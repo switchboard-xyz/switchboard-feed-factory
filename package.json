@@ -8,8 +8,8 @@
   "scripts": {
     "publish": "",
     "build": "tsc",
-    "dev": "ts-node src/index.ts",
-    "start": "tsc && node dist/index.js",
+    "dev": "ts-node src/index.ts --payerKeypairFile=example-keypair.json",
+    "start": "tsc && node dist/index.js --payerKeypairFile=example-keypair.json",
     "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,12 +28,11 @@
     "@solana/web3.js": "^1.29.2",
     "@switchboard-xyz/switchboard-api": "^0.2.152",
     "@types/yargs": "^17.0.3",
-    "dir-resolve": "^1.0.2",
     "fs": "^0.0.1-security",
-    "yargs": "^16.2.0"
+    "resolve-dir": "^1.0.1",
+    "yargs": "^17.2.1"
   },
   "devDependencies": {
-    "@types/dir-resolve": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint": "^7.32.0",
