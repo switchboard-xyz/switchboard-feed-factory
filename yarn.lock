@@ -219,6 +219,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/dir-resolve@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/dir-resolve/-/dir-resolve-1.0.0.tgz#51400fdbddb443977aeb9dc15cbe1a39a59989fc"
+  integrity sha1-UUAP2920Q5d6653BXL4aOaWZifw=
+
 "@types/express-serve-static-core@^4.17.9":
   version "4.17.24"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.24.tgz#ea41f93bf7e0d59cd5a76665068ed6aab6815c07"
@@ -267,11 +272,6 @@
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
-
-"@types/readline-sync@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@types/readline-sync/-/readline-sync-1.4.4.tgz#8568292efe4ddd94d0ccee958b29cc3f4e0ea140"
-  integrity sha512-cFjVIoiamX7U6zkO2VPvXyTxbFDdiRo902IarJuPVxBhpDnXhwSaVE86ip+SCuyWBbEioKCkT4C88RNTxBM1Dw==
 
 "@types/ws@^7.4.4":
   version "7.4.7"
@@ -744,6 +744,11 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+dir-resolve@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/dir-resolve/-/dir-resolve-1.0.2.tgz#73946fdfe466af31c18dd75652e9c2c300e0651c"
+  integrity sha1-c5Rv3+RmrzHBjddWUunCwwDgZRw=
+
 doctrine@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-2.1.0.tgz#5cd01fc101621b42c4cd7f5d1a66243716d3f39d"
@@ -1127,6 +1132,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
+  integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -1922,11 +1932,6 @@ read-pkg@^3.0.0:
     load-json-file "^4.0.0"
     normalize-package-data "^2.3.2"
     path-type "^3.0.0"
-
-readline-sync@^1.4.10:
-  version "1.4.10"
-  resolved "https://registry.yarnpkg.com/readline-sync/-/readline-sync-1.4.10.tgz#41df7fbb4b6312d673011594145705bf56d8873b"
-  integrity sha512-gNva8/6UAe8QYepIQH/jQ2qn91Qj0B9sYjMBBs3QOB8F2CXcKgLxQaJRP76sWVRQt+QU+8fAkCbCvjjMFu7Ycw==
 
 rechoir@^0.6.2:
   version "0.6.2"
