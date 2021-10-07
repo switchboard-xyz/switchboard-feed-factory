@@ -1,0 +1,18 @@
+[
+  // The correct data schema for a match to upload is as follows:
+  // {
+  //   "name": "NewcastleUnited-vs-WestHamUnited-August15",
+  //   "espnId": "606037",
+  //   "yahooId": "newcastle-united-west-ham-united-2247017"
+  // }
+  //
+  // - `name` (required) is used to name the output file where the feed's account keypair is stored.
+  // - `espnId` (optional) will add an ESPN job for the specified match when provided.
+  // - `yahooId` (optional) will add a Yahoo Sports job for the specified match when provided.
+  //
+  {
+    "name": "ManchesterCity-vs-WolverhamptonWanderers-December11",
+    "espnId": "605888",
+    "yahooId": "manchester-city-wolverhampton-wanderers-2247169"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "name": "switchboard-epl-feeds",
+  "version": "1.0.0",
+  "description": "A small example script on producing EPL data feeds and publishing to Switchboard's oracle network.",
+  "author": "jack@switchboard.xyz",
+  "license": "MIT",
+  "private": true,
+  "main": "main.ts",
+  "scripts": {
+    "publish": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessupjn/switchboard-epl-feeds.git"
+  },
+  "keywords": [
+    "switchboard"
+  ],
+  "bugs": {
+    "url": "https://github.com/jessupjn/switchboard-epl-feeds/issues"
+  },
+  "homepage": "https://github.com/jessupjn/switchboard-epl-feeds#readme",
+  "dependencies": {
+    "@solana/web3.js": "^1.29.2",
+    "@switchboard-xyz/switchboard-api": "^0.2.152",
+    "@types/yargs": "^17.0.3",
+    "readline-sync": "^1.4.10",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.2.1"
+  }
+}
