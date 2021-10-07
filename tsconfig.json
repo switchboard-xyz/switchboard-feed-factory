@@ -1,11 +1,12 @@
 {
-  // "ts-node": {
-  //   "compilerOptions": {
-  //     "module": "commonjs",
-  //     "target": "ES2021",
-  //     "strict": true
-  //   }
-  // },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "ES2021",
+      "strict": true,
+      "noImplicitAny": false
+    }
+  },
   "compilerOptions": {
     "declaration": true,
     "moduleResolution": "node",
@@ -20,7 +21,8 @@
     "resolveJsonModule": true,
     "noEmitOnError": true,
     "isolatedModules": true,
-    "typeRoots": ["./src/types", "./node_modules/@types"]
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "noImplicitAny": false
   },
   "include": ["*", "src/**/*"],
   "exclude": ["node_modules"]

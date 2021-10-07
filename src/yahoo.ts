@@ -1,6 +1,6 @@
 import { OracleJob } from "@switchboard-xyz/switchboard-api";
 
-const yahooJob = (yahooMatchId: string): OracleJob => {
+const createYahooJob = (yahooMatchId: string): OracleJob => {
   const yahooMatchNumber = yahooMatchId.slice(
     yahooMatchId.lastIndexOf("-") + 1
   );
@@ -80,4 +80,4 @@ const yahooJob = (yahooMatchId: string): OracleJob => {
   });
 };
 
-export default yahooJob;
+export default createYahooJob;
