@@ -4,9 +4,9 @@ import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
 import _feeds from "./feeds.json";
-import { FeedType, FactoryError } from "./types";
+import { FeedInput, FactoryError, FeedOutput } from "./types";
 import DataFeedFactory from "./dataFeedFactory";
-import { toCluster } from "./utils";
+import { toCluster, formatFactoryError } from "./utils";
 
 async function main(): Promise<void> {
   // Read in keypair file to fund the new feeds
@@ -35,25 +35,35 @@ async function main(): Promise<void> {
   const feedFactory = new DataFeedFactory(cluster, payerAccount);
 
   // Read in json feeds and pass to factory
-  const feeds = _feeds as FeedType[];
-  // convert to map and make sure names are unique
-  const _feedMap = feeds.reduce(function (map, obj: FeedType) {
-    map[obj.name] = obj;
-    return map;
-  }, {});
+  const feedInput = _feeds as FeedInput[];
+  const feedInputMap = new Map(feedInput.map((f) => [f.name, f]));
+  if (feedInputMap.size !== feedInput.length) {
+    const e = new FactoryError(
+      "duplicate names detected, check your json file",
+      "JsonErr"
+    );
+    console.log(formatFactoryError(e));
+    return;
+  }
   console.log(
     chalk.yellow("######## Creating Data Feeds from JSON File ########")
   );
-  const dataFeedAccounts = await Promise.all(
-    feeds.map((feed) => feedFactory.createEplFeed(feed))
-  );
 
+  const feedOutputMap: Map<string, FeedOutput | FactoryError> = new Map();
+  await Promise.all(
+    feedInput.map(async (f) => {
+      const resp = await feedFactory.createEplFeed(f);
+      feedOutputMap.set(f.name, resp);
+      if (resp instanceof FactoryError) {
+        console.log(formatFactoryError(resp));
+      } else {
+        console.log(
+          `${chalk.blue(f.name)}: ${resp.dataFeed.publicKey.toString()}`
+        );
+      }
+    })
+  );
   // write to output file
-  dataFeedAccounts.forEach((f) => {
-    if (!(f instanceof FactoryError)) {
-      console.log(f.publicKey.toString());
-    }
-  });
 }
 
 main().then(

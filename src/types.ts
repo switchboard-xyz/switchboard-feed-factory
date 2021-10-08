@@ -1,4 +1,7 @@
-export interface FeedType {
+import { Account } from "@solana/web3.js";
+import { OracleJob } from "@switchboard-xyz/switchboard-api";
+
+export interface FeedInput {
   // (required) is used to name the output file where the feed's account keypair is stored.
   name: string;
   // (optional) will add an ESPN job for the specified match when provided.
@@ -13,4 +16,7 @@ export class FactoryError extends Error {
   }
 }
 
-// export default FeedType;
+export interface FeedOutput extends FeedInput {
+  dataFeed: Account;
+  jobs: OracleJob[];
+}
