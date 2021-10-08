@@ -6,6 +6,9 @@ export class FactoryError extends Error {
     this.name = type ? type : "FactoryError";
   }
   public toString(): string {
+    return `${this.name}:: ${this.message}`;
+  }
+  public toFormattedString(): string {
     return `${chalk.red(this.name)}:: ${this.message}`;
   }
 }

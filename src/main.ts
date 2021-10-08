@@ -10,7 +10,6 @@ import {
   JsonInputError,
   FactoryError,
   DataFeedFactory,
-  DataFeed,
 } from "./types/";
 import readlineSync from "readline-sync";
 
@@ -76,25 +75,51 @@ async function main(): Promise<void> {
     return;
   }
   console.log(chalk.blue("# of New Feeds:"), FactoryInput.length);
-  if (readlineSync.keyInYN("Does the configuration look correct?")) {
-    // pass feeds to factory and parse account response
-    console.log(
-      chalk.underline.yellow(
-        "######## Creating Data Feeds from JSON File ########"
-      )
-    );
-    const factoryOutput: DataFeed[] = [];
-    await Promise.all(
-      FactoryInput.map(async (f) => {
-        const newFeed = await feedFactory.createNewFeed(f);
-        await feedFactory.verifyNewFeed(newFeed);
-        factoryOutput.push(newFeed);
-        console.log(newFeed.toResultString());
-      })
-    );
-  } else {
+  if (!readlineSync.keyInYN("Does the configuration look correct?")) {
     console.log("Exiting...");
     return;
+  }
+
+  // pass feeds to factory and parse account response
+  console.log(
+    chalk.underline.yellow(
+      "######## Creating Data Feeds from JSON File ########"
+    )
+  );
+  const factoryOutput = await Promise.all(
+    FactoryInput.map(async (f) => {
+      const newFeed = await feedFactory.createNewFeed(f);
+      await feedFactory.verifyNewFeed(newFeed);
+      console.log(newFeed.toFormattedString());
+      return newFeed;
+    })
+  );
+  // Write to output file
+  const createdFeeds = factoryOutput.filter((f) => f.output);
+  if (createdFeeds.length > 0) {
+    fs.writeFileSync(
+      `./CreatedFeeds-${Date.now()}.json`,
+      JSON.stringify(createdFeeds, null, 2)
+    );
+  } else {
+    console.log("No newly created data feeds");
+  }
+
+  const errorMap = {};
+  factoryOutput
+    .filter((f) => f.error)
+    .forEach((f) => {
+      if (f.error) {
+        errorMap[f.input.name] = f.error?.toString();
+      }
+    });
+  if (Object.keys(errorMap).length > 0) {
+    fs.writeFileSync(
+      `./Errors-${Date.now()}.json`,
+      JSON.stringify(errorMap, null, 2)
+    );
+  } else {
+    console.log("No errors");
   }
 }
 

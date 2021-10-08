@@ -1,4 +1,4 @@
-import { Account } from "@solana/web3.js";
+import { Account, PublicKey } from "@solana/web3.js";
 import { OracleJob } from "@switchboard-xyz/switchboard-api";
 
 /**
@@ -13,5 +13,21 @@ export interface FactoryInput {
 }
 export interface FactoryOutput {
   dataFeed: Account;
-  jobs: OracleJob[];
+  jobs: JobOutput[];
+}
+export interface JobOutput {
+  provider: string;
+  id: string;
+  pubKey?: PublicKey;
+  job?: OracleJob;
+}
+export interface FactoryOutputJSON {
+  name: string;
+  dataFeed: string;
+  jobs: JobOutputJSON[];
+}
+export interface JobOutputJSON {
+  provider: string;
+  id: string;
+  pubKey: string;
 }

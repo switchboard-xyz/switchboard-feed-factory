@@ -1,3 +1,3 @@
 export * from "./dataFeedFactory";
-export * from "./types";
+export * from "./factory";
 export * from "./error";

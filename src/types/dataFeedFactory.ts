@@ -13,6 +13,9 @@ import {
   ConfigError,
   VerifyError,
   FactoryOutput,
+  JobOutput,
+  FactoryOutputJSON,
+  JobOutputJSON,
 } from "../types";
 import {
   OracleJob,
@@ -26,13 +29,6 @@ import {
   parseFulfillmentAccountData,
 } from "@switchboard-xyz/switchboard-api";
 import chalk from "chalk";
-
-const logSymbols = {
-  info: chalk.blue("i"),
-  success: chalk.green("√"),
-  warning: chalk.yellow("‼"),
-  error: chalk.red("×"),
-};
 
 export class DataFeedFactory {
   private connection: Connection;
@@ -102,13 +98,21 @@ export class DataFeed {
     this.verified = false;
   }
 
-  private createJobs(): OracleJob[] {
-    const jobs: OracleJob[] = [];
+  private createJobs(): JobOutput[] {
+    const jobs: JobOutput[] = [];
     if (this.input.espnId) {
-      jobs.push(createEspnJob(this.input.espnId));
+      jobs.push({
+        provider: "ESPN",
+        id: this.input.espnId,
+        job: createEspnJob(this.input.espnId),
+      });
     }
     if (this.input.yahooId) {
-      jobs.push(createYahooJob(this.input.yahooId));
+      jobs.push({
+        provider: "Yahoo",
+        id: this.input.yahooId,
+        job: createYahooJob(this.input.yahooId),
+      });
     }
     return jobs;
   }
@@ -128,7 +132,7 @@ export class DataFeed {
     }
 
     let dataFeed: Account;
-    const jobAccounts: Account[] = [];
+    // const jobKeys: PublicKey[] = [];
     try {
       dataFeed = await createDataFeed(connection, payerAccount, switchboardPID);
     } catch (e) {
@@ -142,9 +146,10 @@ export class DataFeed {
             connection,
             payerAccount,
             dataFeed,
-            j.tasks as OracleJob.Task[]
+            j.job?.tasks as OracleJob.Task[]
           );
-          jobAccounts.push(jobAccount);
+          j.pubKey = jobAccount.publicKey;
+          // jobKeys.push(jobAccount.publicKey);
         } catch (err) {
           console.log("Failed to create job", err);
         }
@@ -195,17 +200,47 @@ export class DataFeed {
       this.verified = true;
     }
   }
-  public toResultString(): string {
+  public toString(): string {
     if (this.error) {
-      return `${logSymbols.error} ${this.error.toString()}`;
+      return `${this.error.toString()}`;
     } else if (this.created && this.verified && this.output) {
-      return `${logSymbols.success} ${
+      return `${
         this.input.name
       } (${this.output.dataFeed.publicKey.toString()}) verified successfully with ${
         this.output.jobs.length
       } jobs`;
     } else {
-      return `${logSymbols.warning} ${this.input.name} logic error`;
+      return `${this.input.name} logic error`;
     }
+  }
+  public toFormattedString(): string {
+    if (this.error) {
+      return `${this.error.toFormattedString()}`;
+    } else if (this.created && this.verified && this.output) {
+      return `${chalk.green("Created")}: ${chalk.blue(
+        this.input.name
+      )} (${this.output.dataFeed.publicKey.toString()}) verified successfully with ${
+        this.output.jobs.length
+      } jobs`;
+    } else {
+      return `${this.input.name} logic error`;
+    }
+  }
+
+  public toJSON(): FactoryOutputJSON {
+    const jobs = !this.output
+      ? []
+      : this.output.jobs.map((j): JobOutputJSON => {
+          return {
+            provider: j.provider,
+            id: j.id,
+            pubKey: j.pubKey ? j.pubKey.toString() : "",
+          };
+        });
+    return {
+      name: this.input.name,
+      dataFeed: this.output ? this.output.dataFeed.publicKey.toString() : "",
+      jobs: jobs,
+    };
   }
 }
