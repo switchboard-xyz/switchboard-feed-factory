@@ -4,7 +4,12 @@ import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
 import _feeds from "./feeds.json";
-import { FeedInput, FactoryError, FeedOutput } from "./types";
+import {
+  FactoryInput,
+  FactoryError,
+  FactoryOutput,
+  FactoryResult,
+} from "./types";
 import DataFeedFactory from "./dataFeedFactory";
 import { toCluster } from "./utils";
 
@@ -53,9 +58,9 @@ async function main(): Promise<void> {
   await feedFactory.verifyFulfillmentManager();
 
   // Read in json feeds and check for any duplicate names
-  const feedInput = _feeds as FeedInput[];
-  const feedInputMap = new Map(feedInput.map((f) => [f.name, f]));
-  if (feedInputMap.size !== feedInput.length) {
+  const FactoryInput = _feeds as FactoryInput[];
+  const FactoryInputMap = new Map(FactoryInput.map((f) => [f.name, f]));
+  if (FactoryInputMap.size !== FactoryInput.length) {
     const e = new FactoryError(
       "duplicate names detected, check your json file",
       "JsonErr"
@@ -63,23 +68,23 @@ async function main(): Promise<void> {
     console.log(`${e}`);
     return;
   }
+
+  // pass feeds to factory and parse account response
   console.log(
     chalk.underline.yellow(
       "######## Creating Data Feeds from JSON File ########"
     )
   );
-
-  // pass feeds to factory and parse account response
-  const feedOutput: (FeedOutput | FactoryError)[] = [];
+  const FactoryOutput: FactoryResult<FactoryOutput, FactoryError>[] = [];
   await Promise.all(
-    feedInput.map(async (f) => {
+    FactoryInput.map(async (f) => {
       const resp = await feedFactory.createEplFeed(f);
-      feedOutput.push(resp);
-      if (resp instanceof FactoryError) {
-        console.log(`${resp}`);
-      } else {
+      FactoryOutput.push(resp);
+      if (resp.isErr()) {
+        console.log(`${resp.error}`);
+      } else if (resp.isOk()) {
         console.log(
-          `${chalk.blue(f.name)}: ${resp.dataFeed.publicKey.toString()}`
+          `${chalk.blue(f.name)}: ${resp.value.dataFeed.publicKey.toString()}`
         );
       }
     })
@@ -89,34 +94,34 @@ async function main(): Promise<void> {
   console.log(
     chalk.underline.yellow("######## Verifying Data Feeds On-Chain ########")
   );
-  const feedResult: (boolean | FactoryError)[] = [];
+  const feedResult: FactoryResult<boolean, FactoryError>[] = [];
   await Promise.all(
-    feedOutput.map(async (f) => {
-      if (f instanceof FactoryError) {
-        console.log(logSymbols.error, `${f}`);
+    FactoryOutput.map(async (f) => {
+      if (f.isErr()) {
+        console.log(logSymbols.error, `${f.error}`);
         return;
       }
       // verify configuration matches expected
-      const result = await feedFactory.verifyEplFeed(f);
+      const result = await feedFactory.verifyEplFeed(f.value);
       feedResult.push(result);
-      if (result instanceof FactoryError) {
+      if (result.isErr()) {
         console.log(logSymbols.error, `${result}`);
       } else {
         if (result) {
           console.log(
             logSymbols.success,
             `${chalk.green("Success::")} feed ${
-              f.name
+              f.value.name
             } verified successfully with ${
-              f.jobs.length
-            } jobs: ${f.dataFeed.publicKey.toString()}`
+              f.value.jobs.length
+            } jobs: ${f.value.dataFeed.publicKey.toString()}`
           );
         } else {
           console.log(
             logSymbols.error,
             `${chalk.red(
               "Error::"
-            )}failed to verify account configuration ${f.dataFeed.publicKey.toString()}`
+            )}failed to verify account configuration ${f.value.dataFeed.publicKey.toString()}`
           );
         }
       }

@@ -2,14 +2,22 @@ import { Account } from "@solana/web3.js";
 import { OracleJob } from "@switchboard-xyz/switchboard-api";
 import chalk from "chalk";
 
-export interface FeedInput {
-  // (required) is used to name the output file where the feed's account keypair is stored.
+/**
+ * @param name  Unique name for the data feed
+ * @param espnId (optional) The ESPN ID associated with the data feed
+ * @param yahooId  (optional) The Yahoo ID associated with the data feed
+ */
+export interface FactoryInput {
   name: string;
-  // (optional) will add an ESPN job for the specified match when provided.
   espnId?: string;
-  // (optional) will add a Yahoo Sports job for the specified match when provided.
   yahooId?: string;
 }
+export interface FactoryOutput extends FactoryInput {
+  dataFeed: Account;
+  jobs: OracleJob[];
+  verified?: boolean;
+}
+
 export class FactoryError extends Error {
   constructor(message: string, type?: string) {
     super(message);
@@ -20,23 +28,56 @@ export class FactoryError extends Error {
   }
 }
 
-export interface FeedOutput extends FeedInput {
-  dataFeed: Account;
-  jobs: OracleJob[];
+// https://dev.to/duunitori/mimicing-rust-s-result-type-in-typescript-3pn1
+export type FactoryResult<T, E> = Ok<T, E> | Err<T, E>;
+
+export class Ok<T, E> {
+  public constructor(public readonly value: T) {}
+  public isOk(): this is Ok<T, E> {
+    return true;
+  }
+  public isErr(): this is Err<T, E> {
+    return false;
+  }
 }
 
-// export class FeedOutput implements FeedInput {
-//   name: string;
-//   espnId?: string;
-//   yahooId?: string;
-//   dataFeed: Account;
-//   jobs: OracleJob[];
+export class Err<T, E> {
+  public constructor(public readonly error: E) {}
+  public isOk(): this is Ok<T, E> {
+    return false;
+  }
+  public isErr(): this is Err<T, E> {
+    return true;
+  }
+}
 
-//   constructor(input: FeedInput, dataFeed: Account, jobs: OracleJob[]) {
-//     this.name = input.name;
-//     this.espnId = input.espnId;
-//     this.yahooId = input.yahooId;
-//     this.dataFeed = dataFeed;
-//     this.jobs = jobs;
-//   }
-// }
+/**
+ * Construct a new Ok result value.
+ */
+export const ok = <T, E>(value: T): Ok<T, E> => new Ok(value);
+
+/**
+ * Construct a new Err result value.
+ */
+export const err = <T, E>(error: E): Err<T, E> => new Err(error);
+
+export class SwitchboardError extends FactoryError {
+  constructor(message: string) {
+    super(message, "SwitchboardError");
+  }
+}
+export class ConfigError extends FactoryError {
+  constructor(message: string) {
+    super(message, "ConfigError");
+  }
+}
+export class JsonInputError extends FactoryError {
+  constructor(message: string) {
+    super(message, "JsonInputError");
+  }
+}
+export class VerifyError extends FactoryError {
+  constructor(message: string) {
+    super(message, "VerifyError");
+  }
+}

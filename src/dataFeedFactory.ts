@@ -7,7 +7,17 @@ import {
 } from "@solana/web3.js";
 import createEspnJob from "./jobs/espn";
 import createYahooJob from "./jobs/yahoo";
-import { FeedInput, FactoryError, FeedOutput } from "./types";
+import {
+  FactoryInput,
+  FactoryError,
+  SwitchboardError,
+  ConfigError,
+  VerifyError,
+  FactoryOutput,
+  FactoryResult,
+  err,
+  ok,
+} from "./types";
 import {
   OracleJob,
   createDataFeed,
@@ -67,7 +77,7 @@ export default class DataFeedFactory {
       }
     }
   }
-  private parseJobIds(feed: FeedInput): OracleJob[] {
+  private createJobs(feed: FactoryInput): OracleJob[] {
     const jobs: OracleJob[] = [];
     if (feed.espnId) {
       jobs.push(createEspnJob(feed.espnId));
@@ -80,11 +90,11 @@ export default class DataFeedFactory {
   }
 
   public async createEplFeed(
-    feed: FeedInput
-  ): Promise<FeedOutput | FactoryError> {
-    const jobs = this.parseJobIds(feed);
+    feed: FactoryInput
+  ): Promise<FactoryResult<FactoryOutput, FactoryError>> {
+    const jobs = this.createJobs(feed);
     if (jobs.length === 0) {
-      return new FactoryError(`no valid jobs defined for ${feed.name}`);
+      return err(new ConfigError(`no valid jobs defined for ${feed.name}`));
     }
 
     let dataFeed: Account;
@@ -95,11 +105,8 @@ export default class DataFeedFactory {
         this.payerAccount,
         this.SWITCHBOARD_PID
       );
-    } catch (err) {
-      return new FactoryError(
-        "failed to create data feed account",
-        "SwitchboardErr"
-      );
+    } catch (e) {
+      return err(new SwitchboardError("failed to create data feed account"));
     }
     await Promise.all(
       jobs.map(async (j) => {
@@ -124,39 +131,54 @@ export default class DataFeedFactory {
         // fulfillmentManagerPubkey: this.fulfillmentManager.toBuffer(),
         lock: false,
       });
-    } catch (err) {
-      return new FactoryError(
-        `failed to set data feed config ${feed.name}`,
-        "SwitchboardErr"
+    } catch (e) {
+      return err(
+        new SwitchboardError(`failed to set data feed config ${feed.name}`)
       );
     }
-    // console.log(
-    //   `${chalk.blue(feed.name)}: ${dateFeedAccount.publicKey.toString()}`
-    // );
-    return { ...feed, dataFeed, jobs };
+    return ok({ ...feed, dataFeed, jobs });
   }
 
   public async verifyEplFeed(
-    feed: FeedOutput
-  ): Promise<boolean | FactoryError> {
+    feed: FactoryOutput
+  ): Promise<FactoryResult<boolean, FactoryError>> {
     try {
       const aggState = await parseAggregatorAccountData(
         this.connection,
         feed.dataFeed.publicKey
       );
-
-      return aggState.jobDefinitionPubkeys.length === feed.jobs.length
-        ? true
-        : new FactoryError(
-            `data feed has the wrong number of jobs, expected ${feed.jobs.length}, received ${aggState.jobDefinitionPubkeys.length}`,
-            "VerifyError"
-          );
-    } catch (err) {
-      console.log(err);
-      return new FactoryError(
-        `failed to verify Epl feed on-chain ${feed.name}`,
-        "SwitchboardErr"
+      if (!(aggState.jobDefinitionPubkeys.length === feed.jobs.length)) {
+        return err(
+          new VerifyError(
+            `data feed has the wrong number of jobs, expected ${feed.jobs.length}, received ${aggState.jobDefinitionPubkeys.length}`
+          )
+        );
+      }
+    } catch (e) {
+      return err(
+        new SwitchboardError(`failed to verify Epl feed on-chain ${feed.name}`)
       );
     }
+    return ok(true);
   }
 }
+
+// export class DataFeed {
+//   name: string;
+//   espnId?: string;
+//   yahooId?: string;
+//   created: boolean;
+//   error?: FactoryError;
+
+//   constructor(
+//     connection: Connection,
+//     payerAccount: Account,
+//     switchboardPID: PublicKey,
+//     feed: FactoryInput
+//   ) {
+//     this.created = false;
+//     this.name = feed.name;
+//     this.espnId = feed.espnId;
+//     this.yahooId = feed.yahooId;
+//   }
+// }
