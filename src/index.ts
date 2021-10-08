@@ -44,6 +44,7 @@ async function main(): Promise<void> {
   console.log(chalk.blue("Payer Account:"), payerAccount.publicKey.toString());
 
   const cluster = toCluster(argv.cluster);
+  console.log(chalk.blue("Cluster:"), cluster);
   const feedFactory = new DataFeedFactory(
     cluster,
     payerAccount,
@@ -69,11 +70,11 @@ async function main(): Promise<void> {
   );
 
   // pass feeds to factory and parse account response
-  const feedOutputMap: Map<string, FeedOutput | FactoryError> = new Map();
+  const feedOutput: (FeedOutput | FactoryError)[] = [];
   await Promise.all(
     feedInput.map(async (f) => {
       const resp = await feedFactory.createEplFeed(f);
-      feedOutputMap.set(f.name, resp);
+      feedOutput.push(resp);
       if (resp instanceof FactoryError) {
         console.log(`${resp}`);
       } else {
@@ -88,16 +89,16 @@ async function main(): Promise<void> {
   console.log(
     chalk.underline.yellow("######## Verifying Data Feeds On-Chain ########")
   );
-  const feedResultMap: Map<string, boolean | FactoryError> = new Map();
+  const feedResult: (boolean | FactoryError)[] = [];
   await Promise.all(
-    Array.from(feedOutputMap.values()).map(async (f) => {
+    feedOutput.map(async (f) => {
       if (f instanceof FactoryError) {
         console.log(logSymbols.error, `${f}`);
         return;
       }
       // verify configuration matches expected
       const result = await feedFactory.verifyEplFeed(f);
-      feedResultMap.set(f.name, result);
+      feedResult.push(result);
       if (result instanceof FactoryError) {
         console.log(logSymbols.error, `${result}`);
       } else {

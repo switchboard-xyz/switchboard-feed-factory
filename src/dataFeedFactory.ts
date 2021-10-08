@@ -27,9 +27,6 @@ export default class DataFeedFactory {
   public SWITCHBOARD_PID: PublicKey;
 
   constructor(cluster: Cluster, payer: Account, ffManager?: string) {
-    // this.fulfillmentManager = fulfillmentManager
-    //   ? new PublicKey(fulfillmentManager)
-    //   : undefined;
     const url = clusterApiUrl(cluster, true);
     this.connection = new Connection(url, "processed");
     this.payerAccount = payer;
@@ -60,11 +57,12 @@ export default class DataFeedFactory {
           this.fulfillmentManager
         );
       } catch (err) {
-        const e = new FactoryError(
-          `not a valid fulfillment manager account`,
-          "ConfigErr"
+        console.log(
+          `${new FactoryError(
+            `not a valid fulfillment manager account`,
+            "ConfigErr"
+          )}`
         );
-        console.log(`${e}`);
         process.exit(-1);
       }
     }
