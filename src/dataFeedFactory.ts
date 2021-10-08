@@ -23,11 +23,13 @@ import {
 export default class DataFeedFactory {
   private connection: Connection;
   private payerAccount: Account;
-  private fulfillmentManager: PublicKey;
+  public fulfillmentManager?: PublicKey;
   public SWITCHBOARD_PID: PublicKey;
 
-  constructor(cluster: Cluster, payer: Account, fulfillmentManager: string) {
-    this.fulfillmentManager = new PublicKey(fulfillmentManager);
+  constructor(cluster: Cluster, payer: Account, ffManager?: string) {
+    // this.fulfillmentManager = fulfillmentManager
+    //   ? new PublicKey(fulfillmentManager)
+    //   : undefined;
     const url = clusterApiUrl(cluster, true);
     this.connection = new Connection(url, "processed");
     this.payerAccount = payer;
@@ -45,22 +47,26 @@ export default class DataFeedFactory {
         this.SWITCHBOARD_PID = SWITCHBOARD_DEVNET_PID;
         break;
     }
-    // this.verifyFulfillmentManager();
+    if (ffManager) {
+      this.fulfillmentManager = new PublicKey(ffManager);
+    }
   }
 
-  private async verifyFulfillmentManager() {
-    try {
-      await parseFulfillmentAccountData(
-        this.connection,
-        this.fulfillmentManager
-      );
-    } catch (err) {
-      const e = new FactoryError(
-        `not a valid fulfillment manager account`,
-        "ConfigErr"
-      );
-      console.log(`${e}`);
-      process.exit(-1);
+  public async verifyFulfillmentManager(): Promise<void> {
+    if (this.fulfillmentManager) {
+      try {
+        await parseFulfillmentAccountData(
+          this.connection,
+          this.fulfillmentManager
+        );
+      } catch (err) {
+        const e = new FactoryError(
+          `not a valid fulfillment manager account`,
+          "ConfigErr"
+        );
+        console.log(`${e}`);
+        process.exit(-1);
+      }
     }
   }
   private parseJobIds(feed: FeedInput): OracleJob[] {
@@ -84,6 +90,7 @@ export default class DataFeedFactory {
     }
 
     let dataFeed: Account;
+    const jobAccounts: Account[] = [];
     try {
       dataFeed = await createDataFeed(
         this.connection,
@@ -96,18 +103,21 @@ export default class DataFeedFactory {
         "SwitchboardErr"
       );
     }
-    jobs.forEach(async (j) => {
-      try {
-        dataFeed = await addFeedJob(
-          this.connection,
-          this.payerAccount,
-          dataFeed,
-          j.tasks as OracleJob.Task[]
-        );
-      } catch (err) {
-        console.log("Failed to create job");
-      }
-    });
+    await Promise.all(
+      jobs.map(async (j) => {
+        try {
+          const jobAccount = await addFeedJob(
+            this.connection,
+            this.payerAccount,
+            dataFeed,
+            j.tasks as OracleJob.Task[]
+          );
+          jobAccounts.push(jobAccount);
+        } catch (err) {
+          console.log("Failed to create job", err);
+        }
+      })
+    );
 
     try {
       await setDataFeedConfigs(this.connection, this.payerAccount, dataFeed, {
@@ -136,7 +146,13 @@ export default class DataFeedFactory {
         this.connection,
         feed.dataFeed.publicKey
       );
-      return aggState.jobDefinitionPubkeys.length === feed.jobs.length;
+
+      return aggState.jobDefinitionPubkeys.length === feed.jobs.length
+        ? true
+        : new FactoryError(
+            `data feed has the wrong number of jobs, expected ${feed.jobs.length}, received ${aggState.jobDefinitionPubkeys.length}`,
+            "VerifyError"
+          );
     } catch (err) {
       console.log(err);
       return new FactoryError(

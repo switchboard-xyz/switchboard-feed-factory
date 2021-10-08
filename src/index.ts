@@ -34,7 +34,6 @@ async function main(): Promise<void> {
         type: "string",
         describe: "Public key of the fulfillment manager account",
         demand: false,
-        default: "7s6kXRDAV7MKsfydrhsmB48qcUTB7L46C75occvaHgaL",
       },
     })
     .parseSync();
@@ -50,6 +49,7 @@ async function main(): Promise<void> {
     payerAccount,
     argv.fulfillmentManager
   );
+  await feedFactory.verifyFulfillmentManager();
 
   // Read in json feeds and check for any duplicate names
   const feedInput = _feeds as FeedInput[];
@@ -99,17 +99,23 @@ async function main(): Promise<void> {
       const result = await feedFactory.verifyEplFeed(f);
       feedResultMap.set(f.name, result);
       if (result instanceof FactoryError) {
-        console.log(`${result}`);
+        console.log(logSymbols.error, `${result}`);
       } else {
         if (result) {
           console.log(
             logSymbols.success,
-            `account verified successfully ${f.dataFeed.publicKey.toString()}`
+            `${chalk.green("Success::")} feed ${
+              f.name
+            } verified successfully with ${
+              f.jobs.length
+            } jobs: ${f.dataFeed.publicKey.toString()}`
           );
         } else {
           console.log(
             logSymbols.error,
-            `failed to verify account configuration ${f.dataFeed.publicKey.toString()}`
+            `${chalk.red(
+              "Error::"
+            )}failed to verify account configuration ${f.dataFeed.publicKey.toString()}`
           );
         }
       }
