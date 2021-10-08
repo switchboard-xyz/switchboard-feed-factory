@@ -1,15 +1,13 @@
-import { OracleJob } from "@switchboard-xyz/switchboard-api";
+import { OracleJob } from '@switchboard-xyz/switchboard-api'
 
 const createYahooJob = (yahooMatchId: string): OracleJob => {
-  const yahooMatchNumber = yahooMatchId.slice(
-    yahooMatchId.lastIndexOf("-") + 1
-  );
+  const yahooMatchNumber = yahooMatchId.slice(yahooMatchId.lastIndexOf('-') + 1)
 
   // Try to find a match for the query and return its attendance (because a numerical response is
   // required).
   const matchFilter = (filter: string) =>
     `$.context.dispatcher.stores.GamesStore.games[?(` +
-    `@.gameid == 'soccer.g.${yahooMatchNumber}' && ${filter})].attendance`;
+    `@.gameid == 'soccer.g.${yahooMatchNumber}' && ${filter})].attendance`
   return OracleJob.create({
     tasks: [
       OracleJob.Task.create({
@@ -39,7 +37,9 @@ const createYahooJob = (yahooMatchId: string): OracleJob => {
                     },
                   }),
                   // If the match is final and home team is marked the winner, return 1.
-                  OracleJob.Task.create({ valueTask: { value: 1 } }),
+                  OracleJob.Task.create({
+                    valueTask: { value: 1 },
+                  }),
                 ],
                 onFailure: [
                   OracleJob.Task.create({
@@ -50,7 +50,9 @@ const createYahooJob = (yahooMatchId: string): OracleJob => {
                     },
                   }),
                   // If the match is final and away team is marked the winner, return 2.
-                  OracleJob.Task.create({ valueTask: { value: 2 } }),
+                  OracleJob.Task.create({
+                    valueTask: { value: 2 },
+                  }),
                 ],
               }),
             }),
@@ -65,11 +67,15 @@ const createYahooJob = (yahooMatchId: string): OracleJob => {
                     },
                   }),
                   // If the match is final and away team is marked the winner, return 2.
-                  OracleJob.Task.create({ valueTask: { value: 0 } }),
+                  OracleJob.Task.create({
+                    valueTask: { value: 0 },
+                  }),
                 ],
                 onFailure: [
                   // If a 'final' match outcome has not been found, return -1.
-                  OracleJob.Task.create({ valueTask: { value: -1 } }),
+                  OracleJob.Task.create({
+                    valueTask: { value: -1 },
+                  }),
                 ],
               }),
             }),
@@ -77,7 +83,7 @@ const createYahooJob = (yahooMatchId: string): OracleJob => {
         }),
       }),
     ],
-  });
-};
+  })
+}
 
-export default createYahooJob;
+export default createYahooJob

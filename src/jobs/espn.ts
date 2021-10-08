@@ -1,7 +1,7 @@
-import { OracleJob } from "@switchboard-xyz/switchboard-api";
+import { OracleJob } from '@switchboard-xyz/switchboard-api'
 
 const createEspnJob = (espnMatchId: string): OracleJob => {
-  const espnCompletedMatch = `$.competitions[?(@.status.type.completed && @.id == '${espnMatchId}')]`;
+  const espnCompletedMatch = `$.competitions[?(@.status.type.completed && @.id == '${espnMatchId}')]`
   return OracleJob.create({
     tasks: [
       OracleJob.Task.create({
@@ -32,7 +32,9 @@ const createEspnJob = (espnMatchId: string): OracleJob => {
                       path: `${espnCompletedMatch}.competitors[?(@.winner && @.homeAway == 'home')].id`,
                     }),
                   }),
-                  OracleJob.Task.create({ valueTask: { value: 1 } }),
+                  OracleJob.Task.create({
+                    valueTask: { value: 1 },
+                  }),
                 ],
                 // Our next attempt tries to do the same except it looks for a competitor
                 // that has been marked both the away team and the winner. If successful,
@@ -43,7 +45,9 @@ const createEspnJob = (espnMatchId: string): OracleJob => {
                       path: `${espnCompletedMatch}.competitors[?(@.winner && @.homeAway == 'away')].id`,
                     }),
                   }),
-                  OracleJob.Task.create({ valueTask: { value: 2 } }),
+                  OracleJob.Task.create({
+                    valueTask: { value: 2 },
+                  }),
                 ],
               },
             }),
@@ -60,11 +64,15 @@ const createEspnJob = (espnMatchId: string): OracleJob => {
                       path: `${espnCompletedMatch}.id`,
                     }),
                   }),
-                  OracleJob.Task.create({ valueTask: { value: 0 } }),
+                  OracleJob.Task.create({
+                    valueTask: { value: 0 },
+                  }),
                 ],
                 // If all of the above fails, return ValueTask(-1).
                 onFailure: [
-                  OracleJob.Task.create({ valueTask: { value: -1 } }),
+                  OracleJob.Task.create({
+                    valueTask: { value: -1 },
+                  }),
                 ],
               }),
             }),
@@ -72,7 +80,7 @@ const createEspnJob = (espnMatchId: string): OracleJob => {
         }),
       }),
     ],
-  });
-};
+  })
+}
 
-export default createEspnJob;
+export default createEspnJob

@@ -6,10 +6,10 @@ A small example script on producing EPL data feeds and publishing to Switchboard
 
 When "update" is called on a resulting feed, the following results can be expected for each job:
 
-- _RESULT_UNFINISHED_ (**-1**) - The game has not been completed.
-- _RESULT_DRAW_ (**0**) - The game has not been completed.
-- _RESULT_HOME_WIN_ (**1**) - The game has not been completed.
-- _RESULT_AWAY_WIN_ (**2**) - The game has not been completed.
+-   _RESULT_UNFINISHED_ (**-1**) - The game has not been completed.
+-   _RESULT_DRAW_ (**0**) - The game has not been completed.
+-   _RESULT_HOME_WIN_ (**1**) - The game has not been completed.
+-   _RESULT_AWAY_WIN_ (**2**) - The game has not been completed.
 
 ## To Use This Tool:
 

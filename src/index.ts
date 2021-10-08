@@ -1,26 +1,22 @@
-import { Account } from "@solana/web3.js";
+import { Account, PublicKey, Cluster } from "@solana/web3.js";
 import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
 import _feeds from "./feeds.json";
 import {
+  ConfigError,
   FactoryInput,
+  JsonInputError,
   FactoryError,
-  FactoryOutput,
-  FactoryResult,
-} from "./types";
-import DataFeedFactory from "./dataFeedFactory";
-import { toCluster } from "./utils";
-
-const logSymbols = {
-  info: chalk.blue("i"),
-  success: chalk.green("√"),
-  warning: chalk.yellow("‼"),
-  error: chalk.red("×"),
-};
+} from "./types/types";
+import { DataFeedFactory, DataFeed } from "./types/dataFeedFactory";
+import readlineSync from "readline-sync";
 
 async function main(): Promise<void> {
+  console.log(
+    chalk.underline.yellow("######## Configuration Settings ########")
+  );
   // Read in keypair file to fund the new feeds
   const argv = yargs(process.argv.slice(2))
     .options({
@@ -29,104 +25,76 @@ async function main(): Promise<void> {
         describe: "Path to keypair file that will pay for transactions.",
         demand: true,
       },
+      fulfillmentManager: {
+        type: "string",
+        describe: "Public key of the fulfillment manager account",
+        demand: true,
+      },
       cluster: {
         type: "string",
         describe: "devnet, testnet, or mainnet-beta",
         demand: false,
         default: "devnet",
       },
-      fulfillmentManager: {
-        type: "string",
-        describe: "Public key of the fulfillment manager account",
-        demand: false,
-      },
     })
     .parseSync();
+  const cluster = toCluster(argv.cluster);
+  console.log(chalk.blue("Cluster:"), cluster);
+
   const payerKeypair = JSON.parse(
     fs.readFileSync(resolve(argv.payerKeypairFile), "utf-8")
   );
   const payerAccount = new Account(payerKeypair);
   console.log(chalk.blue("Payer Account:"), payerAccount.publicKey.toString());
 
-  const cluster = toCluster(argv.cluster);
-  console.log(chalk.blue("Cluster:"), cluster);
+  const fulfillmentManager = new PublicKey(argv.fulfillmentManager);
+  console.log(
+    chalk.blue("Fulfillment Manager:"),
+    fulfillmentManager.toString()
+  );
+
   const feedFactory = new DataFeedFactory(
     cluster,
     payerAccount,
-    argv.fulfillmentManager
+    fulfillmentManager
   );
-  await feedFactory.verifyFulfillmentManager();
+  const ffmCheck = await feedFactory.verifyFulfillmentManager();
+  if (ffmCheck instanceof ConfigError) {
+    console.log(ffmCheck.toString());
+    return;
+  }
 
   // Read in json feeds and check for any duplicate names
   const FactoryInput = _feeds as FactoryInput[];
   const FactoryInputMap = new Map(FactoryInput.map((f) => [f.name, f]));
   if (FactoryInputMap.size !== FactoryInput.length) {
-    const e = new FactoryError(
-      "duplicate names detected, check your json file",
-      "JsonErr"
+    const e = new JsonInputError(
+      "duplicate names detected, check your json file"
     );
-    console.log(`${e}`);
+    console.log(e.toString());
     return;
   }
-
-  // pass feeds to factory and parse account response
-  console.log(
-    chalk.underline.yellow(
-      "######## Creating Data Feeds from JSON File ########"
-    )
-  );
-  const FactoryOutput: FactoryResult<FactoryOutput, FactoryError>[] = [];
-  await Promise.all(
-    FactoryInput.map(async (f) => {
-      const resp = await feedFactory.createEplFeed(f);
-      FactoryOutput.push(resp);
-      if (resp.isErr()) {
-        console.log(`${resp.error}`);
-      } else if (resp.isOk()) {
-        console.log(
-          `${chalk.blue(f.name)}: ${resp.value.dataFeed.publicKey.toString()}`
-        );
-      }
-    })
-  );
-
-  // verify new account configurations on-chain
-  console.log(
-    chalk.underline.yellow("######## Verifying Data Feeds On-Chain ########")
-  );
-  const feedResult: FactoryResult<boolean, FactoryError>[] = [];
-  await Promise.all(
-    FactoryOutput.map(async (f) => {
-      if (f.isErr()) {
-        console.log(logSymbols.error, `${f.error}`);
-        return;
-      }
-      // verify configuration matches expected
-      const result = await feedFactory.verifyEplFeed(f.value);
-      feedResult.push(result);
-      if (result.isErr()) {
-        console.log(logSymbols.error, `${result}`);
-      } else {
-        if (result) {
-          console.log(
-            logSymbols.success,
-            `${chalk.green("Success::")} feed ${
-              f.value.name
-            } verified successfully with ${
-              f.value.jobs.length
-            } jobs: ${f.value.dataFeed.publicKey.toString()}`
-          );
-        } else {
-          console.log(
-            logSymbols.error,
-            `${chalk.red(
-              "Error::"
-            )}failed to verify account configuration ${f.value.dataFeed.publicKey.toString()}`
-          );
-        }
-      }
-    })
-  );
+  console.log(chalk.blue("# of New Feeds:"), FactoryInput.length);
+  if (readlineSync.keyInYN("Does the configuration look correct?")) {
+    // pass feeds to factory and parse account response
+    console.log(
+      chalk.underline.yellow(
+        "######## Creating Data Feeds from JSON File ########"
+      )
+    );
+    const factoryOutput: DataFeed[] = [];
+    await Promise.all(
+      FactoryInput.map(async (f) => {
+        const newFeed = await feedFactory.createNewFeed(f);
+        await feedFactory.verifyNewFeed(newFeed);
+        factoryOutput.push(newFeed);
+        console.log(newFeed.toResultString());
+      })
+    );
+  } else {
+    console.log("Exiting...");
+    return;
+  }
 }
 
 main().then(
@@ -135,7 +103,26 @@ main().then(
     process.exit();
   },
   (err) => {
-    console.log(err);
-    process.exit(-1);
+    if (err instanceof FactoryError) {
+      console.log(err.toString());
+      process.exit(-1);
+    } else {
+      console.log(err);
+      process.exit(-1);
+    }
   }
 );
+
+function toCluster(cluster: string): Cluster {
+  switch (cluster) {
+    case "devnet":
+    case "testnet":
+    case "mainnet-beta": {
+      return cluster;
+    }
+  }
+
+  throw new ConfigError(
+    `Invalid cluster ${cluster} [devnet / testnet / mainnet-beta]`
+  );
+}

@@ -12,10 +12,9 @@ export interface FactoryInput {
   espnId?: string;
   yahooId?: string;
 }
-export interface FactoryOutput extends FactoryInput {
+export interface FactoryOutput {
   dataFeed: Account;
   jobs: OracleJob[];
-  verified?: boolean;
 }
 
 export class FactoryError extends Error {

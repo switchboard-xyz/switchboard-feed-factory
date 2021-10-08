@@ -1,47 +1,49 @@
 {
-  "name": "switchboard-epl-feeds",
-  "version": "1.0.0",
-  "description": "A small example script on producing EPL data feeds and publishing to Switchboard's oracle network.",
-  "author": "jack@switchboard.xyz",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "publish": "",
-    "build": "tsc",
-    "dev": "ts-node src/index.ts --payerKeypairFile=example-keypair.json",
-    "start": "tsc && node bin/index.js --payerKeypairFile=example-keypair.json",
-    "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jessupjn/switchboard-epl-feeds.git"
-  },
-  "keywords": [
-    "switchboard"
-  ],
-  "bugs": {
-    "url": "https://github.com/jessupjn/switchboard-epl-feeds/issues"
-  },
-  "homepage": "https://github.com/jessupjn/switchboard-epl-feeds#readme",
-  "dependencies": {
-    "@solana/web3.js": "^1.29.2",
-    "@switchboard-xyz/switchboard-api": "^0.2.152",
-    "@types/yargs": "^17.0.3",
-    "chalk": "^4.1.2",
-    "fs": "^0.0.1-security",
-    "resolve-dir": "^1.0.1",
-    "yargs": "^17.2.1"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.3"
-  }
+    "name": "switchboard-epl-feeds",
+    "version": "1.0.0",
+    "description": "A small example script on producing EPL data feeds and publishing to Switchboard's oracle network.",
+    "author": "jack@switchboard.xyz",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "publish": "",
+        "build": "tsc",
+        "dev": "ts-node src/index.ts --payerKeypairFile=example-keypair.json --fulfillmentManager=9DQtXe31pHpNsVskZJpbDUBUGKdxDCV96L7N4Xwbi62X",
+        "start": "tsc && node bin/index.js --payerKeypairFile=example-keypair.json --fulfillmentManager=9DQtXe31pHpNsVskZJpbDUBUGKdxDCV96L7N4Xwbi62X",
+        "create-ff-manager": "ts-node src/createFFManager.ts",
+        "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jessupjn/switchboard-epl-feeds.git"
+    },
+    "keywords": [
+        "switchboard"
+    ],
+    "bugs": {
+        "url": "https://github.com/jessupjn/switchboard-epl-feeds/issues"
+    },
+    "homepage": "https://github.com/jessupjn/switchboard-epl-feeds#readme",
+    "dependencies": {
+        "@solana/web3.js": "^1.29.2",
+        "@switchboard-xyz/switchboard-api": "^0.2.152",
+        "@types/yargs": "^17.0.3",
+        "chalk": "^4.1.2",
+        "fs": "^0.0.1-security",
+        "readline-sync": "^1.4.10",
+        "resolve-dir": "^1.0.1",
+        "yargs": "^17.2.1"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.33.0",
+        "@typescript-eslint/parser": "^4.33.0",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.24.2",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.4.1",
+        "ts-node": "^10.2.1",
+        "typescript": "^4.4.3"
+    }
 }
