@@ -10,7 +10,14 @@ export function toCluster(cluster: string): Cluster {
       return cluster;
     }
   }
-  throw new Error("Invalid cluster provided.");
+  console.log(
+    `${new FactoryError(
+      `Invalid cluster ${cluster} [devnet / testnet / mainnet-beta]`,
+      "ClusterErr"
+    )}`
+  );
+  process.exit(-1);
+  // throw new FactoryError("Invalid cluster provided.", "ClusterErr");
 }
 export function formatFactoryError(err: FactoryError): string {
   return `${chalk.red(err.name)}: ${err.message}`;

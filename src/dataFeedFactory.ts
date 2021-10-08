@@ -16,18 +16,18 @@ import {
   SWITCHBOARD_TESTNET_PID,
   addFeedJob,
   setDataFeedConfigs,
+  parseAggregatorAccountData,
+  parseFulfillmentAccountData,
 } from "@switchboard-xyz/switchboard-api";
-import chalk from "chalk";
 
 export default class DataFeedFactory {
   private connection: Connection;
   private payerAccount: Account;
-  private fulfillmentManager = new PublicKey(
-    "7s6kXRDAV7MKsfydrhsmB48qcUTB7L46C75occvaHgaL" // this isnt right
-  );
+  private fulfillmentManager: PublicKey;
   public SWITCHBOARD_PID: PublicKey;
 
-  constructor(cluster: Cluster, payer: Account) {
+  constructor(cluster: Cluster, payer: Account, fulfillmentManager: string) {
+    this.fulfillmentManager = new PublicKey(fulfillmentManager);
     const url = clusterApiUrl(cluster, true);
     this.connection = new Connection(url, "processed");
     this.payerAccount = payer;
@@ -44,6 +44,23 @@ export default class DataFeedFactory {
       default:
         this.SWITCHBOARD_PID = SWITCHBOARD_DEVNET_PID;
         break;
+    }
+    // this.verifyFulfillmentManager();
+  }
+
+  private async verifyFulfillmentManager() {
+    try {
+      await parseFulfillmentAccountData(
+        this.connection,
+        this.fulfillmentManager
+      );
+    } catch (err) {
+      const e = new FactoryError(
+        `not a valid fulfillment manager account`,
+        "ConfigErr"
+      );
+      console.log(`${e}`);
+      process.exit(-1);
     }
   }
   private parseJobIds(feed: FeedInput): OracleJob[] {
@@ -96,12 +113,12 @@ export default class DataFeedFactory {
       await setDataFeedConfigs(this.connection, this.payerAccount, dataFeed, {
         minConfirmations: 5,
         minUpdateDelaySeconds: 60,
-        fulfillmentManagerPubkey: this.fulfillmentManager.toBuffer(),
+        // fulfillmentManagerPubkey: this.fulfillmentManager.toBuffer(),
         lock: false,
       });
     } catch (err) {
       return new FactoryError(
-        `failed to set data feed config: ${err}`,
+        `failed to set data feed config ${feed.name}`,
         "SwitchboardErr"
       );
     }
@@ -109,5 +126,23 @@ export default class DataFeedFactory {
     //   `${chalk.blue(feed.name)}: ${dateFeedAccount.publicKey.toString()}`
     // );
     return { ...feed, dataFeed, jobs };
+  }
+
+  public async verifyEplFeed(
+    feed: FeedOutput
+  ): Promise<boolean | FactoryError> {
+    try {
+      const aggState = await parseAggregatorAccountData(
+        this.connection,
+        feed.dataFeed.publicKey
+      );
+      return aggState.jobDefinitionPubkeys.length === feed.jobs.length;
+    } catch (err) {
+      console.log(err);
+      return new FactoryError(
+        `failed to verify Epl feed on-chain ${feed.name}`,
+        "SwitchboardErr"
+      );
+    }
   }
 }
