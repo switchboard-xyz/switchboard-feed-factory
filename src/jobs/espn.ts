@@ -1,7 +1,7 @@
-import { OracleJob } from '@switchboard-xyz/switchboard-api'
+import { OracleJob } from "@switchboard-xyz/switchboard-api";
 
-const createEspnJob = (espnMatchId: string): OracleJob => {
-  const espnCompletedMatch = `$.competitions[?(@.status.type.completed && @.id == '${espnMatchId}')]`
+export const createEspnJob = (espnMatchId: string): OracleJob => {
+  const espnCompletedMatch = `$.competitions[?(@.status.type.completed && @.id == '${espnMatchId}')]`;
   return OracleJob.create({
     tasks: [
       OracleJob.Task.create({
@@ -80,7 +80,5 @@ const createEspnJob = (espnMatchId: string): OracleJob => {
         }),
       }),
     ],
-  })
-}
-
-export default createEspnJob
+  });
+};

@@ -9,8 +9,9 @@ import {
   FactoryInput,
   JsonInputError,
   FactoryError,
-} from "./types/types";
-import { DataFeedFactory, DataFeed } from "./types/dataFeedFactory";
+  DataFeedFactory,
+  DataFeed,
+} from "./types/";
 import readlineSync from "readline-sync";
 
 async function main(): Promise<void> {

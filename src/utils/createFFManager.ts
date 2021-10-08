@@ -4,14 +4,31 @@ import {
   setFulfillmentManagerConfigs,
   createFulfillmentManager,
 } from "@switchboard-xyz/switchboard-api";
+import yargs from "yargs/yargs";
 import fs from "fs";
 import resolve from "resolve-dir";
 
 async function main(): Promise<void> {
+  const argv = yargs(process.argv.slice(2))
+    .options({
+      payerKeypairFile: {
+        type: "string",
+        describe: "Path to keypair file that will pay for transactions.",
+        demand: true,
+      },
+      cluster: {
+        type: "string",
+        describe: "devnet, testnet, or mainnet-beta",
+        demand: false,
+        default: "devnet",
+      },
+    })
+    .parseSync();
+
   const url = clusterApiUrl("devnet", true);
   const connection = new Connection(url, "processed");
   const payerKeypair = JSON.parse(
-    fs.readFileSync(resolve("./ffmanager-keypair.json"), "utf-8")
+    fs.readFileSync(resolve(argv.payerKeypairFile), "utf-8")
   );
   const payerAccount = new Account(payerKeypair);
   const fulfillmentManagerAccount = await createFulfillmentManager(

@@ -5,8 +5,7 @@ import {
   Cluster,
   clusterApiUrl,
 } from "@solana/web3.js";
-import createEspnJob from "../jobs/espn";
-import createYahooJob from "../jobs/yahoo";
+import { createEspnJob, createYahooJob } from "../jobs";
 import {
   FactoryInput,
   FactoryError,
@@ -14,7 +13,7 @@ import {
   ConfigError,
   VerifyError,
   FactoryOutput,
-} from "./types";
+} from "../types";
 import {
   OracleJob,
   createDataFeed,
