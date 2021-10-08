@@ -1,50 +1,59 @@
-import { Account, Cluster, clusterApiUrl, Connection } from "@solana/web3.js";
+import { Account, clusterApiUrl, Connection } from "@solana/web3.js";
 import fs from "fs";
 import resolve from "resolve-dir";
+import chalk from "chalk";
 import yargs from "yargs/yargs";
 import _feeds from "./feeds.json";
-import createEplFeed from "./create";
-import FeedType from "./types";
-
-const argv = yargs(process.argv.slice(2))
-  .options({
-    payerKeypairFile: {
-      type: "string",
-      describe: "Path to keypair file that will pay for transactions.",
-      demand: true,
-    },
-  })
-  .parseSync();
-
-function toCluster(cluster: string): Cluster {
-  switch (cluster) {
-    case "devnet":
-    case "testnet":
-    case "mainnet-beta": {
-      return cluster;
-    }
-  }
-  throw new Error("Invalid cluster provided.");
-}
+import { FeedType, FactoryError } from "./types";
+import DataFeedFactory from "./dataFeedFactory";
+import { toCluster } from "./utils";
 
 async function main(): Promise<void> {
   // Read in keypair file to fund the new feeds
+  const argv = yargs(process.argv.slice(2))
+    .options({
+      payerKeypairFile: {
+        type: "string",
+        describe: "Path to keypair file that will pay for transactions.",
+        demand: true,
+      },
+      cluster: {
+        type: "string",
+        describe: "devnet, testnet, or mainnet-beta",
+        demand: false,
+        default: "devnet",
+      },
+    })
+    .parseSync();
   const payerKeypair = JSON.parse(
     fs.readFileSync(resolve(argv.payerKeypairFile), "utf-8")
   );
   const payerAccount = new Account(payerKeypair);
-  console.log("Payer Account:", payerAccount.publicKey.toString());
+  console.log(chalk.blue("Payer Account:"), payerAccount.publicKey.toString());
 
-  // Setup Solana connection
-  const cluster = "devnet";
-  const url = clusterApiUrl(toCluster(cluster), true);
-  const connection = new Connection(url, "processed");
+  const cluster = toCluster(argv.cluster);
+  const feedFactory = new DataFeedFactory(cluster, payerAccount);
 
-  // Read in json feeds
+  // Read in json feeds and pass to factory
   const feeds = _feeds as FeedType[];
-  feeds.forEach(
-    async (feed) => await createEplFeed(connection, payerAccount, feed)
+  // convert to map and make sure names are unique
+  const _feedMap = feeds.reduce(function (map, obj: FeedType) {
+    map[obj.name] = obj;
+    return map;
+  }, {});
+  console.log(
+    chalk.yellow("######## Creating Data Feeds from JSON File ########")
   );
+  const dataFeedAccounts = await Promise.all(
+    feeds.map((feed) => feedFactory.createEplFeed(feed))
+  );
+
+  // write to output file
+  dataFeedAccounts.forEach((f) => {
+    if (!(f instanceof FactoryError)) {
+      console.log(f.publicKey.toString());
+    }
+  });
 }
 
 main().then(

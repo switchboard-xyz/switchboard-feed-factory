@@ -1,0 +1,12 @@
+import { Cluster } from "@solana/web3.js";
+
+export function toCluster(cluster: string): Cluster {
+  switch (cluster) {
+    case "devnet":
+    case "testnet":
+    case "mainnet-beta": {
+      return cluster;
+    }
+  }
+  throw new Error("Invalid cluster provided.");
+}

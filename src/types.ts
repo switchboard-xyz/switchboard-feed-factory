@@ -6,5 +6,11 @@ export interface FeedType {
   // (optional) will add a Yahoo Sports job for the specified match when provided.
   yahooId?: string;
 }
+export class FactoryError extends Error {
+  constructor(message: string, type?: string) {
+    super(message);
+    this.name = type ? type : "FactoryError";
+  }
+}
 
-export default FeedType;
+// export default FeedType;

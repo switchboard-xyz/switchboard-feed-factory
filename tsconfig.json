@@ -16,7 +16,7 @@
     "allowJs": true,
     "checkJs": false,
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "bin",
     "strict": true,
     "resolveJsonModule": true,
     "noEmitOnError": true,
