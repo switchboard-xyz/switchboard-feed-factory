@@ -1,4 +1,4 @@
-import { Account, clusterApiUrl, Connection } from "@solana/web3.js";
+import { Account } from "@solana/web3.js";
 import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";

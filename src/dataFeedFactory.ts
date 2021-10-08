@@ -59,21 +59,39 @@ export default class DataFeedFactory {
       return new FactoryError("no valid jobs defined");
     }
 
-    const dateFeedAccount = await createDataFeed(
-      this.connection,
-      this.payerAccount,
-      this.SWITCHBOARD_PID
-    );
-    const jobAccounts = await Promise.all(
-      jobs.map(async (j) => {
-        return await addFeedJob(
-          this.connection,
-          this.payerAccount,
-          dateFeedAccount,
-          j.tasks as OracleJob.Task[]
-        );
-      })
-    );
+    let dateFeedAccount: Account;
+    try {
+      dateFeedAccount = await createDataFeed(
+        this.connection,
+        this.payerAccount,
+        this.SWITCHBOARD_PID
+      );
+    } catch (err) {
+      console.log("Failed to create data feed account");
+      return new FactoryError(
+        "failed to create data feed account",
+        "SwitchboardErr"
+      );
+    }
+    jobs.forEach(async (j) => {
+      dateFeedAccount = await addFeedJob(
+        this.connection,
+        this.payerAccount,
+        dateFeedAccount,
+        j.tasks as OracleJob.Task[]
+      );
+    });
+
+    // const jobAccounts = await Promise.all(
+    //   jobs.map(async (j) => {
+    //     return await addFeedJob(
+    //       this.connection,
+    //       this.payerAccount,
+    //       dateFeedAccount,
+    //       j.tasks as OracleJob.Task[]
+    //     );
+    //   })
+    // );
 
     await setDataFeedConfigs(
       this.connection,
@@ -87,9 +105,9 @@ export default class DataFeedFactory {
       }
     );
     console.log(chalk.blue(feed.name), dateFeedAccount.publicKey.toString());
-    jobAccounts.forEach((j, i) => {
-      console.log(i, chalk.green(j.publicKey.toString()));
-    });
+    // jobAccounts.forEach((j, i) => {
+    //   console.log(i, chalk.green(j.publicKey.toString()));
+    // });
     return dateFeedAccount;
   }
 }
