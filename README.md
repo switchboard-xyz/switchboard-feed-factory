@@ -52,11 +52,11 @@ solana airdrop 5 example-keypair.json
 If you need to create a new one:
 
 ```bash
-ts-node src/utils/createFFManager.ts --payerKeypairFile=example-keypair.json
+export FULFILLMENT_MANAGER_KEY="$(ts-node src/utils/createFFManager.ts --payerKeypairFile=example-keypair.json)"
 ```
 
 ### 4. Run the tool
 
 ```bash
-ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentManager={FULFILLMENT_MANAGER_PUBLIC_KEY}
+ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?}
 ```

@@ -125,7 +125,7 @@ async function main(): Promise<void> {
 
 main().then(
   () => {
-    console.log("Switchboard-EPL-Feeds ran successfully.");
+    console.log(chalk.green("Switchboard-EPL-Feeds ran successfully."));
     process.exit();
   },
   (err) => {

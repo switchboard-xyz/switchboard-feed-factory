@@ -8,7 +8,7 @@ import yargs from "yargs/yargs";
 import fs from "fs";
 import resolve from "resolve-dir";
 
-async function main(): Promise<void> {
+async function main(): Promise<string> {
   const argv = yargs(process.argv.slice(2))
     .options({
       payerKeypairFile: {
@@ -49,12 +49,11 @@ async function main(): Promise<void> {
   );
 
   console.log(fulfillmentManagerAccount.publicKey.toString());
-  // 9DQtXe31pHpNsVskZJpbDUBUGKdxDCV96L7N4Xwbi62X
+  return fulfillmentManagerAccount.publicKey.toString();
 }
 
 main().then(
   () => {
-    console.log("Created Fulfillment Manager account succesfully");
     process.exit();
   },
   (err) => {
