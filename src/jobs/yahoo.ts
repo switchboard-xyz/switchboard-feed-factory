@@ -39,9 +39,7 @@ export const createYahooJob = (yahooMatchId: string): OracleJob => {
                     },
                   }),
                   // If the match is final and home team is marked the winner, return 1.
-                  OracleJob.Task.create({
-                    valueTask: { value: 1 },
-                  }),
+                  OracleJob.Task.create({ valueTask: { value: 1 } }),
                 ],
                 onFailure: [
                   OracleJob.Task.create({
@@ -52,9 +50,7 @@ export const createYahooJob = (yahooMatchId: string): OracleJob => {
                     },
                   }),
                   // If the match is final and away team is marked the winner, return 2.
-                  OracleJob.Task.create({
-                    valueTask: { value: 2 },
-                  }),
+                  OracleJob.Task.create({ valueTask: { value: 2 } }),
                 ],
               }),
             }),
@@ -69,16 +65,10 @@ export const createYahooJob = (yahooMatchId: string): OracleJob => {
                     },
                   }),
                   // If the match is final and away team is marked the winner, return 2.
-                  OracleJob.Task.create({
-                    valueTask: { value: 0 },
-                  }),
+                  OracleJob.Task.create({ valueTask: { value: 0 } }),
                 ],
-                onFailure: [
-                  // If a 'final' match outcome has not been found, return -1.
-                  OracleJob.Task.create({
-                    valueTask: { value: -1 },
-                  }),
-                ],
+                // If all of the above fails, don't return a response.
+                onFailure: [],
               }),
             }),
           ],
