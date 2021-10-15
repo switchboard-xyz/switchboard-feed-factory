@@ -27,6 +27,7 @@ export interface Event {
 
 export async function fetchNbaFeeds(date: string): Promise<boolean> {
   const strippedDate = date.replaceAll("-", "");
+  console.log(strippedDate, date);
   const nbaApi = `https://data.nba.net/prod/v2/${strippedDate}/scoreboard.json`;
   const nbaResponse: any = await api(nbaApi);
   const nbaEvents: any[] = nbaResponse.games;
@@ -53,7 +54,9 @@ export async function fetchNbaFeeds(date: string): Promise<boolean> {
 
   const yahooApi = `https://api-secure.sports.yahoo.com/v1/editorial/s/scoreboard?leagues=nba&date=${date}`;
   const yahooResponse: any = await api(yahooApi);
-  const yahooEvents: any[] = yahooResponse.service.scoreboard.games;
+  const yahooEvents: any[] = yahooResponse.service.scoreboard.games
+    ? Object.values(yahooResponse.service.scoreboard.games)
+    : [];
   if (yahooEvents && yahooEvents.length > 0) {
     fs.writeFileSync(
       `./feeds/nba/yahoo-${date}.json`,
