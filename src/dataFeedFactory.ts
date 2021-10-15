@@ -57,6 +57,9 @@ export class DataFeedFactory {
     }
   }
 
+  /**
+   * Reads the fulfillment manager account on-chain and verifies it is the correct account type
+   */
   public async verifyFulfillmentManager(): Promise<ConfigError | null> {
     try {
       await parseFulfillmentAccountData(
@@ -67,6 +70,22 @@ export class DataFeedFactory {
       return new ConfigError(`not a valid fulfillment manager account`);
     }
     return null;
+  }
+
+  /**
+   * Returns the array of DataFeeds from the factory
+   *
+   * @param factoryInput struct defining the parameters for the factory
+   */
+  public async buildFeeds(factoryInput: FactoryInput[]): Promise<DataFeed[]> {
+    return await Promise.all(
+      factoryInput.map(async (f) => {
+        const newFeed = await this.createNewFeed(f);
+        await this.verifyNewFeed(newFeed);
+        console.log(newFeed.toFormattedString());
+        return newFeed;
+      })
+    );
   }
 
   public async createNewFeed(newFeed: FactoryInput): Promise<DataFeed> {
