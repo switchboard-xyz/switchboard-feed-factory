@@ -16,6 +16,7 @@ import {
   addFeedJob,
   setDataFeedConfigs,
   parseAggregatorAccountData,
+  createFulfillmentManagerAuth,
 } from "@switchboard-xyz/switchboard-api";
 import chalk from "chalk";
 import { jobFactory } from "../jobs";
@@ -36,7 +37,7 @@ export class DataFeed {
   public async createFeed(
     connection: Connection,
     payerAccount: Account,
-    fulfillmentManager: PublicKey,
+    fulfillmentAccount: Account,
     switchboardPID: PublicKey
   ): Promise<void> {
     // TO DD: Setup job factory in main using sport as the constructor param,
@@ -87,7 +88,7 @@ export class DataFeed {
       await setDataFeedConfigs(connection, payerAccount, dataFeed, {
         minConfirmations: 5,
         minUpdateDelaySeconds: 60,
-        fulfillmentManagerPubkey: fulfillmentManager.toBuffer(),
+        fulfillmentManagerPubkey: fulfillmentAccount.publicKey.toBuffer(),
         lock: false,
       });
     } catch (e) {
@@ -97,14 +98,37 @@ export class DataFeed {
       return;
     }
 
+    // allow data feed to use fulfillment managers oracles
+    let updateAuth: Account;
+    try {
+      updateAuth = await createFulfillmentManagerAuth(
+        connection,
+        payerAccount,
+        fulfillmentAccount,
+        dataFeed.publicKey,
+        {
+          authorizeHeartbeat: false,
+          authorizeUsage: true,
+        }
+      );
+      //   console.log(`export UPDATE_AUTH_KEY=${updateAuth.publicKey}`);
+    } catch (err) {
+      this.error = new SwitchboardError(
+        `failed to add data feed to fulfillment manager ${this.input.name}`
+      );
+      return;
+    }
+
     this.output = {
       dataFeed,
+      updateAuth,
       jobs,
     };
     this.created = true;
   }
 
-  // read feed on-chain and verify correct # of jobs
+  // TO DO: We should be verifying it has the correct fulfillment manager account and
+  // a valid update auth account
   public async verifyFeed(connection: Connection): Promise<void> {
     if (!this.error && this.output?.dataFeed) {
       try {
@@ -173,6 +197,9 @@ export class DataFeed {
     return {
       name: this.input.name,
       dataFeed: this.output ? this.output.dataFeed.publicKey.toString() : "",
+      updateAuth: this.output
+        ? this.output.updateAuth.publicKey.toString()
+        : "",
       jobs: jobs,
     };
   }

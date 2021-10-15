@@ -3,6 +3,7 @@ import {
   SWITCHBOARD_DEVNET_PID,
   setFulfillmentManagerConfigs,
   createFulfillmentManager,
+  createFulfillmentManagerAuth,
 } from "@switchboard-xyz/switchboard-api";
 import yargs from "yargs/yargs";
 import fs from "fs";
@@ -49,6 +50,18 @@ async function main(): Promise<string> {
       lock: false,
     }
   );
+
+  const authAccount = await createFulfillmentManagerAuth(
+    connection,
+    payerAccount,
+    fulfillmentManagerAccount,
+    payerAccount.publicKey,
+    {
+      authorizeHeartbeat: true,
+      authorizeUsage: false,
+    }
+  );
+
   const answer = await prompts([
     {
       type: "text",
@@ -57,7 +70,7 @@ async function main(): Promise<string> {
       initial: "fulfillment-keypair.json",
     },
   ]);
-  let keypairFile: string = "./" + answer.keypairFile;
+  let keypairFile: string = answer.keypairFile;
   if (!keypairFile.endsWith(".json")) {
     keypairFile += ".json";
   }
@@ -66,13 +79,25 @@ async function main(): Promise<string> {
   }
   const secret = Uint8Array.from(fulfillmentManagerAccount.secretKey);
   fs.writeFileSync(keypairFile, `[${secret.toString()}]`);
-
-  console.log();
   console.log(
     `${chalk.green("Fulfilmment manager created:")} ${chalk.blue(
       fulfillmentManagerAccount.publicKey.toString()
     )}`
   );
+
+  const authSecret = Uint8Array.from(authAccount.secretKey);
+  const authKeypairFile = `Auth-${keypairFile}`;
+  if (fs.existsSync(authKeypairFile)) {
+    throw `${chalk.red(`auth keypair file already exist:`)} ${authKeypairFile}`;
+  }
+  fs.writeFileSync(authKeypairFile, `[${authSecret.toString()}]`);
+
+  console.log(
+    `${chalk.green(
+      "Fulfilmment manager authorization account created:"
+    )} ${chalk.blue(authAccount.publicKey.toString())}`
+  );
+
   return fulfillmentManagerAccount.publicKey.toString();
 }
 

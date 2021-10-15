@@ -17,6 +17,7 @@ export class DataFeedFactory {
   private connection: Connection;
   private payerAccount: Account;
   private fulfillmentAccount: Account;
+  private authAccount?: Account; // might not be needed
   public SWITCHBOARD_PID: PublicKey;
 
   constructor(cluster: Cluster, payer: Account, fulfillment: Account) {
@@ -42,6 +43,7 @@ export class DataFeedFactory {
 
   /**
    * Reads the fulfillment manager account on-chain and verifies it is the correct account type
+   * Then creates an auth account
    */
   public async verifyFulfillmentManager(): Promise<ConfigError | null> {
     try {
@@ -76,7 +78,7 @@ export class DataFeedFactory {
     await dataFeed.createFeed(
       this.connection,
       this.payerAccount,
-      this.fulfillmentAccount.publicKey,
+      this.fulfillmentAccount,
       this.SWITCHBOARD_PID
     );
     return dataFeed;

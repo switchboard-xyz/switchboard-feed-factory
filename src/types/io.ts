@@ -29,11 +29,13 @@ export interface FactoryInput {
 }
 export interface FactoryOutput {
   dataFeed: Account;
+  updateAuth: Account;
   jobs: JobOutput[];
 }
 export interface FactoryOutputJSON {
   name: string;
   dataFeed: string;
+  updateAuth: string;
   jobs: JobOutputJSON[];
 }
 
