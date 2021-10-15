@@ -9,7 +9,6 @@ import {
   AppConfig,
   DataFeedFactory,
 } from "./types/";
-
 import prompts from "prompts";
 import readlineSync from "readline-sync";
 import { ingestFeeds } from "./utils/ingestFeeds";

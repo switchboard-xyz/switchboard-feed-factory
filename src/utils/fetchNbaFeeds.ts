@@ -1,6 +1,3 @@
-import fetch from "node-fetch";
-import fs from "fs";
-
 /**
  * Hits each endpoint and builds a struct containing
  * Home Team, Away Team, Event Date, Endpoint Name, Endpoint ID
@@ -8,6 +5,11 @@ import fs from "fs";
  *
  * @privateRemarks probably need to use some kind of fuzzy matching to match teams unless we mapped each team ID
  */
+
+import fs from "fs";
+import { api } from "./api";
+import { getDates } from "./getDates";
+import chalk from "chalk";
 
 export interface EventKind {
   Endpoint: string;
@@ -23,50 +25,61 @@ export interface Event {
   Yahoo?: EventKind;
 }
 
-// Standard variation
-async function api<T>(url: string): Promise<T> {
-  return fetch(url).then((response) => {
-    if (!response.ok) {
-      throw new Error(response.statusText);
-    }
-    return response.json() as Promise<T>;
-  });
-}
-
-export async function fetchNbaFeeds(): Promise<void> {
-  const nbaApi = "https://data.nba.net/prod/v2/20211015/scoreboard.json";
+export async function fetchNbaFeeds(date: string): Promise<boolean> {
+  const strippedDate = date.replaceAll("-", "");
+  const nbaApi = `https://data.nba.net/prod/v2/${strippedDate}/scoreboard.json`;
   const nbaResponse: any = await api(nbaApi);
-  fs.writeFileSync(
-    `./feeds/nba/nba.json`,
-    JSON.stringify(nbaResponse.games, null, 2)
-  );
-  const nbaMap = new Map(
-    nbaResponse.games.map((event) => [event.gameId, event])
-  );
+  const nbaEvents: any[] = nbaResponse.games;
+  if (nbaEvents && nbaEvents.length > 0) {
+    fs.writeFileSync(
+      `./feeds/nba/nba-${date}.json`,
+      JSON.stringify(nbaEvents, null, 2)
+    );
+  } else {
+    console.error(chalk.red(`failed to get nba events on ${date}`));
+  }
 
-  const espnApi =
-    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20211015";
+  const espnApi = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${strippedDate}`;
   const espnResponse: any = await api(espnApi);
-  fs.writeFileSync(
-    `./feeds/nba/espn.json`,
-    JSON.stringify(espnResponse.events, null, 2)
-  );
+  const espnEvents: any[] = espnResponse.events;
+  if (espnEvents && espnEvents.length > 0) {
+    fs.writeFileSync(
+      `./feeds/nba/espn-${date}.json`,
+      JSON.stringify(espnEvents, null, 2)
+    );
+  } else {
+    console.error(chalk.red(`failed to get espn events on ${date}`));
+  }
 
-  const yahooApi =
-    "https://api-secure.sports.yahoo.com/v1/editorial/s/scoreboard?leagues=nba&date=2021-10-15";
+  const yahooApi = `https://api-secure.sports.yahoo.com/v1/editorial/s/scoreboard?leagues=nba&date=${date}`;
   const yahooResponse: any = await api(yahooApi);
-  fs.writeFileSync(
-    `./feeds/nba/yahoo.json`,
-    JSON.stringify(yahooResponse.service.scoreboard.games, null, 2)
-  );
+  const yahooEvents: any[] = yahooResponse.service.scoreboard.games;
+  if (yahooEvents && yahooEvents.length > 0) {
+    fs.writeFileSync(
+      `./feeds/nba/yahoo-${date}.json`,
+      JSON.stringify(yahooEvents, null, 2)
+    );
+  } else {
+    console.error(chalk.red(`failed to get yahoo events on ${date}`));
+  }
+
+  return true;
 }
 
-fetchNbaFeeds().then(
+export async function main(): Promise<void> {
+  const dates = await getDates();
+  for await (const d of dates) {
+    const complete = await fetchNbaFeeds(d);
+    if (!complete) console.error(`failed to fetch feeds for ${d}`);
+  }
+}
+
+main().then(
   () => {
+    console.log(chalk.green("Succesfully fetched NBA Feeds"));
     process.exit();
   },
   (err) => {
-    console.log(err);
-    process.exit(-1);
+    console.error(err);
   }
 );
