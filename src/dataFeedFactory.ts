@@ -5,18 +5,17 @@ import {
   Cluster,
   clusterApiUrl,
 } from "@solana/web3.js";
-import { createEspnJob, createYahooJob } from "../jobs";
 import {
   FactoryInput,
   FactoryError,
   SwitchboardError,
   ConfigError,
+  JobOutput,
   VerifyError,
   FactoryOutput,
-  JobOutput,
   FactoryOutputJSON,
   JobOutputJSON,
-} from "../types";
+} from "./types";
 import {
   OracleJob,
   createDataFeed,
@@ -29,6 +28,7 @@ import {
   parseFulfillmentAccountData,
 } from "@switchboard-xyz/switchboard-api";
 import chalk from "chalk";
+import { jobFactory } from "./jobs";
 
 export class DataFeedFactory {
   private connection: Connection;
@@ -71,7 +71,7 @@ export class DataFeedFactory {
 
   public async createNewFeed(newFeed: FactoryInput): Promise<DataFeed> {
     const dataFeed = new DataFeed(newFeed);
-    await dataFeed.createEplFeed(
+    await dataFeed.createFeed(
       this.connection,
       this.payerAccount,
       this.fulfillmentManager,
@@ -81,7 +81,7 @@ export class DataFeedFactory {
   }
 
   public async verifyNewFeed(dataFeed: DataFeed): Promise<void> {
-    await dataFeed.verifyEplFeed(this.connection);
+    await dataFeed.verifyFeed(this.connection);
   }
 }
 
@@ -98,32 +98,21 @@ export class DataFeed {
     this.verified = false;
   }
 
-  private createJobs(): JobOutput[] {
-    const jobs: JobOutput[] = [];
-    if (this.input.espnId) {
-      jobs.push({
-        provider: "ESPN",
-        id: this.input.espnId,
-        job: createEspnJob(this.input.espnId),
-      });
-    }
-    if (this.input.yahooId) {
-      jobs.push({
-        provider: "Yahoo",
-        id: this.input.yahooId,
-        job: createYahooJob(this.input.yahooId),
-      });
-    }
-    return jobs;
-  }
-
-  public async createEplFeed(
+  public async createFeed(
     connection: Connection,
     payerAccount: Account,
     fulfillmentManager: PublicKey,
     switchboardPID: PublicKey
   ): Promise<void> {
-    const jobs = this.createJobs();
+    const jobs: JobOutput[] = [];
+    this.input.jobs.forEach((j) => {
+      try {
+        const jobResult = jobFactory(this.input.sport, j);
+        jobs.push(jobResult);
+      } catch (err) {
+        console.error(err);
+      }
+    });
     if (jobs.length === 0) {
       this.error = new ConfigError(
         `no valid jobs defined for ${this.input.name}`
@@ -176,7 +165,7 @@ export class DataFeed {
     this.created = true;
   }
 
-  public async verifyEplFeed(connection: Connection): Promise<void> {
+  public async verifyFeed(connection: Connection): Promise<void> {
     if (!this.error && this.output?.dataFeed) {
       try {
         const aggState = await parseAggregatorAccountData(
@@ -227,13 +216,14 @@ export class DataFeed {
     }
   }
 
+  // TO DO: Wrap feed JSON output in result type with input config (cluster, sport, fulfillment manager, etc)
   public toJSON(): FactoryOutputJSON {
     const jobs = !this.output
       ? []
       : this.output.jobs.map((j): JobOutputJSON => {
           return {
-            provider: j.provider,
-            id: j.id,
+            provider: j.jobProvider,
+            id: j.jobId,
             pubKey: j.pubKey ? j.pubKey.toString() : "",
           };
         });

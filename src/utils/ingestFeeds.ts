@@ -1,34 +1,54 @@
 import fs from "fs";
-import { FactoryInput } from "../types";
+import { FactoryInput, JsonInput } from "../types";
+import { JobInput } from "../types/factory";
+import { JsonInputError } from "../types/error";
 
 /**
-   * Returns the parsed JSON file file corresponding to a given sport
+   * Handles the mapping between chosen job type and parsed JSON file
+   * Returns an input for the Data Feed Factory
    *
-   * @param sportFlag - epl | nba
-   * @returns Array of jobIDs
+   * @param sport - epl | nba
+   * @returns Array of FactoryInput elements for the DataFeedFactory to consume
 
    */
-export const ingestFeeds = (sportFlag: string): FactoryInput[] => {
-  switch (sportFlag.toLowerCase()) {
-    case "epl": {
-      try {
-        const fileBuffer = fs.readFileSync("epl.feeds.json");
-        const eplFeeds: FactoryInput[] = JSON.parse(fileBuffer.toString());
-        return eplFeeds;
-      } catch (err) {
-        throw "please create epl.feeds.json";
-      }
-    }
-    case "nba": {
-      try {
-        const fileBuffer = fs.readFileSync("nba.feeds.json");
-        const nbaFeeds: FactoryInput[] = JSON.parse(fileBuffer.toString());
-        return nbaFeeds;
-      } catch (err) {
-        throw "please create nba.feeds.json";
-      }
-    }
+export const ingestFeeds = (sport: string): FactoryInput[] => {
+  let inputFile: string;
+  switch (sport.toLowerCase()) {
+    case "epl":
+      inputFile = "epl.feeds.json";
+      break;
+    case "nba":
+      inputFile = "nba.feeds.json";
+      break;
     default:
-      throw `couldnt match a sport for ${sportFlag} - (epl/nba)`;
+      throw `couldnt match a sport for ${sport} - (epl/nba)`;
   }
+  try {
+    const fileBuffer = fs.readFileSync(inputFile);
+    const jsonInput: JsonInput[] = JSON.parse(fileBuffer.toString());
+    const factoryInput = jsonInput.map((f): FactoryInput => {
+      const jobs: JobInput[] = [];
+      if (f.espnId) {
+        jobs.push({
+          jobProvider: "espn",
+          jobId: f.espnId,
+        });
+      }
+      if (f.yahooId) {
+        jobs.push({
+          jobProvider: "yahoo",
+          jobId: f.yahooId,
+        });
+      }
+      return {
+        name: f.name,
+        sport,
+        jobs,
+      };
+    });
+    return factoryInput;
+  } catch (err) {
+    throw `please create ${inputFile} - ${err}`;
+  }
+  throw new JsonInputError("failed to parse json file");
 };

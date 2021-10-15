@@ -1,6 +1,6 @@
 import { OracleJob } from "@switchboard-xyz/switchboard-api";
 
-export const createEspnJob = (espnMatchId: string): OracleJob => {
+export const createEspnEplJob = (espnMatchId: string): OracleJob => {
   const espnCompletedMatch = `$.competitions[?(@.status.type.completed && @.id == '${espnMatchId}')]`;
   return OracleJob.create({
     tasks: [

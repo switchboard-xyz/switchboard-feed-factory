@@ -3,15 +3,15 @@ import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
-import {
-  ConfigError,
-  JsonInputError,
-  FactoryError,
-  DataFeedFactory,
-} from "./types/";
+import { ConfigError, JsonInputError, FactoryError } from "./types/";
+import { DataFeedFactory } from "./dataFeedFactory";
 import prompts from "prompts";
 import readlineSync from "readline-sync";
 import { ingestFeeds } from "./utils/ingestFeeds";
+
+export interface AppConfig {
+  cluster: string;
+}
 
 async function main(): Promise<void> {
   console.log(
@@ -44,7 +44,7 @@ async function main(): Promise<void> {
     })
     .parseSync();
 
-  const selectedSport =
+  const selectedSport: string =
     argv.sport === "epl" || argv.sport === "nba"
       ? argv.sport
       : (
@@ -58,12 +58,15 @@ async function main(): Promise<void> {
                   title: "English Premier League (epl.feeds.json)",
                   value: "epl",
                 },
-                { title: "NBA (nba.feeds.json)", value: "nba" },
+                {
+                  title: "National Basketball Association (nba.feeds.json)",
+                  value: "nba",
+                },
               ],
             },
           ])
         ).sport;
-  console.log(selectedSport);
+  console.log(chalk.blue("Sport:"), selectedSport.toUpperCase());
 
   const FactoryInput = ingestFeeds(selectedSport);
   const cluster = toCluster(argv.cluster);
