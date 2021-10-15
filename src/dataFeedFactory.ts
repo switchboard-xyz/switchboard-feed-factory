@@ -104,6 +104,7 @@ export class DataFeed {
     fulfillmentManager: PublicKey,
     switchboardPID: PublicKey
   ): Promise<void> {
+    // pass jobs to job factory and filter errors
     const jobs: JobOutput[] = [];
     this.input.jobs.forEach((j) => {
       try {
@@ -120,8 +121,8 @@ export class DataFeed {
       return;
     }
 
+    // create feeds then add jobs and return job public key
     let dataFeed: Account;
-    // const jobKeys: PublicKey[] = [];
     try {
       dataFeed = await createDataFeed(connection, payerAccount, switchboardPID);
     } catch (e) {
@@ -138,13 +139,13 @@ export class DataFeed {
             j.job?.tasks as OracleJob.Task[]
           );
           j.pubKey = jobAccount.publicKey;
-          // jobKeys.push(jobAccount.publicKey);
         } catch (err) {
           console.log("Failed to create job", err);
         }
       })
     );
 
+    // set fulfillment manager and update config
     try {
       await setDataFeedConfigs(connection, payerAccount, dataFeed, {
         minConfirmations: 5,
@@ -165,6 +166,7 @@ export class DataFeed {
     this.created = true;
   }
 
+  // read feed on-chain and verify correct # of jobs
   public async verifyFeed(connection: Connection): Promise<void> {
     if (!this.error && this.output?.dataFeed) {
       try {
@@ -189,6 +191,7 @@ export class DataFeed {
       this.verified = true;
     }
   }
+
   public toString(): string {
     if (this.error) {
       return `${this.error.toString()}`;
@@ -202,6 +205,8 @@ export class DataFeed {
       return `${this.input.name} logic error`;
     }
   }
+
+  // for better console logging
   public toFormattedString(): string {
     if (this.error) {
       return `${this.error.toFormattedString()}`;
