@@ -1,7 +1,7 @@
 import fs from "fs";
 import chalk from "chalk";
-import { FactoryError } from "./types/";
-import { getConfig, AppConfig } from "./config";
+import { FactoryError, AppConfig } from "./types/";
+import { getConfig } from "./config";
 
 async function main(): Promise<void> {
   // Read in config with prompts

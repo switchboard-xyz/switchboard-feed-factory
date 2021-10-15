@@ -1,6 +1,6 @@
 import fs from "fs";
 import { FactoryInput, JsonInput } from "../types";
-import { JobInput } from "../types/factory";
+import { JobInput } from "../types";
 import { JsonInputError } from "../types/error";
 
 /**

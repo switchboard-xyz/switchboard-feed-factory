@@ -3,7 +3,7 @@ import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
-import { ConfigError, JsonInputError, FactoryInput } from "./types/";
+import { ConfigError, JsonInputError, AppConfig } from "./types/";
 import { DataFeedFactory } from "./dataFeedFactory";
 import prompts from "prompts";
 import readlineSync from "readline-sync";
@@ -12,17 +12,8 @@ import { ingestFeeds } from "./utils/ingestFeeds";
 import dotenv from "dotenv";
 dotenv.config();
 
-// should keep track of configuration parameters that might change flow of program
-export interface AppConfig {
-  cluster: Cluster;
-  fulfillmentManager: PublicKey;
-  sport: string;
-  factoryInput: FactoryInput[];
-  factory: DataFeedFactory;
-}
-
 /**
- * Returns the app config required for the DataFeedFactory
+ * Reads in program arguements and prompts, then returns the parsed JSON and DataFeedFactory
  *
  * @returns the configuration struct defining the cluster,
  * fulfillment manager, sport, and the parsed JSON file with the intended data feeds
