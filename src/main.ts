@@ -3,15 +3,15 @@ import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
-import _feeds from "./feeds.json";
 import {
   ConfigError,
-  FactoryInput,
   JsonInputError,
   FactoryError,
   DataFeedFactory,
 } from "./types/";
+import prompts from "prompts";
 import readlineSync from "readline-sync";
+import { ingestFeeds } from "./utils/ingestFeeds";
 
 async function main(): Promise<void> {
   console.log(
@@ -30,6 +30,11 @@ async function main(): Promise<void> {
         describe: "Public key of the fulfillment manager account",
         demand: true,
       },
+      sport: {
+        type: "string",
+        describe: "Which sport to load [epl / nba]",
+        demand: false,
+      },
       cluster: {
         type: "string",
         describe: "devnet, testnet, or mainnet-beta",
@@ -38,6 +43,29 @@ async function main(): Promise<void> {
       },
     })
     .parseSync();
+
+  const selectedSport =
+    argv.sport === "epl" || argv.sport === "nba"
+      ? argv.sport
+      : (
+          await prompts([
+            {
+              type: "select",
+              name: "sport",
+              message: "Pick a sport",
+              choices: [
+                {
+                  title: "English Premier League (epl.feeds.json)",
+                  value: "epl",
+                },
+                { title: "NBA (nba.feeds.json)", value: "nba" },
+              ],
+            },
+          ])
+        ).sport;
+  console.log(selectedSport);
+
+  const FactoryInput = ingestFeeds(selectedSport);
   const cluster = toCluster(argv.cluster);
   console.log(chalk.blue("Cluster:"), cluster);
 
@@ -65,7 +93,6 @@ async function main(): Promise<void> {
   }
 
   // Read in json feeds and check for any duplicate names
-  const FactoryInput = _feeds as FactoryInput[];
   const FactoryInputMap = new Map(FactoryInput.map((f) => [f.name, f]));
   if (FactoryInputMap.size !== FactoryInput.length) {
     const e = new JsonInputError(

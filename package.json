@@ -9,7 +9,7 @@
     "publish": "",
     "build": "tsc",
     "dev": "ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?}",
-    "start": "tsc && node bin/main.js --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?}",
+    "start": "tsc && node bin/main.js --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?} --sport=epl",
     "create-ff-manager": "ts-node src/utils/createFFManager.ts --payerKeypairFile=example-keypair.json",
     "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,11 +31,13 @@
     "@types/yargs": "^17.0.3",
     "chalk": "^4.1.2",
     "fs": "^0.0.1-security",
+    "prompts": "^2.4.2",
     "readline-sync": "^1.4.10",
     "resolve-dir": "^1.0.1",
     "yargs": "^17.2.1"
   },
   "devDependencies": {
+    "@types/prompts": "^2.0.14",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint": "^7.32.0",

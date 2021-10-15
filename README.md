@@ -58,5 +58,5 @@ export FULFILLMENT_MANAGER_KEY="$(ts-node src/utils/createFFManager.ts --payerKe
 ### 4. Run the tool
 
 ```bash
-ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?}
+ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?} --sport=epl
 ```
