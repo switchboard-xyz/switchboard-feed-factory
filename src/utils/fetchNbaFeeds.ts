@@ -5,6 +5,8 @@ import fs from "fs";
  * Hits each endpoint and builds a struct containing
  * Home Team, Away Team, Event Date, Endpoint Name, Endpoint ID
  * Then attempts to map each event to each endpoint using the NBA as the master record
+ *
+ * @privateRemarks probably need to use some kind of fuzzy matching to match teams unless we mapped each team ID
  */
 
 export interface EventKind {

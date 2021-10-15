@@ -3,8 +3,13 @@ import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
-import { ConfigError, JsonInputError, AppConfig } from "./types/";
-import { DataFeedFactory } from "./dataFeedFactory";
+import {
+  ConfigError,
+  JsonInputError,
+  AppConfig,
+  DataFeedFactory,
+} from "./types/";
+
 import prompts from "prompts";
 import readlineSync from "readline-sync";
 import { ingestFeeds } from "./utils/ingestFeeds";

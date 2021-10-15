@@ -18,7 +18,7 @@ import {
   parseAggregatorAccountData,
 } from "@switchboard-xyz/switchboard-api";
 import chalk from "chalk";
-import { jobFactory } from "./jobs";
+import { jobFactory } from "../jobs";
 
 export class DataFeed {
   input: FactoryInput;
