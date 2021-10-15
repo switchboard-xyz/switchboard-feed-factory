@@ -5,7 +5,6 @@ import {
   AppConfig,
   DataFeedFactory,
   ConfigError,
-  JsonInputError,
 } from "./types/";
 import { getConfig } from "./config";
 

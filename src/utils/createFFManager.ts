@@ -7,6 +7,8 @@ import {
 import yargs from "yargs/yargs";
 import fs from "fs";
 import resolve from "resolve-dir";
+import prompts from "prompts";
+import chalk from "chalk";
 
 async function main(): Promise<string> {
   const argv = yargs(process.argv.slice(2))
@@ -47,8 +49,30 @@ async function main(): Promise<string> {
       lock: false,
     }
   );
+  const answer = await prompts([
+    {
+      type: "text",
+      name: "keypairFile",
+      message: "Enter a name for the output file",
+      initial: "fulfillment-keypair.json",
+    },
+  ]);
+  let keypairFile: string = "./" + answer.keypairFile;
+  if (!keypairFile.endsWith(".json")) {
+    keypairFile += ".json";
+  }
+  if (fs.existsSync(keypairFile)) {
+    throw `${chalk.red(`file already exist:`)} ${keypairFile}`;
+  }
+  const secret = Uint8Array.from(fulfillmentManagerAccount.secretKey);
+  fs.writeFileSync(keypairFile, `[${secret.toString()}]`);
 
-  console.log(fulfillmentManagerAccount.publicKey.toString());
+  console.log();
+  console.log(
+    `${chalk.green("Fulfilmment manager created:")} ${chalk.blue(
+      fulfillmentManagerAccount.publicKey.toString()
+    )}`
+  );
   return fulfillmentManagerAccount.publicKey.toString();
 }
 
