@@ -104,7 +104,9 @@ export class DataFeed {
     fulfillmentManager: PublicKey,
     switchboardPID: PublicKey
   ): Promise<void> {
-    // pass jobs to job factory and filter errors
+    // TO DD: Setup job factory in main using sport as the constructor param,
+    // from there we can just pass jobs and the mapping will be handled behind the scenes.
+    // and it will remove the need for sport in this context
     const jobs: JobOutput[] = [];
     this.input.jobs.forEach((j) => {
       try {
