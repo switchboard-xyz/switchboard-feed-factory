@@ -46,9 +46,19 @@ export const ingestFeeds = (sport: string): FactoryInput[] => {
         jobs,
       };
     });
+
+    // Read in json feeds and check for any duplicate names
+    const FactoryInputMap = new Map(factoryInput.map((f) => [f.name, f]));
+    if (FactoryInputMap.size !== factoryInput.length) {
+      const e = new JsonInputError(
+        "duplicate names detected, check your json file"
+      );
+      // console.log(e.toString());
+      throw e;
+    }
+
     return factoryInput;
   } catch (err) {
     throw `please create ${inputFile} - ${err}`;
   }
-  throw new JsonInputError("failed to parse json file");
 };

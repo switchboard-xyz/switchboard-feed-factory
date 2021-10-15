@@ -1,21 +1,36 @@
 import fs from "fs";
 import chalk from "chalk";
-import { FactoryError, AppConfig } from "./types/";
+import {
+  FactoryError,
+  AppConfig,
+  DataFeedFactory,
+  ConfigError,
+  JsonInputError,
+} from "./types/";
 import { getConfig } from "./config";
 
 async function main(): Promise<void> {
-  // Read in config with prompts
   const config: AppConfig = await getConfig();
+
+  const factory = new DataFeedFactory(
+    config.cluster,
+    config.payerAccount,
+    config.fulfillmentAccount
+  );
+
+  const ffmCheck = await factory.verifyFulfillmentManager();
+  if (ffmCheck instanceof ConfigError) {
+    console.log(ffmCheck.toString());
+    throw ffmCheck;
+  }
 
   console.log(
     chalk.underline.yellow(
       "######## Creating Data Feeds from JSON File ########"
     )
   );
-  // pass factory input to factory and parse account response
-  const factoryOutput = await config.factory.buildFeeds(config.factoryInput);
+  const factoryOutput = await factory.buildFeeds(config.factoryInput);
 
-  // Write to output file
   const createdFeeds = factoryOutput.filter((f) => f.output);
   if (createdFeeds.length > 0) {
     fs.writeFileSync(

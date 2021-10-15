@@ -8,8 +8,8 @@
   "scripts": {
     "publish": "",
     "build": "tsc",
-    "dev": "ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?}",
-    "start": "tsc && node bin/main.js --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?} --sport=epl",
+    "dev": "ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=ffmanager-keypair.json",
+    "start": "tsc && node bin/main.js --payerKeypairFile=example-keypair.json --fulfillmentKeypair=ffmanager-keypair.json",
     "create-ff-manager": "ts-node src/utils/createFFManager.ts --payerKeypairFile=example-keypair.json",
     "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -16,14 +16,14 @@ import {
 export class DataFeedFactory {
   private connection: Connection;
   private payerAccount: Account;
-  public fulfillmentManager: PublicKey;
+  private fulfillmentAccount: Account;
   public SWITCHBOARD_PID: PublicKey;
 
-  constructor(cluster: Cluster, payer: Account, ffManager: PublicKey) {
+  constructor(cluster: Cluster, payer: Account, fulfillment: Account) {
     const url = clusterApiUrl(cluster, true);
     this.connection = new Connection(url, "processed");
     this.payerAccount = payer;
-    this.fulfillmentManager = ffManager;
+    this.fulfillmentAccount = fulfillment;
     switch (cluster) {
       case "mainnet-beta":
         this.SWITCHBOARD_PID = SWITCHBOARD_MAINNET_PID;
@@ -47,7 +47,7 @@ export class DataFeedFactory {
     try {
       await parseFulfillmentAccountData(
         this.connection,
-        this.fulfillmentManager
+        this.fulfillmentAccount.publicKey
       );
     } catch (err) {
       return new ConfigError(`not a valid fulfillment manager account`);
@@ -76,7 +76,7 @@ export class DataFeedFactory {
     await dataFeed.createFeed(
       this.connection,
       this.payerAccount,
-      this.fulfillmentManager,
+      this.fulfillmentAccount.publicKey,
       this.SWITCHBOARD_PID
     );
     return dataFeed;

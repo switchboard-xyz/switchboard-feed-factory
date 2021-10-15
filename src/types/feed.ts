@@ -96,6 +96,7 @@ export class DataFeed {
       );
       return;
     }
+
     this.output = {
       dataFeed,
       jobs,

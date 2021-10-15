@@ -1,14 +1,9 @@
-import { Account, PublicKey, Cluster } from "@solana/web3.js";
+import { Account, Cluster } from "@solana/web3.js";
 import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
-import {
-  ConfigError,
-  JsonInputError,
-  AppConfig,
-  DataFeedFactory,
-} from "./types/";
+import { ConfigError, AppConfig } from "./types/";
 import prompts from "prompts";
 import readlineSync from "readline-sync";
 import { ingestFeeds } from "./utils/ingestFeeds";
@@ -34,9 +29,10 @@ export async function getConfig(): Promise<AppConfig> {
         describe: "Path to keypair file that will pay for transactions.",
         demand: true,
       },
-      fulfillmentManager: {
+      fulfillmentKeypair: {
         type: "string",
-        describe: "Public key of the fulfillment manager account",
+        describe:
+          "Path to the keypair file that will orchestrate fulfillment request to oracles",
         demand: true,
       },
       sport: {
@@ -75,45 +71,28 @@ export async function getConfig(): Promise<AppConfig> {
             },
           ])
         ).sport;
-  console.log(chalk.blue("Sport:"), sport.toUpperCase());
 
   const factoryInput = ingestFeeds(sport);
+
   const cluster = toCluster(argv.cluster);
-  console.log(chalk.blue("Cluster:"), cluster);
 
   const payerKeypair = JSON.parse(
     fs.readFileSync(resolve(argv.payerKeypairFile), "utf-8")
   );
   const payerAccount = new Account(payerKeypair);
+
+  const fulfillmentKeypair = JSON.parse(
+    fs.readFileSync(resolve(argv.fulfillmentKeypair), "utf-8")
+  );
+  const fulfillmentAccount = new Account(fulfillmentKeypair);
+
+  console.log(chalk.blue("Sport:"), sport.toUpperCase());
+  console.log(chalk.blue("Cluster:"), cluster);
   console.log(chalk.blue("Payer Account:"), payerAccount.publicKey.toString());
-
-  const fulfillmentManager = new PublicKey(argv.fulfillmentManager);
   console.log(
-    chalk.blue("Fulfillment Manager:"),
-    fulfillmentManager.toString()
+    chalk.blue("Fulfillment Account:"),
+    fulfillmentAccount.publicKey.toString()
   );
-
-  const factory = new DataFeedFactory(
-    cluster,
-    payerAccount,
-    fulfillmentManager
-  );
-  const ffmCheck = await factory.verifyFulfillmentManager();
-  if (ffmCheck instanceof ConfigError) {
-    console.log(ffmCheck.toString());
-    throw ffmCheck;
-  }
-
-  // TO DO: This should be done in ingestFeeds
-  // Read in json feeds and check for any duplicate names
-  const FactoryInputMap = new Map(factoryInput.map((f) => [f.name, f]));
-  if (FactoryInputMap.size !== factoryInput.length) {
-    const e = new JsonInputError(
-      "duplicate names detected, check your json file"
-    );
-    console.log(e.toString());
-    throw new ConfigError("duplicate names for a feed detected");
-  }
   console.log(chalk.blue("# of New Feeds:"), factoryInput.length);
   if (!readlineSync.keyInYN("Does the configuration look correct?")) {
     console.log("Exiting...");
@@ -121,10 +100,10 @@ export async function getConfig(): Promise<AppConfig> {
   }
   return {
     cluster,
-    fulfillmentManager,
     sport,
     factoryInput,
-    factory,
+    fulfillmentAccount,
+    payerAccount,
   };
 }
 
