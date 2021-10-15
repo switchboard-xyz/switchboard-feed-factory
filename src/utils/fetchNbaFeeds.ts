@@ -1,10 +1,25 @@
 import fetch from "node-fetch";
 import fs from "fs";
 
-// const formatDate = (date) =>
-//   `${date.getHours()}:${String(date.getMinutes()).padStart(2, "0")} ${String(
-//     date.getSeconds()
-//   ).padStart(2, "0")}.${String(date.getMilliseconds()).padStart(3, "0")}`;
+/**
+ * Hits each endpoint and builds a struct containing
+ * Home Team, Away Team, Event Date, Endpoint Name, Endpoint ID
+ * Then attempts to map each event to each endpoint using the NBA as the master record
+ */
+
+export interface EventKind {
+  Endpoint: string;
+  EndpointId: string;
+  HomeTeam: string;
+  AwayTeam: string;
+  EventDate: Date;
+}
+
+export interface Event {
+  Nba: EventKind;
+  Espn?: EventKind;
+  Yahoo?: EventKind;
+}
 
 // Standard variation
 async function api<T>(url: string): Promise<T> {
@@ -18,18 +33,21 @@ async function api<T>(url: string): Promise<T> {
 
 export async function fetchNbaFeeds(): Promise<void> {
   const nbaApi = "https://data.nba.net/prod/v2/20211015/scoreboard.json";
-  const nbaResponse = await api(nbaApi);
+  const nbaResponse: any = await api(nbaApi);
   fs.writeFileSync(
     `./feeds/nba/nba.json`,
-    JSON.stringify(nbaResponse, null, 2)
+    JSON.stringify(nbaResponse.games, null, 2)
+  );
+  const nbaMap = new Map(
+    nbaResponse.games.map((event) => [event.gameId, event])
   );
 
   const espnApi =
     "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20211015";
-  const espnResponse = await api(espnApi);
+  const espnResponse: any = await api(espnApi);
   fs.writeFileSync(
     `./feeds/nba/espn.json`,
-    JSON.stringify(espnResponse, null, 2)
+    JSON.stringify(espnResponse.events, null, 2)
   );
 
   const yahooApi =

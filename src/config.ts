@@ -100,6 +100,7 @@ export async function getConfig(): Promise<AppConfig> {
     throw ffmCheck;
   }
 
+  // TO DO: This should be done in ingestFeeds
   // Read in json feeds and check for any duplicate names
   const FactoryInputMap = new Map(factoryInput.map((f) => [f.name, f]));
   if (FactoryInputMap.size !== factoryInput.length) {
