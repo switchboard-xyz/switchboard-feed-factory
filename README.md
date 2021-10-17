@@ -47,16 +47,43 @@ solana-keygen new --outfile example-keypair.json
 solana airdrop 5 example-keypair.json
 ```
 
-#### Fulfillment Manager Public Key
+#### Fulfillment Manager Keypair
 
 If you need to create a new one:
 
 ```bash
-export FULFILLMENT_MANAGER_KEY="$(ts-node src/utils/createFFManager.ts --payerKeypairFile=example-keypair.json)"
+export FULFILLMENT_MANAGER_KEY="$(npm run create-ff-manager)"
+export FULFILLMENT_MANAGER_KEY="$(ts-node src/utils/createFulfillmentManager.ts --payerKeypairFile=example-keypair.json)"
 ```
 
-### 4. Run the tool
+#### Fulfillment Manager Authorization Public Key
+
+If you need to create a new one:
 
 ```bash
-ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentManager=${FULFILLMENT_MANAGER_KEY?} --sport=epl
+export AUTH_KEY="$(npm run authorize-ff-manager)"
+export FULFILLMENT_MANAGER_KEY="$(ts-node src/utils/createFulfillmentManagerAuth.ts --payerKeypairFile=example-keypair.json)"
+```
+
+### 4. Run the Oracle to Process Updates
+
+```bash
+npm run oracle
+// docker-compose up
+
+```
+
+### 5. Create Data Feeds
+
+```bash
+npm run dev
+// ts-node src/main.ts --payerKeypairFile=example-keypair.json \
+    --fulfillmentManager=fulfillment-keypair.json
+
+```
+
+### 6. Update Data Feeds
+
+```bash
+
 ```

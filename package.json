@@ -10,9 +10,12 @@
     "build": "tsc",
     "dev": "ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
     "start": "tsc && node bin/main.js --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
-    "create-ff-manager": "ts-node src/utils/createFFManager.ts --payerKeypairFile=example-keypair.json",
+    "create-ff-manager": "ts-node src/utils/createFulfillmentManager.ts --payerKeypairFile=example-keypair.json",
+    "authorize-ff-manager": "ts-node src/utils/createFulfillmentManagerAuth.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
+    "updateFeeds": "ts-node src/utils/updateDataFeed.ts --payerKeypairFile=example-keypair.json ",
     "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "oracle": "docker-compose up"
   },
   "repository": {
     "type": "git",

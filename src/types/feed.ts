@@ -129,6 +129,7 @@ export class DataFeed {
 
   // TO DO: We should be verifying it has the correct fulfillment manager account and
   // a valid update auth account
+  // then call update
   public async verifyFeed(connection: Connection): Promise<void> {
     if (!this.error && this.output?.dataFeed) {
       try {

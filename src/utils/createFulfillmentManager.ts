@@ -51,17 +51,6 @@ async function main(): Promise<string> {
     }
   );
 
-  const authAccount = await createFulfillmentManagerAuth(
-    connection,
-    payerAccount,
-    fulfillmentManagerAccount,
-    payerAccount.publicKey,
-    {
-      authorizeHeartbeat: true,
-      authorizeUsage: false,
-    }
-  );
-
   const answer = await prompts([
     {
       type: "text",
@@ -80,22 +69,26 @@ async function main(): Promise<string> {
   const secret = Uint8Array.from(fulfillmentManagerAccount.secretKey);
   fs.writeFileSync(keypairFile, `[${secret.toString()}]`);
   console.log(
-    `${chalk.green("Fulfilmment manager created:")} ${chalk.blue(
-      fulfillmentManagerAccount.publicKey.toString()
-    )}`
+    `     ${chalk.green("export")} ${chalk.blue(
+      "FULFILLMENT_MANAGER_KEY"
+    )}=${chalk.yellow(fulfillmentManagerAccount.publicKey)}`
   );
 
-  const authSecret = Uint8Array.from(authAccount.secretKey);
-  const authKeypairFile = `Auth-${keypairFile}`;
-  if (fs.existsSync(authKeypairFile)) {
-    throw `${chalk.red(`auth keypair file already exist:`)} ${authKeypairFile}`;
-  }
-  fs.writeFileSync(authKeypairFile, `[${authSecret.toString()}]`);
+  const authAccount = await createFulfillmentManagerAuth(
+    connection,
+    payerAccount,
+    fulfillmentManagerAccount,
+    payerAccount.publicKey,
+    {
+      authorizeHeartbeat: true,
+      authorizeUsage: false,
+    }
+  );
 
   console.log(
-    `${chalk.green(
-      "Fulfilmment manager authorization account created:"
-    )} ${chalk.blue(authAccount.publicKey.toString())}`
+    `     ${chalk.green("export")} ${chalk.blue("AUTH_KEY")}=${chalk.yellow(
+      authAccount.publicKey
+    )}`
   );
 
   return fulfillmentManagerAccount.publicKey.toString();
@@ -107,6 +100,6 @@ main().then(
   },
   (err) => {
     console.log(err);
-    process.exit(-1);
+    return "";
   }
 );
