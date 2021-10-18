@@ -1,7 +1,6 @@
 import fs from "fs";
 import chalk from "chalk";
-import { selectSport, selectDates, selectDateRange } from "./cli";
-import prompts from "prompts";
+import { selectSport, selectDateRange } from "./cli";
 import { fetchNbaFeeds } from "./nba/fetchNbaFeeds";
 import { getNbaEventUrl } from "./nba/jobs/nba";
 import { getEspnEventUrl } from "./nba/jobs/espn";
@@ -27,8 +26,7 @@ export async function fetchFeeds(): Promise<boolean> {
   return false;
 }
 export async function nba(): Promise<boolean> {
-  const x = await selectDateRange();
-  const dates = await selectDates();
+  const dates = await selectDateRange();
   console.log(dates);
   let allMatches: JsonInput[] = [];
   for await (const d of dates) {

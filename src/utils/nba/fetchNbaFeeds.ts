@@ -7,14 +7,12 @@
  */
 
 import fs from "fs";
-import { selectDates } from "../cli";
 import chalk from "chalk";
 import { JsonInput } from "../../types";
-import prompts from "prompts";
 import { capitalizeTeamName } from "./nbaAbbreviationMap";
-import { getNbaEvents, getNbaEventUrl } from "./jobs/nba";
-import { getEspnEvents, getEspnEventUrl } from "./jobs/espn";
-import { getYahooEvents, getYahooEventUrl } from "./jobs/yahoo";
+import { getNbaEvents } from "./jobs/nba";
+import { getEspnEvents } from "./jobs/espn";
+import { getYahooEvents } from "./jobs/yahoo";
 import { toDateString } from "../toDateString";
 
 export interface EventKind {
