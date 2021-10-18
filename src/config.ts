@@ -9,6 +9,7 @@ import { ingestFeeds } from "./utils/ingestFeeds";
 import { toCluster } from "./utils/toCluster";
 import dotenv from "dotenv";
 import { selectSport } from "./utils/cli/selectSport";
+import { selectCluster } from "./utils/cli/selectCluster";
 dotenv.config();
 
 /**
@@ -44,19 +45,21 @@ export async function getConfig(): Promise<AppConfig> {
         type: "string",
         describe: "devnet, testnet, or mainnet-beta",
         demand: false,
-        default: "devnet",
       },
     })
     .parseSync();
 
+  const cluster = argv.cluster
+    ? toCluster(argv.cluster)
+    : await selectCluster();
+
+  // TO DO: Sport should be an enumeration
   const sport: string =
     argv.sport === "epl" || argv.sport === "nba"
       ? argv.sport
       : await selectSport();
 
   const factoryInput = ingestFeeds(sport);
-
-  const cluster = toCluster(argv.cluster);
 
   const payerKeypair = JSON.parse(
     fs.readFileSync(resolve(argv.payerKeypairFile), "utf-8")

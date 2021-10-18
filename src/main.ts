@@ -33,7 +33,7 @@ async function main(): Promise<void> {
   const createdFeeds = factoryOutput.filter((f) => f.output);
   if (createdFeeds.length > 0) {
     fs.writeFileSync(
-      `./CreatedFeeds-${Date.now()}.json`,
+      `./CreatedFeeds-${config.sport.toUpperCase()}-${Date.now()}.json`,
       JSON.stringify(createdFeeds, null, 2)
     );
   } else {
@@ -50,7 +50,7 @@ async function main(): Promise<void> {
     });
   if (Object.keys(errorMap).length > 0) {
     fs.writeFileSync(
-      `./Errors-${Date.now()}.json`,
+      `./Errors-${config.sport.toUpperCase()}-${Date.now()}.json`,
       JSON.stringify(errorMap, null, 2)
     );
   } else {
@@ -60,7 +60,7 @@ async function main(): Promise<void> {
 
 main().then(
   () => {
-    console.log(chalk.green("Switchboard-EPL-Feeds ran successfully."));
+    console.log(chalk.green("Switchboard-Feed-Factory ran successfully."));
     process.exit();
   },
   (err) => {
