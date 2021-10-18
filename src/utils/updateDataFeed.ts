@@ -20,6 +20,11 @@ async function main(): Promise<string> {
         demand: false,
         default: "devnet",
       },
+      sport: {
+        type: "string",
+        describe: "Which sport to load [epl / nba]",
+        demand: false,
+      },
     })
     .parseSync();
 
@@ -32,7 +37,11 @@ async function main(): Promise<string> {
 
   const jsonFiles: Choice[] = fs
     .readdirSync("./")
-    .filter((file) => path.extname(file) === ".json")
+    .filter(
+      (file) =>
+        path.extname(file) === ".json" &&
+        path.basename(file).startsWith("CreatedFeeds-")
+    )
     .map((fileName) => {
       return {
         value: fileName,

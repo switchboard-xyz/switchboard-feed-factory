@@ -7,17 +7,14 @@
  */
 
 import fs from "fs";
-import { api } from "../api";
 import { getDates, getDateString } from "./getDates";
 import chalk from "chalk";
 import { JsonInput } from "../../types";
 import prompts from "prompts";
-import {
-  abbreviationMap,
-  getTeamFromNbaAbbreviation,
-  getTeamFromEspnAbbreviation,
-  capitalizeTeamName,
-} from "./nbaAbbreviationMap";
+import { capitalizeTeamName } from "./nbaAbbreviationMap";
+import { getNbaEvents } from "./jobs/nba";
+import { getEspnEvents } from "./jobs/espn";
+import { getYahooEvents } from "./jobs/yahoo";
 
 export interface EventKind {
   Endpoint: string;
@@ -46,92 +43,10 @@ export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
   if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
     fs.mkdirSync(`./feeds/nba/${date}/raw`);
   }
-  const strippedDate = date.replaceAll("-", "");
-  // console.log(strippedDate, date);
 
-  // Parse NBA response and build EventKind array
-  const nbaApi = `https://data.nba.net/prod/v2/${strippedDate}/scoreboard.json`;
-  const nbaResponse: any = await api(nbaApi);
-  const nbaResponseEvents: any[] = nbaResponse.games;
-  const nbaEvents: EventKind[] = nbaResponseEvents.map((e) => {
-    return {
-      Endpoint: "nba",
-      EndpointId: e.gameId,
-      HomeTeam: getTeamFromNbaAbbreviation(e.hTeam.triCode),
-      AwayTeam: getTeamFromNbaAbbreviation(e.vTeam.triCode),
-      EventDate: new Date(e.startTimeUTC),
-    };
-  });
-  if (nbaEvents && nbaEvents.length > 0) {
-    fs.writeFileSync(
-      `./feeds/nba/${date}/raw/nba.json`,
-      JSON.stringify(nbaResponseEvents, null, 2)
-    );
-    fs.writeFileSync(
-      `./feeds/nba/${date}/nba.json`,
-      JSON.stringify(nbaEvents, null, 2)
-    );
-  } else {
-    console.error(chalk.red(`failed to get nba events on ${date}`));
-  }
-
-  // Parse ESPN response and build EventKind array
-  const espnApi = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${strippedDate}`;
-  const espnResponse: any = await api(espnApi);
-  const espnResponseEvents: any[] = espnResponse.events;
-  const espnEvents: EventKind[] = espnResponseEvents.map((e) => {
-    const teams: string[] = e.shortName.split(" @ ", 2); // away @ home
-    return {
-      Endpoint: "espn",
-      EndpointId: e.id,
-      HomeTeam: getTeamFromEspnAbbreviation(teams[1]),
-      AwayTeam: getTeamFromEspnAbbreviation(teams[0]),
-      EventDate: new Date(e.date),
-    };
-  });
-  if (espnEvents && espnEvents.length > 0) {
-    fs.writeFileSync(
-      `./feeds/nba/${date}/raw/espn.json`,
-      JSON.stringify(espnResponseEvents, null, 2)
-    );
-    fs.writeFileSync(
-      `./feeds/nba/${date}/espn.json`,
-      JSON.stringify(espnEvents, null, 2)
-    );
-  } else {
-    console.error(chalk.red(`failed to get espn events on ${date}`));
-  }
-
-  // Parse Yahoo response and build EventKind array
-  const yahooApi = `https://api-secure.sports.yahoo.com/v1/editorial/s/scoreboard?leagues=nba&date=${date}`;
-  const yahooResponse: any = await api(yahooApi);
-  const yahooResponseEvents: any[] = yahooResponse.service.scoreboard.games
-    ? Object.values(yahooResponse.service.scoreboard.games)
-    : [];
-  const yahooEvents: EventKind[] = yahooResponseEvents.map((e) => {
-    const boxscoreId: string = e.navigation_links.boxscore.url;
-    const gameId = boxscoreId.replace("/nba/", "").replace("/", "");
-    const [home, away] = mapYahooNames(gameId);
-    return {
-      Endpoint: "yahoo",
-      EndpointId: gameId,
-      HomeTeam: home,
-      AwayTeam: away,
-      EventDate: new Date(date), // cheating a bit
-    };
-  });
-  if (yahooResponseEvents && yahooResponseEvents.length > 0) {
-    fs.writeFileSync(
-      `./feeds/nba/${date}/raw/yahoo.json`,
-      JSON.stringify(yahooResponseEvents, null, 2)
-    );
-    fs.writeFileSync(
-      `./feeds/nba/${date}/yahoo.json`,
-      JSON.stringify(yahooEvents, null, 2)
-    );
-  } else {
-    console.error(chalk.red(`failed to get yahoo events on ${date}`));
-  }
+  const nbaEvents = await getNbaEvents(date);
+  const espnEvents = await getEspnEvents(date);
+  const yahooEvents = await getYahooEvents(date);
 
   // match NBA to ESPN & Yahoo list
   const matches: Event[] = nbaEvents.map((nbaEvent) => {
@@ -253,34 +168,3 @@ main().then(
     console.error(err);
   }
 );
-
-/**
- * Yahoo uses the same abbreviation and naming as NBA so using reverse map
- * to lookuo values
- */
-const mapYahooNames = (gameId: string): [string, string] => {
-  let [home, away] = ["", ""];
-  let parsedGameId = gameId;
-  for (const awayTeam of abbreviationMap.keys()) {
-    if (parsedGameId.startsWith(awayTeam)) {
-      away = awayTeam;
-      parsedGameId = gameId.replace(`${away}-`, "");
-      break;
-    }
-  }
-  if (!away) {
-    console.error(`failed to get away team for Yahoo ${gameId}`);
-  }
-  for (const homeTeam of abbreviationMap.keys()) {
-    if (parsedGameId.startsWith(homeTeam)) {
-      home = homeTeam;
-      break;
-    }
-  }
-  if (!home) console.error(`failed to get home team for Yahoo ${parsedGameId}`);
-  if (home === away) {
-    console.error(`failed to get correct home & away team for ${parsedGameId}`);
-    return ["", away];
-  }
-  return [home, away];
-};
