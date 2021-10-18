@@ -44,3 +44,26 @@ export async function selectDates(): Promise<string[]> {
   // console.log(answer.date);
   return answer.date;
 }
+
+export async function selectDateRange(): Promise<string[]> {
+  const today = new Date();
+  const dates = await prompts([
+    {
+      type: "date",
+      name: "start",
+      message: "Start date",
+      initial: new Date(today.getFullYear(), today.getMonth(), today.getDate()),
+    },
+    {
+      type: "date",
+      name: "end",
+      message: "End date",
+      initial: new Date(
+        today.getFullYear(),
+        today.getMonth(),
+        today.getDate() + 7
+      ),
+    },
+  ]);
+  return [toDateString(dates.start), toDateString(dates.end)];
+}
