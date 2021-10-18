@@ -1,5 +1,6 @@
 import prompts, { Choice } from "prompts";
 import chalk from "chalk";
+import { toDateString } from "../toDateString";
 
 function getNextNDays(numDays: number): string[] {
   const days: string[] = [];
@@ -7,7 +8,7 @@ function getNextNDays(numDays: number): string[] {
   for (let i = 0; i < numDays; i++) {
     const nextDate = new Date();
     nextDate.setDate(today.getDate() + i);
-    days.push(getDateString(nextDate));
+    days.push(toDateString(nextDate));
   }
   // console.log(
   //   `${chalk.blue(days[0])} ${chalk.yellow("-")} ${chalk.blue(days[-1])}`
@@ -15,8 +16,15 @@ function getNextNDays(numDays: number): string[] {
   return days;
 }
 
-export async function getDates(numDays: number): Promise<string[]> {
-  const days = getNextNDays(numDays);
+export async function selectDates(): Promise<string[]> {
+  const numDaysAnswer = await prompts([
+    {
+      type: "number",
+      name: "numDays",
+      message: "Number of days to fetch events for",
+    },
+  ]);
+  const days = getNextNDays(numDaysAnswer.numDays);
   const choices: Choice[] = days.map((d) => {
     return { title: d, value: d };
   });
@@ -35,12 +43,4 @@ export async function getDates(numDays: number): Promise<string[]> {
   );
   // console.log(answer.date);
   return answer.date;
-}
-
-export function getDateString(d: Date | undefined): string {
-  if (d)
-    return `${d.getFullYear()}-${(d.getMonth() + 1)
-      .toString()
-      .padStart(2, "0")}-${d.getDate().toString().padStart(2, "0")}`;
-  return "";
 }

@@ -1,5 +1,5 @@
 import { OracleJob } from "@switchboard-xyz/switchboard-api";
-import { getDateString } from "../../utils/fetchNba/getDates";
+import { toDateString } from "../../utils/toDateString";
 
 /**
  * IN PROGRESS
@@ -7,7 +7,7 @@ import { getDateString } from "../../utils/fetchNba/getDates";
  */
 
 export const createEspnNbaJob = (date: Date, nbaId: string): OracleJob => {
-  const d = getDateString(date).replaceAll("-", "");
+  const d = toDateString(date).replaceAll("-", "");
   const espnCompletedMatch = `$.competitions[?(@.status.type.completed && @.id == '${nbaId}')]`;
   return OracleJob.create({
     tasks: [
