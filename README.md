@@ -59,7 +59,7 @@ or
 ```bash
 ts-node src/utils/fetchDataFeeds.ts
 ```
-This will create an output file under ./feeds/<sport>. Copy and paste the applicable Ids to <sport>.feeds.json at the root directory
+This will create an output file under ./feeds/**sport**. Copy and paste the applicable Ids to **sport**.feeds.json at the root directory
 
 ### 5. Create Data Feeds
 
@@ -70,7 +70,7 @@ or
 ```bash
 ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json
 ```
-This will create a JSON output at the root directory named CreatedFeeds-<sport>-<timestamp>.json. This file contains the public key of the data feed and authorization account, the jobs in the data feed, and data feed configuration 
+This will create a JSON output at the root directory named CreatedFeeds-**sport**-**timestamp**.json. This file contains the public key of the data feed and authorization account, the jobs in the data feed, and data feed configuration 
   
 ### 6. Update Data Feeds
   ```bash
