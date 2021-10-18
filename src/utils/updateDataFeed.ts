@@ -1,22 +1,8 @@
-import {
-  Account,
-  Cluster,
-  clusterApiUrl,
-  Connection,
-  Context,
-  PublicKey,
-  SignatureResult,
-} from "@solana/web3.js";
-import {
-  AggregatorState,
-  parseAggregatorAccountData,
-  updateFeed,
-} from "@switchboard-xyz/switchboard-api";
+import { Account, clusterApiUrl, Connection } from "@solana/web3.js";
 import yargs from "yargs/yargs";
 import fs from "fs";
 import resolve from "resolve-dir";
 import prompts, { Choice } from "prompts";
-import chalk from "chalk";
 import path from "path";
 
 // NOT IMPLEMENTED
@@ -63,7 +49,6 @@ async function main(): Promise<string> {
     },
   ]);
   console.log(`selected ${pickJson.jsonFile}`);
-
 
   //   let dataFeedPubkey = new PublicKey(argv.dataFeedPubkey);
   //   let updateAuthPubkey = new PublicKey(argv.updateAuthPubkey);
