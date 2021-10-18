@@ -81,26 +81,25 @@ ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair
 ```
 
 This will create a JSON output at the root directory named CreatedFeeds-**sport**-**timestamp**.json. This file contains the public key of the data feed and authorization account, the jobs in the data feed, and data feed configuration
-  
+
 ### 6. Update Data Feeds
 
-  ```bash
+```bash
 npm run feeds:update
 ```
 
 or
 
-  ```bash
+```bash
 ts-node src/utils/updateDataFeed.ts --payerKeypairFile=example-keypair.json
 ```
 
 Select the output file from the previous step. If the game has completed, the data feed update will resolve output the result to the terminal.
-  
+
 ## Feed Results
 
 When "update" is called on a resulting feed, the following results can be expected for each job:
 
-- _RESULT_UNFINISHED_ (**-1**) - The game has not been completed.
-- _RESULT_DRAW_ (**0**)  The game has not been completed.
+- _RESULT_DRAW_ (**0**) The game has not been completed.
 - _RESULT_HOME_WIN_ (**1**) - The game has not been completed.
 - _RESULT_AWAY_WIN_ (**2**) - The game has not been completed.
