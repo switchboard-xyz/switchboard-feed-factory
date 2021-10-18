@@ -30,22 +30,10 @@ export interface Event {
 }
 
 export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
-  if (!fs.existsSync(`./feeds`)) {
-    fs.mkdirSync(`./feeds`);
-  }
-  if (!fs.existsSync(`./feeds/nba`)) {
-    fs.mkdirSync(`./feeds/nba`);
-  }
-  if (!fs.existsSync(`./feeds/nba/${date}`)) {
-    fs.mkdirSync(`./feeds/nba/${date}`);
-  }
-  if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
-    fs.mkdirSync(`./feeds/nba/${date}/raw`);
-  }
-
   const nbaEvents = await getNbaEvents(date);
   const espnEvents = await getEspnEvents(date);
   const yahooEvents = await getYahooEvents(date);
+  if (!nbaEvents || nbaEvents.length === 0) return [];
 
   // match NBA to ESPN & Yahoo list
   const matches: Event[] = nbaEvents.map((nbaEvent) => {

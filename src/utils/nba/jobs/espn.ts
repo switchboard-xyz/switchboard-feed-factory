@@ -23,6 +23,12 @@ export async function getEspnEvents(date: string): Promise<EventKind[]> {
     };
   });
   if (espnEvents && espnEvents.length > 0) {
+    if (!fs.existsSync(`./feeds/nba/${date}`)) {
+      fs.mkdirSync(`./feeds/nba/${date}`);
+    }
+    if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
+      fs.mkdirSync(`./feeds/nba/${date}/raw`);
+    }
     fs.writeFileSync(
       `./feeds/nba/${date}/raw/espn.json`,
       JSON.stringify(espnResponseEvents, null, 2)

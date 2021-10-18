@@ -23,6 +23,12 @@ export async function getNbaEvents(date: string): Promise<EventKind[]> {
     };
   });
   if (nbaEvents && nbaEvents.length > 0) {
+    if (!fs.existsSync(`./feeds/nba/${date}`)) {
+      fs.mkdirSync(`./feeds/nba/${date}`);
+    }
+    if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
+      fs.mkdirSync(`./feeds/nba/${date}/raw`);
+    }
     fs.writeFileSync(
       `./feeds/nba/${date}/raw/nba.json`,
       JSON.stringify(nbaResponseEvents, null, 2)

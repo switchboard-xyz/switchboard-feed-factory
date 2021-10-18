@@ -20,6 +20,12 @@ export async function fetchFeeds(): Promise<boolean> {
     console.error(chalk.red("EPL fetch not implemented yet"));
     return false;
   } else if (sport.toLowerCase() === "nba") {
+    if (!fs.existsSync(`./feeds`)) {
+      fs.mkdirSync(`./feeds`);
+    }
+    if (!fs.existsSync(`./feeds/nba`)) {
+      fs.mkdirSync(`./feeds/nba`);
+    }
     const success = await nba();
     return success;
   }
@@ -29,6 +35,7 @@ export async function nba(): Promise<boolean> {
   const dates = await selectDateRange();
   console.log(dates);
   let allMatches: JsonInput[] = [];
+
   for await (const d of dates) {
     const matches: JsonInput[] = await fetchNbaFeeds(d);
     if (!matches) console.error(`failed to fetch feeds for ${d}`);

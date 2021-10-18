@@ -55,6 +55,12 @@ export async function getYahooEvents(date: string): Promise<EventKind[]> {
     };
   });
   if (yahooResponseEvents && yahooResponseEvents.length > 0) {
+    if (!fs.existsSync(`./feeds/nba/${date}`)) {
+      fs.mkdirSync(`./feeds/nba/${date}`);
+    }
+    if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
+      fs.mkdirSync(`./feeds/nba/${date}/raw`);
+    }
     fs.writeFileSync(
       `./feeds/nba/${date}/raw/yahoo.json`,
       JSON.stringify(yahooResponseEvents, null, 2)
