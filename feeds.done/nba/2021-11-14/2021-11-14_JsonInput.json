@@ -1,0 +1,51 @@
+[
+  {
+    "name": "SanAntonioSpurs_at_LosAngelesLakers_2021-11-14",
+    "date": "2021-11-14T20:30:00.000Z",
+    "nbaId": "0022100192",
+    "yahooId": "san-antonio-spurs-los-angeles-lakers-2021111413",
+    "espnId": "401360016"
+  },
+  {
+    "name": "MilwaukeeBucks_at_AtlantaHawks_2021-11-14",
+    "date": "2021-11-14T23:00:00.000Z",
+    "nbaId": "0022100193",
+    "yahooId": "milwaukee-bucks-atlanta-hawks-2021111401",
+    "espnId": "401360017"
+  },
+  {
+    "name": "GoldenStateWarriors_at_CharlotteHornets_2021-11-14",
+    "date": "2021-11-15T00:00:00.000Z",
+    "nbaId": "0022100194",
+    "yahooId": "golden-state-warriors-charlotte-hornets-2021111430",
+    "espnId": "401360018"
+  },
+  {
+    "name": "PhoenixSuns_at_HoustonRockets_2021-11-14",
+    "date": "2021-11-15T00:00:00.000Z",
+    "nbaId": "0022100195",
+    "yahooId": "phoenix-suns-houston-rockets-2021111410",
+    "espnId": "401360019"
+  },
+  {
+    "name": "BrooklynNets_at_OklahomaCityThunder_2021-11-14",
+    "date": "2021-11-15T00:00:00.000Z",
+    "nbaId": "0022100196",
+    "yahooId": "brooklyn-nets-oklahoma-city-thunder-2021111425",
+    "espnId": "401360020"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_DenverNuggets_2021-11-14",
+    "date": "2021-11-15T01:00:00.000Z",
+    "nbaId": "0022100197",
+    "yahooId": "portland-trail-blazers-denver-nuggets-2021111407",
+    "espnId": "401360021"
+  },
+  {
+    "name": "ChicagoBulls_at_LosAngelesClippers_2021-11-14",
+    "date": "2021-11-15T02:30:00.000Z",
+    "nbaId": "0022100198",
+    "yahooId": "chicago-bulls-los-angeles-clippers-2021111412",
+    "espnId": "401360022"
+  }
+]

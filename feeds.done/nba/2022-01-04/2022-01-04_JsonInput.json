@@ -1,0 +1,37 @@
+[
+  {
+    "name": "MemphisGrizzlies_at_ClevelandCavaliers_2022-01-04",
+    "date": "2022-01-05T00:00:00.000Z",
+    "nbaId": "0022100562",
+    "yahooId": "memphis-grizzlies-cleveland-cavaliers-2022010405",
+    "espnId": "401360381"
+  },
+  {
+    "name": "SanAntonioSpurs_at_TorontoRaptors_2022-01-04",
+    "date": "2022-01-05T00:00:00.000Z",
+    "nbaId": "0022100563",
+    "yahooId": "san-antonio-spurs-toronto-raptors-2022010428",
+    "espnId": "401360382"
+  },
+  {
+    "name": "IndianaPacers_at_NewYorkKnicks_2022-01-04",
+    "date": "2022-01-05T00:30:00.000Z",
+    "nbaId": "0022100564",
+    "yahooId": "indiana-pacers-new-york-knicks-2022010418",
+    "espnId": "401360383"
+  },
+  {
+    "name": "PhoenixSuns_at_NewOrleansPelicans_2022-01-04",
+    "date": "2022-01-05T01:00:00.000Z",
+    "nbaId": "0022100565",
+    "yahooId": "phoenix-suns-new-orleans-pelicans-2022010403",
+    "espnId": "401360384"
+  },
+  {
+    "name": "SacramentoKings_at_LosAngelesLakers_2022-01-04",
+    "date": "2022-01-05T03:30:00.000Z",
+    "nbaId": "0022100566",
+    "yahooId": "sacramento-kings-los-angeles-lakers-2022010413",
+    "espnId": "401360385"
+  }
+]

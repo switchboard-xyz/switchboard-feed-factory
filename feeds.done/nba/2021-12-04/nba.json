@@ -1,0 +1,51 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100342",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2021-12-04T18:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100343",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2021-12-05T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100344",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2021-12-05T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100345",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2021-12-05T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100346",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2021-12-05T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100347",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-12-05T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100348",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2021-12-05T03:00:00.000Z"
+  }
+]

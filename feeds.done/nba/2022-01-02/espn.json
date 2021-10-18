@@ -1,0 +1,51 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360364",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2022-01-02T20:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360365",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2022-01-02T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360366",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2022-01-02T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360367",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2022-01-02T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360368",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2022-01-03T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360369",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2022-01-03T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360370",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-01-03T02:30:00.000Z"
+  }
+]

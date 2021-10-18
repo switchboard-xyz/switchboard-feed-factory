@@ -1,0 +1,65 @@
+[
+  {
+    "name": "OrlandoMagic_at_IndianaPacers_2022-02-02",
+    "date": "2022-02-03T00:00:00.000Z",
+    "nbaId": "0022100773",
+    "yahooId": "orlando-magic-indiana-pacers-2022020211",
+    "espnId": "401360592"
+  },
+  {
+    "name": "WashingtonWizards_at_Philadelphia76ers_2022-02-02",
+    "date": "2022-02-03T00:00:00.000Z",
+    "nbaId": "0022100774",
+    "yahooId": "washington-wizards-philadelphia-76ers-2022020220",
+    "espnId": "401360593"
+  },
+  {
+    "name": "CharlotteHornets_at_BostonCeltics_2022-02-02",
+    "date": "2022-02-03T00:30:00.000Z",
+    "nbaId": "0022100775",
+    "yahooId": "charlotte-hornets-boston-celtics-2022020202",
+    "espnId": "401360594"
+  },
+  {
+    "name": "MemphisGrizzlies_at_NewYorkKnicks_2022-02-02",
+    "date": "2022-02-03T00:30:00.000Z",
+    "nbaId": "0022100776",
+    "yahooId": "memphis-grizzlies-new-york-knicks-2022020218",
+    "espnId": "401360595"
+  },
+  {
+    "name": "ClevelandCavaliers_at_HoustonRockets_2022-02-02",
+    "date": "2022-02-03T01:00:00.000Z",
+    "nbaId": "0022100777",
+    "yahooId": "cleveland-cavaliers-houston-rockets-2022020210",
+    "espnId": "401360596"
+  },
+  {
+    "name": "OklahomaCityThunder_at_DallasMavericks_2022-02-02",
+    "date": "2022-02-03T01:30:00.000Z",
+    "nbaId": "0022100778",
+    "yahooId": "oklahoma-city-thunder-dallas-mavericks-2022020206",
+    "espnId": "401360597"
+  },
+  {
+    "name": "DenverNuggets_at_UtahJazz_2022-02-02",
+    "date": "2022-02-03T03:00:00.000Z",
+    "nbaId": "0022100779",
+    "yahooId": "denver-nuggets-utah-jazz-2022020226",
+    "espnId": "401360598"
+  },
+  {
+    "name": "BrooklynNets_at_SacramentoKings_2022-02-02",
+    "date": "2022-02-03T03:00:00.000Z",
+    "nbaId": "0022100780",
+    "yahooId": "brooklyn-nets-sacramento-kings-2022020223",
+    "espnId": "401360599"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_LosAngelesLakers_2022-02-02",
+    "date": "2022-02-03T03:30:00.000Z",
+    "nbaId": "0022100781",
+    "yahooId": "portland-trail-blazers-los-angeles-lakers-2022020213",
+    "espnId": "401360600"
+  }
+]

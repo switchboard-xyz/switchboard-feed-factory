@@ -1,0 +1,58 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100147",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2021-11-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100148",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-11-09T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100149",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2021-11-09T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100150",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2021-11-09T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100151",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2021-11-09T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100152",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2021-11-09T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100153",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2021-11-09T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100154",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "charlotte-hornets",
+    "EventDate": "2021-11-09T03:30:00.000Z"
+  }
+]

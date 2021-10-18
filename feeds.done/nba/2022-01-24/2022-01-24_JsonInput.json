@@ -1,0 +1,37 @@
+[
+  {
+    "name": "NewYorkKnicks_at_ClevelandCavaliers_2022-01-24",
+    "date": "2022-01-25T00:00:00.000Z",
+    "nbaId": "0022100709",
+    "yahooId": "new-york-knicks-cleveland-cavaliers-2022012405",
+    "espnId": "401360528"
+  },
+  {
+    "name": "ChicagoBulls_at_AtlantaHawks_2022-01-24",
+    "date": "2022-01-25T00:30:00.000Z",
+    "nbaId": "0022100710",
+    "yahooId": "chicago-bulls-atlanta-hawks-2022012401",
+    "espnId": "401360529"
+  },
+  {
+    "name": "Philadelphia76ers_at_HoustonRockets_2022-01-24",
+    "date": "2022-01-25T01:00:00.000Z",
+    "nbaId": "0022100711",
+    "yahooId": "philadelphia-76ers-houston-rockets-2022012410",
+    "espnId": "401360530"
+  },
+  {
+    "name": "IndianaPacers_at_NewOrleansPelicans_2022-01-24",
+    "date": "2022-01-25T01:00:00.000Z",
+    "nbaId": "0022100712",
+    "yahooId": "indiana-pacers-new-orleans-pelicans-2022012403",
+    "espnId": "401360531"
+  },
+  {
+    "name": "UtahJazz_at_PhoenixSuns_2022-01-24",
+    "date": "2022-01-25T02:00:00.000Z",
+    "nbaId": "0022100713",
+    "yahooId": "utah-jazz-phoenix-suns-2022012421",
+    "espnId": "401360532"
+  }
+]

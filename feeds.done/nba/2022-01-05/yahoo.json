@@ -1,0 +1,79 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "philadelphia-76ers-orlando-magic-2022010519",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "houston-rockets-washington-wizards-2022010527",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "detroit-pistons-charlotte-hornets-2022010530",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-boston-celtics-2022010502",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-dallas-mavericks-2022010506",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "brooklyn-nets-indiana-pacers-2022010511",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-milwaukee-bucks-2022010515",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-minnesota-timberwolves-2022010516",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "utah-jazz-denver-nuggets-2022010507",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "miami-heat-portland-trail-blazers-2022010522",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "atlanta-hawks-sacramento-kings-2022010523",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2022-01-05T00:00:00.000Z"
+  }
+]

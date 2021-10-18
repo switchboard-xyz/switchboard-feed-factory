@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-detroit-pistons-2021111908",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "indiana-pacers-charlotte-hornets-2021111930",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-lakers-boston-celtics-2021111902",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "orlando-magic-brooklyn-nets-2021111917",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-clippers-new-orleans-pelicans-2021111903",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-milwaukee-bucks-2021111915",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "chicago-bulls-denver-nuggets-2021111907",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "dallas-mavericks-phoenix-suns-2021111921",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-sacramento-kings-2021111923",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2021-11-19T00:00:00.000Z"
+  }
+]

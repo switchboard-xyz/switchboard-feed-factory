@@ -1,0 +1,79 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100684",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-01-22T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100685",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-01-22T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100686",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-01-22T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100687",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2022-01-22T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100688",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2022-01-22T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100689",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2022-01-22T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100690",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2022-01-22T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100691",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2022-01-22T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100692",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-01-22T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100693",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2022-01-22T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100694",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2022-01-22T03:00:00.000Z"
+  }
+]

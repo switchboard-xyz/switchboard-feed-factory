@@ -1,0 +1,30 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360899",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-03-22T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360900",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2022-03-22T23:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360901",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2022-03-23T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360902",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-03-23T02:00:00.000Z"
+  }
+]

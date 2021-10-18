@@ -1,0 +1,65 @@
+[
+  {
+    "name": "ClevelandCavaliers_at_CharlotteHornets_2021-11-01",
+    "date": "2021-11-01T23:00:00.000Z",
+    "nbaId": "0022100094",
+    "yahooId": "cleveland-cavaliers-charlotte-hornets-2021110130",
+    "espnId": "401359918"
+  },
+  {
+    "name": "SanAntonioSpurs_at_IndianaPacers_2021-11-01",
+    "date": "2021-11-01T23:00:00.000Z",
+    "nbaId": "0022100095",
+    "yahooId": "san-antonio-spurs-indiana-pacers-2021110111",
+    "espnId": "401359919"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_Philadelphia76ers_2021-11-01",
+    "date": "2021-11-01T23:00:00.000Z",
+    "nbaId": "0022100096",
+    "yahooId": "portland-trail-blazers-philadelphia-76ers-2021110120",
+    "espnId": "401359920"
+  },
+  {
+    "name": "WashingtonWizards_at_AtlantaHawks_2021-11-01",
+    "date": "2021-11-01T23:30:00.000Z",
+    "nbaId": "0022100097",
+    "yahooId": "washington-wizards-atlanta-hawks-2021110101",
+    "espnId": "401359921"
+  },
+  {
+    "name": "ChicagoBulls_at_BostonCeltics_2021-11-01",
+    "date": "2021-11-01T23:30:00.000Z",
+    "nbaId": "0022100098",
+    "yahooId": "chicago-bulls-boston-celtics-2021110102",
+    "espnId": "401359922"
+  },
+  {
+    "name": "TorontoRaptors_at_NewYorkKnicks_2021-11-01",
+    "date": "2021-11-01T23:30:00.000Z",
+    "nbaId": "0022100099",
+    "yahooId": "toronto-raptors-new-york-knicks-2021110118",
+    "espnId": "401359923"
+  },
+  {
+    "name": "DenverNuggets_at_MemphisGrizzlies_2021-11-01",
+    "date": "2021-11-02T00:00:00.000Z",
+    "nbaId": "0022100100",
+    "yahooId": "denver-nuggets-memphis-grizzlies-2021110129",
+    "espnId": "401359924"
+  },
+  {
+    "name": "OrlandoMagic_at_MinnesotaTimberwolves_2021-11-01",
+    "date": "2021-11-02T00:00:00.000Z",
+    "nbaId": "0022100101",
+    "yahooId": "orlando-magic-minnesota-timberwolves-2021110116",
+    "espnId": "401359925"
+  },
+  {
+    "name": "OklahomaCityThunder_at_LosAngelesClippers_2021-11-01",
+    "date": "2021-11-02T02:30:00.000Z",
+    "nbaId": "0022100102",
+    "yahooId": "oklahoma-city-thunder-los-angeles-clippers-2021110112",
+    "espnId": "401359926"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100213",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2021-11-18T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100214",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2021-11-18T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100215",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-11-18T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100216",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-11-18T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100217",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2021-11-18T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100218",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-11-18T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100219",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2021-11-18T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100220",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2021-11-18T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100221",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2021-11-18T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100222",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-11-18T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100223",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2021-11-18T03:00:00.000Z"
+  }
+]

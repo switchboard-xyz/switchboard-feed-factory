@@ -1,0 +1,94 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100413",
+      "HomeTeam": "brooklyn-nets",
+      "AwayTeam": "toronto-raptors",
+      "EventDate": "2021-12-15T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360237",
+      "HomeTeam": "brooklyn-nets",
+      "AwayTeam": "toronto-raptors",
+      "EventDate": "2021-12-15T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "toronto-raptors-brooklyn-nets-2021121417",
+      "HomeTeam": "brooklyn-nets",
+      "AwayTeam": "toronto-raptors",
+      "EventDate": "2021-12-14T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100414",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2021-12-15T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360238",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2021-12-15T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "golden-state-warriors-new-york-knicks-2021121418",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2021-12-14T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100415",
+      "HomeTeam": "chicago-bulls",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2021-12-15T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360239",
+      "HomeTeam": "chicago-bulls",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2021-12-15T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "detroit-pistons-chicago-bulls-2021121404",
+      "HomeTeam": "chicago-bulls",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2021-12-14T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100416",
+      "HomeTeam": "portland-trail-blazers",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2021-12-15T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360240",
+      "HomeTeam": "portland-trail-blazers",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2021-12-15T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "phoenix-suns-portland-trail-blazers-2021121422",
+      "HomeTeam": "portland-trail-blazers",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2021-12-14T00:00:00.000Z"
+    }
+  }
+]

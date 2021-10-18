@@ -1,0 +1,44 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-cleveland-cavaliers-2022020905",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-02-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "chicago-bulls-charlotte-hornets-2022020930",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2022-02-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-oklahoma-city-thunder-2022020925",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2022-02-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-lakers-portland-trail-blazers-2022020922",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-02-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "minnesota-timberwolves-sacramento-kings-2022020923",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-02-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-utah-jazz-2022020926",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-02-09T00:00:00.000Z"
+  }
+]

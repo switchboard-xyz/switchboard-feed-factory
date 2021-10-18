@@ -1,0 +1,65 @@
+[
+  {
+    "name": "BostonCeltics_at_CharlotteHornets_2021-10-25",
+    "date": "2021-10-25T23:00:00.000Z",
+    "nbaId": "0022100041",
+    "yahooId": "boston-celtics-charlotte-hornets-2021102530",
+    "espnId": "401359865"
+  },
+  {
+    "name": "MilwaukeeBucks_at_IndianaPacers_2021-10-25",
+    "date": "2021-10-25T23:00:00.000Z",
+    "nbaId": "0022100042",
+    "yahooId": "milwaukee-bucks-indiana-pacers-2021102511",
+    "espnId": "401359866"
+  },
+  {
+    "name": "DetroitPistons_at_AtlantaHawks_2021-10-25",
+    "date": "2021-10-25T23:30:00.000Z",
+    "nbaId": "0022100043",
+    "yahooId": "detroit-pistons-atlanta-hawks-2021102501",
+    "espnId": "401359867"
+  },
+  {
+    "name": "WashingtonWizards_at_BrooklynNets_2021-10-25",
+    "date": "2021-10-25T23:30:00.000Z",
+    "nbaId": "0022100044",
+    "yahooId": "washington-wizards-brooklyn-nets-2021102517",
+    "espnId": "401359868"
+  },
+  {
+    "name": "OrlandoMagic_at_MiamiHeat_2021-10-25",
+    "date": "2021-10-25T23:30:00.000Z",
+    "nbaId": "0022100045",
+    "yahooId": "orlando-magic-miami-heat-2021102514",
+    "espnId": "401359869"
+  },
+  {
+    "name": "ChicagoBulls_at_TorontoRaptors_2021-10-25",
+    "date": "2021-10-25T23:30:00.000Z",
+    "nbaId": "0022100046",
+    "yahooId": "chicago-bulls-toronto-raptors-2021102528",
+    "espnId": "401359870"
+  },
+  {
+    "name": "NewOrleansPelicans_at_MinnesotaTimberwolves_2021-10-25",
+    "date": "2021-10-26T00:00:00.000Z",
+    "nbaId": "0022100047",
+    "yahooId": "new-orleans-pelicans-minnesota-timberwolves-2021102516",
+    "espnId": "401359871"
+  },
+  {
+    "name": "ClevelandCavaliers_at_DenverNuggets_2021-10-25",
+    "date": "2021-10-26T01:00:00.000Z",
+    "nbaId": "0022100048",
+    "yahooId": "cleveland-cavaliers-denver-nuggets-2021102507",
+    "espnId": "401359872"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_LosAngelesClippers_2021-10-25",
+    "date": "2021-10-26T02:30:00.000Z",
+    "nbaId": "0022100049",
+    "yahooId": "portland-trail-blazers-los-angeles-clippers-2021102512",
+    "espnId": "401359873"
+  }
+]

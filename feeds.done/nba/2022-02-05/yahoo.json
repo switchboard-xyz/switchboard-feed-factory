@@ -1,0 +1,44 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "phoenix-suns-washington-wizards-2022020527",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2022-02-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "memphis-grizzlies-orlando-magic-2022020519",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-02-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "miami-heat-charlotte-hornets-2022020530",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2022-02-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-los-angeles-lakers-2022020513",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2022-02-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "milwaukee-bucks-portland-trail-blazers-2022020522",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2022-02-05T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-sacramento-kings-2022020523",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-02-05T00:00:00.000Z"
+  }
+]

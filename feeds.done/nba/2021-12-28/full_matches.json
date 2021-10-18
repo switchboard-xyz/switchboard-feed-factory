@@ -1,0 +1,186 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100508",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "milwaukee-bucks",
+      "EventDate": "2021-12-29T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360327",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "milwaukee-bucks",
+      "EventDate": "2021-12-29T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "milwaukee-bucks-orlando-magic-2021122819",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "milwaukee-bucks",
+      "EventDate": "2021-12-28T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100509",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2021-12-29T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360328",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2021-12-29T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "washington-wizards-miami-heat-2021122814",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2021-12-28T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100510",
+      "HomeTeam": "toronto-raptors",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2021-12-29T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360329",
+      "HomeTeam": "toronto-raptors",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2021-12-29T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "philadelphia-76ers-toronto-raptors-2021122828",
+      "HomeTeam": "toronto-raptors",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2021-12-28T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100511",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "los-angeles-lakers",
+      "EventDate": "2021-12-29T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360330",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "los-angeles-lakers",
+      "EventDate": "2021-12-29T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "los-angeles-lakers-houston-rockets-2021122810",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "los-angeles-lakers",
+      "EventDate": "2021-12-28T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100512",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2021-12-29T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360331",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2021-12-29T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "new-york-knicks-minnesota-timberwolves-2021122816",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2021-12-28T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100513",
+      "HomeTeam": "new-orleans-pelicans",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2021-12-29T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360332",
+      "HomeTeam": "new-orleans-pelicans",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2021-12-29T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "cleveland-cavaliers-new-orleans-pelicans-2021122803",
+      "HomeTeam": "new-orleans-pelicans",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2021-12-28T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100514",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "denver-nuggets",
+      "EventDate": "2021-12-29T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360333",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "denver-nuggets",
+      "EventDate": "2021-12-29T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "denver-nuggets-golden-state-warriors-2021122809",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "denver-nuggets",
+      "EventDate": "2021-12-28T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100515",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "oklahoma-city-thunder",
+      "EventDate": "2021-12-29T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360334",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "oklahoma-city-thunder",
+      "EventDate": "2021-12-29T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "oklahoma-city-thunder-sacramento-kings-2021122823",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "oklahoma-city-thunder",
+      "EventDate": "2021-12-28T00:00:00.000Z"
+    }
+  }
+]

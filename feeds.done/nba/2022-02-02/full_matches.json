@@ -1,0 +1,209 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100773",
+      "HomeTeam": "indiana-pacers",
+      "AwayTeam": "orlando-magic",
+      "EventDate": "2022-02-03T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360592",
+      "HomeTeam": "indiana-pacers",
+      "AwayTeam": "orlando-magic",
+      "EventDate": "2022-02-03T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "orlando-magic-indiana-pacers-2022020211",
+      "HomeTeam": "indiana-pacers",
+      "AwayTeam": "orlando-magic",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100774",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2022-02-03T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360593",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2022-02-03T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "washington-wizards-philadelphia-76ers-2022020220",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100775",
+      "HomeTeam": "boston-celtics",
+      "AwayTeam": "charlotte-hornets",
+      "EventDate": "2022-02-03T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360594",
+      "HomeTeam": "boston-celtics",
+      "AwayTeam": "charlotte-hornets",
+      "EventDate": "2022-02-03T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "charlotte-hornets-boston-celtics-2022020202",
+      "HomeTeam": "boston-celtics",
+      "AwayTeam": "charlotte-hornets",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100776",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "memphis-grizzlies",
+      "EventDate": "2022-02-03T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360595",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "memphis-grizzlies",
+      "EventDate": "2022-02-03T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "memphis-grizzlies-new-york-knicks-2022020218",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "memphis-grizzlies",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100777",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2022-02-03T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360596",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2022-02-03T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "cleveland-cavaliers-houston-rockets-2022020210",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100778",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "oklahoma-city-thunder",
+      "EventDate": "2022-02-03T01:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360597",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "oklahoma-city-thunder",
+      "EventDate": "2022-02-03T01:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "oklahoma-city-thunder-dallas-mavericks-2022020206",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "oklahoma-city-thunder",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100779",
+      "HomeTeam": "utah-jazz",
+      "AwayTeam": "denver-nuggets",
+      "EventDate": "2022-02-03T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360598",
+      "HomeTeam": "utah-jazz",
+      "AwayTeam": "denver-nuggets",
+      "EventDate": "2022-02-03T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "denver-nuggets-utah-jazz-2022020226",
+      "HomeTeam": "utah-jazz",
+      "AwayTeam": "denver-nuggets",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100780",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2022-02-03T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360599",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2022-02-03T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "brooklyn-nets-sacramento-kings-2022020223",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100781",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-02-03T03:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360600",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-02-03T03:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "portland-trail-blazers-los-angeles-lakers-2022020213",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-02-02T00:00:00.000Z"
+    }
+  }
+]

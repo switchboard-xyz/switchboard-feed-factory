@@ -3,7 +3,7 @@
     "compilerOptions": {
       "module": "commonjs",
       "target": "ES2021",
-      "strict": false,
+      "strict": true,
       "noImplicitAny": false
     }
   },
@@ -17,7 +17,7 @@
     "checkJs": false,
     "sourceMap": true,
     "outDir": "bin",
-    "strict": false, // map.get() would return undefined
+    "strict": true,
     "resolveJsonModule": true,
     "noEmitOnError": true,
     "isolatedModules": true,

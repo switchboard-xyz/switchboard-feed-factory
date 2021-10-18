@@ -1,0 +1,16 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401358773",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-10-19T23:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401358774",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-10-20T02:00:00.000Z"
+  }
+]

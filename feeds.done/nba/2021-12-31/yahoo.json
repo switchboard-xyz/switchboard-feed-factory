@@ -1,0 +1,72 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "phoenix-suns-boston-celtics-2021123102",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "chicago-bulls-indiana-pacers-2021123111",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "dallas-mavericks-sacramento-kings-2021123123",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "miami-heat-houston-rockets-2021123110",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "atlanta-hawks-cleveland-cavaliers-2021123105",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-clippers-toronto-raptors-2021123128",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-oklahoma-city-thunder-2021123125",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-memphis-grizzlies-2021123129",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "minnesota-timberwolves-utah-jazz-2021123126",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "portland-trail-blazers-los-angeles-lakers-2021123113",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2021-12-31T00:00:00.000Z"
+  }
+]

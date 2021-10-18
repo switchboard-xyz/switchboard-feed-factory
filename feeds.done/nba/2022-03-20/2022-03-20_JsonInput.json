@@ -1,0 +1,65 @@
+[
+  {
+    "name": "PortlandTrailBlazers_at_IndianaPacers_2022-03-20",
+    "date": "2022-03-20T19:30:00.000Z",
+    "nbaId": "0022101062",
+    "yahooId": "portland-trail-blazers-indiana-pacers-2022032011",
+    "espnId": "401360881"
+  },
+  {
+    "name": "MemphisGrizzlies_at_HoustonRockets_2022-03-20",
+    "date": "2022-03-20T19:30:00.000Z",
+    "nbaId": "0022101063",
+    "yahooId": "memphis-grizzlies-houston-rockets-2022032010",
+    "espnId": "401360882"
+  },
+  {
+    "name": "NewOrleansPelicans_at_AtlantaHawks_2022-03-20",
+    "date": "2022-03-20T22:00:00.000Z",
+    "nbaId": "0022101064",
+    "yahooId": "new-orleans-pelicans-atlanta-hawks-2022032001",
+    "espnId": "401360883"
+  },
+  {
+    "name": "OklahomaCityThunder_at_OrlandoMagic_2022-03-20",
+    "date": "2022-03-20T22:00:00.000Z",
+    "nbaId": "0022101065",
+    "yahooId": "oklahoma-city-thunder-orlando-magic-2022032019",
+    "espnId": "401360884"
+  },
+  {
+    "name": "PhoenixSuns_at_SacramentoKings_2022-03-20",
+    "date": "2022-03-20T22:00:00.000Z",
+    "nbaId": "0022101066",
+    "yahooId": "phoenix-suns-sacramento-kings-2022032023",
+    "espnId": "401360885"
+  },
+  {
+    "name": "UtahJazz_at_NewYorkKnicks_2022-03-20",
+    "date": "2022-03-20T23:30:00.000Z",
+    "nbaId": "0022101067",
+    "yahooId": "utah-jazz-new-york-knicks-2022032018",
+    "espnId": "401360886"
+  },
+  {
+    "name": "BostonCeltics_at_DenverNuggets_2022-03-20",
+    "date": "2022-03-21T00:00:00.000Z",
+    "nbaId": "0022101068",
+    "yahooId": "boston-celtics-denver-nuggets-2022032007",
+    "espnId": "401360887"
+  },
+  {
+    "name": "TorontoRaptors_at_Philadelphia76ers_2022-03-20",
+    "date": "2022-03-21T00:30:00.000Z",
+    "nbaId": "0022101069",
+    "yahooId": "toronto-raptors-philadelphia-76ers-2022032020",
+    "espnId": "401360888"
+  },
+  {
+    "name": "SanAntonioSpurs_at_GoldenStateWarriors_2022-03-20",
+    "date": "2022-03-21T00:30:00.000Z",
+    "nbaId": "0022101070",
+    "yahooId": "san-antonio-spurs-golden-state-warriors-2022032009",
+    "espnId": "401360889"
+  }
+]

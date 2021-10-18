@@ -1,0 +1,86 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101178",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2022-04-05T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101179",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2022-04-05T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101180",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2022-04-05T23:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101181",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "charlotte-hornets",
+    "EventDate": "2022-04-05T23:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101182",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2022-04-05T23:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101183",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2022-04-06T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101184",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2022-04-06T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101185",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2022-04-06T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101186",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-04-06T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101187",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-04-06T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101188",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2022-04-06T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101189",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-04-06T02:30:00.000Z"
+  }
+]

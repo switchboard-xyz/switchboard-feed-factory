@@ -1,0 +1,163 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100968",
+      "HomeTeam": "detroit-pistons",
+      "AwayTeam": "atlanta-hawks",
+      "EventDate": "2022-03-08T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360787",
+      "HomeTeam": "detroit-pistons",
+      "AwayTeam": "atlanta-hawks",
+      "EventDate": "2022-03-08T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "atlanta-hawks-detroit-pistons-2022030708",
+      "HomeTeam": "detroit-pistons",
+      "AwayTeam": "atlanta-hawks",
+      "EventDate": "2022-03-07T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100969",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "chicago-bulls",
+      "EventDate": "2022-03-08T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360788",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "chicago-bulls",
+      "EventDate": "2022-03-08T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "chicago-bulls-philadelphia-76ers-2022030720",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "chicago-bulls",
+      "EventDate": "2022-03-07T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100970",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "houston-rockets",
+      "EventDate": "2022-03-08T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360789",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "houston-rockets",
+      "EventDate": "2022-03-08T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "houston-rockets-miami-heat-2022030714",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "houston-rockets",
+      "EventDate": "2022-03-07T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100971",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-03-08T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360790",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-03-08T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "portland-trail-blazers-minnesota-timberwolves-2022030716",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-03-07T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100972",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "utah-jazz",
+      "EventDate": "2022-03-08T01:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360791",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "utah-jazz",
+      "EventDate": "2022-03-08T01:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "utah-jazz-dallas-mavericks-2022030706",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "utah-jazz",
+      "EventDate": "2022-03-07T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100973",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "los-angeles-lakers",
+      "EventDate": "2022-03-08T01:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360792",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "los-angeles-lakers",
+      "EventDate": "2022-03-08T01:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "los-angeles-lakers-san-antonio-spurs-2022030724",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "los-angeles-lakers",
+      "EventDate": "2022-03-07T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100974",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2022-03-08T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360793",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2022-03-08T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "new-york-knicks-sacramento-kings-2022030723",
+      "HomeTeam": "sacramento-kings",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2022-03-07T00:00:00.000Z"
+    }
+  }
+]

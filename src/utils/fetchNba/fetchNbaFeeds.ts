@@ -209,7 +209,7 @@ export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
       nbaCount
     )} NBA / ${chalk.yellow(espnCount)} ESPN / ${chalk.yellow(
       yahooCount
-    )} / Yahoo ]`
+    )} Yahoo ]`
   );
   return eventMatches;
 }

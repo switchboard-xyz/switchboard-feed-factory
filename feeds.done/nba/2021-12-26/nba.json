@@ -1,0 +1,58 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100493",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-12-26T20:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100494",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2021-12-26T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100495",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2021-12-26T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100496",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2021-12-26T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100497",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2021-12-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100498",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2021-12-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100499",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2021-12-27T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100500",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2021-12-27T02:00:00.000Z"
+  }
+]

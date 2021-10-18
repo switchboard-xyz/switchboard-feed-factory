@@ -1,0 +1,94 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100349",
+      "HomeTeam": "cleveland-cavaliers",
+      "AwayTeam": "utah-jazz",
+      "EventDate": "2021-12-05T20:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360173",
+      "HomeTeam": "cleveland-cavaliers",
+      "AwayTeam": "utah-jazz",
+      "EventDate": "2021-12-05T20:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "utah-jazz-cleveland-cavaliers-2021120505",
+      "HomeTeam": "cleveland-cavaliers",
+      "AwayTeam": "utah-jazz",
+      "EventDate": "2021-12-05T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100350",
+      "HomeTeam": "atlanta-hawks",
+      "AwayTeam": "charlotte-hornets",
+      "EventDate": "2021-12-05T23:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360174",
+      "HomeTeam": "atlanta-hawks",
+      "AwayTeam": "charlotte-hornets",
+      "EventDate": "2021-12-05T23:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "charlotte-hornets-atlanta-hawks-2021120501",
+      "HomeTeam": "atlanta-hawks",
+      "AwayTeam": "charlotte-hornets",
+      "EventDate": "2021-12-05T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100351",
+      "HomeTeam": "toronto-raptors",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2021-12-05T23:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360175",
+      "HomeTeam": "toronto-raptors",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2021-12-05T23:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "washington-wizards-toronto-raptors-2021120528",
+      "HomeTeam": "toronto-raptors",
+      "AwayTeam": "washington-wizards",
+      "EventDate": "2021-12-05T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100352",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2021-12-06T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360176",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2021-12-06T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "new-orleans-pelicans-houston-rockets-2021120510",
+      "HomeTeam": "houston-rockets",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2021-12-05T00:00:00.000Z"
+    }
+  }
+]

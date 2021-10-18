@@ -1,0 +1,79 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360517",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-01-23T18:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360518",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2022-01-23T20:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360519",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-01-23T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360520",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2022-01-23T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360521",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2022-01-23T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360522",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2022-01-24T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360523",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2022-01-24T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360524",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-01-24T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360525",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2022-01-24T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360526",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2022-01-24T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360527",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2022-01-24T01:30:00.000Z"
+  }
+]

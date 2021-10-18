@@ -1,0 +1,107 @@
+[
+  {
+    "name": "IndianaPacers_at_BrooklynNets_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101216",
+    "yahooId": "indiana-pacers-brooklyn-nets-2022041017",
+    "espnId": "401361035"
+  },
+  {
+    "name": "WashingtonWizards_at_CharlotteHornets_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101217",
+    "yahooId": "washington-wizards-charlotte-hornets-2022041030",
+    "espnId": "401361036"
+  },
+  {
+    "name": "MilwaukeeBucks_at_ClevelandCavaliers_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101218",
+    "yahooId": "milwaukee-bucks-cleveland-cavaliers-2022041005",
+    "espnId": "401361037"
+  },
+  {
+    "name": "SanAntonioSpurs_at_DallasMavericks_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101219",
+    "yahooId": "san-antonio-spurs-dallas-mavericks-2022041006",
+    "espnId": "401361038"
+  },
+  {
+    "name": "LosAngelesLakers_at_DenverNuggets_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101220",
+    "yahooId": "los-angeles-lakers-denver-nuggets-2022041007",
+    "espnId": "401361039"
+  },
+  {
+    "name": "AtlantaHawks_at_HoustonRockets_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101221",
+    "yahooId": "atlanta-hawks-houston-rockets-2022041010",
+    "espnId": "401361040"
+  },
+  {
+    "name": "OklahomaCityThunder_at_LosAngelesClippers_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101222",
+    "yahooId": "oklahoma-city-thunder-los-angeles-clippers-2022041012",
+    "espnId": "401361041"
+  },
+  {
+    "name": "BostonCeltics_at_MemphisGrizzlies_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101223",
+    "yahooId": "boston-celtics-memphis-grizzlies-2022041029",
+    "espnId": "401361042"
+  },
+  {
+    "name": "ChicagoBulls_at_MinnesotaTimberwolves_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101224",
+    "yahooId": "chicago-bulls-minnesota-timberwolves-2022041016",
+    "espnId": "401361043"
+  },
+  {
+    "name": "GoldenStateWarriors_at_NewOrleansPelicans_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101225",
+    "yahooId": "golden-state-warriors-new-orleans-pelicans-2022041003",
+    "espnId": "401361044"
+  },
+  {
+    "name": "TorontoRaptors_at_NewYorkKnicks_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101226",
+    "yahooId": "toronto-raptors-new-york-knicks-2022041018",
+    "espnId": "401361045"
+  },
+  {
+    "name": "MiamiHeat_at_OrlandoMagic_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101227",
+    "yahooId": "miami-heat-orlando-magic-2022041019",
+    "espnId": "401361046"
+  },
+  {
+    "name": "DetroitPistons_at_Philadelphia76ers_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101228",
+    "yahooId": "detroit-pistons-philadelphia-76ers-2022041020",
+    "espnId": "401361047"
+  },
+  {
+    "name": "SacramentoKings_at_PhoenixSuns_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101229",
+    "yahooId": "sacramento-kings-phoenix-suns-2022041021",
+    "espnId": "401361048"
+  },
+  {
+    "name": "UtahJazz_at_PortlandTrailBlazers_2022-04-09",
+    "date": "2022-04-10T00:00:00.000Z",
+    "nbaId": "0022101230",
+    "yahooId": "utah-jazz-portland-trail-blazers-2022041022",
+    "espnId": "401361049"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "memphis-grizzlies-cleveland-cavaliers-2022010405",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-01-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-toronto-raptors-2022010428",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-01-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "indiana-pacers-new-york-knicks-2022010418",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2022-01-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "phoenix-suns-new-orleans-pelicans-2022010403",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2022-01-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "sacramento-kings-los-angeles-lakers-2022010413",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-01-04T00:00:00.000Z"
+  }
+]

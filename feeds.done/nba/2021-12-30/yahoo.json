@@ -1,0 +1,30 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "philadelphia-76ers-brooklyn-nets-2021123017",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2021-12-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "milwaukee-bucks-orlando-magic-2021123019",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2021-12-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "cleveland-cavaliers-washington-wizards-2021123027",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-12-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-denver-nuggets-2021123007",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-12-30T00:00:00.000Z"
+  }
+]

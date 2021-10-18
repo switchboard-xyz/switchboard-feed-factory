@@ -1,0 +1,94 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100525",
+      "HomeTeam": "brooklyn-nets",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2021-12-31T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360344",
+      "HomeTeam": "brooklyn-nets",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2021-12-31T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "philadelphia-76ers-brooklyn-nets-2021123017",
+      "HomeTeam": "brooklyn-nets",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2021-12-30T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100526",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "milwaukee-bucks",
+      "EventDate": "2021-12-31T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360345",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "milwaukee-bucks",
+      "EventDate": "2021-12-31T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "milwaukee-bucks-orlando-magic-2021123019",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "milwaukee-bucks",
+      "EventDate": "2021-12-30T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100527",
+      "HomeTeam": "washington-wizards",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2021-12-31T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360346",
+      "HomeTeam": "washington-wizards",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2021-12-31T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "cleveland-cavaliers-washington-wizards-2021123027",
+      "HomeTeam": "washington-wizards",
+      "AwayTeam": "cleveland-cavaliers",
+      "EventDate": "2021-12-30T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100528",
+      "HomeTeam": "denver-nuggets",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2021-12-31T02:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360347",
+      "HomeTeam": "denver-nuggets",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2021-12-31T02:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "golden-state-warriors-denver-nuggets-2021123007",
+      "HomeTeam": "denver-nuggets",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2021-12-30T00:00:00.000Z"
+    }
+  }
+]

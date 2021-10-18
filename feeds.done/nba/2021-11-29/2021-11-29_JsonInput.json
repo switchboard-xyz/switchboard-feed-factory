@@ -1,0 +1,65 @@
+[
+  {
+    "name": "OrlandoMagic_at_Philadelphia76ers_2021-11-29",
+    "date": "2021-11-30T00:00:00.000Z",
+    "nbaId": "0022100305",
+    "yahooId": "orlando-magic-philadelphia-76ers-2021112920",
+    "espnId": "401360129"
+  },
+  {
+    "name": "DenverNuggets_at_MiamiHeat_2021-11-29",
+    "date": "2021-11-30T00:30:00.000Z",
+    "nbaId": "0022100306",
+    "yahooId": "denver-nuggets-miami-heat-2021112914",
+    "espnId": "401360130"
+  },
+  {
+    "name": "CharlotteHornets_at_ChicagoBulls_2021-11-29",
+    "date": "2021-11-30T01:00:00.000Z",
+    "nbaId": "0022100307",
+    "yahooId": "charlotte-hornets-chicago-bulls-2021112904",
+    "espnId": "401360131"
+  },
+  {
+    "name": "OklahomaCityThunder_at_HoustonRockets_2021-11-29",
+    "date": "2021-11-30T01:00:00.000Z",
+    "nbaId": "0022100308",
+    "yahooId": "oklahoma-city-thunder-houston-rockets-2021112910",
+    "espnId": "401360132"
+  },
+  {
+    "name": "IndianaPacers_at_MinnesotaTimberwolves_2021-11-29",
+    "date": "2021-11-30T01:00:00.000Z",
+    "nbaId": "0022100309",
+    "yahooId": "indiana-pacers-minnesota-timberwolves-2021112916",
+    "espnId": "401360133"
+  },
+  {
+    "name": "ClevelandCavaliers_at_DallasMavericks_2021-11-29",
+    "date": "2021-11-30T01:30:00.000Z",
+    "nbaId": "0022100310",
+    "yahooId": "cleveland-cavaliers-dallas-mavericks-2021112906",
+    "espnId": "401360134"
+  },
+  {
+    "name": "WashingtonWizards_at_SanAntonioSpurs_2021-11-29",
+    "date": "2021-11-30T01:30:00.000Z",
+    "nbaId": "0022100311",
+    "yahooId": "washington-wizards-san-antonio-spurs-2021112924",
+    "espnId": "401360135"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_UtahJazz_2021-11-29",
+    "date": "2021-11-30T02:00:00.000Z",
+    "nbaId": "0022100312",
+    "yahooId": "portland-trail-blazers-utah-jazz-2021112926",
+    "espnId": "401360136"
+  },
+  {
+    "name": "NewOrleansPelicans_at_LosAngelesClippers_2021-11-29",
+    "date": "2021-11-30T03:30:00.000Z",
+    "nbaId": "0022100313",
+    "yahooId": "new-orleans-pelicans-los-angeles-clippers-2021112912",
+    "espnId": "401360137"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "AtlantaHawks_at_ClevelandCavaliers_2021-10-23",
+    "date": "2021-10-23T22:00:00.000Z",
+    "nbaId": "0022100027",
+    "yahooId": "atlanta-hawks-cleveland-cavaliers-2021102305",
+    "espnId": "401359851"
+  },
+  {
+    "name": "MiamiHeat_at_IndianaPacers_2021-10-23",
+    "date": "2021-10-23T23:00:00.000Z",
+    "nbaId": "0022100028",
+    "yahooId": "miami-heat-indiana-pacers-2021102311",
+    "espnId": "401359852"
+  },
+  {
+    "name": "DallasMavericks_at_TorontoRaptors_2021-10-23",
+    "date": "2021-10-23T23:30:00.000Z",
+    "nbaId": "0022100029",
+    "yahooId": "dallas-mavericks-toronto-raptors-2021102328",
+    "espnId": "401359853"
+  },
+  {
+    "name": "DetroitPistons_at_ChicagoBulls_2021-10-23",
+    "date": "2021-10-24T00:00:00.000Z",
+    "nbaId": "0022100030",
+    "yahooId": "detroit-pistons-chicago-bulls-2021102304",
+    "espnId": "401359854"
+  },
+  {
+    "name": "NewOrleansPelicans_at_MinnesotaTimberwolves_2021-10-23",
+    "date": "2021-10-24T00:00:00.000Z",
+    "nbaId": "0022100031",
+    "yahooId": "new-orleans-pelicans-minnesota-timberwolves-2021102316",
+    "espnId": "401359855"
+  },
+  {
+    "name": "MilwaukeeBucks_at_SanAntonioSpurs_2021-10-23",
+    "date": "2021-10-24T00:30:00.000Z",
+    "nbaId": "0022100032",
+    "yahooId": "milwaukee-bucks-san-antonio-spurs-2021102324",
+    "espnId": "401359856"
+  },
+  {
+    "name": "PhoenixSuns_at_PortlandTrailBlazers_2021-10-23",
+    "date": "2021-10-24T02:00:00.000Z",
+    "nbaId": "0022100033",
+    "yahooId": "phoenix-suns-portland-trail-blazers-2021102322",
+    "espnId": "401359857"
+  },
+  {
+    "name": "MemphisGrizzlies_at_LosAngelesClippers_2021-10-23",
+    "date": "2021-10-24T02:30:00.000Z",
+    "nbaId": "0022100034",
+    "yahooId": "memphis-grizzlies-los-angeles-clippers-2021102312",
+    "espnId": "401359858"
+  }
+]

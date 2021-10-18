@@ -1,0 +1,79 @@
+[
+  {
+    "name": "BostonCeltics_at_WashingtonWizards_2021-10-30",
+    "date": "2021-10-30T21:00:00.000Z",
+    "nbaId": "0022100078",
+    "yahooId": "boston-celtics-washington-wizards-2021103027",
+    "espnId": "401359902"
+  },
+  {
+    "name": "OrlandoMagic_at_DetroitPistons_2021-10-30",
+    "date": "2021-10-30T23:00:00.000Z",
+    "nbaId": "0022100079",
+    "yahooId": "orlando-magic-detroit-pistons-2021103008",
+    "espnId": "401359903"
+  },
+  {
+    "name": "NewYorkKnicks_at_NewOrleansPelicans_2021-10-30",
+    "date": "2021-10-30T23:00:00.000Z",
+    "nbaId": "0022100080",
+    "yahooId": "new-york-knicks-new-orleans-pelicans-2021103003",
+    "espnId": "401359904"
+  },
+  {
+    "name": "TorontoRaptors_at_IndianaPacers_2021-10-30",
+    "date": "2021-10-30T23:30:00.000Z",
+    "nbaId": "0022100081",
+    "yahooId": "toronto-raptors-indiana-pacers-2021103011",
+    "espnId": "401359905"
+  },
+  {
+    "name": "AtlantaHawks_at_Philadelphia76ers_2021-10-30",
+    "date": "2021-10-30T23:30:00.000Z",
+    "nbaId": "0022100082",
+    "yahooId": "atlanta-hawks-philadelphia-76ers-2021103020",
+    "espnId": "401359906"
+  },
+  {
+    "name": "UtahJazz_at_ChicagoBulls_2021-10-30",
+    "date": "2021-10-31T00:00:00.000Z",
+    "nbaId": "0022100083",
+    "yahooId": "utah-jazz-chicago-bulls-2021103004",
+    "espnId": "401359907"
+  },
+  {
+    "name": "MiamiHeat_at_MemphisGrizzlies_2021-10-30",
+    "date": "2021-10-31T00:00:00.000Z",
+    "nbaId": "0022100084",
+    "yahooId": "miami-heat-memphis-grizzlies-2021103029",
+    "espnId": "401359908"
+  },
+  {
+    "name": "SanAntonioSpurs_at_MilwaukeeBucks_2021-10-30",
+    "date": "2021-10-31T00:00:00.000Z",
+    "nbaId": "0022100085",
+    "yahooId": "san-antonio-spurs-milwaukee-bucks-2021103015",
+    "espnId": "401359909"
+  },
+  {
+    "name": "OklahomaCityThunder_at_GoldenStateWarriors_2021-10-30",
+    "date": "2021-10-31T00:30:00.000Z",
+    "nbaId": "0022100086",
+    "yahooId": "oklahoma-city-thunder-golden-state-warriors-2021103009",
+    "espnId": "401359910"
+  },
+  {
+    "name": "DenverNuggets_at_MinnesotaTimberwolves_2021-10-30",
+    "date": "2021-10-31T01:00:00.000Z",
+    "nbaId": "0022100087",
+    "yahooId": "denver-nuggets-minnesota-timberwolves-2021103016",
+    "espnId": "401359911"
+  },
+  {
+    "name": "ClevelandCavaliers_at_PhoenixSuns_2021-10-30",
+    "date": "2021-10-31T02:00:00.000Z",
+    "nbaId": "0022100088",
+    "yahooId": "cleveland-cavaliers-phoenix-suns-2021103021",
+    "espnId": "401359912"
+  }
+]

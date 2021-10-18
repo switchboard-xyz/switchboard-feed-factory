@@ -1,0 +1,44 @@
+[
+  {
+    "name": "CharlotteHornets_at_BrooklynNets_2021-10-24",
+    "date": "2021-10-24T20:00:00.000Z",
+    "nbaId": "0022100035",
+    "yahooId": "charlotte-hornets-brooklyn-nets-2021102417",
+    "espnId": "401359859"
+  },
+  {
+    "name": "OrlandoMagic_at_NewYorkKnicks_2021-10-24",
+    "date": "2021-10-24T23:00:00.000Z",
+    "nbaId": "0022100036",
+    "yahooId": "orlando-magic-new-york-knicks-2021102418",
+    "espnId": "401359860"
+  },
+  {
+    "name": "BostonCeltics_at_HoustonRockets_2021-10-24",
+    "date": "2021-10-24T23:00:00.000Z",
+    "nbaId": "0022100037",
+    "yahooId": "boston-celtics-houston-rockets-2021102410",
+    "espnId": "401359861"
+  },
+  {
+    "name": "Philadelphia76ers_at_OklahomaCityThunder_2021-10-24",
+    "date": "2021-10-24T23:00:00.000Z",
+    "nbaId": "0022100038",
+    "yahooId": "philadelphia-76ers-oklahoma-city-thunder-2021102425",
+    "espnId": "401359862"
+  },
+  {
+    "name": "GoldenStateWarriors_at_SacramentoKings_2021-10-24",
+    "date": "2021-10-25T01:00:00.000Z",
+    "nbaId": "0022100039",
+    "yahooId": "golden-state-warriors-sacramento-kings-2021102423",
+    "espnId": "401359863"
+  },
+  {
+    "name": "MemphisGrizzlies_at_LosAngelesLakers_2021-10-24",
+    "date": "2021-10-25T01:30:00.000Z",
+    "nbaId": "0022100040",
+    "yahooId": "memphis-grizzlies-los-angeles-lakers-2021102413",
+    "espnId": "401359864"
+  }
+]

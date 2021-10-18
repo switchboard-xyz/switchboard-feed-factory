@@ -1,0 +1,23 @@
+[
+  {
+    "name": "TorontoRaptors_at_Philadelphia76ers_2021-11-11",
+    "date": "2021-11-12T00:00:00.000Z",
+    "nbaId": "0022100171",
+    "yahooId": "toronto-raptors-philadelphia-76ers-2021111120",
+    "espnId": "401359995"
+  },
+  {
+    "name": "IndianaPacers_at_UtahJazz_2021-11-11",
+    "date": "2021-11-12T02:00:00.000Z",
+    "nbaId": "0022100172",
+    "yahooId": "indiana-pacers-utah-jazz-2021111126",
+    "espnId": "401359996"
+  },
+  {
+    "name": "MiamiHeat_at_LosAngelesClippers_2021-11-11",
+    "date": "2021-11-12T03:30:00.000Z",
+    "nbaId": "0022100173",
+    "yahooId": "miami-heat-los-angeles-clippers-2021111112",
+    "espnId": "401359997"
+  }
+]

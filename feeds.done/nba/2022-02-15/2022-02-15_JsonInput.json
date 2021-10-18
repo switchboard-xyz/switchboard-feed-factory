@@ -1,0 +1,51 @@
+[
+  {
+    "name": "ClevelandCavaliers_at_AtlantaHawks_2022-02-15",
+    "date": "2022-02-16T00:30:00.000Z",
+    "nbaId": "0022100867",
+    "yahooId": "cleveland-cavaliers-atlanta-hawks-2022021501",
+    "espnId": "401360686"
+  },
+  {
+    "name": "DallasMavericks_at_MiamiHeat_2022-02-15",
+    "date": "2022-02-16T00:30:00.000Z",
+    "nbaId": "0022100868",
+    "yahooId": "dallas-mavericks-miami-heat-2022021514",
+    "espnId": "401360687"
+  },
+  {
+    "name": "BostonCeltics_at_Philadelphia76ers_2022-02-15",
+    "date": "2022-02-16T00:30:00.000Z",
+    "nbaId": "0022100869",
+    "yahooId": "boston-celtics-philadelphia-76ers-2022021520",
+    "espnId": "401360688"
+  },
+  {
+    "name": "IndianaPacers_at_MilwaukeeBucks_2022-02-15",
+    "date": "2022-02-16T01:00:00.000Z",
+    "nbaId": "0022100870",
+    "yahooId": "indiana-pacers-milwaukee-bucks-2022021515",
+    "espnId": "401360689"
+  },
+  {
+    "name": "CharlotteHornets_at_MinnesotaTimberwolves_2022-02-15",
+    "date": "2022-02-16T01:00:00.000Z",
+    "nbaId": "0022100871",
+    "yahooId": "charlotte-hornets-minnesota-timberwolves-2022021516",
+    "espnId": "401360690"
+  },
+  {
+    "name": "MemphisGrizzlies_at_NewOrleansPelicans_2022-02-15",
+    "date": "2022-02-16T01:00:00.000Z",
+    "nbaId": "0022100872",
+    "yahooId": "memphis-grizzlies-new-orleans-pelicans-2022021503",
+    "espnId": "401360691"
+  },
+  {
+    "name": "LosAngelesClippers_at_PhoenixSuns_2022-02-15",
+    "date": "2022-02-16T03:00:00.000Z",
+    "nbaId": "0022100873",
+    "yahooId": "los-angeles-clippers-phoenix-suns-2022021521",
+    "espnId": "401360692"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101107",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-03-26T21:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101108",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-03-26T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101109",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2022-03-26T23:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101110",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2022-03-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101111",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2022-03-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101112",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2022-03-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101113",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-03-27T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101114",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2022-03-27T02:00:00.000Z"
+  }
+]

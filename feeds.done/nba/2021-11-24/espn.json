@@ -1,0 +1,93 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360091",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2021-11-25T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360092",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2021-11-25T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360093",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "charlotte-hornets",
+    "EventDate": "2021-11-25T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360094",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-11-25T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360095",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2021-11-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360096",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2021-11-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360097",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2021-11-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360098",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2021-11-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360099",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2021-11-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360100",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2021-11-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360101",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2021-11-25T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360102",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2021-11-25T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360103",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2021-11-25T03:00:00.000Z"
+  }
+]

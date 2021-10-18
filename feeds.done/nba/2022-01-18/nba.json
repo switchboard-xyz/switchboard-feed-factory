@@ -1,0 +1,16 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100666",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-01-19T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100667",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2022-01-19T03:00:00.000Z"
+  }
+]

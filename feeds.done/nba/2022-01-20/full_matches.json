@@ -1,0 +1,71 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100681",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2022-01-21T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360500",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2022-01-21T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "new-orleans-pelicans-new-york-knicks-2022012018",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2022-01-20T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100682",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2022-01-21T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360501",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2022-01-21T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "phoenix-suns-dallas-mavericks-2022012006",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2022-01-20T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100683",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "indiana-pacers",
+      "EventDate": "2022-01-21T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360502",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "indiana-pacers",
+      "EventDate": "2022-01-21T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "indiana-pacers-golden-state-warriors-2022012009",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "indiana-pacers",
+      "EventDate": "2022-01-20T00:00:00.000Z"
+    }
+  }
+]

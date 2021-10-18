@@ -1,0 +1,23 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "dallas-mavericks-atlanta-hawks-2021102101",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-10-21T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "milwaukee-bucks-miami-heat-2021102114",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2021-10-21T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-clippers-golden-state-warriors-2021102109",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2021-10-21T00:00:00.000Z"
+  }
+]

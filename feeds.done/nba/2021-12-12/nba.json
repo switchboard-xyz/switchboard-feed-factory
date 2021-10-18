@@ -1,0 +1,44 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100398",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2021-12-12T17:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100399",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-12-12T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100400",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-12-13T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100401",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2021-12-13T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100402",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2021-12-13T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100403",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-12-13T02:30:00.000Z"
+  }
+]

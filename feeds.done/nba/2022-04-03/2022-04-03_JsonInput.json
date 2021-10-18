@@ -1,0 +1,86 @@
+[
+  {
+    "name": "WashingtonWizards_at_BostonCeltics_2022-04-03",
+    "date": "2022-04-03T17:00:00.000Z",
+    "nbaId": "0022101166",
+    "yahooId": "washington-wizards-boston-celtics-2022040302",
+    "espnId": "401360985"
+  },
+  {
+    "name": "DallasMavericks_at_MilwaukeeBucks_2022-04-03",
+    "date": "2022-04-03T17:00:00.000Z",
+    "nbaId": "0022101167",
+    "yahooId": "dallas-mavericks-milwaukee-bucks-2022040315",
+    "espnId": "401360986"
+  },
+  {
+    "name": "DenverNuggets_at_LosAngelesLakers_2022-04-03",
+    "date": "2022-04-03T19:30:00.000Z",
+    "nbaId": "0022101168",
+    "yahooId": "denver-nuggets-los-angeles-lakers-2022040313",
+    "espnId": "401360987"
+  },
+  {
+    "name": "DetroitPistons_at_IndianaPacers_2022-04-03",
+    "date": "2022-04-03T21:00:00.000Z",
+    "nbaId": "0022101169",
+    "yahooId": "detroit-pistons-indiana-pacers-2022040311",
+    "espnId": "401360988"
+  },
+  {
+    "name": "Philadelphia76ers_at_ClevelandCavaliers_2022-04-03",
+    "date": "2022-04-03T22:00:00.000Z",
+    "nbaId": "0022101170",
+    "yahooId": "philadelphia-76ers-cleveland-cavaliers-2022040305",
+    "espnId": "401360989"
+  },
+  {
+    "name": "NewYorkKnicks_at_OrlandoMagic_2022-04-03",
+    "date": "2022-04-03T22:00:00.000Z",
+    "nbaId": "0022101171",
+    "yahooId": "new-york-knicks-orlando-magic-2022040319",
+    "espnId": "401360990"
+  },
+  {
+    "name": "MiamiHeat_at_TorontoRaptors_2022-04-03",
+    "date": "2022-04-03T23:00:00.000Z",
+    "nbaId": "0022101172",
+    "yahooId": "miami-heat-toronto-raptors-2022040328",
+    "espnId": "401360991"
+  },
+  {
+    "name": "MinnesotaTimberwolves_at_HoustonRockets_2022-04-03",
+    "date": "2022-04-03T23:00:00.000Z",
+    "nbaId": "0022101173",
+    "yahooId": "minnesota-timberwolves-houston-rockets-2022040310",
+    "espnId": "401360992"
+  },
+  {
+    "name": "PhoenixSuns_at_OklahomaCityThunder_2022-04-03",
+    "date": "2022-04-03T23:00:00.000Z",
+    "nbaId": "0022101174",
+    "yahooId": "phoenix-suns-oklahoma-city-thunder-2022040325",
+    "espnId": "401360993"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_SanAntonioSpurs_2022-04-03",
+    "date": "2022-04-03T23:00:00.000Z",
+    "nbaId": "0022101175",
+    "yahooId": "portland-trail-blazers-san-antonio-spurs-2022040324",
+    "espnId": "401360994"
+  },
+  {
+    "name": "GoldenStateWarriors_at_SacramentoKings_2022-04-03",
+    "date": "2022-04-04T01:00:00.000Z",
+    "nbaId": "0022101176",
+    "yahooId": "golden-state-warriors-sacramento-kings-2022040323",
+    "espnId": "401360995"
+  },
+  {
+    "name": "NewOrleansPelicans_at_LosAngelesClippers_2022-04-03",
+    "date": "2022-04-04T01:30:00.000Z",
+    "nbaId": "0022101177",
+    "yahooId": "new-orleans-pelicans-los-angeles-clippers-2022040312",
+    "espnId": "401360996"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "chicago-bulls-detroit-pistons-2022030908",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "boston-celtics-charlotte-hornets-2022030930",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "phoenix-suns-miami-heat-2022030914",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "atlanta-hawks-milwaukee-bucks-2022030915",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "orlando-magic-new-orleans-pelicans-2022030903",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-lakers-houston-rockets-2022030910",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-minnesota-timberwolves-2022030916",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-dallas-mavericks-2022030906",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-san-antonio-spurs-2022030924",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "denver-nuggets-sacramento-kings-2022030923",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "portland-trail-blazers-utah-jazz-2022030926",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "washington-wizards-los-angeles-clippers-2022030912",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2022-03-09T00:00:00.000Z"
+  }
+]

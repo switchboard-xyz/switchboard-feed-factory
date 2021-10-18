@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100382",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2021-12-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100383",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-12-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100384",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-12-11T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100385",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2021-12-11T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100386",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2021-12-11T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100387",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-12-11T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100388",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2021-12-11T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100389",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2021-12-11T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100390",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-12-11T03:00:00.000Z"
+  }
+]

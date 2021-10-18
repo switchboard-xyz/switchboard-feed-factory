@@ -1,0 +1,72 @@
+[
+  {
+    "name": "BrooklynNets_at_ClevelandCavaliers_2021-11-22",
+    "date": "2021-11-23T00:00:00.000Z",
+    "nbaId": "0022100253",
+    "yahooId": "brooklyn-nets-cleveland-cavaliers-2021112205",
+    "espnId": "401360077"
+  },
+  {
+    "name": "CharlotteHornets_at_WashingtonWizards_2021-11-22",
+    "date": "2021-11-23T00:00:00.000Z",
+    "nbaId": "0022100254",
+    "yahooId": "charlotte-hornets-washington-wizards-2021112227",
+    "espnId": "401360078"
+  },
+  {
+    "name": "OklahomaCityThunder_at_AtlantaHawks_2021-11-22",
+    "date": "2021-11-23T00:30:00.000Z",
+    "nbaId": "0022100255",
+    "yahooId": "oklahoma-city-thunder-atlanta-hawks-2021112201",
+    "espnId": "401360079"
+  },
+  {
+    "name": "HoustonRockets_at_BostonCeltics_2021-11-22",
+    "date": "2021-11-23T00:30:00.000Z",
+    "nbaId": "0022100256",
+    "yahooId": "houston-rockets-boston-celtics-2021112202",
+    "espnId": "401360080"
+  },
+  {
+    "name": "IndianaPacers_at_ChicagoBulls_2021-11-22",
+    "date": "2021-11-23T01:00:00.000Z",
+    "nbaId": "0022100257",
+    "yahooId": "indiana-pacers-chicago-bulls-2021112204",
+    "espnId": "401360081"
+  },
+  {
+    "name": "OrlandoMagic_at_MilwaukeeBucks_2021-11-22",
+    "date": "2021-11-23T01:00:00.000Z",
+    "nbaId": "0022100258",
+    "yahooId": "orlando-magic-milwaukee-bucks-2021112215",
+    "espnId": "401360082"
+  },
+  {
+    "name": "MinnesotaTimberwolves_at_NewOrleansPelicans_2021-11-22",
+    "date": "2021-11-23T01:00:00.000Z",
+    "nbaId": "0022100259",
+    "yahooId": "minnesota-timberwolves-new-orleans-pelicans-2021112203",
+    "espnId": "401360083"
+  },
+  {
+    "name": "PhoenixSuns_at_SanAntonioSpurs_2021-11-22",
+    "date": "2021-11-23T01:30:00.000Z",
+    "nbaId": "0022100260",
+    "yahooId": "phoenix-suns-san-antonio-spurs-2021112224",
+    "espnId": "401360084"
+  },
+  {
+    "name": "MemphisGrizzlies_at_UtahJazz_2021-11-22",
+    "date": "2021-11-23T02:00:00.000Z",
+    "nbaId": "0022100261",
+    "yahooId": "memphis-grizzlies-utah-jazz-2021112226",
+    "espnId": "401360085"
+  },
+  {
+    "name": "Philadelphia76ers_at_SacramentoKings_2021-11-22",
+    "date": "2021-11-23T03:00:00.000Z",
+    "nbaId": "0022100262",
+    "yahooId": "philadelphia-76ers-sacramento-kings-2021112223",
+    "espnId": "401360086"
+  }
+]

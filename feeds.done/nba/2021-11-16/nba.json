@@ -1,0 +1,23 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100210",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-11-17T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100211",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2021-11-17T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100212",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2021-11-17T03:30:00.000Z"
+  }
+]

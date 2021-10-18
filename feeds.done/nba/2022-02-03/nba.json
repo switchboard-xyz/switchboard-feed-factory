@@ -1,0 +1,37 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100782",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-02-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100783",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2022-02-04T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100784",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2022-02-04T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100785",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-02-04T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100786",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-02-04T03:00:00.000Z"
+  }
+]

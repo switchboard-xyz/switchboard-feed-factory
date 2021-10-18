@@ -1,0 +1,23 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "brooklyn-nets-dallas-mavericks-2021120706",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-12-07T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-san-antonio-spurs-2021120724",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2021-12-07T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "boston-celtics-los-angeles-lakers-2021120713",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-12-07T00:00:00.000Z"
+  }
+]

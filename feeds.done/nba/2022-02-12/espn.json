@@ -1,0 +1,79 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360664",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2022-02-12T22:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360665",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-02-13T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360666",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-02-13T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360667",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-02-13T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360668",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2022-02-13T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360669",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2022-02-13T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360670",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2022-02-13T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360671",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-02-13T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360672",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-02-13T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360673",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-02-13T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360674",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2022-02-13T02:00:00.000Z"
+  }
+]

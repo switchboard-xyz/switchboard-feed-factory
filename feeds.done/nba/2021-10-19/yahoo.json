@@ -1,0 +1,16 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "brooklyn-nets-milwaukee-bucks-2021101915",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-10-19T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-los-angeles-lakers-2021101913",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-10-19T00:00:00.000Z"
+  }
+]

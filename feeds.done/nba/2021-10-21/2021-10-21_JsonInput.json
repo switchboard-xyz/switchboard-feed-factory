@@ -1,0 +1,23 @@
+[
+  {
+    "name": "DallasMavericks_at_AtlantaHawks_2021-10-21",
+    "date": "2021-10-21T23:30:00.000Z",
+    "nbaId": "0022100014",
+    "yahooId": "dallas-mavericks-atlanta-hawks-2021102101",
+    "espnId": "401358777"
+  },
+  {
+    "name": "MilwaukeeBucks_at_MiamiHeat_2021-10-21",
+    "date": "2021-10-22T00:00:00.000Z",
+    "nbaId": "0022100015",
+    "yahooId": "milwaukee-bucks-miami-heat-2021102114",
+    "espnId": "401359842"
+  },
+  {
+    "name": "LosAngelesClippers_at_GoldenStateWarriors_2021-10-21",
+    "date": "2021-10-22T02:00:00.000Z",
+    "nbaId": "0022100016",
+    "yahooId": "los-angeles-clippers-golden-state-warriors-2021102109",
+    "espnId": "401358778"
+  }
+]

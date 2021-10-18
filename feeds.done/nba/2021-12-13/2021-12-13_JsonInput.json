@@ -1,0 +1,65 @@
+[
+  {
+    "name": "MiamiHeat_at_ClevelandCavaliers_2021-12-13",
+    "date": "2021-12-14T00:00:00.000Z",
+    "nbaId": "0022100404",
+    "yahooId": "miami-heat-cleveland-cavaliers-2021121305",
+    "espnId": "401360228"
+  },
+  {
+    "name": "GoldenStateWarriors_at_IndianaPacers_2021-12-13",
+    "date": "2021-12-14T00:00:00.000Z",
+    "nbaId": "0022100405",
+    "yahooId": "golden-state-warriors-indiana-pacers-2021121311",
+    "espnId": "401360229"
+  },
+  {
+    "name": "SacramentoKings_at_TorontoRaptors_2021-12-13",
+    "date": "2021-12-14T00:00:00.000Z",
+    "nbaId": "0022100406",
+    "yahooId": "sacramento-kings-toronto-raptors-2021121328",
+    "espnId": "401360230"
+  },
+  {
+    "name": "HoustonRockets_at_AtlantaHawks_2021-12-13",
+    "date": "2021-12-14T00:30:00.000Z",
+    "nbaId": "0022100407",
+    "yahooId": "houston-rockets-atlanta-hawks-2021121301",
+    "espnId": "401360231"
+  },
+  {
+    "name": "MilwaukeeBucks_at_BostonCeltics_2021-12-13",
+    "date": "2021-12-14T00:30:00.000Z",
+    "nbaId": "0022100408",
+    "yahooId": "milwaukee-bucks-boston-celtics-2021121302",
+    "espnId": "401360232"
+  },
+  {
+    "name": "Philadelphia76ers_at_MemphisGrizzlies_2021-12-13",
+    "date": "2021-12-14T01:00:00.000Z",
+    "nbaId": "0022100409",
+    "yahooId": "philadelphia-76ers-memphis-grizzlies-2021121329",
+    "espnId": "401360233"
+  },
+  {
+    "name": "CharlotteHornets_at_DallasMavericks_2021-12-13",
+    "date": "2021-12-14T01:30:00.000Z",
+    "nbaId": "0022100410",
+    "yahooId": "charlotte-hornets-dallas-mavericks-2021121306",
+    "espnId": "401360234"
+  },
+  {
+    "name": "WashingtonWizards_at_DenverNuggets_2021-12-13",
+    "date": "2021-12-14T02:00:00.000Z",
+    "nbaId": "0022100411",
+    "yahooId": "washington-wizards-denver-nuggets-2021121307",
+    "espnId": "401360235"
+  },
+  {
+    "name": "PhoenixSuns_at_LosAngelesClippers_2021-12-13",
+    "date": "2021-12-14T03:30:00.000Z",
+    "nbaId": "0022100412",
+    "yahooId": "phoenix-suns-los-angeles-clippers-2021121312",
+    "espnId": "401360236"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100889",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2022-02-25T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100890",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2022-02-25T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100891",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2022-02-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100892",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-02-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100893",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2022-02-25T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100894",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-02-25T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100895",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2022-02-25T03:00:00.000Z"
+  }
+]

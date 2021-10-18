@@ -1,0 +1,65 @@
+[
+  {
+    "name": "HoustonRockets_at_NewYorkKnicks_2021-11-20",
+    "date": "2021-11-20T22:00:00.000Z",
+    "nbaId": "0022100239",
+    "yahooId": "houston-rockets-new-york-knicks-2021112018",
+    "espnId": "401360063"
+  },
+  {
+    "name": "NewOrleansPelicans_at_IndianaPacers_2021-11-20",
+    "date": "2021-11-21T00:00:00.000Z",
+    "nbaId": "0022100240",
+    "yahooId": "new-orleans-pelicans-indiana-pacers-2021112011",
+    "espnId": "401360064"
+  },
+  {
+    "name": "MiamiHeat_at_WashingtonWizards_2021-11-20",
+    "date": "2021-11-21T00:00:00.000Z",
+    "nbaId": "0022100241",
+    "yahooId": "miami-heat-washington-wizards-2021112027",
+    "espnId": "401360065"
+  },
+  {
+    "name": "CharlotteHornets_at_AtlantaHawks_2021-11-20",
+    "date": "2021-11-21T00:30:00.000Z",
+    "nbaId": "0022100242",
+    "yahooId": "charlotte-hornets-atlanta-hawks-2021112001",
+    "espnId": "401360066"
+  },
+  {
+    "name": "OklahomaCityThunder_at_BostonCeltics_2021-11-20",
+    "date": "2021-11-21T00:30:00.000Z",
+    "nbaId": "0022100243",
+    "yahooId": "oklahoma-city-thunder-boston-celtics-2021112002",
+    "espnId": "401360067"
+  },
+  {
+    "name": "OrlandoMagic_at_MilwaukeeBucks_2021-11-20",
+    "date": "2021-11-21T01:00:00.000Z",
+    "nbaId": "0022100244",
+    "yahooId": "orlando-magic-milwaukee-bucks-2021112015",
+    "espnId": "401360068"
+  },
+  {
+    "name": "MemphisGrizzlies_at_MinnesotaTimberwolves_2021-11-20",
+    "date": "2021-11-21T01:00:00.000Z",
+    "nbaId": "0022100245",
+    "yahooId": "memphis-grizzlies-minnesota-timberwolves-2021112016",
+    "espnId": "401360069"
+  },
+  {
+    "name": "Philadelphia76ers_at_PortlandTrailBlazers_2021-11-20",
+    "date": "2021-11-21T03:00:00.000Z",
+    "nbaId": "0022100246",
+    "yahooId": "philadelphia-76ers-portland-trail-blazers-2021112022",
+    "espnId": "401360070"
+  },
+  {
+    "name": "UtahJazz_at_SacramentoKings_2021-11-20",
+    "date": "2021-11-21T03:00:00.000Z",
+    "nbaId": "0022100247",
+    "yahooId": "utah-jazz-sacramento-kings-2021112023",
+    "espnId": "401360071"
+  }
+]
