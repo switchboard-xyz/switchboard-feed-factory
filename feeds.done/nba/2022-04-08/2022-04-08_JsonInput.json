@@ -1,0 +1,65 @@
+[
+  {
+    "name": "MilwaukeeBucks_at_DetroitPistons_2022-04-08",
+    "date": "2022-04-08T23:00:00.000Z",
+    "nbaId": "0022101203",
+    "yahooId": "milwaukee-bucks-detroit-pistons-2022040808",
+    "espnId": "401361022"
+  },
+  {
+    "name": "NewYorkKnicks_at_WashingtonWizards_2022-04-08",
+    "date": "2022-04-08T23:00:00.000Z",
+    "nbaId": "0022101204",
+    "yahooId": "new-york-knicks-washington-wizards-2022040827",
+    "espnId": "401361023"
+  },
+  {
+    "name": "ClevelandCavaliers_at_BrooklynNets_2022-04-08",
+    "date": "2022-04-08T23:30:00.000Z",
+    "nbaId": "0022101205",
+    "yahooId": "cleveland-cavaliers-brooklyn-nets-2022040817",
+    "espnId": "401361024"
+  },
+  {
+    "name": "HoustonRockets_at_TorontoRaptors_2022-04-08",
+    "date": "2022-04-08T23:30:00.000Z",
+    "nbaId": "0022101206",
+    "yahooId": "houston-rockets-toronto-raptors-2022040828",
+    "espnId": "401361025"
+  },
+  {
+    "name": "AtlantaHawks_at_MiamiHeat_2022-04-08",
+    "date": "2022-04-09T00:00:00.000Z",
+    "nbaId": "0022101207",
+    "yahooId": "atlanta-hawks-miami-heat-2022040814",
+    "espnId": "401361026"
+  },
+  {
+    "name": "CharlotteHornets_at_ChicagoBulls_2022-04-08",
+    "date": "2022-04-09T00:00:00.000Z",
+    "nbaId": "0022101208",
+    "yahooId": "charlotte-hornets-chicago-bulls-2022040804",
+    "espnId": "401361027"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_DallasMavericks_2022-04-08",
+    "date": "2022-04-09T00:30:00.000Z",
+    "nbaId": "0022101209",
+    "yahooId": "portland-trail-blazers-dallas-mavericks-2022040806",
+    "espnId": "401361028"
+  },
+  {
+    "name": "PhoenixSuns_at_UtahJazz_2022-04-08",
+    "date": "2022-04-09T01:30:00.000Z",
+    "nbaId": "0022101210",
+    "yahooId": "phoenix-suns-utah-jazz-2022040826",
+    "espnId": "401361029"
+  },
+  {
+    "name": "OklahomaCityThunder_at_LosAngelesLakers_2022-04-08",
+    "date": "2022-04-09T02:30:00.000Z",
+    "nbaId": "0022101211",
+    "yahooId": "oklahoma-city-thunder-los-angeles-lakers-2022040813",
+    "espnId": "401361030"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "OrlandoMagic_at_MiamiHeat_2021-12-26",
+    "date": "2021-12-26T20:30:00.000Z",
+    "nbaId": "0022100493",
+    "yahooId": "orlando-magic-miami-heat-2021122614",
+    "espnId": "401360312"
+  },
+  {
+    "name": "TorontoRaptors_at_ClevelandCavaliers_2021-12-26",
+    "date": "2021-12-26T23:00:00.000Z",
+    "nbaId": "0022100494",
+    "yahooId": "toronto-raptors-cleveland-cavaliers-2021122605",
+    "espnId": "401360313"
+  },
+  {
+    "name": "Philadelphia76ers_at_WashingtonWizards_2021-12-26",
+    "date": "2021-12-26T23:00:00.000Z",
+    "nbaId": "0022100495",
+    "yahooId": "philadelphia-76ers-washington-wizards-2021122627",
+    "espnId": "401360314"
+  },
+  {
+    "name": "MemphisGrizzlies_at_SacramentoKings_2021-12-26",
+    "date": "2021-12-26T23:00:00.000Z",
+    "nbaId": "0022100496",
+    "yahooId": "memphis-grizzlies-sacramento-kings-2021122623",
+    "espnId": "401360315"
+  },
+  {
+    "name": "NewOrleansPelicans_at_OklahomaCityThunder_2021-12-26",
+    "date": "2021-12-27T00:00:00.000Z",
+    "nbaId": "0022100497",
+    "yahooId": "new-orleans-pelicans-oklahoma-city-thunder-2021122625",
+    "espnId": "401360316"
+  },
+  {
+    "name": "DetroitPistons_at_SanAntonioSpurs_2021-12-26",
+    "date": "2021-12-27T00:00:00.000Z",
+    "nbaId": "0022100498",
+    "yahooId": "detroit-pistons-san-antonio-spurs-2021122624",
+    "espnId": "401360317"
+  },
+  {
+    "name": "IndianaPacers_at_ChicagoBulls_2021-12-26",
+    "date": "2021-12-27T01:00:00.000Z",
+    "nbaId": "0022100499",
+    "yahooId": "indiana-pacers-chicago-bulls-2021122604",
+    "espnId": "401360318"
+  },
+  {
+    "name": "DenverNuggets_at_LosAngelesClippers_2021-12-26",
+    "date": "2021-12-27T02:00:00.000Z",
+    "nbaId": "0022100500",
+    "yahooId": "denver-nuggets-los-angeles-clippers-2021122612",
+    "espnId": "401360319"
+  }
+]

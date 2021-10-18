@@ -1,0 +1,1647 @@
+[
+  {
+    "gameid": "nba.g.2021122002",
+    "global_gameid": "nba.g.2373804",
+    "start_time": "Tue, 21 Dec 2021 00:30:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.season",
+    "game_type": "Regular Season",
+    "winning_team_id": null,
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": null,
+    "home_team_id": "nba.t.2",
+    "away_team_id": "nba.t.20",
+    "navigation_links": {
+      "tickets": {
+        "url": "https://seatgeek.com/boston-celtics-tickets/?aid=14&date=2021-12-20"
+      },
+      "boxscore": {
+        "url": "/nba/philadelphia-76ers-boston-celtics-2021122002/"
+      },
+      "match_page": {
+        "url": "/nba/philadelphia-76ers-boston-celtics-2021122002/"
+      },
+      "league_home": {
+        "url": "/nba/"
+      },
+      "league_scores": {
+        "url": "/nba/scoreboard/"
+      }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=nba.g.2021122002&sport=nba",
+    "status_display_name": "7:30 pm ET",
+    "status_description": "Pregame",
+    "status_type": "status.type.pregame",
+    "total_away_points": null,
+    "current_period_id": null,
+    "total_home_points": null,
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": null,
+    "away_team_stats": null,
+    "game_period_balls": null,
+    "game_period_strikes": null,
+    "game_period_outs": null,
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": null,
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": null,
+    "game_periods": [],
+    "baserunners": null,
+    "season": "2021",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "NBATV, CSNE, CSP",
+    "provider_coverage": null,
+    "seatgeek_id": "5479429",
+    "last_updated": false,
+    "teams": [
+      "dataIslandPaths",
+      "nba.g.2021122002",
+      "teams"
+    ],
+    "play_by_play": [
+      "gameplay_by_play",
+      "nba.g.2021122002"
+    ],
+    "pitches": [
+      "gamepitches",
+      "nba.g.2021122002"
+    ],
+    "at_bat": [
+      "gameat_bat",
+      "nba.g.2021122002"
+    ],
+    "penalty_summary": [
+      "gamepenalty_summary",
+      "nba.g.2021122002"
+    ],
+    "scoring_summary": [
+      "gamescoring_summary",
+      "nba.g.2021122002"
+    ],
+    "stat_categories": [
+      "game_stat_leaders"
+    ],
+    "stadium": [
+      "gamestadium",
+      "nba.g.2021122002"
+    ],
+    "stadium_id": [
+      "gamestadium_id",
+      "nba.g.2021122002"
+    ],
+    "stadium_image": [
+      "gamestadium_image",
+      "nba.g.2021122002"
+    ],
+    "attendance": [
+      "gameattendance",
+      "nba.g.2021122002"
+    ],
+    "lineups": [
+      "gamelineups",
+      "nba.g.2021122002"
+    ],
+    "top_performer": [
+      "gametop_performer",
+      "nba.g.2021122002"
+    ],
+    "players": [
+      "dataIslandPaths",
+      "nba.g.2021122002",
+      "players"
+    ],
+    "byline": [
+      "gamebyline",
+      "nba.g.2021122002"
+    ],
+    "highlight": [
+      "gamehighlight",
+      "nba.g.2021122002"
+    ],
+    "highlights": [
+      "gamehighlights",
+      "nba.g.2021122002"
+    ],
+    "live_video": [
+      "gamelive_video",
+      "nba.g.2021122002"
+    ],
+    "odds": [
+      "gameodds",
+      "nba.g.2021122002"
+    ],
+    "current_players": [
+      "gamecurrent_players",
+      "nba.g.2021122002"
+    ],
+    "last_play": [
+      "gamelast_play",
+      "nba.g.2021122002"
+    ],
+    "series_type": [
+      "gameseries_type",
+      "nba.g.2021122002"
+    ],
+    "series_status": [
+      "gameseries_status",
+      "nba.g.2021122002"
+    ],
+    "games": [
+      "dataIslandPaths",
+      "nba.g.2021122002",
+      "games"
+    ],
+    "series_games": [
+      "gameseries_games",
+      "nba.g.2021122002"
+    ],
+    "game_details": [
+      "gamegame_details",
+      "nba.g.2021122002"
+    ],
+    "section_notes": [
+      "gamesection_notes",
+      "nba.g.2021122002"
+    ],
+    "articles": [
+      "dataIslandPaths",
+      "nba.g.2021122002",
+      "gamearticles"
+    ],
+    "tweets": [
+      "gametweets",
+      "nba.g.2021122002"
+    ],
+    "playoff_round": [
+      "gameplayoff_round",
+      "nba.g.2021122002"
+    ],
+    "media_stream": [
+      "gamemedia_stream",
+      "nba.g.2021122002"
+    ],
+    "playoff_series_status": [
+      "gameplayoff_series_status",
+      "nba.g.2021122002"
+    ],
+    "playoff_series_details": [
+      "gameplayoff_series_details",
+      "nba.g.2021122002"
+    ],
+    "drives": [
+      "gamedrives",
+      "nba.g.2021122002"
+    ],
+    "user_teams_game": [
+      "gameuser_teams_game",
+      "nba.g.2021122002"
+    ],
+    "page_metadata": [
+      "gamepage_metadata",
+      "nba.g.2021122002"
+    ],
+    "penalty_box": [
+      "gamepenalty_box",
+      "nba.g.2021122002"
+    ],
+    "starting_pitchers": [
+      "gamestarting_pitchers",
+      "nba.g.2021122002"
+    ],
+    "unrestricted_streams": [
+      "gameunrestricted_streams",
+      "nba.g.2021122002"
+    ],
+    "tv_details": [
+      "gametv_details",
+      "nba.g.2021122002"
+    ],
+    "away_seed": null,
+    "home_seed": null
+  },
+  {
+    "gameid": "nba.g.2021122028",
+    "global_gameid": "nba.g.2374876",
+    "start_time": "Tue, 21 Dec 2021 00:30:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.season",
+    "game_type": "Regular Season",
+    "winning_team_id": null,
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": null,
+    "home_team_id": "nba.t.28",
+    "away_team_id": "nba.t.19",
+    "navigation_links": {
+      "tickets": {
+        "url": "https://seatgeek.com/toronto-raptors-tickets/?aid=14&date=2021-12-20"
+      },
+      "boxscore": {
+        "url": "/nba/orlando-magic-toronto-raptors-2021122028/"
+      },
+      "match_page": {
+        "url": "/nba/orlando-magic-toronto-raptors-2021122028/"
+      },
+      "league_home": {
+        "url": "/nba/"
+      },
+      "league_scores": {
+        "url": "/nba/scoreboard/"
+      }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=nba.g.2021122028&sport=nba",
+    "status_display_name": "7:30 pm ET",
+    "status_description": "Pregame",
+    "status_type": "status.type.pregame",
+    "total_away_points": null,
+    "current_period_id": null,
+    "total_home_points": null,
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": null,
+    "away_team_stats": null,
+    "game_period_balls": null,
+    "game_period_strikes": null,
+    "game_period_outs": null,
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": null,
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": null,
+    "game_periods": [],
+    "baserunners": null,
+    "season": "2021",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "TSN, BSFL",
+    "provider_coverage": null,
+    "seatgeek_id": "5482425",
+    "last_updated": false,
+    "teams": [
+      "dataIslandPaths",
+      "nba.g.2021122028",
+      "teams"
+    ],
+    "play_by_play": [
+      "gameplay_by_play",
+      "nba.g.2021122028"
+    ],
+    "pitches": [
+      "gamepitches",
+      "nba.g.2021122028"
+    ],
+    "at_bat": [
+      "gameat_bat",
+      "nba.g.2021122028"
+    ],
+    "penalty_summary": [
+      "gamepenalty_summary",
+      "nba.g.2021122028"
+    ],
+    "scoring_summary": [
+      "gamescoring_summary",
+      "nba.g.2021122028"
+    ],
+    "stat_categories": [
+      "game_stat_leaders"
+    ],
+    "stadium": [
+      "gamestadium",
+      "nba.g.2021122028"
+    ],
+    "stadium_id": [
+      "gamestadium_id",
+      "nba.g.2021122028"
+    ],
+    "stadium_image": [
+      "gamestadium_image",
+      "nba.g.2021122028"
+    ],
+    "attendance": [
+      "gameattendance",
+      "nba.g.2021122028"
+    ],
+    "lineups": [
+      "gamelineups",
+      "nba.g.2021122028"
+    ],
+    "top_performer": [
+      "gametop_performer",
+      "nba.g.2021122028"
+    ],
+    "players": [
+      "dataIslandPaths",
+      "nba.g.2021122028",
+      "players"
+    ],
+    "byline": [
+      "gamebyline",
+      "nba.g.2021122028"
+    ],
+    "highlight": [
+      "gamehighlight",
+      "nba.g.2021122028"
+    ],
+    "highlights": [
+      "gamehighlights",
+      "nba.g.2021122028"
+    ],
+    "live_video": [
+      "gamelive_video",
+      "nba.g.2021122028"
+    ],
+    "odds": [
+      "gameodds",
+      "nba.g.2021122028"
+    ],
+    "current_players": [
+      "gamecurrent_players",
+      "nba.g.2021122028"
+    ],
+    "last_play": [
+      "gamelast_play",
+      "nba.g.2021122028"
+    ],
+    "series_type": [
+      "gameseries_type",
+      "nba.g.2021122028"
+    ],
+    "series_status": [
+      "gameseries_status",
+      "nba.g.2021122028"
+    ],
+    "games": [
+      "dataIslandPaths",
+      "nba.g.2021122028",
+      "games"
+    ],
+    "series_games": [
+      "gameseries_games",
+      "nba.g.2021122028"
+    ],
+    "game_details": [
+      "gamegame_details",
+      "nba.g.2021122028"
+    ],
+    "section_notes": [
+      "gamesection_notes",
+      "nba.g.2021122028"
+    ],
+    "articles": [
+      "dataIslandPaths",
+      "nba.g.2021122028",
+      "gamearticles"
+    ],
+    "tweets": [
+      "gametweets",
+      "nba.g.2021122028"
+    ],
+    "playoff_round": [
+      "gameplayoff_round",
+      "nba.g.2021122028"
+    ],
+    "media_stream": [
+      "gamemedia_stream",
+      "nba.g.2021122028"
+    ],
+    "playoff_series_status": [
+      "gameplayoff_series_status",
+      "nba.g.2021122028"
+    ],
+    "playoff_series_details": [
+      "gameplayoff_series_details",
+      "nba.g.2021122028"
+    ],
+    "drives": [
+      "gamedrives",
+      "nba.g.2021122028"
+    ],
+    "user_teams_game": [
+      "gameuser_teams_game",
+      "nba.g.2021122028"
+    ],
+    "page_metadata": [
+      "gamepage_metadata",
+      "nba.g.2021122028"
+    ],
+    "penalty_box": [
+      "gamepenalty_box",
+      "nba.g.2021122028"
+    ],
+    "starting_pitchers": [
+      "gamestarting_pitchers",
+      "nba.g.2021122028"
+    ],
+    "unrestricted_streams": [
+      "gameunrestricted_streams",
+      "nba.g.2021122028"
+    ],
+    "tv_details": [
+      "gametv_details",
+      "nba.g.2021122028"
+    ],
+    "away_seed": null,
+    "home_seed": null
+  },
+  {
+    "gameid": "nba.g.2021122004",
+    "global_gameid": "nba.g.2373885",
+    "start_time": "Tue, 21 Dec 2021 01:00:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.season",
+    "game_type": "Regular Season",
+    "winning_team_id": null,
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": null,
+    "home_team_id": "nba.t.4",
+    "away_team_id": "nba.t.10",
+    "navigation_links": {
+      "tickets": {
+        "url": "https://seatgeek.com/chicago-bulls-tickets/?aid=14&date=2021-12-20"
+      },
+      "boxscore": {
+        "url": "/nba/houston-rockets-chicago-bulls-2021122004/"
+      },
+      "match_page": {
+        "url": "/nba/houston-rockets-chicago-bulls-2021122004/"
+      },
+      "league_home": {
+        "url": "/nba/"
+      },
+      "league_scores": {
+        "url": "/nba/scoreboard/"
+      }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=nba.g.2021122004&sport=nba",
+    "status_display_name": "8:00 pm ET",
+    "status_description": "Pregame",
+    "status_type": "status.type.pregame",
+    "total_away_points": null,
+    "current_period_id": null,
+    "total_home_points": null,
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": null,
+    "away_team_stats": null,
+    "game_period_balls": null,
+    "game_period_strikes": null,
+    "game_period_outs": null,
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": null,
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": null,
+    "game_periods": [],
+    "baserunners": null,
+    "season": "2021",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "ATSW, CSCH",
+    "provider_coverage": null,
+    "seatgeek_id": "5481211",
+    "last_updated": false,
+    "teams": [
+      "dataIslandPaths",
+      "nba.g.2021122004",
+      "teams"
+    ],
+    "play_by_play": [
+      "gameplay_by_play",
+      "nba.g.2021122004"
+    ],
+    "pitches": [
+      "gamepitches",
+      "nba.g.2021122004"
+    ],
+    "at_bat": [
+      "gameat_bat",
+      "nba.g.2021122004"
+    ],
+    "penalty_summary": [
+      "gamepenalty_summary",
+      "nba.g.2021122004"
+    ],
+    "scoring_summary": [
+      "gamescoring_summary",
+      "nba.g.2021122004"
+    ],
+    "stat_categories": [
+      "game_stat_leaders"
+    ],
+    "stadium": [
+      "gamestadium",
+      "nba.g.2021122004"
+    ],
+    "stadium_id": [
+      "gamestadium_id",
+      "nba.g.2021122004"
+    ],
+    "stadium_image": [
+      "gamestadium_image",
+      "nba.g.2021122004"
+    ],
+    "attendance": [
+      "gameattendance",
+      "nba.g.2021122004"
+    ],
+    "lineups": [
+      "gamelineups",
+      "nba.g.2021122004"
+    ],
+    "top_performer": [
+      "gametop_performer",
+      "nba.g.2021122004"
+    ],
+    "players": [
+      "dataIslandPaths",
+      "nba.g.2021122004",
+      "players"
+    ],
+    "byline": [
+      "gamebyline",
+      "nba.g.2021122004"
+    ],
+    "highlight": [
+      "gamehighlight",
+      "nba.g.2021122004"
+    ],
+    "highlights": [
+      "gamehighlights",
+      "nba.g.2021122004"
+    ],
+    "live_video": [
+      "gamelive_video",
+      "nba.g.2021122004"
+    ],
+    "odds": [
+      "gameodds",
+      "nba.g.2021122004"
+    ],
+    "current_players": [
+      "gamecurrent_players",
+      "nba.g.2021122004"
+    ],
+    "last_play": [
+      "gamelast_play",
+      "nba.g.2021122004"
+    ],
+    "series_type": [
+      "gameseries_type",
+      "nba.g.2021122004"
+    ],
+    "series_status": [
+      "gameseries_status",
+      "nba.g.2021122004"
+    ],
+    "games": [
+      "dataIslandPaths",
+      "nba.g.2021122004",
+      "games"
+    ],
+    "series_games": [
+      "gameseries_games",
+      "nba.g.2021122004"
+    ],
+    "game_details": [
+      "gamegame_details",
+      "nba.g.2021122004"
+    ],
+    "section_notes": [
+      "gamesection_notes",
+      "nba.g.2021122004"
+    ],
+    "articles": [
+      "dataIslandPaths",
+      "nba.g.2021122004",
+      "gamearticles"
+    ],
+    "tweets": [
+      "gametweets",
+      "nba.g.2021122004"
+    ],
+    "playoff_round": [
+      "gameplayoff_round",
+      "nba.g.2021122004"
+    ],
+    "media_stream": [
+      "gamemedia_stream",
+      "nba.g.2021122004"
+    ],
+    "playoff_series_status": [
+      "gameplayoff_series_status",
+      "nba.g.2021122004"
+    ],
+    "playoff_series_details": [
+      "gameplayoff_series_details",
+      "nba.g.2021122004"
+    ],
+    "drives": [
+      "gamedrives",
+      "nba.g.2021122004"
+    ],
+    "user_teams_game": [
+      "gameuser_teams_game",
+      "nba.g.2021122004"
+    ],
+    "page_metadata": [
+      "gamepage_metadata",
+      "nba.g.2021122004"
+    ],
+    "penalty_box": [
+      "gamepenalty_box",
+      "nba.g.2021122004"
+    ],
+    "starting_pitchers": [
+      "gamestarting_pitchers",
+      "nba.g.2021122004"
+    ],
+    "unrestricted_streams": [
+      "gameunrestricted_streams",
+      "nba.g.2021122004"
+    ],
+    "tv_details": [
+      "gametv_details",
+      "nba.g.2021122004"
+    ],
+    "away_seed": null,
+    "home_seed": null
+  },
+  {
+    "gameid": "nba.g.2021122029",
+    "global_gameid": "nba.g.2374501",
+    "start_time": "Tue, 21 Dec 2021 01:00:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.season",
+    "game_type": "Regular Season",
+    "winning_team_id": null,
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": null,
+    "home_team_id": "nba.t.29",
+    "away_team_id": "nba.t.25",
+    "navigation_links": {
+      "tickets": {
+        "url": "https://seatgeek.com/memphis-grizzlies-tickets/?aid=14&date=2021-12-20"
+      },
+      "boxscore": {
+        "url": "/nba/oklahoma-city-thunder-memphis-grizzlies-2021122029/"
+      },
+      "match_page": {
+        "url": "/nba/oklahoma-city-thunder-memphis-grizzlies-2021122029/"
+      },
+      "league_home": {
+        "url": "/nba/"
+      },
+      "league_scores": {
+        "url": "/nba/scoreboard/"
+      }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=nba.g.2021122029&sport=nba",
+    "status_display_name": "8:00 pm ET",
+    "status_description": "Pregame",
+    "status_type": "status.type.pregame",
+    "total_away_points": null,
+    "current_period_id": null,
+    "total_home_points": null,
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": null,
+    "away_team_stats": null,
+    "game_period_balls": null,
+    "game_period_strikes": null,
+    "game_period_outs": null,
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": null,
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": null,
+    "game_periods": [],
+    "baserunners": null,
+    "season": "2021",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "BSOK, BSTN",
+    "provider_coverage": null,
+    "seatgeek_id": "5480813",
+    "last_updated": false,
+    "teams": [
+      "dataIslandPaths",
+      "nba.g.2021122029",
+      "teams"
+    ],
+    "play_by_play": [
+      "gameplay_by_play",
+      "nba.g.2021122029"
+    ],
+    "pitches": [
+      "gamepitches",
+      "nba.g.2021122029"
+    ],
+    "at_bat": [
+      "gameat_bat",
+      "nba.g.2021122029"
+    ],
+    "penalty_summary": [
+      "gamepenalty_summary",
+      "nba.g.2021122029"
+    ],
+    "scoring_summary": [
+      "gamescoring_summary",
+      "nba.g.2021122029"
+    ],
+    "stat_categories": [
+      "game_stat_leaders"
+    ],
+    "stadium": [
+      "gamestadium",
+      "nba.g.2021122029"
+    ],
+    "stadium_id": [
+      "gamestadium_id",
+      "nba.g.2021122029"
+    ],
+    "stadium_image": [
+      "gamestadium_image",
+      "nba.g.2021122029"
+    ],
+    "attendance": [
+      "gameattendance",
+      "nba.g.2021122029"
+    ],
+    "lineups": [
+      "gamelineups",
+      "nba.g.2021122029"
+    ],
+    "top_performer": [
+      "gametop_performer",
+      "nba.g.2021122029"
+    ],
+    "players": [
+      "dataIslandPaths",
+      "nba.g.2021122029",
+      "players"
+    ],
+    "byline": [
+      "gamebyline",
+      "nba.g.2021122029"
+    ],
+    "highlight": [
+      "gamehighlight",
+      "nba.g.2021122029"
+    ],
+    "highlights": [
+      "gamehighlights",
+      "nba.g.2021122029"
+    ],
+    "live_video": [
+      "gamelive_video",
+      "nba.g.2021122029"
+    ],
+    "odds": [
+      "gameodds",
+      "nba.g.2021122029"
+    ],
+    "current_players": [
+      "gamecurrent_players",
+      "nba.g.2021122029"
+    ],
+    "last_play": [
+      "gamelast_play",
+      "nba.g.2021122029"
+    ],
+    "series_type": [
+      "gameseries_type",
+      "nba.g.2021122029"
+    ],
+    "series_status": [
+      "gameseries_status",
+      "nba.g.2021122029"
+    ],
+    "games": [
+      "dataIslandPaths",
+      "nba.g.2021122029",
+      "games"
+    ],
+    "series_games": [
+      "gameseries_games",
+      "nba.g.2021122029"
+    ],
+    "game_details": [
+      "gamegame_details",
+      "nba.g.2021122029"
+    ],
+    "section_notes": [
+      "gamesection_notes",
+      "nba.g.2021122029"
+    ],
+    "articles": [
+      "dataIslandPaths",
+      "nba.g.2021122029",
+      "gamearticles"
+    ],
+    "tweets": [
+      "gametweets",
+      "nba.g.2021122029"
+    ],
+    "playoff_round": [
+      "gameplayoff_round",
+      "nba.g.2021122029"
+    ],
+    "media_stream": [
+      "gamemedia_stream",
+      "nba.g.2021122029"
+    ],
+    "playoff_series_status": [
+      "gameplayoff_series_status",
+      "nba.g.2021122029"
+    ],
+    "playoff_series_details": [
+      "gameplayoff_series_details",
+      "nba.g.2021122029"
+    ],
+    "drives": [
+      "gamedrives",
+      "nba.g.2021122029"
+    ],
+    "user_teams_game": [
+      "gameuser_teams_game",
+      "nba.g.2021122029"
+    ],
+    "page_metadata": [
+      "gamepage_metadata",
+      "nba.g.2021122029"
+    ],
+    "penalty_box": [
+      "gamepenalty_box",
+      "nba.g.2021122029"
+    ],
+    "starting_pitchers": [
+      "gamestarting_pitchers",
+      "nba.g.2021122029"
+    ],
+    "unrestricted_streams": [
+      "gameunrestricted_streams",
+      "nba.g.2021122029"
+    ],
+    "tv_details": [
+      "gametv_details",
+      "nba.g.2021122029"
+    ],
+    "away_seed": null,
+    "home_seed": null
+  },
+  {
+    "gameid": "nba.g.2021122026",
+    "global_gameid": "nba.g.2374392",
+    "start_time": "Tue, 21 Dec 2021 02:00:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.season",
+    "game_type": "Regular Season",
+    "winning_team_id": null,
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": null,
+    "home_team_id": "nba.t.26",
+    "away_team_id": "nba.t.30",
+    "navigation_links": {
+      "tickets": {
+        "url": "https://seatgeek.com/utah-jazz-tickets/?aid=14&date=2021-12-20"
+      },
+      "boxscore": {
+        "url": "/nba/charlotte-hornets-utah-jazz-2021122026/"
+      },
+      "match_page": {
+        "url": "/nba/charlotte-hornets-utah-jazz-2021122026/"
+      },
+      "league_home": {
+        "url": "/nba/"
+      },
+      "league_scores": {
+        "url": "/nba/scoreboard/"
+      }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=nba.g.2021122026&sport=nba",
+    "status_display_name": "9:00 pm ET",
+    "status_description": "Pregame",
+    "status_type": "status.type.pregame",
+    "total_away_points": null,
+    "current_period_id": null,
+    "total_home_points": null,
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": null,
+    "away_team_stats": null,
+    "game_period_balls": null,
+    "game_period_strikes": null,
+    "game_period_outs": null,
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": null,
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": null,
+    "game_periods": [],
+    "baserunners": null,
+    "season": "2021",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "ATRM, FSCR",
+    "provider_coverage": null,
+    "seatgeek_id": "5481137",
+    "last_updated": false,
+    "teams": [
+      "dataIslandPaths",
+      "nba.g.2021122026",
+      "teams"
+    ],
+    "play_by_play": [
+      "gameplay_by_play",
+      "nba.g.2021122026"
+    ],
+    "pitches": [
+      "gamepitches",
+      "nba.g.2021122026"
+    ],
+    "at_bat": [
+      "gameat_bat",
+      "nba.g.2021122026"
+    ],
+    "penalty_summary": [
+      "gamepenalty_summary",
+      "nba.g.2021122026"
+    ],
+    "scoring_summary": [
+      "gamescoring_summary",
+      "nba.g.2021122026"
+    ],
+    "stat_categories": [
+      "game_stat_leaders"
+    ],
+    "stadium": [
+      "gamestadium",
+      "nba.g.2021122026"
+    ],
+    "stadium_id": [
+      "gamestadium_id",
+      "nba.g.2021122026"
+    ],
+    "stadium_image": [
+      "gamestadium_image",
+      "nba.g.2021122026"
+    ],
+    "attendance": [
+      "gameattendance",
+      "nba.g.2021122026"
+    ],
+    "lineups": [
+      "gamelineups",
+      "nba.g.2021122026"
+    ],
+    "top_performer": [
+      "gametop_performer",
+      "nba.g.2021122026"
+    ],
+    "players": [
+      "dataIslandPaths",
+      "nba.g.2021122026",
+      "players"
+    ],
+    "byline": [
+      "gamebyline",
+      "nba.g.2021122026"
+    ],
+    "highlight": [
+      "gamehighlight",
+      "nba.g.2021122026"
+    ],
+    "highlights": [
+      "gamehighlights",
+      "nba.g.2021122026"
+    ],
+    "live_video": [
+      "gamelive_video",
+      "nba.g.2021122026"
+    ],
+    "odds": [
+      "gameodds",
+      "nba.g.2021122026"
+    ],
+    "current_players": [
+      "gamecurrent_players",
+      "nba.g.2021122026"
+    ],
+    "last_play": [
+      "gamelast_play",
+      "nba.g.2021122026"
+    ],
+    "series_type": [
+      "gameseries_type",
+      "nba.g.2021122026"
+    ],
+    "series_status": [
+      "gameseries_status",
+      "nba.g.2021122026"
+    ],
+    "games": [
+      "dataIslandPaths",
+      "nba.g.2021122026",
+      "games"
+    ],
+    "series_games": [
+      "gameseries_games",
+      "nba.g.2021122026"
+    ],
+    "game_details": [
+      "gamegame_details",
+      "nba.g.2021122026"
+    ],
+    "section_notes": [
+      "gamesection_notes",
+      "nba.g.2021122026"
+    ],
+    "articles": [
+      "dataIslandPaths",
+      "nba.g.2021122026",
+      "gamearticles"
+    ],
+    "tweets": [
+      "gametweets",
+      "nba.g.2021122026"
+    ],
+    "playoff_round": [
+      "gameplayoff_round",
+      "nba.g.2021122026"
+    ],
+    "media_stream": [
+      "gamemedia_stream",
+      "nba.g.2021122026"
+    ],
+    "playoff_series_status": [
+      "gameplayoff_series_status",
+      "nba.g.2021122026"
+    ],
+    "playoff_series_details": [
+      "gameplayoff_series_details",
+      "nba.g.2021122026"
+    ],
+    "drives": [
+      "gamedrives",
+      "nba.g.2021122026"
+    ],
+    "user_teams_game": [
+      "gameuser_teams_game",
+      "nba.g.2021122026"
+    ],
+    "page_metadata": [
+      "gamepage_metadata",
+      "nba.g.2021122026"
+    ],
+    "penalty_box": [
+      "gamepenalty_box",
+      "nba.g.2021122026"
+    ],
+    "starting_pitchers": [
+      "gamestarting_pitchers",
+      "nba.g.2021122026"
+    ],
+    "unrestricted_streams": [
+      "gameunrestricted_streams",
+      "nba.g.2021122026"
+    ],
+    "tv_details": [
+      "gametv_details",
+      "nba.g.2021122026"
+    ],
+    "away_seed": null,
+    "home_seed": null
+  },
+  {
+    "gameid": "nba.g.2021122009",
+    "global_gameid": "nba.g.2374132",
+    "start_time": "Tue, 21 Dec 2021 03:00:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.season",
+    "game_type": "Regular Season",
+    "winning_team_id": null,
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": null,
+    "home_team_id": "nba.t.9",
+    "away_team_id": "nba.t.23",
+    "navigation_links": {
+      "tickets": {
+        "url": "https://seatgeek.com/golden-state-warriors-tickets/?aid=14&date=2021-12-20"
+      },
+      "boxscore": {
+        "url": "/nba/sacramento-kings-golden-state-warriors-2021122009/"
+      },
+      "match_page": {
+        "url": "/nba/sacramento-kings-golden-state-warriors-2021122009/"
+      },
+      "league_home": {
+        "url": "/nba/"
+      },
+      "league_scores": {
+        "url": "/nba/scoreboard/"
+      }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=nba.g.2021122009&sport=nba",
+    "status_display_name": "10:00 pm ET",
+    "status_description": "Pregame",
+    "status_type": "status.type.pregame",
+    "total_away_points": null,
+    "current_period_id": null,
+    "total_home_points": null,
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": null,
+    "away_team_stats": null,
+    "game_period_balls": null,
+    "game_period_strikes": null,
+    "game_period_outs": null,
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": null,
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": null,
+    "game_periods": [],
+    "baserunners": null,
+    "season": "2021",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "CSBA, NSCA",
+    "provider_coverage": null,
+    "seatgeek_id": "5480481",
+    "last_updated": false,
+    "teams": [
+      "dataIslandPaths",
+      "nba.g.2021122009",
+      "teams"
+    ],
+    "play_by_play": [
+      "gameplay_by_play",
+      "nba.g.2021122009"
+    ],
+    "pitches": [
+      "gamepitches",
+      "nba.g.2021122009"
+    ],
+    "at_bat": [
+      "gameat_bat",
+      "nba.g.2021122009"
+    ],
+    "penalty_summary": [
+      "gamepenalty_summary",
+      "nba.g.2021122009"
+    ],
+    "scoring_summary": [
+      "gamescoring_summary",
+      "nba.g.2021122009"
+    ],
+    "stat_categories": [
+      "game_stat_leaders"
+    ],
+    "stadium": [
+      "gamestadium",
+      "nba.g.2021122009"
+    ],
+    "stadium_id": [
+      "gamestadium_id",
+      "nba.g.2021122009"
+    ],
+    "stadium_image": [
+      "gamestadium_image",
+      "nba.g.2021122009"
+    ],
+    "attendance": [
+      "gameattendance",
+      "nba.g.2021122009"
+    ],
+    "lineups": [
+      "gamelineups",
+      "nba.g.2021122009"
+    ],
+    "top_performer": [
+      "gametop_performer",
+      "nba.g.2021122009"
+    ],
+    "players": [
+      "dataIslandPaths",
+      "nba.g.2021122009",
+      "players"
+    ],
+    "byline": [
+      "gamebyline",
+      "nba.g.2021122009"
+    ],
+    "highlight": [
+      "gamehighlight",
+      "nba.g.2021122009"
+    ],
+    "highlights": [
+      "gamehighlights",
+      "nba.g.2021122009"
+    ],
+    "live_video": [
+      "gamelive_video",
+      "nba.g.2021122009"
+    ],
+    "odds": [
+      "gameodds",
+      "nba.g.2021122009"
+    ],
+    "current_players": [
+      "gamecurrent_players",
+      "nba.g.2021122009"
+    ],
+    "last_play": [
+      "gamelast_play",
+      "nba.g.2021122009"
+    ],
+    "series_type": [
+      "gameseries_type",
+      "nba.g.2021122009"
+    ],
+    "series_status": [
+      "gameseries_status",
+      "nba.g.2021122009"
+    ],
+    "games": [
+      "dataIslandPaths",
+      "nba.g.2021122009",
+      "games"
+    ],
+    "series_games": [
+      "gameseries_games",
+      "nba.g.2021122009"
+    ],
+    "game_details": [
+      "gamegame_details",
+      "nba.g.2021122009"
+    ],
+    "section_notes": [
+      "gamesection_notes",
+      "nba.g.2021122009"
+    ],
+    "articles": [
+      "dataIslandPaths",
+      "nba.g.2021122009",
+      "gamearticles"
+    ],
+    "tweets": [
+      "gametweets",
+      "nba.g.2021122009"
+    ],
+    "playoff_round": [
+      "gameplayoff_round",
+      "nba.g.2021122009"
+    ],
+    "media_stream": [
+      "gamemedia_stream",
+      "nba.g.2021122009"
+    ],
+    "playoff_series_status": [
+      "gameplayoff_series_status",
+      "nba.g.2021122009"
+    ],
+    "playoff_series_details": [
+      "gameplayoff_series_details",
+      "nba.g.2021122009"
+    ],
+    "drives": [
+      "gamedrives",
+      "nba.g.2021122009"
+    ],
+    "user_teams_game": [
+      "gameuser_teams_game",
+      "nba.g.2021122009"
+    ],
+    "page_metadata": [
+      "gamepage_metadata",
+      "nba.g.2021122009"
+    ],
+    "penalty_box": [
+      "gamepenalty_box",
+      "nba.g.2021122009"
+    ],
+    "starting_pitchers": [
+      "gamestarting_pitchers",
+      "nba.g.2021122009"
+    ],
+    "unrestricted_streams": [
+      "gameunrestricted_streams",
+      "nba.g.2021122009"
+    ],
+    "tv_details": [
+      "gametv_details",
+      "nba.g.2021122009"
+    ],
+    "away_seed": null,
+    "home_seed": null
+  },
+  {
+    "gameid": "nba.g.2021122012",
+    "global_gameid": "nba.g.2374355",
+    "start_time": "Tue, 21 Dec 2021 03:30:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.season",
+    "game_type": "Regular Season",
+    "winning_team_id": null,
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": null,
+    "home_team_id": "nba.t.12",
+    "away_team_id": "nba.t.24",
+    "navigation_links": {
+      "tickets": {
+        "url": "https://seatgeek.com/los-angeles-clippers-tickets/?aid=14&date=2021-12-20"
+      },
+      "boxscore": {
+        "url": "/nba/san-antonio-spurs-los-angeles-clippers-2021122012/"
+      },
+      "match_page": {
+        "url": "/nba/san-antonio-spurs-los-angeles-clippers-2021122012/"
+      },
+      "league_home": {
+        "url": "/nba/"
+      },
+      "league_scores": {
+        "url": "/nba/scoreboard/"
+      }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=nba.g.2021122012&sport=nba",
+    "status_display_name": "10:30 pm ET",
+    "status_description": "Pregame",
+    "status_type": "status.type.pregame",
+    "total_away_points": null,
+    "current_period_id": null,
+    "total_home_points": null,
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": null,
+    "away_team_stats": null,
+    "game_period_balls": null,
+    "game_period_strikes": null,
+    "game_period_outs": null,
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": null,
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": null,
+    "game_periods": [],
+    "baserunners": null,
+    "season": "2021",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "BSSC, BSSW",
+    "provider_coverage": null,
+    "seatgeek_id": "5480249",
+    "last_updated": false,
+    "teams": [
+      "dataIslandPaths",
+      "nba.g.2021122012",
+      "teams"
+    ],
+    "play_by_play": [
+      "gameplay_by_play",
+      "nba.g.2021122012"
+    ],
+    "pitches": [
+      "gamepitches",
+      "nba.g.2021122012"
+    ],
+    "at_bat": [
+      "gameat_bat",
+      "nba.g.2021122012"
+    ],
+    "penalty_summary": [
+      "gamepenalty_summary",
+      "nba.g.2021122012"
+    ],
+    "scoring_summary": [
+      "gamescoring_summary",
+      "nba.g.2021122012"
+    ],
+    "stat_categories": [
+      "game_stat_leaders"
+    ],
+    "stadium": [
+      "gamestadium",
+      "nba.g.2021122012"
+    ],
+    "stadium_id": [
+      "gamestadium_id",
+      "nba.g.2021122012"
+    ],
+    "stadium_image": [
+      "gamestadium_image",
+      "nba.g.2021122012"
+    ],
+    "attendance": [
+      "gameattendance",
+      "nba.g.2021122012"
+    ],
+    "lineups": [
+      "gamelineups",
+      "nba.g.2021122012"
+    ],
+    "top_performer": [
+      "gametop_performer",
+      "nba.g.2021122012"
+    ],
+    "players": [
+      "dataIslandPaths",
+      "nba.g.2021122012",
+      "players"
+    ],
+    "byline": [
+      "gamebyline",
+      "nba.g.2021122012"
+    ],
+    "highlight": [
+      "gamehighlight",
+      "nba.g.2021122012"
+    ],
+    "highlights": [
+      "gamehighlights",
+      "nba.g.2021122012"
+    ],
+    "live_video": [
+      "gamelive_video",
+      "nba.g.2021122012"
+    ],
+    "odds": [
+      "gameodds",
+      "nba.g.2021122012"
+    ],
+    "current_players": [
+      "gamecurrent_players",
+      "nba.g.2021122012"
+    ],
+    "last_play": [
+      "gamelast_play",
+      "nba.g.2021122012"
+    ],
+    "series_type": [
+      "gameseries_type",
+      "nba.g.2021122012"
+    ],
+    "series_status": [
+      "gameseries_status",
+      "nba.g.2021122012"
+    ],
+    "games": [
+      "dataIslandPaths",
+      "nba.g.2021122012",
+      "games"
+    ],
+    "series_games": [
+      "gameseries_games",
+      "nba.g.2021122012"
+    ],
+    "game_details": [
+      "gamegame_details",
+      "nba.g.2021122012"
+    ],
+    "section_notes": [
+      "gamesection_notes",
+      "nba.g.2021122012"
+    ],
+    "articles": [
+      "dataIslandPaths",
+      "nba.g.2021122012",
+      "gamearticles"
+    ],
+    "tweets": [
+      "gametweets",
+      "nba.g.2021122012"
+    ],
+    "playoff_round": [
+      "gameplayoff_round",
+      "nba.g.2021122012"
+    ],
+    "media_stream": [
+      "gamemedia_stream",
+      "nba.g.2021122012"
+    ],
+    "playoff_series_status": [
+      "gameplayoff_series_status",
+      "nba.g.2021122012"
+    ],
+    "playoff_series_details": [
+      "gameplayoff_series_details",
+      "nba.g.2021122012"
+    ],
+    "drives": [
+      "gamedrives",
+      "nba.g.2021122012"
+    ],
+    "user_teams_game": [
+      "gameuser_teams_game",
+      "nba.g.2021122012"
+    ],
+    "page_metadata": [
+      "gamepage_metadata",
+      "nba.g.2021122012"
+    ],
+    "penalty_box": [
+      "gamepenalty_box",
+      "nba.g.2021122012"
+    ],
+    "starting_pitchers": [
+      "gamestarting_pitchers",
+      "nba.g.2021122012"
+    ],
+    "unrestricted_streams": [
+      "gameunrestricted_streams",
+      "nba.g.2021122012"
+    ],
+    "tv_details": [
+      "gametv_details",
+      "nba.g.2021122012"
+    ],
+    "away_seed": null,
+    "home_seed": null
+  }
+]

@@ -1,0 +1,724 @@
+[
+  {
+    "seasonStageId": 2,
+    "seasonYear": "2021",
+    "leagueName": "standard",
+    "gameId": "0022100681",
+    "arena": {
+      "name": "Madison Square Garden",
+      "isDomestic": true,
+      "city": "New York",
+      "stateAbbr": "NY",
+      "country": "USA"
+    },
+    "isGameActivated": false,
+    "statusNum": 1,
+    "extendedStatusNum": 0,
+    "startTimeEastern": "7:30 PM ET",
+    "startTimeUTC": "2022-01-21T00:30:00.000Z",
+    "startDateEastern": "20220120",
+    "homeStartDate": "20220120",
+    "homeStartTime": "1930",
+    "visitorStartDate": "20220120",
+    "visitorStartTime": "1830",
+    "gameUrlCode": "20220120/NOPNYK",
+    "clock": "",
+    "isBuzzerBeater": false,
+    "isPreviewArticleAvail": false,
+    "isRecapArticleAvail": false,
+    "nugget": {
+      "text": ""
+    },
+    "attendance": "",
+    "tickets": {
+      "mobileApp": "https://a.data.nba.com/tickets/single/2021/0022100681/APP_TIX",
+      "desktopWeb": "https://a.data.nba.com/tickets/single/2021/0022100681/TEAM_SCH",
+      "mobileWeb": "https://a.data.nba.com/tickets/single/2021/0022100681/WEB_MWEB",
+      "leagGameInfo": "https://a.data.nba.com/tickets/single/2021/0022100681/LEAG_GAMEINFO",
+      "leagTix": "https://a.data.nba.com/tickets/single/2021/0022100681/LEAG_TIX"
+    },
+    "hasGameBookPdf": false,
+    "isStartTimeTBD": false,
+    "isNeutralVenue": false,
+    "gameDuration": {
+      "hours": "",
+      "minutes": ""
+    },
+    "period": {
+      "current": 0,
+      "type": 0,
+      "maxRegular": 4,
+      "isHalftime": false,
+      "isEndOfPeriod": false
+    },
+    "vTeam": {
+      "teamId": "1610612740",
+      "triCode": "NOP",
+      "win": "0",
+      "loss": "0",
+      "seriesWin": "",
+      "seriesLoss": "",
+      "score": "",
+      "linescore": []
+    },
+    "hTeam": {
+      "teamId": "1610612752",
+      "triCode": "NYK",
+      "win": "0",
+      "loss": "0",
+      "seriesWin": "",
+      "seriesLoss": "",
+      "score": "",
+      "linescore": []
+    },
+    "watch": {
+      "broadcast": {
+        "broadcasters": {
+          "national": [
+            {
+              "shortName": "TNT",
+              "longName": "TNT"
+            }
+          ],
+          "canadian": [
+            {
+              "shortName": "SN",
+              "longName": "Sportsnet"
+            }
+          ],
+          "vTeam": [],
+          "hTeam": [],
+          "spanish_hTeam": [],
+          "spanish_vTeam": [],
+          "spanish_national": []
+        },
+        "video": {
+          "regionalBlackoutCodes": "torr",
+          "canPurchase": false,
+          "isLeaguePass": true,
+          "isNationalBlackout": true,
+          "isTNTOT": true,
+          "isVR": false,
+          "tntotIsOnAir": false,
+          "isNextVR": false,
+          "isNBAOnTNTVR": false,
+          "isMagicLeap": false,
+          "isOculusVenues": false,
+          "streams": [
+            {
+              "streamType": "vTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "hTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_vTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_hTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_natl",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "mobile",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "condensed",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "alt",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            }
+          ],
+          "deepLink": [
+            {
+              "broadcaster": "TNT",
+              "regionalMarketCodes": "",
+              "iosApp": "https://tnt.app.link/7w91Bdy0NV",
+              "androidApp": "https://tnt.app.link/7w91Bdy0NV",
+              "desktopWeb": "https://tnt.app.link/7w91Bdy0NV",
+              "mobileWeb": "https://tnt.app.link/7w91Bdy0NV"
+            }
+          ]
+        },
+        "audio": {
+          "national": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": []
+          },
+          "vTeam": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": [
+              {
+                "shortName": "ESPN 100.3FM",
+                "longName": "ESPN 100.3FM"
+              }
+            ]
+          },
+          "hTeam": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": [
+              {
+                "shortName": "ESPN NY 98.7",
+                "longName": "ESPN NY 98.7"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "seasonStageId": 2,
+    "seasonYear": "2021",
+    "leagueName": "standard",
+    "gameId": "0022100682",
+    "arena": {
+      "name": "American Airlines Center",
+      "isDomestic": true,
+      "city": "Dallas",
+      "stateAbbr": "TX",
+      "country": "USA"
+    },
+    "isGameActivated": false,
+    "statusNum": 1,
+    "extendedStatusNum": 0,
+    "startTimeEastern": "10:00 PM ET",
+    "startTimeUTC": "2022-01-21T03:00:00.000Z",
+    "startDateEastern": "20220120",
+    "homeStartDate": "20220120",
+    "homeStartTime": "2100",
+    "visitorStartDate": "20220120",
+    "visitorStartTime": "2000",
+    "gameUrlCode": "20220120/PHXDAL",
+    "clock": "",
+    "isBuzzerBeater": false,
+    "isPreviewArticleAvail": false,
+    "isRecapArticleAvail": false,
+    "nugget": {
+      "text": ""
+    },
+    "attendance": "",
+    "tickets": {
+      "mobileApp": "https://a.data.nba.com/tickets/single/2021/0022100682/APP_TIX",
+      "desktopWeb": "https://a.data.nba.com/tickets/single/2021/0022100682/TEAM_SCH",
+      "mobileWeb": "https://a.data.nba.com/tickets/single/2021/0022100682/WEB_MWEB",
+      "leagGameInfo": "https://a.data.nba.com/tickets/single/2021/0022100682/LEAG_GAMEINFO",
+      "leagTix": "https://a.data.nba.com/tickets/single/2021/0022100682/LEAG_TIX"
+    },
+    "hasGameBookPdf": false,
+    "isStartTimeTBD": false,
+    "isNeutralVenue": false,
+    "gameDuration": {
+      "hours": "",
+      "minutes": ""
+    },
+    "period": {
+      "current": 0,
+      "type": 0,
+      "maxRegular": 4,
+      "isHalftime": false,
+      "isEndOfPeriod": false
+    },
+    "vTeam": {
+      "teamId": "1610612756",
+      "triCode": "PHX",
+      "win": "0",
+      "loss": "0",
+      "seriesWin": "",
+      "seriesLoss": "",
+      "score": "",
+      "linescore": []
+    },
+    "hTeam": {
+      "teamId": "1610612742",
+      "triCode": "DAL",
+      "win": "0",
+      "loss": "0",
+      "seriesWin": "",
+      "seriesLoss": "",
+      "score": "",
+      "linescore": []
+    },
+    "watch": {
+      "broadcast": {
+        "broadcasters": {
+          "national": [
+            {
+              "shortName": "TNT",
+              "longName": "TNT"
+            }
+          ],
+          "canadian": [
+            {
+              "shortName": "SN",
+              "longName": "Sportsnet"
+            }
+          ],
+          "vTeam": [],
+          "hTeam": [],
+          "spanish_hTeam": [],
+          "spanish_vTeam": [],
+          "spanish_national": []
+        },
+        "video": {
+          "regionalBlackoutCodes": "torr",
+          "canPurchase": false,
+          "isLeaguePass": true,
+          "isNationalBlackout": true,
+          "isTNTOT": true,
+          "isVR": false,
+          "tntotIsOnAir": false,
+          "isNextVR": false,
+          "isNBAOnTNTVR": false,
+          "isMagicLeap": false,
+          "isOculusVenues": false,
+          "streams": [
+            {
+              "streamType": "vTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "hTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_vTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_hTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_natl",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "mobile",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "condensed",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "alt",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            }
+          ],
+          "deepLink": [
+            {
+              "broadcaster": "TNT",
+              "regionalMarketCodes": "",
+              "iosApp": "https://tnt.app.link/7w91Bdy0NV",
+              "androidApp": "https://tnt.app.link/7w91Bdy0NV",
+              "desktopWeb": "https://tnt.app.link/7w91Bdy0NV",
+              "mobileWeb": "https://tnt.app.link/7w91Bdy0NV"
+            }
+          ]
+        },
+        "audio": {
+          "national": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": []
+          },
+          "vTeam": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": [
+              {
+                "shortName": "KMVP 98.7 / S: KSUN",
+                "longName": "KMVP 98.7 / S: KSUN"
+              }
+            ]
+          },
+          "hTeam": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": [
+              {
+                "shortName": "97.1 FM / S: 99.1 FM",
+                "longName": "97.1 FM / S: 99.1 FM"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "seasonStageId": 2,
+    "seasonYear": "2021",
+    "leagueName": "standard",
+    "gameId": "0022100683",
+    "arena": {
+      "name": "Chase Center",
+      "isDomestic": true,
+      "city": "San Francisco",
+      "stateAbbr": "CA",
+      "country": "USA"
+    },
+    "isGameActivated": false,
+    "statusNum": 1,
+    "extendedStatusNum": 0,
+    "startTimeEastern": "10:00 PM ET",
+    "startTimeUTC": "2022-01-21T03:00:00.000Z",
+    "startDateEastern": "20220120",
+    "homeStartDate": "20220120",
+    "homeStartTime": "1900",
+    "visitorStartDate": "20220120",
+    "visitorStartTime": "2200",
+    "gameUrlCode": "20220120/INDGSW",
+    "clock": "",
+    "isBuzzerBeater": false,
+    "isPreviewArticleAvail": false,
+    "isRecapArticleAvail": false,
+    "nugget": {
+      "text": ""
+    },
+    "attendance": "",
+    "tickets": {
+      "mobileApp": "https://a.data.nba.com/tickets/single/2021/0022100683/APP_TIX",
+      "desktopWeb": "https://a.data.nba.com/tickets/single/2021/0022100683/TEAM_SCH",
+      "mobileWeb": "https://a.data.nba.com/tickets/single/2021/0022100683/WEB_MWEB",
+      "leagGameInfo": "https://a.data.nba.com/tickets/single/2021/0022100683/LEAG_GAMEINFO",
+      "leagTix": "https://a.data.nba.com/tickets/single/2021/0022100683/LEAG_TIX"
+    },
+    "hasGameBookPdf": false,
+    "isStartTimeTBD": false,
+    "isNeutralVenue": false,
+    "gameDuration": {
+      "hours": "",
+      "minutes": ""
+    },
+    "period": {
+      "current": 0,
+      "type": 0,
+      "maxRegular": 4,
+      "isHalftime": false,
+      "isEndOfPeriod": false
+    },
+    "vTeam": {
+      "teamId": "1610612754",
+      "triCode": "IND",
+      "win": "0",
+      "loss": "0",
+      "seriesWin": "",
+      "seriesLoss": "",
+      "score": "",
+      "linescore": []
+    },
+    "hTeam": {
+      "teamId": "1610612744",
+      "triCode": "GSW",
+      "win": "0",
+      "loss": "0",
+      "seriesWin": "",
+      "seriesLoss": "",
+      "score": "",
+      "linescore": []
+    },
+    "watch": {
+      "broadcast": {
+        "broadcasters": {
+          "national": [],
+          "canadian": [
+            {
+              "shortName": "NBAC",
+              "longName": "NBA TV Canada"
+            }
+          ],
+          "vTeam": [
+            {
+              "shortName": "BSIN",
+              "longName": "Bally Sports Indiana"
+            }
+          ],
+          "hTeam": [
+            {
+              "shortName": "NBCSBA",
+              "longName": "NBC Sports  Bay Area"
+            }
+          ],
+          "spanish_hTeam": [],
+          "spanish_vTeam": [],
+          "spanish_national": []
+        },
+        "video": {
+          "regionalBlackoutCodes": "torr_gswr_indr",
+          "canPurchase": false,
+          "isLeaguePass": true,
+          "isNationalBlackout": false,
+          "isTNTOT": false,
+          "isVR": false,
+          "tntotIsOnAir": false,
+          "isNextVR": false,
+          "isNBAOnTNTVR": false,
+          "isMagicLeap": false,
+          "isOculusVenues": false,
+          "streams": [
+            {
+              "streamType": "vTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "hTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_vTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_hTeam",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "espanol_natl",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "mobile",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "condensed",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            },
+            {
+              "streamType": "alt",
+              "isOnAir": false,
+              "doesArchiveExist": false,
+              "isArchiveAvailToWatch": false,
+              "streamId": "",
+              "duration": 0
+            }
+          ],
+          "deepLink": []
+        },
+        "audio": {
+          "national": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": []
+          },
+          "vTeam": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": [
+              {
+                "shortName": "93.5/107.5 The Fan",
+                "longName": "93.5/107.5 The Fan"
+              }
+            ]
+          },
+          "hTeam": {
+            "streams": [
+              {
+                "language": "English",
+                "isOnAir": false,
+                "streamId": ""
+              },
+              {
+                "language": "Spanish",
+                "isOnAir": false,
+                "streamId": ""
+              }
+            ],
+            "broadcasters": [
+              {
+                "shortName": "95.7 The Game",
+                "longName": "95.7 The Game"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

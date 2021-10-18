@@ -1,0 +1,86 @@
+[
+  {
+    "name": "NewOrleansPelicans_at_BostonCeltics_2022-01-17",
+    "date": "2022-01-17T17:30:00.000Z",
+    "nbaId": "0022100654",
+    "yahooId": "new-orleans-pelicans-boston-celtics-2022011702",
+    "espnId": "401360473"
+  },
+  {
+    "name": "CharlotteHornets_at_NewYorkKnicks_2022-01-17",
+    "date": "2022-01-17T18:00:00.000Z",
+    "nbaId": "0022100655",
+    "yahooId": "charlotte-hornets-new-york-knicks-2022011718",
+    "espnId": "401360474"
+  },
+  {
+    "name": "Philadelphia76ers_at_WashingtonWizards_2022-01-17",
+    "date": "2022-01-17T19:00:00.000Z",
+    "nbaId": "0022100656",
+    "yahooId": "philadelphia-76ers-washington-wizards-2022011727",
+    "espnId": "401360475"
+  },
+  {
+    "name": "BrooklynNets_at_ClevelandCavaliers_2022-01-17",
+    "date": "2022-01-17T20:00:00.000Z",
+    "nbaId": "0022100657",
+    "yahooId": "brooklyn-nets-cleveland-cavaliers-2022011705",
+    "espnId": "401360476"
+  },
+  {
+    "name": "ChicagoBulls_at_MemphisGrizzlies_2022-01-17",
+    "date": "2022-01-17T20:30:00.000Z",
+    "nbaId": "0022100658",
+    "yahooId": "chicago-bulls-memphis-grizzlies-2022011729",
+    "espnId": "401360477"
+  },
+  {
+    "name": "IndianaPacers_at_LosAngelesClippers_2022-01-17",
+    "date": "2022-01-17T20:30:00.000Z",
+    "nbaId": "0022100659",
+    "yahooId": "indiana-pacers-los-angeles-clippers-2022011712",
+    "espnId": "401360478"
+  },
+  {
+    "name": "MilwaukeeBucks_at_AtlantaHawks_2022-01-17",
+    "date": "2022-01-17T23:00:00.000Z",
+    "nbaId": "0022100660",
+    "yahooId": "milwaukee-bucks-atlanta-hawks-2022011701",
+    "espnId": "401360479"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_OrlandoMagic_2022-01-17",
+    "date": "2022-01-18T00:00:00.000Z",
+    "nbaId": "0022100661",
+    "yahooId": "portland-trail-blazers-orlando-magic-2022011719",
+    "espnId": "401360480"
+  },
+  {
+    "name": "TorontoRaptors_at_MiamiHeat_2022-01-17",
+    "date": "2022-01-18T00:30:00.000Z",
+    "nbaId": "0022100662",
+    "yahooId": "toronto-raptors-miami-heat-2022011714",
+    "espnId": "401360481"
+  },
+  {
+    "name": "OklahomaCityThunder_at_DallasMavericks_2022-01-17",
+    "date": "2022-01-18T01:30:00.000Z",
+    "nbaId": "0022100663",
+    "yahooId": "oklahoma-city-thunder-dallas-mavericks-2022011706",
+    "espnId": "401360482"
+  },
+  {
+    "name": "PhoenixSuns_at_SanAntonioSpurs_2022-01-17",
+    "date": "2022-01-18T01:30:00.000Z",
+    "nbaId": "0022100664",
+    "yahooId": "phoenix-suns-san-antonio-spurs-2022011724",
+    "espnId": "401360483"
+  },
+  {
+    "name": "UtahJazz_at_LosAngelesLakers_2022-01-17",
+    "date": "2022-01-18T03:30:00.000Z",
+    "nbaId": "0022100665",
+    "yahooId": "utah-jazz-los-angeles-lakers-2022011713",
+    "espnId": "401360484"
+  }
+]

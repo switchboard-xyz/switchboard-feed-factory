@@ -1,0 +1,37 @@
+[
+  {
+    "name": "GoldenStateWarriors_at_MilwaukeeBucks_2022-01-13",
+    "date": "2022-01-14T00:30:00.000Z",
+    "nbaId": "0022100627",
+    "yahooId": "golden-state-warriors-milwaukee-bucks-2022011315",
+    "espnId": "401360446"
+  },
+  {
+    "name": "MinnesotaTimberwolves_at_MemphisGrizzlies_2022-01-13",
+    "date": "2022-01-14T01:00:00.000Z",
+    "nbaId": "0022100628",
+    "yahooId": "minnesota-timberwolves-memphis-grizzlies-2022011329",
+    "espnId": "401360447"
+  },
+  {
+    "name": "LosAngelesClippers_at_NewOrleansPelicans_2022-01-13",
+    "date": "2022-01-14T01:00:00.000Z",
+    "nbaId": "0022100629",
+    "yahooId": "los-angeles-clippers-new-orleans-pelicans-2022011303",
+    "espnId": "401360448"
+  },
+  {
+    "name": "OklahomaCityThunder_at_BrooklynNets_2022-01-13",
+    "date": "2022-01-14T01:30:00.000Z",
+    "nbaId": "0022100630",
+    "yahooId": "oklahoma-city-thunder-brooklyn-nets-2022011317",
+    "espnId": "401360449"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_DenverNuggets_2022-01-13",
+    "date": "2022-01-14T03:00:00.000Z",
+    "nbaId": "0022100631",
+    "yahooId": "portland-trail-blazers-denver-nuggets-2022011307",
+    "espnId": "401360450"
+  }
+]

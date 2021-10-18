@@ -1,0 +1,37 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "philadelphia-76ers-detroit-pistons-2021110408",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2021-11-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "utah-jazz-atlanta-hawks-2021110401",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2021-11-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "boston-celtics-miami-heat-2021110414",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-11-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "houston-rockets-phoenix-suns-2021110421",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2021-11-04T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-los-angeles-lakers-2021110413",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2021-11-04T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "HoustonRockets_at_SacramentoKings_2022-01-16",
+    "date": "2022-01-16T23:00:00.000Z",
+    "nbaId": "0022100651",
+    "yahooId": "houston-rockets-sacramento-kings-2022011623",
+    "espnId": "401360470"
+  },
+  {
+    "name": "GoldenStateWarriors_at_MinnesotaTimberwolves_2022-01-16",
+    "date": "2022-01-17T01:00:00.000Z",
+    "nbaId": "0022100652",
+    "yahooId": "golden-state-warriors-minnesota-timberwolves-2022011616",
+    "espnId": "401360471"
+  },
+  {
+    "name": "UtahJazz_at_DenverNuggets_2022-01-16",
+    "date": "2022-01-17T01:00:00.000Z",
+    "nbaId": "0022100653",
+    "yahooId": "utah-jazz-denver-nuggets-2022011607",
+    "espnId": "401360472"
+  }
+]

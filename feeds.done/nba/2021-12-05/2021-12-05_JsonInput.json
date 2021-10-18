@@ -1,0 +1,30 @@
+[
+  {
+    "name": "UtahJazz_at_ClevelandCavaliers_2021-12-05",
+    "date": "2021-12-05T20:30:00.000Z",
+    "nbaId": "0022100349",
+    "yahooId": "utah-jazz-cleveland-cavaliers-2021120505",
+    "espnId": "401360173"
+  },
+  {
+    "name": "CharlotteHornets_at_AtlantaHawks_2021-12-05",
+    "date": "2021-12-05T23:00:00.000Z",
+    "nbaId": "0022100350",
+    "yahooId": "charlotte-hornets-atlanta-hawks-2021120501",
+    "espnId": "401360174"
+  },
+  {
+    "name": "WashingtonWizards_at_TorontoRaptors_2021-12-05",
+    "date": "2021-12-05T23:00:00.000Z",
+    "nbaId": "0022100351",
+    "yahooId": "washington-wizards-toronto-raptors-2021120528",
+    "espnId": "401360175"
+  },
+  {
+    "name": "NewOrleansPelicans_at_HoustonRockets_2021-12-05",
+    "date": "2021-12-06T00:00:00.000Z",
+    "nbaId": "0022100352",
+    "yahooId": "new-orleans-pelicans-houston-rockets-2021120510",
+    "espnId": "401360176"
+  }
+]

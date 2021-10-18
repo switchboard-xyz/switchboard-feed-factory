@@ -1,0 +1,30 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101212",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-04-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101213",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2022-04-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101214",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2022-04-09T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022101215",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-04-09T00:00:00.000Z"
+  }
+]

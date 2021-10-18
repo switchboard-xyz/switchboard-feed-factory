@@ -1,0 +1,30 @@
+[
+  {
+    "name": "MilwaukeeBucks_at_MinnesotaTimberwolves_2022-03-19",
+    "date": "2022-03-19T21:00:00.000Z",
+    "nbaId": "0022101058",
+    "yahooId": "milwaukee-bucks-minnesota-timberwolves-2022031916",
+    "espnId": "401360877"
+  },
+  {
+    "name": "DallasMavericks_at_CharlotteHornets_2022-03-19",
+    "date": "2022-03-19T23:00:00.000Z",
+    "nbaId": "0022101059",
+    "yahooId": "dallas-mavericks-charlotte-hornets-2022031930",
+    "espnId": "401360878"
+  },
+  {
+    "name": "DetroitPistons_at_ClevelandCavaliers_2022-03-19",
+    "date": "2022-03-20T00:00:00.000Z",
+    "nbaId": "0022101060",
+    "yahooId": "detroit-pistons-cleveland-cavaliers-2022031905",
+    "espnId": "401360879"
+  },
+  {
+    "name": "LosAngelesLakers_at_WashingtonWizards_2022-03-19",
+    "date": "2022-03-20T00:00:00.000Z",
+    "nbaId": "0022101061",
+    "yahooId": "los-angeles-lakers-washington-wizards-2022031927",
+    "espnId": "401360880"
+  }
+]

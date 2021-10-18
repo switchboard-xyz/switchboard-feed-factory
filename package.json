@@ -13,7 +13,7 @@
     "create-ff-manager": "ts-node src/utils/createFulfillmentManager.ts --payerKeypairFile=example-keypair.json",
     "authorize-ff-manager": "ts-node src/utils/createFulfillmentManagerAuth.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
     "update-feeds": "ts-node src/utils/updateDataFeed.ts --payerKeypairFile=example-keypair.json ",
-    "fetch-nba-events": "ts-node src/utils/fetchNbaFeeds.ts",
+    "fetch-nba-events": "ts-node src/utils/fetchNba/fetchNbaFeeds.ts",
     "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "oracle": "docker-compose up"

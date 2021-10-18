@@ -1,0 +1,30 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360087",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2021-11-24T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360088",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2021-11-24T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360089",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2021-11-24T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360090",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-11-24T03:30:00.000Z"
+  }
+]

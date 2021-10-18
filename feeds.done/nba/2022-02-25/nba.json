@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100896",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2022-02-26T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100897",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-02-26T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100898",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2022-02-26T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100899",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-02-26T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100900",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2022-02-26T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100901",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2022-02-26T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100902",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2022-02-26T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100903",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2022-02-26T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100904",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-02-26T03:00:00.000Z"
+  }
+]

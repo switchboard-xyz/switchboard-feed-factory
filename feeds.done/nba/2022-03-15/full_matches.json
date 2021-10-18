@@ -1,0 +1,94 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022101029",
+      "HomeTeam": "indiana-pacers",
+      "AwayTeam": "memphis-grizzlies",
+      "EventDate": "2022-03-15T23:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360848",
+      "HomeTeam": "indiana-pacers",
+      "AwayTeam": "memphis-grizzlies",
+      "EventDate": "2022-03-15T23:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "memphis-grizzlies-indiana-pacers-2022031511",
+      "HomeTeam": "indiana-pacers",
+      "AwayTeam": "memphis-grizzlies",
+      "EventDate": "2022-03-15T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022101030",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2022-03-15T23:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360849",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2022-03-15T23:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "brooklyn-nets-orlando-magic-2022031519",
+      "HomeTeam": "orlando-magic",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2022-03-15T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022101031",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2022-03-15T23:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360850",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2022-03-15T23:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "detroit-pistons-miami-heat-2022031514",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2022-03-15T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022101032",
+      "HomeTeam": "new-orleans-pelicans",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2022-03-16T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360851",
+      "HomeTeam": "new-orleans-pelicans",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2022-03-16T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "phoenix-suns-new-orleans-pelicans-2022031503",
+      "HomeTeam": "new-orleans-pelicans",
+      "AwayTeam": "phoenix-suns",
+      "EventDate": "2022-03-15T00:00:00.000Z"
+    }
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360077",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-11-23T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360078",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "charlotte-hornets",
+    "EventDate": "2021-11-23T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360079",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2021-11-23T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360080",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2021-11-23T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360081",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2021-11-23T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360082",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-11-23T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360083",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2021-11-23T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360084",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2021-11-23T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360085",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2021-11-23T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360086",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2021-11-23T03:00:00.000Z"
+  }
+]

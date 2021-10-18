@@ -1,0 +1,58 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100751",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-01-30T18:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100752",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-01-30T18:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100753",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2022-01-30T20:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100754",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2022-01-30T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100755",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100756",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100757",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2022-01-31T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100758",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-01-31T01:00:00.000Z"
+  }
+]

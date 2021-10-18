@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "orlando-magic-cleveland-cavaliers-2022032805",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "atlanta-hawks-indiana-pacers-2022032811",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "denver-nuggets-charlotte-hornets-2022032830",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "sacramento-kings-miami-heat-2022032814",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "chicago-bulls-new-york-knicks-2022032818",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "boston-celtics-toronto-raptors-2022032828",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-houston-rockets-2022032810",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-memphis-grizzlies-2022032829",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-portland-trail-blazers-2022032822",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-03-28T00:00:00.000Z"
+  }
+]

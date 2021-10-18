@@ -1,0 +1,16 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360552",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-01-28T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360553",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-01-28T03:00:00.000Z"
+  }
+]

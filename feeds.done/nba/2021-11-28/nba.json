@@ -1,0 +1,37 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100300",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-11-28T20:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100301",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2021-11-28T22:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100302",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-11-28T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100303",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2021-11-28T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100304",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2021-11-29T02:30:00.000Z"
+  }
+]

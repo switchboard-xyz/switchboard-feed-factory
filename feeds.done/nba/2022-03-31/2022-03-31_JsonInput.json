@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Philadelphia76ers_at_DetroitPistons_2022-03-31",
+    "date": "2022-03-31T23:00:00.000Z",
+    "nbaId": "0022101147",
+    "yahooId": "philadelphia-76ers-detroit-pistons-2022033108",
+    "espnId": "401360966"
+  },
+  {
+    "name": "MilwaukeeBucks_at_BrooklynNets_2022-03-31",
+    "date": "2022-03-31T23:30:00.000Z",
+    "nbaId": "0022101148",
+    "yahooId": "milwaukee-bucks-brooklyn-nets-2022033117",
+    "espnId": "401360967"
+  },
+  {
+    "name": "LosAngelesClippers_at_ChicagoBulls_2022-03-31",
+    "date": "2022-04-01T00:00:00.000Z",
+    "nbaId": "0022101149",
+    "yahooId": "los-angeles-clippers-chicago-bulls-2022033104",
+    "espnId": "401360968"
+  },
+  {
+    "name": "LosAngelesLakers_at_UtahJazz_2022-03-31",
+    "date": "2022-04-01T02:00:00.000Z",
+    "nbaId": "0022101150",
+    "yahooId": "los-angeles-lakers-utah-jazz-2022033126",
+    "espnId": "401360969"
+  }
+]

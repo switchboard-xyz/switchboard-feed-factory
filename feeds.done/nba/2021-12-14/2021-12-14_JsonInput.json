@@ -1,0 +1,30 @@
+[
+  {
+    "name": "TorontoRaptors_at_BrooklynNets_2021-12-14",
+    "date": "2021-12-15T00:30:00.000Z",
+    "nbaId": "0022100413",
+    "yahooId": "toronto-raptors-brooklyn-nets-2021121417",
+    "espnId": "401360237"
+  },
+  {
+    "name": "GoldenStateWarriors_at_NewYorkKnicks_2021-12-14",
+    "date": "2021-12-15T00:30:00.000Z",
+    "nbaId": "0022100414",
+    "yahooId": "golden-state-warriors-new-york-knicks-2021121418",
+    "espnId": "401360238"
+  },
+  {
+    "name": "DetroitPistons_at_ChicagoBulls_2021-12-14",
+    "date": "2021-12-15T01:00:00.000Z",
+    "nbaId": "0022100415",
+    "yahooId": "detroit-pistons-chicago-bulls-2021121404",
+    "espnId": "401360239"
+  },
+  {
+    "name": "PhoenixSuns_at_PortlandTrailBlazers_2021-12-14",
+    "date": "2021-12-15T03:00:00.000Z",
+    "nbaId": "0022100416",
+    "yahooId": "phoenix-suns-portland-trail-blazers-2021121422",
+    "espnId": "401360240"
+  }
+]

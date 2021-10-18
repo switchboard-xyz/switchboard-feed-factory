@@ -18,6 +18,7 @@ export interface AppConfig {
  */
 export interface JsonInput {
   name: string;
+  date?: Date;
   nbaId?: string;
   espnId?: string;
   yahooId?: string;

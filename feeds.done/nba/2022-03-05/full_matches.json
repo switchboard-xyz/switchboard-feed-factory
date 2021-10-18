@@ -1,0 +1,140 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100954",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "sacramento-kings",
+      "EventDate": "2022-03-05T22:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360773",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "sacramento-kings",
+      "EventDate": "2022-03-05T22:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "sacramento-kings-dallas-mavericks-2022030506",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "sacramento-kings",
+      "EventDate": "2022-03-05T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100955",
+      "HomeTeam": "charlotte-hornets",
+      "AwayTeam": "san-antonio-spurs",
+      "EventDate": "2022-03-06T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360774",
+      "HomeTeam": "charlotte-hornets",
+      "AwayTeam": "san-antonio-spurs",
+      "EventDate": "2022-03-06T00:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "san-antonio-spurs-charlotte-hornets-2022030530",
+      "HomeTeam": "charlotte-hornets",
+      "AwayTeam": "san-antonio-spurs",
+      "EventDate": "2022-03-05T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100956",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2022-03-06T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360775",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2022-03-06T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "philadelphia-76ers-miami-heat-2022030514",
+      "HomeTeam": "miami-heat",
+      "AwayTeam": "philadelphia-76ers",
+      "EventDate": "2022-03-05T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100957",
+      "HomeTeam": "memphis-grizzlies",
+      "AwayTeam": "orlando-magic",
+      "EventDate": "2022-03-06T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360776",
+      "HomeTeam": "memphis-grizzlies",
+      "AwayTeam": "orlando-magic",
+      "EventDate": "2022-03-06T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "orlando-magic-memphis-grizzlies-2022030529",
+      "HomeTeam": "memphis-grizzlies",
+      "AwayTeam": "orlando-magic",
+      "EventDate": "2022-03-05T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100958",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-03-06T01:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360777",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-03-06T01:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "portland-trail-blazers-minnesota-timberwolves-2022030516",
+      "HomeTeam": "minnesota-timberwolves",
+      "AwayTeam": "portland-trail-blazers",
+      "EventDate": "2022-03-05T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100959",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2022-03-06T01:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360778",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2022-03-06T01:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "golden-state-warriors-los-angeles-lakers-2022030513",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2022-03-05T00:00:00.000Z"
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "MilwaukeeBucks_at_DetroitPistons_2021-11-02",
+    "date": "2021-11-02T23:00:00.000Z",
+    "nbaId": "0022100103",
+    "yahooId": "milwaukee-bucks-detroit-pistons-2021110208",
+    "espnId": "401359927"
+  },
+  {
+    "name": "MiamiHeat_at_DallasMavericks_2021-11-02",
+    "date": "2021-11-02T23:30:00.000Z",
+    "nbaId": "0022100104",
+    "yahooId": "miami-heat-dallas-mavericks-2021110206",
+    "espnId": "401359928"
+  },
+  {
+    "name": "SacramentoKings_at_UtahJazz_2021-11-02",
+    "date": "2021-11-03T01:00:00.000Z",
+    "nbaId": "0022100105",
+    "yahooId": "sacramento-kings-utah-jazz-2021110226",
+    "espnId": "401359929"
+  },
+  {
+    "name": "NewOrleansPelicans_at_PhoenixSuns_2021-11-02",
+    "date": "2021-11-03T02:00:00.000Z",
+    "nbaId": "0022100106",
+    "yahooId": "new-orleans-pelicans-phoenix-suns-2021110221",
+    "espnId": "401359930"
+  },
+  {
+    "name": "HoustonRockets_at_LosAngelesLakers_2021-11-02",
+    "date": "2021-11-03T02:30:00.000Z",
+    "nbaId": "0022100107",
+    "yahooId": "houston-rockets-los-angeles-lakers-2021110213",
+    "espnId": "401359931"
+  }
+]

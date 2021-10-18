@@ -1,0 +1,71 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100363",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2021-12-08T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360187",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2021-12-08T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "brooklyn-nets-dallas-mavericks-2021120706",
+      "HomeTeam": "dallas-mavericks",
+      "AwayTeam": "brooklyn-nets",
+      "EventDate": "2021-12-07T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100364",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2021-12-08T01:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360188",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2021-12-08T01:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "new-york-knicks-san-antonio-spurs-2021120724",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "new-york-knicks",
+      "EventDate": "2021-12-07T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100365",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "boston-celtics",
+      "EventDate": "2021-12-08T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360189",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "boston-celtics",
+      "EventDate": "2021-12-08T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "boston-celtics-los-angeles-lakers-2021120713",
+      "HomeTeam": "los-angeles-lakers",
+      "AwayTeam": "boston-celtics",
+      "EventDate": "2021-12-07T00:00:00.000Z"
+    }
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "SacramentoKings_at_DallasMavericks_2022-03-05",
+    "date": "2022-03-05T22:00:00.000Z",
+    "nbaId": "0022100954",
+    "yahooId": "sacramento-kings-dallas-mavericks-2022030506",
+    "espnId": "401360773"
+  },
+  {
+    "name": "SanAntonioSpurs_at_CharlotteHornets_2022-03-05",
+    "date": "2022-03-06T00:00:00.000Z",
+    "nbaId": "0022100955",
+    "yahooId": "san-antonio-spurs-charlotte-hornets-2022030530",
+    "espnId": "401360774"
+  },
+  {
+    "name": "Philadelphia76ers_at_MiamiHeat_2022-03-05",
+    "date": "2022-03-06T01:00:00.000Z",
+    "nbaId": "0022100956",
+    "yahooId": "philadelphia-76ers-miami-heat-2022030514",
+    "espnId": "401360775"
+  },
+  {
+    "name": "OrlandoMagic_at_MemphisGrizzlies_2022-03-05",
+    "date": "2022-03-06T01:00:00.000Z",
+    "nbaId": "0022100957",
+    "yahooId": "orlando-magic-memphis-grizzlies-2022030529",
+    "espnId": "401360776"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_MinnesotaTimberwolves_2022-03-05",
+    "date": "2022-03-06T01:00:00.000Z",
+    "nbaId": "0022100958",
+    "yahooId": "portland-trail-blazers-minnesota-timberwolves-2022030516",
+    "espnId": "401360777"
+  },
+  {
+    "name": "GoldenStateWarriors_at_LosAngelesLakers_2022-03-05",
+    "date": "2022-03-06T01:30:00.000Z",
+    "nbaId": "0022100959",
+    "yahooId": "golden-state-warriors-los-angeles-lakers-2022030513",
+    "espnId": "401360778"
+  }
+]

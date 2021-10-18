@@ -1,0 +1,51 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-orleans-pelicans-cleveland-cavaliers-2022013105",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-clippers-indiana-pacers-2022013111",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "memphis-grizzlies-philadelphia-76ers-2022013120",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "miami-heat-boston-celtics-2022013102",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "sacramento-kings-new-york-knicks-2022013118",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-houston-rockets-2022013110",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "portland-trail-blazers-oklahoma-city-thunder-2022013125",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2022-01-31T00:00:00.000Z"
+  }
+]

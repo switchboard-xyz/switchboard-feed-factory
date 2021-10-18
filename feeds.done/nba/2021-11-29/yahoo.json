@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "orlando-magic-philadelphia-76ers-2021112920",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "denver-nuggets-miami-heat-2021112914",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "charlotte-hornets-chicago-bulls-2021112904",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "charlotte-hornets",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-houston-rockets-2021112910",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "indiana-pacers-minnesota-timberwolves-2021112916",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "indiana-pacers",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "cleveland-cavaliers-dallas-mavericks-2021112906",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "washington-wizards-san-antonio-spurs-2021112924",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "portland-trail-blazers-utah-jazz-2021112926",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-orleans-pelicans-los-angeles-clippers-2021112912",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2021-11-29T00:00:00.000Z"
+  }
+]

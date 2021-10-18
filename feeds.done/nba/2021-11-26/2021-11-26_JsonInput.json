@@ -1,0 +1,86 @@
+[
+  {
+    "name": "DetroitPistons_at_LosAngelesClippers_2021-11-26",
+    "date": "2021-11-26T20:30:00.000Z",
+    "nbaId": "0022100280",
+    "yahooId": "detroit-pistons-los-angeles-clippers-2021112612",
+    "espnId": "401360104"
+  },
+  {
+    "name": "MinnesotaTimberwolves_at_CharlotteHornets_2021-11-26",
+    "date": "2021-11-27T00:00:00.000Z",
+    "nbaId": "0022100281",
+    "yahooId": "minnesota-timberwolves-charlotte-hornets-2021112630",
+    "espnId": "401360105"
+  },
+  {
+    "name": "PhoenixSuns_at_NewYorkKnicks_2021-11-26",
+    "date": "2021-11-27T00:00:00.000Z",
+    "nbaId": "0022100282",
+    "yahooId": "phoenix-suns-new-york-knicks-2021112618",
+    "espnId": "401360106"
+  },
+  {
+    "name": "ChicagoBulls_at_OrlandoMagic_2021-11-26",
+    "date": "2021-11-27T00:00:00.000Z",
+    "nbaId": "0022100283",
+    "yahooId": "chicago-bulls-orlando-magic-2021112619",
+    "espnId": "401360107"
+  },
+  {
+    "name": "TorontoRaptors_at_IndianaPacers_2021-11-26",
+    "date": "2021-11-27T01:00:00.000Z",
+    "nbaId": "0022100284",
+    "yahooId": "toronto-raptors-indiana-pacers-2021112611",
+    "espnId": "401360108"
+  },
+  {
+    "name": "AtlantaHawks_at_MemphisGrizzlies_2021-11-26",
+    "date": "2021-11-27T01:00:00.000Z",
+    "nbaId": "0022100285",
+    "yahooId": "atlanta-hawks-memphis-grizzlies-2021112629",
+    "espnId": "401360109"
+  },
+  {
+    "name": "WashingtonWizards_at_OklahomaCityThunder_2021-11-26",
+    "date": "2021-11-27T01:00:00.000Z",
+    "nbaId": "0022100286",
+    "yahooId": "washington-wizards-oklahoma-city-thunder-2021112625",
+    "espnId": "401360110"
+  },
+  {
+    "name": "BostonCeltics_at_SanAntonioSpurs_2021-11-26",
+    "date": "2021-11-27T01:30:00.000Z",
+    "nbaId": "0022100287",
+    "yahooId": "boston-celtics-san-antonio-spurs-2021112624",
+    "espnId": "401360111"
+  },
+  {
+    "name": "MilwaukeeBucks_at_DenverNuggets_2021-11-26",
+    "date": "2021-11-27T02:00:00.000Z",
+    "nbaId": "0022100288",
+    "yahooId": "milwaukee-bucks-denver-nuggets-2021112607",
+    "espnId": "401360112"
+  },
+  {
+    "name": "NewOrleansPelicans_at_UtahJazz_2021-11-26",
+    "date": "2021-11-27T02:00:00.000Z",
+    "nbaId": "0022100289",
+    "yahooId": "new-orleans-pelicans-utah-jazz-2021112626",
+    "espnId": "401360113"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_GoldenStateWarriors_2021-11-26",
+    "date": "2021-11-27T03:00:00.000Z",
+    "nbaId": "0022100290",
+    "yahooId": "portland-trail-blazers-golden-state-warriors-2021112609",
+    "espnId": "401360114"
+  },
+  {
+    "name": "SacramentoKings_at_LosAngelesLakers_2021-11-26",
+    "date": "2021-11-27T03:30:00.000Z",
+    "nbaId": "0022100291",
+    "yahooId": "sacramento-kings-los-angeles-lakers-2021112613",
+    "espnId": "401360115"
+  }
+]

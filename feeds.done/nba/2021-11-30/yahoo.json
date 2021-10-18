@@ -1,0 +1,37 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-brooklyn-nets-2021113017",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2021-11-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "memphis-grizzlies-toronto-raptors-2021113028",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2021-11-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-phoenix-suns-2021113021",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-11-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "detroit-pistons-portland-trail-blazers-2021113022",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2021-11-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-lakers-sacramento-kings-2021113023",
+    "HomeTeam": "sacramento-kings",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2021-11-30T00:00:00.000Z"
+  }
+]

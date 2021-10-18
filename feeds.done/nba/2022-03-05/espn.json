@@ -1,0 +1,44 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360773",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-03-05T22:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360774",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-03-06T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360775",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2022-03-06T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360776",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2022-03-06T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360777",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2022-03-06T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360778",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-03-06T01:30:00.000Z"
+  }
+]

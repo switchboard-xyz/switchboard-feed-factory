@@ -1,0 +1,79 @@
+[
+  {
+    "name": "WashingtonWizards_at_CharlotteHornets_2021-11-17",
+    "date": "2021-11-18T00:00:00.000Z",
+    "nbaId": "0022100213",
+    "yahooId": "washington-wizards-charlotte-hornets-2021111730",
+    "espnId": "401360037"
+  },
+  {
+    "name": "IndianaPacers_at_DetroitPistons_2021-11-17",
+    "date": "2021-11-18T00:00:00.000Z",
+    "nbaId": "0022100214",
+    "yahooId": "indiana-pacers-detroit-pistons-2021111708",
+    "espnId": "401360038"
+  },
+  {
+    "name": "BostonCeltics_at_AtlantaHawks_2021-11-17",
+    "date": "2021-11-18T00:30:00.000Z",
+    "nbaId": "0022100215",
+    "yahooId": "boston-celtics-atlanta-hawks-2021111701",
+    "espnId": "401360039"
+  },
+  {
+    "name": "ClevelandCavaliers_at_BrooklynNets_2021-11-17",
+    "date": "2021-11-18T00:30:00.000Z",
+    "nbaId": "0022100216",
+    "yahooId": "cleveland-cavaliers-brooklyn-nets-2021111717",
+    "espnId": "401360040"
+  },
+  {
+    "name": "NewOrleansPelicans_at_MiamiHeat_2021-11-17",
+    "date": "2021-11-18T00:30:00.000Z",
+    "nbaId": "0022100217",
+    "yahooId": "new-orleans-pelicans-miami-heat-2021111714",
+    "espnId": "401360041"
+  },
+  {
+    "name": "OrlandoMagic_at_NewYorkKnicks_2021-11-17",
+    "date": "2021-11-18T00:30:00.000Z",
+    "nbaId": "0022100218",
+    "yahooId": "orlando-magic-new-york-knicks-2021111718",
+    "espnId": "401360042"
+  },
+  {
+    "name": "LosAngelesLakers_at_MilwaukeeBucks_2021-11-17",
+    "date": "2021-11-18T00:30:00.000Z",
+    "nbaId": "0022100219",
+    "yahooId": "los-angeles-lakers-milwaukee-bucks-2021111715",
+    "espnId": "401360043"
+  },
+  {
+    "name": "SacramentoKings_at_MinnesotaTimberwolves_2021-11-17",
+    "date": "2021-11-18T01:00:00.000Z",
+    "nbaId": "0022100220",
+    "yahooId": "sacramento-kings-minnesota-timberwolves-2021111716",
+    "espnId": "401360044"
+  },
+  {
+    "name": "HoustonRockets_at_OklahomaCityThunder_2021-11-17",
+    "date": "2021-11-18T01:00:00.000Z",
+    "nbaId": "0022100221",
+    "yahooId": "houston-rockets-oklahoma-city-thunder-2021111725",
+    "espnId": "401360045"
+  },
+  {
+    "name": "DallasMavericks_at_PhoenixSuns_2021-11-17",
+    "date": "2021-11-18T03:00:00.000Z",
+    "nbaId": "0022100222",
+    "yahooId": "dallas-mavericks-phoenix-suns-2021111721",
+    "espnId": "401360046"
+  },
+  {
+    "name": "ChicagoBulls_at_PortlandTrailBlazers_2021-11-17",
+    "date": "2021-11-18T03:00:00.000Z",
+    "nbaId": "0022100223",
+    "yahooId": "chicago-bulls-portland-trail-blazers-2021111722",
+    "espnId": "401360047"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "SacramentoKings_at_CharlotteHornets_2021-12-10",
+    "date": "2021-12-11T00:00:00.000Z",
+    "nbaId": "0022100382",
+    "yahooId": "sacramento-kings-charlotte-hornets-2021121030",
+    "espnId": "401360206"
+  },
+  {
+    "name": "DallasMavericks_at_IndianaPacers_2021-12-10",
+    "date": "2021-12-11T00:00:00.000Z",
+    "nbaId": "0022100383",
+    "yahooId": "dallas-mavericks-indiana-pacers-2021121011",
+    "espnId": "401360207"
+  },
+  {
+    "name": "BrooklynNets_at_AtlantaHawks_2021-12-10",
+    "date": "2021-12-11T00:30:00.000Z",
+    "nbaId": "0022100384",
+    "yahooId": "brooklyn-nets-atlanta-hawks-2021121001",
+    "espnId": "401360208"
+  },
+  {
+    "name": "NewYorkKnicks_at_TorontoRaptors_2021-12-10",
+    "date": "2021-12-11T00:30:00.000Z",
+    "nbaId": "0022100385",
+    "yahooId": "new-york-knicks-toronto-raptors-2021121028",
+    "espnId": "401360209"
+  },
+  {
+    "name": "MilwaukeeBucks_at_HoustonRockets_2021-12-10",
+    "date": "2021-12-11T01:00:00.000Z",
+    "nbaId": "0022100386",
+    "yahooId": "milwaukee-bucks-houston-rockets-2021121010",
+    "espnId": "401360210"
+  },
+  {
+    "name": "ClevelandCavaliers_at_MinnesotaTimberwolves_2021-12-10",
+    "date": "2021-12-11T01:00:00.000Z",
+    "nbaId": "0022100387",
+    "yahooId": "cleveland-cavaliers-minnesota-timberwolves-2021121016",
+    "espnId": "401360211"
+  },
+  {
+    "name": "DetroitPistons_at_NewOrleansPelicans_2021-12-10",
+    "date": "2021-12-11T01:00:00.000Z",
+    "nbaId": "0022100388",
+    "yahooId": "detroit-pistons-new-orleans-pelicans-2021121003",
+    "espnId": "401360212"
+  },
+  {
+    "name": "LosAngelesLakers_at_OklahomaCityThunder_2021-12-10",
+    "date": "2021-12-11T01:00:00.000Z",
+    "nbaId": "0022100389",
+    "yahooId": "los-angeles-lakers-oklahoma-city-thunder-2021121025",
+    "espnId": "401360213"
+  },
+  {
+    "name": "BostonCeltics_at_PhoenixSuns_2021-12-10",
+    "date": "2021-12-11T03:00:00.000Z",
+    "nbaId": "0022100390",
+    "yahooId": "boston-celtics-phoenix-suns-2021121021",
+    "espnId": "401360214"
+  }
+]

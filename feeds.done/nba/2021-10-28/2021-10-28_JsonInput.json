@@ -1,0 +1,44 @@
+[
+  {
+    "name": "DetroitPistons_at_Philadelphia76ers_2021-10-28",
+    "date": "2021-10-28T23:00:00.000Z",
+    "nbaId": "0022100065",
+    "yahooId": "detroit-pistons-philadelphia-76ers-2021102820",
+    "espnId": "401359889"
+  },
+  {
+    "name": "AtlantaHawks_at_WashingtonWizards_2021-10-28",
+    "date": "2021-10-28T23:00:00.000Z",
+    "nbaId": "0022100066",
+    "yahooId": "atlanta-hawks-washington-wizards-2021102827",
+    "espnId": "401359890"
+  },
+  {
+    "name": "NewYorkKnicks_at_ChicagoBulls_2021-10-28",
+    "date": "2021-10-29T00:00:00.000Z",
+    "nbaId": "0022100067",
+    "yahooId": "new-york-knicks-chicago-bulls-2021102804",
+    "espnId": "401359891"
+  },
+  {
+    "name": "UtahJazz_at_HoustonRockets_2021-10-28",
+    "date": "2021-10-29T00:00:00.000Z",
+    "nbaId": "0022100068",
+    "yahooId": "utah-jazz-houston-rockets-2021102810",
+    "espnId": "401359892"
+  },
+  {
+    "name": "SanAntonioSpurs_at_DallasMavericks_2021-10-28",
+    "date": "2021-10-29T00:30:00.000Z",
+    "nbaId": "0022100069",
+    "yahooId": "san-antonio-spurs-dallas-mavericks-2021102806",
+    "espnId": "401359893"
+  },
+  {
+    "name": "MemphisGrizzlies_at_GoldenStateWarriors_2021-10-28",
+    "date": "2021-10-29T02:00:00.000Z",
+    "nbaId": "0022100070",
+    "yahooId": "memphis-grizzlies-golden-state-warriors-2021102809",
+    "espnId": "401359894"
+  }
+]

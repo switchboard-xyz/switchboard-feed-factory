@@ -1,0 +1,16 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-lakers-philadelphia-76ers-2022012720",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-01-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "minnesota-timberwolves-golden-state-warriors-2022012709",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-01-27T00:00:00.000Z"
+  }
+]

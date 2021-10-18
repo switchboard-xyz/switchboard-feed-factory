@@ -1,0 +1,79 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "boston-celtics-washington-wizards-2021103027",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-new-orleans-pelicans-2021103003",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "orlando-magic-detroit-pistons-2021103008",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-indiana-pacers-2021103011",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "atlanta-hawks-philadelphia-76ers-2021103020",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "utah-jazz-chicago-bulls-2021103004",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-milwaukee-bucks-2021103015",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "miami-heat-memphis-grizzlies-2021103029",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-golden-state-warriors-2021103009",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "denver-nuggets-minnesota-timberwolves-2021103016",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "cleveland-cavaliers-phoenix-suns-2021103021",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-10-30T00:00:00.000Z"
+  }
+]

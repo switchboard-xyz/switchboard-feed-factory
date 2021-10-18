@@ -1,0 +1,79 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-portland-trail-blazers-2022021222",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-new-orleans-pelicans-2022021203",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "sacramento-kings-washington-wizards-2022021227",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "memphis-grizzlies-charlotte-hornets-2022021230",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "memphis-grizzlies",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "cleveland-cavaliers-philadelphia-76ers-2022021220",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "denver-nuggets-toronto-raptors-2022021228",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-chicago-bulls-2022021204",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "brooklyn-nets-miami-heat-2022021214",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-clippers-dallas-mavericks-2022021206",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-lakers-golden-state-warriors-2022021209",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "orlando-magic-phoenix-suns-2022021221",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2022-02-12T00:00:00.000Z"
+  }
+]

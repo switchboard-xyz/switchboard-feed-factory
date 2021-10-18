@@ -1,0 +1,51 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100441",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2021-12-18T17:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100442",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-12-19T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100443",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-12-19T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100444",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2021-12-19T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100445",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2021-12-19T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100446",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-12-19T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100447",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2021-12-19T02:00:00.000Z"
+  }
+]

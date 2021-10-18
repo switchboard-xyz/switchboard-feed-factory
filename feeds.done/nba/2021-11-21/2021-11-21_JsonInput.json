@@ -1,0 +1,37 @@
+[
+  {
+    "name": "DallasMavericks_at_LosAngelesClippers_2021-11-21",
+    "date": "2021-11-21T20:30:00.000Z",
+    "nbaId": "0022100248",
+    "yahooId": "dallas-mavericks-los-angeles-clippers-2021112112",
+    "espnId": "401360072"
+  },
+  {
+    "name": "LosAngelesLakers_at_DetroitPistons_2021-11-21",
+    "date": "2021-11-21T23:00:00.000Z",
+    "nbaId": "0022100249",
+    "yahooId": "los-angeles-lakers-detroit-pistons-2021112108",
+    "espnId": "401360073"
+  },
+  {
+    "name": "NewYorkKnicks_at_ChicagoBulls_2021-11-21",
+    "date": "2021-11-22T01:00:00.000Z",
+    "nbaId": "0022100250",
+    "yahooId": "new-york-knicks-chicago-bulls-2021112104",
+    "espnId": "401360074"
+  },
+  {
+    "name": "DenverNuggets_at_PhoenixSuns_2021-11-21",
+    "date": "2021-11-22T01:00:00.000Z",
+    "nbaId": "0022100251",
+    "yahooId": "denver-nuggets-phoenix-suns-2021112121",
+    "espnId": "401360075"
+  },
+  {
+    "name": "TorontoRaptors_at_GoldenStateWarriors_2021-11-21",
+    "date": "2021-11-22T01:30:00.000Z",
+    "nbaId": "0022100252",
+    "yahooId": "toronto-raptors-golden-state-warriors-2021112109",
+    "espnId": "401360076"
+  }
+]

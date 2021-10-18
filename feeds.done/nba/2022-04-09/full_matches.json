@@ -1,0 +1,94 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022101212",
+      "HomeTeam": "los-angeles-clippers",
+      "AwayTeam": "sacramento-kings",
+      "EventDate": "2022-04-09T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401361031",
+      "HomeTeam": "los-angeles-clippers",
+      "AwayTeam": "sacramento-kings",
+      "EventDate": "2022-04-09T04:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "sacramento-kings-los-angeles-clippers-2022040912",
+      "HomeTeam": "los-angeles-clippers",
+      "AwayTeam": "sacramento-kings",
+      "EventDate": "2022-04-09T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022101213",
+      "HomeTeam": "memphis-grizzlies",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2022-04-09T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401361032",
+      "HomeTeam": "memphis-grizzlies",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2022-04-09T04:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "new-orleans-pelicans-memphis-grizzlies-2022040929",
+      "HomeTeam": "memphis-grizzlies",
+      "AwayTeam": "new-orleans-pelicans",
+      "EventDate": "2022-04-09T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022101214",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "indiana-pacers",
+      "EventDate": "2022-04-09T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401361033",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "indiana-pacers",
+      "EventDate": "2022-04-09T04:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "indiana-pacers-philadelphia-76ers-2022040920",
+      "HomeTeam": "philadelphia-76ers",
+      "AwayTeam": "indiana-pacers",
+      "EventDate": "2022-04-09T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022101215",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2022-04-09T00:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401361034",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2022-04-09T04:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "golden-state-warriors-san-antonio-spurs-2022040924",
+      "HomeTeam": "san-antonio-spurs",
+      "AwayTeam": "golden-state-warriors",
+      "EventDate": "2022-04-09T00:00:00.000Z"
+    }
+  }
+]

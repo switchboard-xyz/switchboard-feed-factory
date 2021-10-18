@@ -1,0 +1,3041 @@
+[
+  {
+    "id": "401360926",
+    "uid": "s:40~l:46~e:401360926",
+    "date": "2022-03-26T21:00Z",
+    "name": "San Antonio Spurs at New Orleans Pelicans",
+    "shortName": "SA @ NO",
+    "season": {
+      "year": 2022,
+      "type": 2,
+      "slug": "regular-season"
+    },
+    "competitions": [
+      {
+        "id": "401360926",
+        "uid": "s:40~l:46~e:401360926~c:401360926",
+        "date": "2022-03-26T21:00Z",
+        "attendance": 0,
+        "type": {
+          "id": "1",
+          "abbreviation": "STD"
+        },
+        "timeValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": false,
+        "recent": false,
+        "venue": {
+          "id": "985",
+          "fullName": "Smoothie King Center",
+          "address": {
+            "city": "New Orleans",
+            "state": "LA"
+          },
+          "capacity": 16867,
+          "indoor": true
+        },
+        "competitors": [
+          {
+            "id": "3",
+            "uid": "s:40~l:46~t:3",
+            "type": "team",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "3",
+              "uid": "s:40~l:46~t:3",
+              "location": "New Orleans",
+              "name": "Pelicans",
+              "abbreviation": "NO",
+              "displayName": "New Orleans Pelicans",
+              "shortDisplayName": "Pelicans",
+              "color": "002a5c",
+              "alternateColor": "b4975a",
+              "isActive": true,
+              "venue": {
+                "id": "985"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/no/new-orleans-pelicans",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/no/new-orleans-pelicans",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/no/new-orleans-pelicans",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/no",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/no",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:3&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/no/new-orleans-pelicans",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/no",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/no",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/no",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
+            },
+            "score": "0",
+            "statistics": []
+          },
+          {
+            "id": "24",
+            "uid": "s:40~l:46~t:24",
+            "type": "team",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "24",
+              "uid": "s:40~l:46~t:24",
+              "location": "San Antonio",
+              "name": "Spurs",
+              "abbreviation": "SA",
+              "displayName": "San Antonio Spurs",
+              "shortDisplayName": "Spurs",
+              "color": "000000",
+              "alternateColor": "061922",
+              "isActive": true,
+              "venue": {
+                "id": "780"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/sa/san-antonio-spurs",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/sa/san-antonio-spurs",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/sa/san-antonio-spurs",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/sa",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/sa",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:24&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/sa/san-antonio-spurs",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/sa",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/sa",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/sa",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+            },
+            "score": "0",
+            "statistics": []
+          }
+        ],
+        "notes": [],
+        "status": {
+          "clock": 0,
+          "displayClock": "0.0",
+          "period": 0,
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, March 26th at 5:00 PM EDT",
+            "shortDetail": "3/26 - 5:00 PM EDT"
+          }
+        },
+        "broadcasts": [],
+        "tickets": [
+          {
+            "summary": "Tickets as low as $18",
+            "numberAvailable": 1120,
+            "links": [
+              {
+                "href": "https://www.vividseats.com/nba-basketball/new-orleans-pelicans-tickets/pelicans-3-26-3697400.html?wsUser=717"
+              },
+              {
+                "href": "https://www.vividseats.com/venues/smoothie-king-center-tickets.html?wsUser=717"
+              }
+            ]
+          }
+        ],
+        "startDate": "2022-03-26T21:00Z",
+        "geoBroadcasts": []
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "http://www.espn.com/nba/game/_/gameId/401360926",
+        "text": "Gamecast",
+        "shortText": "Gamecast",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "status": {
+      "clock": 0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+        "id": "1",
+        "name": "STATUS_SCHEDULED",
+        "state": "pre",
+        "completed": false,
+        "description": "Scheduled",
+        "detail": "Sat, March 26th at 5:00 PM EDT",
+        "shortDetail": "3/26 - 5:00 PM EDT"
+      }
+    }
+  },
+  {
+    "id": "401360927",
+    "uid": "s:40~l:46~e:401360927",
+    "date": "2022-03-26T23:00Z",
+    "name": "Sacramento Kings at Orlando Magic",
+    "shortName": "SAC @ ORL",
+    "season": {
+      "year": 2022,
+      "type": 2,
+      "slug": "regular-season"
+    },
+    "competitions": [
+      {
+        "id": "401360927",
+        "uid": "s:40~l:46~e:401360927~c:401360927",
+        "date": "2022-03-26T23:00Z",
+        "attendance": 0,
+        "type": {
+          "id": "1",
+          "abbreviation": "STD"
+        },
+        "timeValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": false,
+        "recent": false,
+        "venue": {
+          "id": "3432",
+          "fullName": "Amway Center",
+          "address": {
+            "city": "Orlando",
+            "state": "FL"
+          },
+          "capacity": 18500,
+          "indoor": false
+        },
+        "competitors": [
+          {
+            "id": "19",
+            "uid": "s:40~l:46~t:19",
+            "type": "team",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "19",
+              "uid": "s:40~l:46~t:19",
+              "location": "Orlando",
+              "name": "Magic",
+              "abbreviation": "ORL",
+              "displayName": "Orlando Magic",
+              "shortDisplayName": "Magic",
+              "color": "0860A8",
+              "alternateColor": "c4ced3",
+              "isActive": true,
+              "venue": {
+                "id": "3432"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/orl/orlando-magic",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/orl/orlando-magic",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/orl/orlando-magic",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/orl",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/orl",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:19&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/orl/orlando-magic",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/orl",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/orl",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/orl",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
+            },
+            "score": "0",
+            "statistics": []
+          },
+          {
+            "id": "23",
+            "uid": "s:40~l:46~t:23",
+            "type": "team",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "23",
+              "uid": "s:40~l:46~t:23",
+              "location": "Sacramento",
+              "name": "Kings",
+              "abbreviation": "SAC",
+              "displayName": "Sacramento Kings",
+              "shortDisplayName": "Kings",
+              "color": "393996",
+              "alternateColor": "8e9090",
+              "isActive": true,
+              "venue": {
+                "id": "2247"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/sac/sacramento-kings",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/sac/sacramento-kings",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/sac/sacramento-kings",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/sac",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/sac",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:23&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/sac/sacramento-kings",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/sac",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/sac",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/sac",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png"
+            },
+            "score": "0",
+            "statistics": []
+          }
+        ],
+        "notes": [],
+        "status": {
+          "clock": 0,
+          "displayClock": "0.0",
+          "period": 0,
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, March 26th at 7:00 PM EDT",
+            "shortDetail": "3/26 - 7:00 PM EDT"
+          }
+        },
+        "broadcasts": [],
+        "tickets": [
+          {
+            "summary": "Tickets as low as $14",
+            "numberAvailable": 1632,
+            "links": [
+              {
+                "href": "https://www.vividseats.com/nba-basketball/orlando-magic-tickets/magic-3-26-3696382.html?wsUser=717"
+              },
+              {
+                "href": "https://www.vividseats.com/venues/amway-center-tickets.html?wsUser=717"
+              }
+            ]
+          }
+        ],
+        "startDate": "2022-03-26T23:00Z",
+        "geoBroadcasts": []
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "http://www.espn.com/nba/game/_/gameId/401360927",
+        "text": "Gamecast",
+        "shortText": "Gamecast",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "status": {
+      "clock": 0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+        "id": "1",
+        "name": "STATUS_SCHEDULED",
+        "state": "pre",
+        "completed": false,
+        "description": "Scheduled",
+        "detail": "Sat, March 26th at 7:00 PM EDT",
+        "shortDetail": "3/26 - 7:00 PM EDT"
+      }
+    }
+  },
+  {
+    "id": "401360928",
+    "uid": "s:40~l:46~e:401360928",
+    "date": "2022-03-26T23:30Z",
+    "name": "Indiana Pacers at Toronto Raptors",
+    "shortName": "IND @ TOR",
+    "season": {
+      "year": 2022,
+      "type": 2,
+      "slug": "regular-season"
+    },
+    "competitions": [
+      {
+        "id": "401360928",
+        "uid": "s:40~l:46~e:401360928~c:401360928",
+        "date": "2022-03-26T23:30Z",
+        "attendance": 0,
+        "type": {
+          "id": "1",
+          "abbreviation": "STD"
+        },
+        "timeValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": false,
+        "recent": false,
+        "venue": {
+          "id": "1838",
+          "fullName": "Scotiabank Arena",
+          "address": {
+            "city": "Toronto",
+            "state": "ON"
+          },
+          "capacity": 19800,
+          "indoor": false
+        },
+        "competitors": [
+          {
+            "id": "28",
+            "uid": "s:40~l:46~t:28",
+            "type": "team",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "28",
+              "uid": "s:40~l:46~t:28",
+              "location": "Toronto",
+              "name": "Raptors",
+              "abbreviation": "TOR",
+              "displayName": "Toronto Raptors",
+              "shortDisplayName": "Raptors",
+              "color": "CE0F41",
+              "alternateColor": "061922",
+              "isActive": true,
+              "venue": {
+                "id": "1838"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/tor/toronto-raptors",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/tor/toronto-raptors",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/tor/toronto-raptors",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/tor",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/tor",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:28&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/tor/toronto-raptors",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/tor",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/tor",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/tor",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png"
+            },
+            "score": "0",
+            "statistics": []
+          },
+          {
+            "id": "11",
+            "uid": "s:40~l:46~t:11",
+            "type": "team",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "11",
+              "uid": "s:40~l:46~t:11",
+              "location": "Indiana",
+              "name": "Pacers",
+              "abbreviation": "IND",
+              "displayName": "Indiana Pacers",
+              "shortDisplayName": "Pacers",
+              "color": "061642",
+              "alternateColor": "00275d",
+              "isActive": true,
+              "venue": {
+                "id": "2183"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/ind/indiana-pacers",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/ind/indiana-pacers",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/ind/indiana-pacers",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/ind",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/ind",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:11&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/ind/indiana-pacers",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/ind",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/ind",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/ind",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+            },
+            "score": "0",
+            "statistics": []
+          }
+        ],
+        "notes": [],
+        "status": {
+          "clock": 0,
+          "displayClock": "0.0",
+          "period": 0,
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, March 26th at 7:30 PM EDT",
+            "shortDetail": "3/26 - 7:30 PM EDT"
+          }
+        },
+        "broadcasts": [],
+        "tickets": [
+          {
+            "summary": "Tickets as low as $42",
+            "numberAvailable": 1002,
+            "links": [
+              {
+                "href": "https://www.vividseats.com/nba-basketball/toronto-raptors-tickets/raptors-vs-pacers-3-26-3696669.html?wsUser=717"
+              },
+              {
+                "href": "https://www.vividseats.com/venues/scotia-bank-arena-tickets.html?wsUser=717"
+              }
+            ]
+          }
+        ],
+        "startDate": "2022-03-26T23:30Z",
+        "geoBroadcasts": []
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "http://www.espn.com/nba/game/_/gameId/401360928",
+        "text": "Gamecast",
+        "shortText": "Gamecast",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "status": {
+      "clock": 0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+        "id": "1",
+        "name": "STATUS_SCHEDULED",
+        "state": "pre",
+        "completed": false,
+        "description": "Scheduled",
+        "detail": "Sat, March 26th at 7:30 PM EDT",
+        "shortDetail": "3/26 - 7:30 PM EDT"
+      }
+    }
+  },
+  {
+    "id": "401360929",
+    "uid": "s:40~l:46~e:401360929",
+    "date": "2022-03-27T00:00Z",
+    "name": "Chicago Bulls at Cleveland Cavaliers",
+    "shortName": "CHI @ CLE",
+    "season": {
+      "year": 2022,
+      "type": 2,
+      "slug": "regular-season"
+    },
+    "competitions": [
+      {
+        "id": "401360929",
+        "uid": "s:40~l:46~e:401360929~c:401360929",
+        "date": "2022-03-27T00:00Z",
+        "attendance": 0,
+        "type": {
+          "id": "1",
+          "abbreviation": "STD"
+        },
+        "timeValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": false,
+        "recent": false,
+        "venue": {
+          "id": "3417",
+          "fullName": "Rocket Mortgage FieldHouse",
+          "address": {
+            "city": "Cleveland",
+            "state": "OH"
+          },
+          "capacity": 19432,
+          "indoor": false
+        },
+        "competitors": [
+          {
+            "id": "5",
+            "uid": "s:40~l:46~t:5",
+            "type": "team",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "5",
+              "uid": "s:40~l:46~t:5",
+              "location": "Cleveland",
+              "name": "Cavaliers",
+              "abbreviation": "CLE",
+              "displayName": "Cleveland Cavaliers",
+              "shortDisplayName": "Cavaliers",
+              "color": "061642",
+              "alternateColor": "fdbb30",
+              "isActive": true,
+              "venue": {
+                "id": "3417"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/cle/cleveland-cavaliers",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/cle/cleveland-cavaliers",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/cle/cleveland-cavaliers",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/cle",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/cle",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:5&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/cle/cleveland-cavaliers",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/cle",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/cle",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/cle",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+            },
+            "score": "0",
+            "statistics": []
+          },
+          {
+            "id": "4",
+            "uid": "s:40~l:46~t:4",
+            "type": "team",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "4",
+              "uid": "s:40~l:46~t:4",
+              "location": "Chicago",
+              "name": "Bulls",
+              "abbreviation": "CHI",
+              "displayName": "Chicago Bulls",
+              "shortDisplayName": "Bulls",
+              "color": "000000",
+              "alternateColor": "000000",
+              "isActive": true,
+              "venue": {
+                "id": "1847"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/chi/chicago-bulls",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/chi/chicago-bulls",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/chi/chicago-bulls",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/chi",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/chi",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:4&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/chi/chicago-bulls",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/chi",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/chi",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/chi",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png"
+            },
+            "score": "0",
+            "statistics": []
+          }
+        ],
+        "notes": [],
+        "status": {
+          "clock": 0,
+          "displayClock": "0.0",
+          "period": 0,
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, March 26th at 8:00 PM EDT",
+            "shortDetail": "3/26 - 8:00 PM EDT"
+          }
+        },
+        "broadcasts": [],
+        "tickets": [
+          {
+            "summary": "Tickets as low as $20",
+            "numberAvailable": 916,
+            "links": [
+              {
+                "href": "https://www.vividseats.com/nba-basketball/cleveland-cavaliers-tickets/cavaliers-3-26-3696560.html?wsUser=717"
+              },
+              {
+                "href": "https://www.vividseats.com/venues/rocket-mortgage-fieldhouse-tickets.html?wsUser=717"
+              }
+            ]
+          }
+        ],
+        "startDate": "2022-03-27T00:00Z",
+        "geoBroadcasts": []
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "http://www.espn.com/nba/game/_/gameId/401360929",
+        "text": "Gamecast",
+        "shortText": "Gamecast",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "status": {
+      "clock": 0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+        "id": "1",
+        "name": "STATUS_SCHEDULED",
+        "state": "pre",
+        "completed": false,
+        "description": "Scheduled",
+        "detail": "Sat, March 26th at 8:00 PM EDT",
+        "shortDetail": "3/26 - 8:00 PM EDT"
+      }
+    }
+  },
+  {
+    "id": "401360930",
+    "uid": "s:40~l:46~e:401360930",
+    "date": "2022-03-27T00:00Z",
+    "name": "Brooklyn Nets at Miami Heat",
+    "shortName": "BKN @ MIA",
+    "season": {
+      "year": 2022,
+      "type": 2,
+      "slug": "regular-season"
+    },
+    "competitions": [
+      {
+        "id": "401360930",
+        "uid": "s:40~l:46~e:401360930~c:401360930",
+        "date": "2022-03-27T00:00Z",
+        "attendance": 0,
+        "type": {
+          "id": "1",
+          "abbreviation": "STD"
+        },
+        "timeValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": false,
+        "recent": false,
+        "venue": {
+          "id": "3438",
+          "fullName": "FTX Arena",
+          "address": {
+            "city": "Miami",
+            "state": "FL"
+          },
+          "capacity": 19600,
+          "indoor": true
+        },
+        "competitors": [
+          {
+            "id": "14",
+            "uid": "s:40~l:46~t:14",
+            "type": "team",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "14",
+              "uid": "s:40~l:46~t:14",
+              "location": "Miami",
+              "name": "Heat",
+              "abbreviation": "MIA",
+              "displayName": "Miami Heat",
+              "shortDisplayName": "Heat",
+              "color": "000000",
+              "alternateColor": "000000",
+              "isActive": true,
+              "venue": {
+                "id": "3438"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/mia/miami-heat",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/mia/miami-heat",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/mia/miami-heat",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/mia",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/mia",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:14&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/mia/miami-heat",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/mia",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/mia",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/mia",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
+            },
+            "score": "0",
+            "statistics": []
+          },
+          {
+            "id": "17",
+            "uid": "s:40~l:46~t:17",
+            "type": "team",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "17",
+              "uid": "s:40~l:46~t:17",
+              "location": "Brooklyn",
+              "name": "Nets",
+              "abbreviation": "BKN",
+              "displayName": "Brooklyn Nets",
+              "shortDisplayName": "Nets",
+              "color": "000000",
+              "alternateColor": "ffffff",
+              "isActive": true,
+              "venue": {
+                "id": "1826"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/bkn/brooklyn-nets",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/bkn/brooklyn-nets",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/bkn/brooklyn-nets",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/bkn",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/bkn",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:17&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/bkn/brooklyn-nets",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/bkn",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/bkn",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/bkn",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+            },
+            "score": "0",
+            "statistics": []
+          }
+        ],
+        "notes": [],
+        "status": {
+          "clock": 0,
+          "displayClock": "0.0",
+          "period": 0,
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, March 26th at 8:00 PM EDT",
+            "shortDetail": "3/26 - 8:00 PM EDT"
+          }
+        },
+        "broadcasts": [
+          {
+            "market": "national",
+            "names": [
+              "NBA TV"
+            ]
+          }
+        ],
+        "tickets": [
+          {
+            "summary": "Tickets as low as $59",
+            "numberAvailable": 3411,
+            "links": [
+              {
+                "href": "https://www.vividseats.com/nba-basketball/miami-heat-tickets/heat-3-26-3696365.html?wsUser=717"
+              },
+              {
+                "href": "https://www.vividseats.com/venues/american-airlines-arena-_-fl-tickets.html?wsUser=717"
+              }
+            ]
+          }
+        ],
+        "startDate": "2022-03-27T00:00Z",
+        "geoBroadcasts": [
+          {
+            "type": {
+              "id": "1",
+              "shortName": "TV"
+            },
+            "market": {
+              "id": "1",
+              "type": "National"
+            },
+            "media": {
+              "shortName": "NBA TV"
+            },
+            "lang": "en",
+            "region": "us"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "http://www.espn.com/nba/game/_/gameId/401360930",
+        "text": "Gamecast",
+        "shortText": "Gamecast",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "status": {
+      "clock": 0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+        "id": "1",
+        "name": "STATUS_SCHEDULED",
+        "state": "pre",
+        "completed": false,
+        "description": "Scheduled",
+        "detail": "Sat, March 26th at 8:00 PM EDT",
+        "shortDetail": "3/26 - 8:00 PM EDT"
+      }
+    }
+  },
+  {
+    "id": "401360931",
+    "uid": "s:40~l:46~e:401360931",
+    "date": "2022-03-27T00:00Z",
+    "name": "Milwaukee Bucks at Memphis Grizzlies",
+    "shortName": "MIL @ MEM",
+    "season": {
+      "year": 2022,
+      "type": 2,
+      "slug": "regular-season"
+    },
+    "competitions": [
+      {
+        "id": "401360931",
+        "uid": "s:40~l:46~e:401360931~c:401360931",
+        "date": "2022-03-27T00:00Z",
+        "attendance": 0,
+        "type": {
+          "id": "1",
+          "abbreviation": "STD"
+        },
+        "timeValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": false,
+        "recent": false,
+        "venue": {
+          "id": "1392",
+          "fullName": "FedExForum",
+          "address": {
+            "city": "Memphis",
+            "state": "TN"
+          },
+          "capacity": 18400,
+          "indoor": true
+        },
+        "competitors": [
+          {
+            "id": "29",
+            "uid": "s:40~l:46~t:29",
+            "type": "team",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "29",
+              "uid": "s:40~l:46~t:29",
+              "location": "Memphis",
+              "name": "Grizzlies",
+              "abbreviation": "MEM",
+              "displayName": "Memphis Grizzlies",
+              "shortDisplayName": "Grizzlies",
+              "color": "5D76A8",
+              "alternateColor": "7399c6",
+              "isActive": true,
+              "venue": {
+                "id": "1392"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/mem/memphis-grizzlies",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/mem/memphis-grizzlies",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/mem/memphis-grizzlies",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/mem",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/mem",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:29&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/mem/memphis-grizzlies",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/mem",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/mem",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/mem",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+            },
+            "score": "0",
+            "statistics": []
+          },
+          {
+            "id": "15",
+            "uid": "s:40~l:46~t:15",
+            "type": "team",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "15",
+              "uid": "s:40~l:46~t:15",
+              "location": "Milwaukee",
+              "name": "Bucks",
+              "abbreviation": "MIL",
+              "displayName": "Milwaukee Bucks",
+              "shortDisplayName": "Bucks",
+              "color": "003813",
+              "alternateColor": "f0ebd2",
+              "isActive": true,
+              "venue": {
+                "id": "2099"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/mil/milwaukee-bucks",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/mil/milwaukee-bucks",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/mil/milwaukee-bucks",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/mil",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/mil",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:15&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/mil/milwaukee-bucks",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/mil",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/mil",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/mil",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+            },
+            "score": "0",
+            "statistics": []
+          }
+        ],
+        "notes": [],
+        "status": {
+          "clock": 0,
+          "displayClock": "0.0",
+          "period": 0,
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, March 26th at 8:00 PM EDT",
+            "shortDetail": "3/26 - 8:00 PM EDT"
+          }
+        },
+        "broadcasts": [],
+        "tickets": [
+          {
+            "summary": "Tickets as low as $29",
+            "numberAvailable": 1687,
+            "links": [
+              {
+                "href": "https://www.vividseats.com/nba-basketball/memphis-grizzlies-tickets/grizzlies-3-26-3696753.html?wsUser=717"
+              },
+              {
+                "href": "https://www.vividseats.com/venues/fedex-forum-tickets.html?wsUser=717"
+              }
+            ]
+          }
+        ],
+        "startDate": "2022-03-27T00:00Z",
+        "geoBroadcasts": []
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "http://www.espn.com/nba/game/_/gameId/401360931",
+        "text": "Gamecast",
+        "shortText": "Gamecast",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "status": {
+      "clock": 0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+        "id": "1",
+        "name": "STATUS_SCHEDULED",
+        "state": "pre",
+        "completed": false,
+        "description": "Scheduled",
+        "detail": "Sat, March 26th at 8:00 PM EDT",
+        "shortDetail": "3/26 - 8:00 PM EDT"
+      }
+    }
+  },
+  {
+    "id": "401360932",
+    "uid": "s:40~l:46~e:401360932",
+    "date": "2022-03-27T01:00Z",
+    "name": "Oklahoma City Thunder at Denver Nuggets",
+    "shortName": "OKC @ DEN",
+    "season": {
+      "year": 2022,
+      "type": 2,
+      "slug": "regular-season"
+    },
+    "competitions": [
+      {
+        "id": "401360932",
+        "uid": "s:40~l:46~e:401360932~c:401360932",
+        "date": "2022-03-27T01:00Z",
+        "attendance": 0,
+        "type": {
+          "id": "1",
+          "abbreviation": "STD"
+        },
+        "timeValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": false,
+        "recent": false,
+        "venue": {
+          "id": "892",
+          "fullName": "Ball Arena",
+          "address": {
+            "city": "Denver",
+            "state": "CO"
+          },
+          "capacity": 19520,
+          "indoor": true
+        },
+        "competitors": [
+          {
+            "id": "7",
+            "uid": "s:40~l:46~t:7",
+            "type": "team",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "7",
+              "uid": "s:40~l:46~t:7",
+              "location": "Denver",
+              "name": "Nuggets",
+              "abbreviation": "DEN",
+              "displayName": "Denver Nuggets",
+              "shortDisplayName": "Nuggets",
+              "color": "0860A8",
+              "alternateColor": "fdb927",
+              "isActive": true,
+              "venue": {
+                "id": "892"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/den/denver-nuggets",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/den/denver-nuggets",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/den/denver-nuggets",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/den",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/den",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:7&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/den/denver-nuggets",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/den",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/den",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/den",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
+            },
+            "score": "0",
+            "statistics": []
+          },
+          {
+            "id": "25",
+            "uid": "s:40~l:46~t:25",
+            "type": "team",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "25",
+              "uid": "s:40~l:46~t:25",
+              "location": "Oklahoma City",
+              "name": "Thunder",
+              "abbreviation": "OKC",
+              "displayName": "Oklahoma City Thunder",
+              "shortDisplayName": "Thunder",
+              "color": "C67C03",
+              "alternateColor": "f05133",
+              "isActive": true,
+              "venue": {
+                "id": "2559"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/okc/oklahoma-city-thunder",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/okc/oklahoma-city-thunder",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/okc/oklahoma-city-thunder",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/okc",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/okc",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:25&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/okc/oklahoma-city-thunder",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/okc",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/okc",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/okc",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+            },
+            "score": "0",
+            "statistics": []
+          }
+        ],
+        "notes": [],
+        "status": {
+          "clock": 0,
+          "displayClock": "0.0",
+          "period": 0,
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, March 26th at 9:00 PM EDT",
+            "shortDetail": "3/26 - 9:00 PM EDT"
+          }
+        },
+        "broadcasts": [],
+        "tickets": [
+          {
+            "summary": "Tickets as low as $13",
+            "numberAvailable": 2720,
+            "links": [
+              {
+                "href": "https://www.vividseats.com/nba-basketball/denver-nuggets-tickets/nuggets-3-26-3696962.html?wsUser=717"
+              },
+              {
+                "href": "https://www.vividseats.com/venues/pepsi-center-tickets.html?wsUser=717"
+              }
+            ]
+          }
+        ],
+        "startDate": "2022-03-27T01:00Z",
+        "geoBroadcasts": []
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "http://www.espn.com/nba/game/_/gameId/401360932",
+        "text": "Gamecast",
+        "shortText": "Gamecast",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "status": {
+      "clock": 0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+        "id": "1",
+        "name": "STATUS_SCHEDULED",
+        "state": "pre",
+        "completed": false,
+        "description": "Scheduled",
+        "detail": "Sat, March 26th at 9:00 PM EDT",
+        "shortDetail": "3/26 - 9:00 PM EDT"
+      }
+    }
+  },
+  {
+    "id": "401360933",
+    "uid": "s:40~l:46~e:401360933",
+    "date": "2022-03-27T02:00Z",
+    "name": "Houston Rockets at Portland Trail Blazers",
+    "shortName": "HOU @ POR",
+    "season": {
+      "year": 2022,
+      "type": 2,
+      "slug": "regular-season"
+    },
+    "competitions": [
+      {
+        "id": "401360933",
+        "uid": "s:40~l:46~e:401360933~c:401360933",
+        "date": "2022-03-27T02:00Z",
+        "attendance": 0,
+        "type": {
+          "id": "1",
+          "abbreviation": "STD"
+        },
+        "timeValid": true,
+        "neutralSite": false,
+        "conferenceCompetition": false,
+        "recent": false,
+        "venue": {
+          "id": "3423",
+          "fullName": "Moda Center",
+          "address": {
+            "city": "Portland",
+            "state": "OR"
+          },
+          "capacity": 19441,
+          "indoor": false
+        },
+        "competitors": [
+          {
+            "id": "22",
+            "uid": "s:40~l:46~t:22",
+            "type": "team",
+            "order": 0,
+            "homeAway": "home",
+            "team": {
+              "id": "22",
+              "uid": "s:40~l:46~t:22",
+              "location": "Portland",
+              "name": "Trail Blazers",
+              "abbreviation": "POR",
+              "displayName": "Portland Trail Blazers",
+              "shortDisplayName": "Trail Blazers",
+              "color": "000000",
+              "alternateColor": "bac3c9",
+              "isActive": true,
+              "venue": {
+                "id": "3423"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/por/portland-trail-blazers",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/por/portland-trail-blazers",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/por/portland-trail-blazers",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/por",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/por",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:22&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/por/portland-trail-blazers",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/por",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/por",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/por",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
+            },
+            "score": "0",
+            "statistics": []
+          },
+          {
+            "id": "10",
+            "uid": "s:40~l:46~t:10",
+            "type": "team",
+            "order": 1,
+            "homeAway": "away",
+            "team": {
+              "id": "10",
+              "uid": "s:40~l:46~t:10",
+              "location": "Houston",
+              "name": "Rockets",
+              "abbreviation": "HOU",
+              "displayName": "Houston Rockets",
+              "shortDisplayName": "Rockets",
+              "color": "D40026",
+              "alternateColor": "c4ced3",
+              "isActive": true,
+              "venue": {
+                "id": "1394"
+              },
+              "links": [
+                {
+                  "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/_/name/hou/houston-rockets",
+                  "text": "Clubhouse",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/roster/_/name/hou/houston-rockets",
+                  "text": "Roster",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/stats/_/name/hou/houston-rockets",
+                  "text": "Statistics",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/schedule/_/name/hou",
+                  "text": "Schedule",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/photos/_/name/hou",
+                  "text": "photos",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "scores",
+                    "sportscenter",
+                    "app",
+                    "team"
+                  ],
+                  "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:10&section=scores",
+                  "text": "Scores",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "draftpicks",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/draft/teams/_/name/hou/houston-rockets",
+                  "text": "Draft Picks",
+                  "isExternal": false,
+                  "isPremium": true
+                },
+                {
+                  "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "http://www.espn.com/nba/team/transactions/_/name/hou",
+                  "text": "Transactions",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/injuries/_/name/hou",
+                  "text": "Injuries",
+                  "isExternal": false,
+                  "isPremium": false
+                },
+                {
+                  "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                  ],
+                  "href": "https://www.espn.com/nba/team/depth/_/name/hou",
+                  "text": "Depth Chart",
+                  "isExternal": false,
+                  "isPremium": false
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
+            },
+            "score": "0",
+            "statistics": []
+          }
+        ],
+        "notes": [],
+        "status": {
+          "clock": 0,
+          "displayClock": "0.0",
+          "period": 0,
+          "type": {
+            "id": "1",
+            "name": "STATUS_SCHEDULED",
+            "state": "pre",
+            "completed": false,
+            "description": "Scheduled",
+            "detail": "Sat, March 26th at 10:00 PM EDT",
+            "shortDetail": "3/26 - 10:00 PM EDT"
+          }
+        },
+        "broadcasts": [],
+        "tickets": [
+          {
+            "summary": "Tickets as low as $23",
+            "numberAvailable": 1422,
+            "links": [
+              {
+                "href": "https://www.vividseats.com/nba-basketball/portland-trail-blazers-tickets/trail-blazers-vs-rockets-3-26-3697124.html?wsUser=717"
+              },
+              {
+                "href": "https://www.vividseats.com/venues/moda-center-tickets.html?wsUser=717"
+              }
+            ]
+          }
+        ],
+        "startDate": "2022-03-27T02:00Z",
+        "geoBroadcasts": []
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "summary",
+          "desktop",
+          "event"
+        ],
+        "href": "http://www.espn.com/nba/game/_/gameId/401360933",
+        "text": "Gamecast",
+        "shortText": "Gamecast",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "status": {
+      "clock": 0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+        "id": "1",
+        "name": "STATUS_SCHEDULED",
+        "state": "pre",
+        "completed": false,
+        "description": "Scheduled",
+        "detail": "Sat, March 26th at 10:00 PM EDT",
+        "shortDetail": "3/26 - 10:00 PM EDT"
+      }
+    }
+  }
+]

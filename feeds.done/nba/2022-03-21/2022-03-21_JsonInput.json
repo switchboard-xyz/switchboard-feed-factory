@@ -1,0 +1,65 @@
+[
+  {
+    "name": "NewOrleansPelicans_at_CharlotteHornets_2022-03-21",
+    "date": "2022-03-21T23:00:00.000Z",
+    "nbaId": "0022101071",
+    "yahooId": "new-orleans-pelicans-charlotte-hornets-2022032130",
+    "espnId": "401360890"
+  },
+  {
+    "name": "LosAngelesLakers_at_ClevelandCavaliers_2022-03-21",
+    "date": "2022-03-21T23:00:00.000Z",
+    "nbaId": "0022101072",
+    "yahooId": "los-angeles-lakers-cleveland-cavaliers-2022032105",
+    "espnId": "401360891"
+  },
+  {
+    "name": "PortlandTrailBlazers_at_DetroitPistons_2022-03-21",
+    "date": "2022-03-21T23:00:00.000Z",
+    "nbaId": "0022101073",
+    "yahooId": "portland-trail-blazers-detroit-pistons-2022032108",
+    "espnId": "401360892"
+  },
+  {
+    "name": "MiamiHeat_at_Philadelphia76ers_2022-03-21",
+    "date": "2022-03-21T23:00:00.000Z",
+    "nbaId": "0022101074",
+    "yahooId": "miami-heat-philadelphia-76ers-2022032120",
+    "espnId": "401360893"
+  },
+  {
+    "name": "UtahJazz_at_BrooklynNets_2022-03-21",
+    "date": "2022-03-21T23:30:00.000Z",
+    "nbaId": "0022101075",
+    "yahooId": "utah-jazz-brooklyn-nets-2022032117",
+    "espnId": "401360894"
+  },
+  {
+    "name": "TorontoRaptors_at_ChicagoBulls_2022-03-21",
+    "date": "2022-03-22T00:00:00.000Z",
+    "nbaId": "0022101076",
+    "yahooId": "toronto-raptors-chicago-bulls-2022032104",
+    "espnId": "401360895"
+  },
+  {
+    "name": "WashingtonWizards_at_HoustonRockets_2022-03-21",
+    "date": "2022-03-22T00:00:00.000Z",
+    "nbaId": "0022101077",
+    "yahooId": "washington-wizards-houston-rockets-2022032110",
+    "espnId": "401360896"
+  },
+  {
+    "name": "BostonCeltics_at_OklahomaCityThunder_2022-03-21",
+    "date": "2022-03-22T00:00:00.000Z",
+    "nbaId": "0022101078",
+    "yahooId": "boston-celtics-oklahoma-city-thunder-2022032125",
+    "espnId": "401360897"
+  },
+  {
+    "name": "MinnesotaTimberwolves_at_DallasMavericks_2022-03-21",
+    "date": "2022-03-22T00:30:00.000Z",
+    "nbaId": "0022101079",
+    "yahooId": "minnesota-timberwolves-dallas-mavericks-2022032106",
+    "espnId": "401360898"
+  }
+]

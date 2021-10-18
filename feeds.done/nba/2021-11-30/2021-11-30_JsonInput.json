@@ -1,0 +1,37 @@
+[
+  {
+    "name": "NewYorkKnicks_at_BrooklynNets_2021-11-30",
+    "date": "2021-12-01T00:30:00.000Z",
+    "nbaId": "0022100314",
+    "yahooId": "new-york-knicks-brooklyn-nets-2021113017",
+    "espnId": "401360138"
+  },
+  {
+    "name": "MemphisGrizzlies_at_TorontoRaptors_2021-11-30",
+    "date": "2021-12-01T00:30:00.000Z",
+    "nbaId": "0022100315",
+    "yahooId": "memphis-grizzlies-toronto-raptors-2021113028",
+    "espnId": "401360139"
+  },
+  {
+    "name": "GoldenStateWarriors_at_PhoenixSuns_2021-11-30",
+    "date": "2021-12-01T03:00:00.000Z",
+    "nbaId": "0022100316",
+    "yahooId": "golden-state-warriors-phoenix-suns-2021113021",
+    "espnId": "401360140"
+  },
+  {
+    "name": "DetroitPistons_at_PortlandTrailBlazers_2021-11-30",
+    "date": "2021-12-01T03:00:00.000Z",
+    "nbaId": "0022100317",
+    "yahooId": "detroit-pistons-portland-trail-blazers-2021113022",
+    "espnId": "401360141"
+  },
+  {
+    "name": "LosAngelesLakers_at_SacramentoKings_2021-11-30",
+    "date": "2021-12-01T03:00:00.000Z",
+    "nbaId": "0022100318",
+    "yahooId": "los-angeles-lakers-sacramento-kings-2021113023",
+    "espnId": "401360142"
+  }
+]

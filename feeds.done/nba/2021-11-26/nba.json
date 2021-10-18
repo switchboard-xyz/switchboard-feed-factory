@@ -1,0 +1,86 @@
+[
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100280",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2021-11-26T20:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100281",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2021-11-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100282",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2021-11-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100283",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2021-11-27T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100284",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2021-11-27T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100285",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2021-11-27T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100286",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2021-11-27T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100287",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-11-27T01:30:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100288",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2021-11-27T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100289",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "new-orleans-pelicans",
+    "EventDate": "2021-11-27T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100290",
+    "HomeTeam": "golden-state-warriors",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2021-11-27T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "nba",
+    "EndpointId": "0022100291",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2021-11-27T03:30:00.000Z"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100666",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "minnesota-timberwolves",
+      "EventDate": "2022-01-19T00:30:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360485",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "minnesota-timberwolves",
+      "EventDate": "2022-01-19T00:30:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "minnesota-timberwolves-new-york-knicks-2022011818",
+      "HomeTeam": "new-york-knicks",
+      "AwayTeam": "minnesota-timberwolves",
+      "EventDate": "2022-01-18T00:00:00.000Z"
+    }
+  },
+  {
+    "Nba": {
+      "Endpoint": "nba",
+      "EndpointId": "0022100667",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2022-01-19T03:00:00.000Z"
+    },
+    "Espn": {
+      "Endpoint": "espn",
+      "EndpointId": "401360486",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2022-01-19T03:00:00.000Z"
+    },
+    "Yahoo": {
+      "Endpoint": "yahoo",
+      "EndpointId": "detroit-pistons-golden-state-warriors-2022011809",
+      "HomeTeam": "golden-state-warriors",
+      "AwayTeam": "detroit-pistons",
+      "EventDate": "2022-01-18T00:00:00.000Z"
+    }
+  }
+]

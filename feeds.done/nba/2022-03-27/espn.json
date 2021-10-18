@@ -1,0 +1,51 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360934",
+    "HomeTeam": "detroit-pistons",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2022-03-27T19:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360935",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-03-27T22:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360936",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-03-27T22:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360937",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2022-03-27T22:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360938",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2022-03-27T23:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360939",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "charlotte-hornets",
+    "EventDate": "2022-03-27T23:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360940",
+    "HomeTeam": "dallas-mavericks",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2022-03-27T23:30:00.000Z"
+  }
+]

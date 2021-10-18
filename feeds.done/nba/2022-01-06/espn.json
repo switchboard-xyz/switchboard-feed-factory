@@ -1,0 +1,30 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360397",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2022-01-07T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360398",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2022-01-07T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360399",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-01-07T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360400",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-01-07T03:00:00.000Z"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "dallas-mavericks-indiana-pacers-2021121011",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "sacramento-kings-charlotte-hornets-2021121030",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "brooklyn-nets-atlanta-hawks-2021121001",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-toronto-raptors-2021121028",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "detroit-pistons-new-orleans-pelicans-2021121003",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "milwaukee-bucks-houston-rockets-2021121010",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "cleveland-cavaliers-minnesota-timberwolves-2021121016",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-lakers-oklahoma-city-thunder-2021121025",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "boston-celtics-phoenix-suns-2021121021",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "boston-celtics",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  }
+]

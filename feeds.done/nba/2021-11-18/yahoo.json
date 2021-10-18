@@ -1,0 +1,44 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-cleveland-cavaliers-2021111805",
+    "HomeTeam": "cleveland-cavaliers",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2021-11-18T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "washington-wizards-miami-heat-2021111814",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2021-11-18T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-minnesota-timberwolves-2021111816",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2021-11-18T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-clippers-memphis-grizzlies-2021111829",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2021-11-18T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "philadelphia-76ers-denver-nuggets-2021111807",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2021-11-18T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-utah-jazz-2021111826",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2021-11-18T00:00:00.000Z"
+  }
+]

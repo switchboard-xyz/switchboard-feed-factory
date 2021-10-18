@@ -1,0 +1,23 @@
+[
+  {
+    "name": "OklahomaCityThunder_at_ClevelandCavaliers_2022-01-22",
+    "date": "2022-01-23T01:00:00.000Z",
+    "nbaId": "0022100695",
+    "yahooId": "oklahoma-city-thunder-cleveland-cavaliers-2022012205",
+    "espnId": "401360514"
+  },
+  {
+    "name": "SacramentoKings_at_MilwaukeeBucks_2022-01-22",
+    "date": "2022-01-23T01:00:00.000Z",
+    "nbaId": "0022100696",
+    "yahooId": "sacramento-kings-milwaukee-bucks-2022012215",
+    "espnId": "401360515"
+  },
+  {
+    "name": "IndianaPacers_at_PhoenixSuns_2022-01-22",
+    "date": "2022-01-23T02:00:00.000Z",
+    "nbaId": "0022100697",
+    "yahooId": "indiana-pacers-phoenix-suns-2022012221",
+    "espnId": "401360516"
+  }
+]

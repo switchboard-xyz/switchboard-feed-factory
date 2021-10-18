@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "san-antonio-spurs-indiana-pacers-2021110111",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "portland-trail-blazers-philadelphia-76ers-2021110120",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "portland-trail-blazers",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "cleveland-cavaliers-charlotte-hornets-2021110130",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "washington-wizards-atlanta-hawks-2021110101",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "chicago-bulls-boston-celtics-2021110102",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "chicago-bulls",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-new-york-knicks-2021110118",
+    "HomeTeam": "new-york-knicks",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "orlando-magic-minnesota-timberwolves-2021110116",
+    "HomeTeam": "minnesota-timberwolves",
+    "AwayTeam": "orlando-magic",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "denver-nuggets-memphis-grizzlies-2021110129",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "oklahoma-city-thunder-los-angeles-clippers-2021110112",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "oklahoma-city-thunder",
+    "EventDate": "2021-11-01T00:00:00.000Z"
+  }
+]

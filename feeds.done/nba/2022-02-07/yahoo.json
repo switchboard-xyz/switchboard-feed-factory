@@ -1,0 +1,37 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "miami-heat-washington-wizards-2022020727",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "miami-heat",
+    "EventDate": "2022-02-07T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-charlotte-hornets-2022020730",
+    "HomeTeam": "charlotte-hornets",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2022-02-07T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "phoenix-suns-chicago-bulls-2022020704",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "phoenix-suns",
+    "EventDate": "2022-02-07T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-oklahoma-city-thunder-2022020725",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-02-07T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-utah-jazz-2022020726",
+    "HomeTeam": "utah-jazz",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2022-02-07T00:00:00.000Z"
+  }
+]

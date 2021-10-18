@@ -1,0 +1,72 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "minnesota-timberwolves-orlando-magic-2022031119",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "los-angeles-clippers-atlanta-hawks-2022031101",
+    "HomeTeam": "atlanta-hawks",
+    "AwayTeam": "los-angeles-clippers",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "detroit-pistons-boston-celtics-2022031102",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "detroit-pistons",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "charlotte-hornets-new-orleans-pelicans-2022031103",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "charlotte-hornets",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "dallas-mavericks-houston-rockets-2022031110",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "cleveland-cavaliers-miami-heat-2022031114",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "new-york-knicks-memphis-grizzlies-2022031129",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "new-york-knicks",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "utah-jazz-san-antonio-spurs-2022031124",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "toronto-raptors-phoenix-suns-2022031121",
+    "HomeTeam": "phoenix-suns",
+    "AwayTeam": "toronto-raptors",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "washington-wizards-los-angeles-lakers-2022031113",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2022-03-11T00:00:00.000Z"
+  }
+]

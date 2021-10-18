@@ -1,0 +1,23 @@
+[
+  {
+    "name": "UtahJazz_at_Philadelphia76ers_2021-12-09",
+    "date": "2021-12-10T00:00:00.000Z",
+    "nbaId": "0022100379",
+    "yahooId": "utah-jazz-philadelphia-76ers-2021120920",
+    "espnId": "401360203"
+  },
+  {
+    "name": "LosAngelesLakers_at_MemphisGrizzlies_2021-12-09",
+    "date": "2021-12-10T01:00:00.000Z",
+    "nbaId": "0022100380",
+    "yahooId": "los-angeles-lakers-memphis-grizzlies-2021120929",
+    "espnId": "401360204"
+  },
+  {
+    "name": "DenverNuggets_at_SanAntonioSpurs_2021-12-09",
+    "date": "2021-12-10T01:30:00.000Z",
+    "nbaId": "0022100381",
+    "yahooId": "denver-nuggets-san-antonio-spurs-2021120924",
+    "espnId": "401360205"
+  }
+]

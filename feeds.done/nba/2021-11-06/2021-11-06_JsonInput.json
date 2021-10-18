@@ -1,0 +1,44 @@
+[
+  {
+    "name": "HoustonRockets_at_DenverNuggets_2021-11-06",
+    "date": "2021-11-06T21:00:00.000Z",
+    "nbaId": "0022100133",
+    "yahooId": "houston-rockets-denver-nuggets-2021110607",
+    "espnId": "401359957"
+  },
+  {
+    "name": "UtahJazz_at_MiamiHeat_2021-11-06",
+    "date": "2021-11-06T23:30:00.000Z",
+    "nbaId": "0022100134",
+    "yahooId": "utah-jazz-miami-heat-2021110614",
+    "espnId": "401359958"
+  },
+  {
+    "name": "Philadelphia76ers_at_ChicagoBulls_2021-11-06",
+    "date": "2021-11-07T00:00:00.000Z",
+    "nbaId": "0022100135",
+    "yahooId": "philadelphia-76ers-chicago-bulls-2021110604",
+    "espnId": "401359959"
+  },
+  {
+    "name": "BostonCeltics_at_DallasMavericks_2021-11-06",
+    "date": "2021-11-07T00:30:00.000Z",
+    "nbaId": "0022100136",
+    "yahooId": "boston-celtics-dallas-mavericks-2021110606",
+    "espnId": "401359960"
+  },
+  {
+    "name": "AtlantaHawks_at_PhoenixSuns_2021-11-06",
+    "date": "2021-11-07T02:00:00.000Z",
+    "nbaId": "0022100137",
+    "yahooId": "atlanta-hawks-phoenix-suns-2021110621",
+    "espnId": "401359961"
+  },
+  {
+    "name": "LosAngelesLakers_at_PortlandTrailBlazers_2021-11-06",
+    "date": "2021-11-07T02:30:00.000Z",
+    "nbaId": "0022100138",
+    "yahooId": "los-angeles-lakers-portland-trail-blazers-2021110622",
+    "espnId": "401359962"
+  }
+]

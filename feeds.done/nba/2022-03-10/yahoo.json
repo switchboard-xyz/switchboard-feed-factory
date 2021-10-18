@@ -1,0 +1,16 @@
+[
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "brooklyn-nets-philadelphia-76ers-2022031020",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "brooklyn-nets",
+    "EventDate": "2022-03-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "yahoo",
+    "EndpointId": "golden-state-warriors-denver-nuggets-2022031007",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "golden-state-warriors",
+    "EventDate": "2022-03-10T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360203",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2021-12-10T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360204",
+    "HomeTeam": "memphis-grizzlies",
+    "AwayTeam": "los-angeles-lakers",
+    "EventDate": "2021-12-10T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360205",
+    "HomeTeam": "san-antonio-spurs",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2021-12-10T01:30:00.000Z"
+  }
+]

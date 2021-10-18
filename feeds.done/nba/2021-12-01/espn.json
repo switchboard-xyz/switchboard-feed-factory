@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360143",
+    "HomeTeam": "indiana-pacers",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2021-12-02T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360144",
+    "HomeTeam": "orlando-magic",
+    "AwayTeam": "denver-nuggets",
+    "EventDate": "2021-12-02T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360145",
+    "HomeTeam": "washington-wizards",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2021-12-02T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360146",
+    "HomeTeam": "boston-celtics",
+    "AwayTeam": "philadelphia-76ers",
+    "EventDate": "2021-12-02T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360147",
+    "HomeTeam": "miami-heat",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2021-12-02T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360148",
+    "HomeTeam": "milwaukee-bucks",
+    "AwayTeam": "charlotte-hornets",
+    "EventDate": "2021-12-02T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360149",
+    "HomeTeam": "new-orleans-pelicans",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2021-12-02T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360150",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "houston-rockets",
+    "EventDate": "2021-12-02T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360151",
+    "HomeTeam": "los-angeles-clippers",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2021-12-02T03:30:00.000Z"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "AtlantaHawks_at_LosAngelesClippers_2022-01-09",
+    "date": "2022-01-09T20:30:00.000Z",
+    "nbaId": "0022100597",
+    "yahooId": "atlanta-hawks-los-angeles-clippers-2022010912",
+    "espnId": "401360416"
+  },
+  {
+    "name": "WashingtonWizards_at_OrlandoMagic_2022-01-09",
+    "date": "2022-01-09T23:00:00.000Z",
+    "nbaId": "0022100598",
+    "yahooId": "washington-wizards-orlando-magic-2022010919",
+    "espnId": "401360417"
+  },
+  {
+    "name": "NewOrleansPelicans_at_TorontoRaptors_2022-01-09",
+    "date": "2022-01-09T23:00:00.000Z",
+    "nbaId": "0022100599",
+    "yahooId": "new-orleans-pelicans-toronto-raptors-2022010928",
+    "espnId": "401360418"
+  },
+  {
+    "name": "MinnesotaTimberwolves_at_HoustonRockets_2022-01-09",
+    "date": "2022-01-10T00:00:00.000Z",
+    "nbaId": "0022100600",
+    "yahooId": "minnesota-timberwolves-houston-rockets-2022010910",
+    "espnId": "401360419"
+  },
+  {
+    "name": "DenverNuggets_at_OklahomaCityThunder_2022-01-09",
+    "date": "2022-01-10T00:00:00.000Z",
+    "nbaId": "0022100601",
+    "yahooId": "denver-nuggets-oklahoma-city-thunder-2022010925",
+    "espnId": "401360420"
+  },
+  {
+    "name": "SanAntonioSpurs_at_BrooklynNets_2022-01-09",
+    "date": "2022-01-10T00:30:00.000Z",
+    "nbaId": "0022100602",
+    "yahooId": "san-antonio-spurs-brooklyn-nets-2022010917",
+    "espnId": "401360421"
+  },
+  {
+    "name": "ChicagoBulls_at_DallasMavericks_2022-01-09",
+    "date": "2022-01-10T00:30:00.000Z",
+    "nbaId": "0022100603",
+    "yahooId": "chicago-bulls-dallas-mavericks-2022010906",
+    "espnId": "401360422"
+  },
+  {
+    "name": "ClevelandCavaliers_at_GoldenStateWarriors_2022-01-09",
+    "date": "2022-01-10T01:30:00.000Z",
+    "nbaId": "0022100604",
+    "yahooId": "cleveland-cavaliers-golden-state-warriors-2022010909",
+    "espnId": "401360423"
+  },
+  {
+    "name": "SacramentoKings_at_PortlandTrailBlazers_2022-01-09",
+    "date": "2022-01-10T02:00:00.000Z",
+    "nbaId": "0022100605",
+    "yahooId": "sacramento-kings-portland-trail-blazers-2022010922",
+    "espnId": "401360424"
+  },
+  {
+    "name": "MemphisGrizzlies_at_LosAngelesLakers_2022-01-09",
+    "date": "2022-01-10T02:30:00.000Z",
+    "nbaId": "0022100606",
+    "yahooId": "memphis-grizzlies-los-angeles-lakers-2022010913",
+    "espnId": "401360425"
+  }
+]

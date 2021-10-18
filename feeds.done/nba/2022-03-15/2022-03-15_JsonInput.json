@@ -1,0 +1,30 @@
+[
+  {
+    "name": "MemphisGrizzlies_at_IndianaPacers_2022-03-15",
+    "date": "2022-03-15T23:00:00.000Z",
+    "nbaId": "0022101029",
+    "yahooId": "memphis-grizzlies-indiana-pacers-2022031511",
+    "espnId": "401360848"
+  },
+  {
+    "name": "BrooklynNets_at_OrlandoMagic_2022-03-15",
+    "date": "2022-03-15T23:00:00.000Z",
+    "nbaId": "0022101030",
+    "yahooId": "brooklyn-nets-orlando-magic-2022031519",
+    "espnId": "401360849"
+  },
+  {
+    "name": "DetroitPistons_at_MiamiHeat_2022-03-15",
+    "date": "2022-03-15T23:30:00.000Z",
+    "nbaId": "0022101031",
+    "yahooId": "detroit-pistons-miami-heat-2022031514",
+    "espnId": "401360850"
+  },
+  {
+    "name": "PhoenixSuns_at_NewOrleansPelicans_2022-03-15",
+    "date": "2022-03-16T00:00:00.000Z",
+    "nbaId": "0022101032",
+    "yahooId": "phoenix-suns-new-orleans-pelicans-2022031503",
+    "espnId": "401360851"
+  }
+]

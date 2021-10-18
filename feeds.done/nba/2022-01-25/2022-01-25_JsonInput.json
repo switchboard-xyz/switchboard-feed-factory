@@ -1,0 +1,58 @@
+[
+  {
+    "name": "DenverNuggets_at_DetroitPistons_2022-01-25",
+    "date": "2022-01-26T00:00:00.000Z",
+    "nbaId": "0022100714",
+    "yahooId": "denver-nuggets-detroit-pistons-2022012508",
+    "espnId": "401360533"
+  },
+  {
+    "name": "CharlotteHornets_at_TorontoRaptors_2022-01-25",
+    "date": "2022-01-26T00:00:00.000Z",
+    "nbaId": "0022100715",
+    "yahooId": "charlotte-hornets-toronto-raptors-2022012528",
+    "espnId": "401360534"
+  },
+  {
+    "name": "LosAngelesClippers_at_WashingtonWizards_2022-01-25",
+    "date": "2022-01-26T00:00:00.000Z",
+    "nbaId": "0022100716",
+    "yahooId": "los-angeles-clippers-washington-wizards-2022012527",
+    "espnId": "401360535"
+  },
+  {
+    "name": "SacramentoKings_at_BostonCeltics_2022-01-25",
+    "date": "2022-01-26T00:30:00.000Z",
+    "nbaId": "0022100717",
+    "yahooId": "sacramento-kings-boston-celtics-2022012502",
+    "espnId": "401360536"
+  },
+  {
+    "name": "LosAngelesLakers_at_BrooklynNets_2022-01-25",
+    "date": "2022-01-26T00:30:00.000Z",
+    "nbaId": "0022100718",
+    "yahooId": "los-angeles-lakers-brooklyn-nets-2022012517",
+    "espnId": "401360537"
+  },
+  {
+    "name": "SanAntonioSpurs_at_HoustonRockets_2022-01-25",
+    "date": "2022-01-26T01:00:00.000Z",
+    "nbaId": "0022100719",
+    "yahooId": "san-antonio-spurs-houston-rockets-2022012510",
+    "espnId": "401360538"
+  },
+  {
+    "name": "DallasMavericks_at_GoldenStateWarriors_2022-01-25",
+    "date": "2022-01-26T03:00:00.000Z",
+    "nbaId": "0022100720",
+    "yahooId": "dallas-mavericks-golden-state-warriors-2022012509",
+    "espnId": "401360539"
+  },
+  {
+    "name": "MinnesotaTimberwolves_at_PortlandTrailBlazers_2022-01-25",
+    "date": "2022-01-26T03:00:00.000Z",
+    "nbaId": "0022100721",
+    "yahooId": "minnesota-timberwolves-portland-trail-blazers-2022012522",
+    "espnId": "401360540"
+  }
+]

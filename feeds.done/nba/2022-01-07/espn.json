@@ -1,0 +1,65 @@
+[
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360401",
+    "HomeTeam": "philadelphia-76ers",
+    "AwayTeam": "san-antonio-spurs",
+    "EventDate": "2022-01-08T00:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360402",
+    "HomeTeam": "brooklyn-nets",
+    "AwayTeam": "milwaukee-bucks",
+    "EventDate": "2022-01-08T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360403",
+    "HomeTeam": "toronto-raptors",
+    "AwayTeam": "utah-jazz",
+    "EventDate": "2022-01-08T00:30:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360404",
+    "HomeTeam": "chicago-bulls",
+    "AwayTeam": "washington-wizards",
+    "EventDate": "2022-01-08T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360405",
+    "HomeTeam": "houston-rockets",
+    "AwayTeam": "dallas-mavericks",
+    "EventDate": "2022-01-08T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360406",
+    "HomeTeam": "oklahoma-city-thunder",
+    "AwayTeam": "minnesota-timberwolves",
+    "EventDate": "2022-01-08T01:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360407",
+    "HomeTeam": "denver-nuggets",
+    "AwayTeam": "sacramento-kings",
+    "EventDate": "2022-01-08T02:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360408",
+    "HomeTeam": "los-angeles-lakers",
+    "AwayTeam": "atlanta-hawks",
+    "EventDate": "2022-01-08T03:00:00.000Z"
+  },
+  {
+    "Endpoint": "espn",
+    "EndpointId": "401360409",
+    "HomeTeam": "portland-trail-blazers",
+    "AwayTeam": "cleveland-cavaliers",
+    "EventDate": "2022-01-08T03:00:00.000Z"
+  }
+]

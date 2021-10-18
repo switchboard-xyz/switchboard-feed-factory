@@ -1,0 +1,51 @@
+[
+  {
+    "name": "MemphisGrizzlies_at_DetroitPistons_2022-02-10",
+    "date": "2022-02-11T00:00:00.000Z",
+    "nbaId": "0022100831",
+    "yahooId": "memphis-grizzlies-detroit-pistons-2022021008",
+    "espnId": "401360650"
+  },
+  {
+    "name": "BrooklynNets_at_WashingtonWizards_2022-02-10",
+    "date": "2022-02-11T00:00:00.000Z",
+    "nbaId": "0022100832",
+    "yahooId": "brooklyn-nets-washington-wizards-2022021027",
+    "espnId": "401360651"
+  },
+  {
+    "name": "MiamiHeat_at_NewOrleansPelicans_2022-02-10",
+    "date": "2022-02-11T00:30:00.000Z",
+    "nbaId": "0022100833",
+    "yahooId": "miami-heat-new-orleans-pelicans-2022021003",
+    "espnId": "401360652"
+  },
+  {
+    "name": "TorontoRaptors_at_HoustonRockets_2022-02-10",
+    "date": "2022-02-11T01:00:00.000Z",
+    "nbaId": "0022100834",
+    "yahooId": "toronto-raptors-houston-rockets-2022021010",
+    "espnId": "401360653"
+  },
+  {
+    "name": "LosAngelesClippers_at_DallasMavericks_2022-02-10",
+    "date": "2022-02-11T01:30:00.000Z",
+    "nbaId": "0022100835",
+    "yahooId": "los-angeles-clippers-dallas-mavericks-2022021006",
+    "espnId": "401360654"
+  },
+  {
+    "name": "MilwaukeeBucks_at_PhoenixSuns_2022-02-10",
+    "date": "2022-02-11T03:00:00.000Z",
+    "nbaId": "0022100836",
+    "yahooId": "milwaukee-bucks-phoenix-suns-2022021021",
+    "espnId": "401360655"
+  },
+  {
+    "name": "NewYorkKnicks_at_GoldenStateWarriors_2022-02-10",
+    "date": "2022-02-11T03:00:00.000Z",
+    "nbaId": "0022100837",
+    "yahooId": "new-york-knicks-golden-state-warriors-2022021009",
+    "espnId": "401360656"
+  }
+]

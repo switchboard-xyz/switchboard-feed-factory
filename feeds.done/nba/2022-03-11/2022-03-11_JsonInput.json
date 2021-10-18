@@ -1,0 +1,72 @@
+[
+  {
+    "name": "MinnesotaTimberwolves_at_OrlandoMagic_2022-03-11",
+    "date": "2022-03-12T00:00:00.000Z",
+    "nbaId": "0022100995",
+    "yahooId": "minnesota-timberwolves-orlando-magic-2022031119",
+    "espnId": "401360814"
+  },
+  {
+    "name": "LosAngelesClippers_at_AtlantaHawks_2022-03-11",
+    "date": "2022-03-12T00:30:00.000Z",
+    "nbaId": "0022100996",
+    "yahooId": "los-angeles-clippers-atlanta-hawks-2022031101",
+    "espnId": "401360815"
+  },
+  {
+    "name": "DetroitPistons_at_BostonCeltics_2022-03-11",
+    "date": "2022-03-12T00:30:00.000Z",
+    "nbaId": "0022100997",
+    "yahooId": "detroit-pistons-boston-celtics-2022031102",
+    "espnId": "401360816"
+  },
+  {
+    "name": "ClevelandCavaliers_at_MiamiHeat_2022-03-11",
+    "date": "2022-03-12T01:00:00.000Z",
+    "nbaId": "0022100998",
+    "yahooId": "cleveland-cavaliers-miami-heat-2022031114",
+    "espnId": "401360817"
+  },
+  {
+    "name": "DallasMavericks_at_HoustonRockets_2022-03-11",
+    "date": "2022-03-12T01:00:00.000Z",
+    "nbaId": "0022100999",
+    "yahooId": "dallas-mavericks-houston-rockets-2022031110",
+    "espnId": "401360818"
+  },
+  {
+    "name": "NewYorkKnicks_at_MemphisGrizzlies_2022-03-11",
+    "date": "2022-03-12T01:00:00.000Z",
+    "nbaId": "0022101000",
+    "yahooId": "new-york-knicks-memphis-grizzlies-2022031129",
+    "espnId": "401360819"
+  },
+  {
+    "name": "CharlotteHornets_at_NewOrleansPelicans_2022-03-11",
+    "date": "2022-03-12T01:00:00.000Z",
+    "nbaId": "0022101001",
+    "yahooId": "charlotte-hornets-new-orleans-pelicans-2022031103",
+    "espnId": "401360820"
+  },
+  {
+    "name": "UtahJazz_at_SanAntonioSpurs_2022-03-11",
+    "date": "2022-03-12T01:30:00.000Z",
+    "nbaId": "0022101002",
+    "yahooId": "utah-jazz-san-antonio-spurs-2022031124",
+    "espnId": "401360821"
+  },
+  {
+    "name": "TorontoRaptors_at_PhoenixSuns_2022-03-11",
+    "date": "2022-03-12T02:00:00.000Z",
+    "nbaId": "0022101003",
+    "yahooId": "toronto-raptors-phoenix-suns-2022031121",
+    "espnId": "401360822"
+  },
+  {
+    "name": "WashingtonWizards_at_LosAngelesLakers_2022-03-11",
+    "date": "2022-03-12T03:30:00.000Z",
+    "nbaId": "0022101004",
+    "yahooId": "washington-wizards-los-angeles-lakers-2022031113",
+    "espnId": "401360823"
+  }
+]
