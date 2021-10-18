@@ -31,7 +31,7 @@ npm run fulfillment:create
 ```
 or
 ```bash
-ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json
+ts-node src/utils/createFulfillmentManager.ts --payerKeypairFile=example-keypair.json
 ```
 Upon running this, you will need to copy and paste the output into a terminal to set the environment variables so your local oracle can process any updates.
 
