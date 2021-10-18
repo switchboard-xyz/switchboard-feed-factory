@@ -4,7 +4,6 @@ import { getTeamFromEspnAbbreviation } from "../nbaAbbreviationMap";
 import fs from "fs";
 import chalk from "chalk";
 import { JsonInput } from "../../../types";
-import { getDateString } from "../getDates";
 
 export async function getEspnEvents(date: string): Promise<EventKind[]> {
   const strippedDate = date.replaceAll("-", "");

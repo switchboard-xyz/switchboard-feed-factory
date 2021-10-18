@@ -6,8 +6,7 @@ import chalk from "chalk";
 import { JsonInput } from "../../../types";
 
 /**
- * Yahoo uses the same abbreviation and naming as NBA so using reverse map
- * to lookuo values
+ * Yahoo gameId is <away-team-home-team-dateid>
  */
 const parseTeamNames = (gameId: string): [string, string] => {
   let [home, away] = ["", ""];

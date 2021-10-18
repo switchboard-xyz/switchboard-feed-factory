@@ -121,7 +121,7 @@ async function updateDataFeed(
   const emitter = new EventEmitter();
   const callback = async function (
     signatureResult: SignatureResult,
-    ctx: Context
+    _ctx: Context
   ) {
     if (signatureResult.err) {
       console.error("SignatureError:", signatureResult);
