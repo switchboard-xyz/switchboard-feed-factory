@@ -236,7 +236,8 @@ export async function main(): Promise<void> {
     );
     const header = "Date,Name,NBA ID,ESPN ID,Yahoo ID";
     const csvLines: string[] = allMatches.map(
-      (m) => `${m.date},${m.name},${m.nbaId},${m.espnId},${m.yahooId}`
+      (m) =>
+        `${getDateString(m.date)},${m.name},${m.nbaId},${m.espnId},${m.yahooId}`
     );
     csvLines.unshift(header);
     fs.writeFileSync(`./feeds/nba/AllFeeds.csv`, csvLines.join("\r\n"));
