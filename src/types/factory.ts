@@ -12,6 +12,7 @@ import {
   SWITCHBOARD_TESTNET_PID,
   parseFulfillmentAccountData,
 } from "@switchboard-xyz/switchboard-api";
+import { sleep } from "../utils/sleep";
 
 export class DataFeedFactory {
   private connection: Connection;
@@ -63,14 +64,15 @@ export class DataFeedFactory {
    * @param factoryInput struct defining the parameters for the factory
    */
   public async buildFeeds(factoryInput: FactoryInput[]): Promise<DataFeed[]> {
-    return await Promise.all(
-      factoryInput.map(async (f) => {
-        const newFeed = await this.createNewFeed(f);
-        await this.verifyNewFeed(newFeed);
-        console.log(newFeed.toFormattedString());
-        return newFeed;
-      })
-    );
+    const feeds: DataFeed[] = [];
+    for await (const f of factoryInput) {
+      const newFeed = await this.createNewFeed(f);
+      await this.verifyNewFeed(newFeed);
+      console.log(newFeed.toFormattedString());
+      await sleep(1_000);
+      feeds.push(newFeed);
+    }
+    return feeds;
   }
 
   public async createNewFeed(newFeed: FactoryInput): Promise<DataFeed> {
