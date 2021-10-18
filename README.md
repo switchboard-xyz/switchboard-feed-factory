@@ -29,6 +29,10 @@ solana airdrop 5 example-keypair.json
 ```bash
 npm run fulfillment:create
 ```
+or
+```bash
+ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json
+```
 Upon running this, you will need to copy and paste the output into a terminal to set the environment variables so your local oracle can process any updates.
 
 If you already have a fulfillment manager keypair, make sure it is named fulfillment-keypair.json at the root directory or change the npm commands to point to your keypair.
@@ -51,6 +55,10 @@ You can manually edit the json files or run the following script to fetch gameId
 ```bash
 npm run feeds:fetch
 ```
+or
+```bash
+ts-node src/utils/fetchDataFeeds.ts
+```
 This will create an output file under ./feeds/<sport>. Copy and paste the applicable Ids to <sport>.feeds.json at the root directory
 
 ### 5. Create Data Feeds
@@ -58,11 +66,19 @@ This will create an output file under ./feeds/<sport>. Copy and paste the applic
 ```bash
 npm run feeds:create
 ```
+or
+```bash
+ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json
+```
 This will create a JSON output at the root directory named CreatedFeeds-<sport>-<timestamp>.json. This file contains the public key of the data feed and authorization account, the jobs in the data feed, and data feed configuration 
   
 ### 6. Update Data Feeds
   ```bash
 npm run feeds:update
+```
+or
+  ```bash
+ts-node src/utils/updateDataFeed.ts --payerKeypairFile=example-keypair.json
 ```
 Select the output file from the previous step. If the game has completed, the data feed update will resolve output the result to the terminal.
   
