@@ -7,14 +7,13 @@
  */
 
 import fs from "fs";
-import { getDates, getDateString } from "./getDates";
 import chalk from "chalk";
 import { JsonInput } from "../../types";
-import prompts from "prompts";
 import { capitalizeTeamName } from "./nbaAbbreviationMap";
-import { getNbaEvents, getNbaEventUrl } from "./jobs/nba";
-import { getEspnEvents, getEspnEventUrl } from "./jobs/espn";
-import { getYahooEvents, getYahooEventUrl } from "./jobs/yahoo";
+import { getNbaEvents } from "./jobs/nba";
+import { getEspnEvents } from "./jobs/espn";
+import { getYahooEvents } from "./jobs/yahoo";
+import { toDateString } from "../toDateString";
 
 export interface EventKind {
   Endpoint: string;
@@ -31,22 +30,10 @@ export interface Event {
 }
 
 export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
-  if (!fs.existsSync(`./feeds`)) {
-    fs.mkdirSync(`./feeds`);
-  }
-  if (!fs.existsSync(`./feeds/nba`)) {
-    fs.mkdirSync(`./feeds/nba`);
-  }
-  if (!fs.existsSync(`./feeds/nba/${date}`)) {
-    fs.mkdirSync(`./feeds/nba/${date}`);
-  }
-  if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
-    fs.mkdirSync(`./feeds/nba/${date}/raw`);
-  }
-
   const nbaEvents = await getNbaEvents(date);
   const espnEvents = await getEspnEvents(date);
   const yahooEvents = await getYahooEvents(date);
+  if (!nbaEvents || nbaEvents.length === 0) return [];
 
   // match NBA to ESPN & Yahoo list
   const matches: Event[] = nbaEvents.map((nbaEvent) => {
@@ -89,7 +76,7 @@ export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
   const eventMatches: JsonInput[] = matches.map((match) => {
     const name = `${capitalizeTeamName(
       match.Nba.AwayTeam
-    )}_at_${capitalizeTeamName(match.Nba.HomeTeam)}_${getDateString(
+    )}_at_${capitalizeTeamName(match.Nba.HomeTeam)}_${toDateString(
       match.Nba.EventDate
     )}`;
     const jsonInput: JsonInput = {
@@ -128,48 +115,3 @@ export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
   );
   return eventMatches;
 }
-
-export async function main(): Promise<void> {
-  const answer = await prompts([
-    {
-      type: "number",
-      name: "numDays",
-      message: "How many days do you want to fetch data for? (1-200)",
-    },
-  ]);
-  const dates = await getDates(answer.numDays);
-  let allMatches: JsonInput[] = [];
-  for await (const d of dates) {
-    const matches: JsonInput[] = await fetchNbaFeeds(d);
-    if (!matches) console.error(`failed to fetch feeds for ${d}`);
-    allMatches = allMatches.concat(matches);
-  }
-  if (allMatches) {
-    fs.writeFileSync(
-      `./feeds/nba/JsonInput.json`,
-      JSON.stringify(allMatches, null, 2)
-    );
-    const header =
-      "Date,Name,NBA ID,ESPN ID,Yahoo ID,NBA Endpoint,SPN Endpoint,Yahoo Endpoint,";
-    const csvLines: string[] = allMatches.map(
-      (m) =>
-        `"${getDateString(m.date)}","${m.name}","${m.nbaId}","${m.espnId}","${
-          m.yahooId
-        }","${getNbaEventUrl(m)}","${getEspnEventUrl(m)}","${getYahooEventUrl(
-          m
-        )}"`
-    );
-    csvLines.unshift(header);
-    fs.writeFileSync(`./feeds/nba/AllFeeds.csv`, csvLines.join("\r\n"));
-  }
-}
-
-main().then(
-  () => {
-    console.log(chalk.green("Succesfully fetched NBA Feeds"));
-    process.exit();
-  },
-  (err) => {
-    console.error(err);
-  }
-);

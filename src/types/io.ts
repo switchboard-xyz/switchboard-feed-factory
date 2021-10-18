@@ -38,6 +38,8 @@ export interface FactoryOutputJSON {
   name: string;
   dataFeed: string;
   updateAuth: string;
+  minConfirmation: number;
+  minUpdateDelay: number;
   jobs: JobOutputJSON[];
 }
 

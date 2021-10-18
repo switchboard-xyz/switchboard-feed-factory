@@ -1,34 +1,33 @@
 {
-  "name": "switchboard-epl-feeds",
+  "name": "switchboard-feed-factory",
   "version": "1.0.0",
-  "description": "A small example script on producing EPL data feeds and publishing to Switchboard's oracle network.",
+  "description": "A command line tool to fetch, create, and update switchboard data feeds",
   "author": "jack@switchboard.xyz",
   "license": "MIT",
   "private": true,
   "scripts": {
     "publish": "",
     "build": "tsc",
-    "dev": "ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
-    "start": "tsc && node bin/main.js --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
-    "create-ff-manager": "ts-node src/utils/createFulfillmentManager.ts --payerKeypairFile=example-keypair.json",
-    "authorize-ff-manager": "ts-node src/utils/createFulfillmentManagerAuth.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
-    "update-feeds": "ts-node src/utils/updateDataFeed.ts --payerKeypairFile=example-keypair.json ",
-    "fetch-nba-events": "ts-node src/utils/fetchNba/fetchNbaFeeds.ts",
+    "fulfillment:create": "ts-node src/utils/createFulfillmentManager.ts --payerKeypairFile=example-keypair.json",
+    "fulfillment:authorize": "ts-node src/utils/createFulfillmentManagerAuth.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
+    "feeds:fetch": "ts-node src/utils/fetchDataFeeds.ts",
+    "feeds:create": "ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
+    "feeds:update": "ts-node src/utils/updateDataFeed.ts --payerKeypairFile=example-keypair.json",
     "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "oracle": "docker-compose up"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jessupjn/switchboard-epl-feeds.git"
+    "url": "git+https://github.com/switchboard-xyz/switchboard-feed-factory.git"
   },
   "keywords": [
     "switchboard"
   ],
   "bugs": {
-    "url": "https://github.com/jessupjn/switchboard-epl-feeds/issues"
+    "url": "https://github.com/switchboard-xyz/switchboard-feed-factory/issues"
   },
-  "homepage": "https://github.com/jessupjn/switchboard-epl-feeds#readme",
+  "homepage": "https://github.com/switchboard-xyz/switchboard-feed-factory#readme",
   "dependencies": {
     "@solana/web3.js": "^1.29.2",
     "@switchboard-xyz/switchboard-api": "^0.2.152",

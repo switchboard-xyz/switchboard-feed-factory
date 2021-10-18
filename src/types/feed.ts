@@ -20,6 +20,7 @@ import {
 } from "@switchboard-xyz/switchboard-api";
 import chalk from "chalk";
 import { jobFactory } from "../jobs";
+import { sleep } from "../utils/sleep";
 
 export class DataFeed {
   input: FactoryInput;
@@ -27,6 +28,7 @@ export class DataFeed {
   error?: FactoryError;
   created: boolean;
   verified: boolean;
+  minUpdateDelaySeconds: number = 60 * 60;
 
   constructor(feed: FactoryInput) {
     this.input = feed;
@@ -64,30 +66,30 @@ export class DataFeed {
     try {
       dataFeed = await createDataFeed(connection, payerAccount, switchboardPID);
     } catch (e) {
-      this.error = new SwitchboardError("failed to create data feed account");
+      this.error = new SwitchboardError(
+        `failed to create data feed account ${this.input.name}: ${e}`
+      );
       return;
     }
-    await Promise.all(
-      jobs.map(async (j) => {
-        try {
-          const jobAccount = await addFeedJob(
-            connection,
-            payerAccount,
-            dataFeed,
-            j.job?.tasks as OracleJob.Task[]
-          );
-          j.pubKey = jobAccount.publicKey;
-        } catch (err) {
-          console.log("Failed to create job", err);
-        }
-      })
-    );
+    for await (const j of jobs) {
+      try {
+        const jobAccount = await addFeedJob(
+          connection,
+          payerAccount,
+          dataFeed,
+          j.job?.tasks as OracleJob.Task[]
+        );
+        j.pubKey = jobAccount.publicKey;
+      } catch (err) {
+        console.log("Failed to create job", err);
+      }
+    }
 
     // set fulfillment manager and update config
     try {
       await setDataFeedConfigs(connection, payerAccount, dataFeed, {
-        minConfirmations: 5,
-        minUpdateDelaySeconds: 60,
+        minConfirmations: jobs.length,
+        minUpdateDelaySeconds: this.minUpdateDelaySeconds,
         fulfillmentManagerPubkey: fulfillmentAccount.publicKey.toBuffer(),
         lock: false,
       });
@@ -198,6 +200,8 @@ export class DataFeed {
     return {
       name: this.input.name,
       dataFeed: this.output ? this.output.dataFeed.publicKey.toString() : "",
+      minConfirmation: jobs.length,
+      minUpdateDelay: this.minUpdateDelaySeconds,
       updateAuth: this.output
         ? this.output.updateAuth.publicKey.toString()
         : "",

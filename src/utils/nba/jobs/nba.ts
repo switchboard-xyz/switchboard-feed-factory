@@ -4,7 +4,7 @@ import { getTeamFromNbaAbbreviation } from "../nbaAbbreviationMap";
 import fs from "fs";
 import chalk from "chalk";
 import { JsonInput } from "../../../types";
-import { getDateString } from "../getDates";
+import { toDateString } from "../../toDateString";
 
 export async function getNbaEvents(date: string): Promise<EventKind[]> {
   const strippedDate = date.replaceAll("-", "");
@@ -23,6 +23,12 @@ export async function getNbaEvents(date: string): Promise<EventKind[]> {
     };
   });
   if (nbaEvents && nbaEvents.length > 0) {
+    if (!fs.existsSync(`./feeds/nba/${date}`)) {
+      fs.mkdirSync(`./feeds/nba/${date}`);
+    }
+    if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
+      fs.mkdirSync(`./feeds/nba/${date}/raw`);
+    }
     fs.writeFileSync(
       `./feeds/nba/${date}/raw/nba.json`,
       JSON.stringify(nbaResponseEvents, null, 2)
@@ -40,6 +46,6 @@ export async function getNbaEvents(date: string): Promise<EventKind[]> {
 export const getNbaEventUrl = (feed: JsonInput): string => {
   if (!feed.date || !feed.nbaId) return "";
   const date = new Date(feed.date);
-  const dateStr = getDateString(date).replaceAll("-", "");
+  const dateStr = toDateString(date).replaceAll("-", "");
   return `http://data.nba.net/prod/v1/${dateStr}/${feed.nbaId}_boxscore.json`;
 };

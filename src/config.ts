@@ -1,14 +1,15 @@
-import { Account, Cluster } from "@solana/web3.js";
+import { Account } from "@solana/web3.js";
 import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
 import { ConfigError, AppConfig } from "./types/";
-import prompts from "prompts";
 import readlineSync from "readline-sync";
 import { ingestFeeds } from "./utils/ingestFeeds";
-
+import { toCluster } from "./utils/toCluster";
 import dotenv from "dotenv";
+import { selectSport } from "./utils/cli/selectSport";
+import { selectCluster } from "./utils/cli/selectCluster";
 dotenv.config();
 
 /**
@@ -44,37 +45,21 @@ export async function getConfig(): Promise<AppConfig> {
         type: "string",
         describe: "devnet, testnet, or mainnet-beta",
         demand: false,
-        default: "devnet",
       },
     })
     .parseSync();
 
+  const cluster = argv.cluster
+    ? toCluster(argv.cluster)
+    : await selectCluster();
+
+  // TO DO: Sport should be an enumeration
   const sport: string =
     argv.sport === "epl" || argv.sport === "nba"
       ? argv.sport
-      : (
-          await prompts([
-            {
-              type: "select",
-              name: "sport",
-              message: "Pick a sport",
-              choices: [
-                {
-                  title: "English Premier League (epl.feeds.json)",
-                  value: "epl",
-                },
-                {
-                  title: "National Basketball Association (nba.feeds.json)",
-                  value: "nba",
-                },
-              ],
-            },
-          ])
-        ).sport;
+      : await selectSport();
 
   const factoryInput = ingestFeeds(sport);
-
-  const cluster = toCluster(argv.cluster);
 
   const payerKeypair = JSON.parse(
     fs.readFileSync(resolve(argv.payerKeypairFile), "utf-8")
@@ -105,18 +90,4 @@ export async function getConfig(): Promise<AppConfig> {
     fulfillmentAccount,
     payerAccount,
   };
-}
-
-function toCluster(cluster: string): Cluster {
-  switch (cluster) {
-    case "devnet":
-    case "testnet":
-    case "mainnet-beta": {
-      return cluster;
-    }
-  }
-
-  throw new ConfigError(
-    `Invalid cluster ${cluster} [devnet / testnet / mainnet-beta]`
-  );
 }

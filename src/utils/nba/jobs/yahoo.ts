@@ -6,8 +6,7 @@ import chalk from "chalk";
 import { JsonInput } from "../../../types";
 
 /**
- * Yahoo uses the same abbreviation and naming as NBA so using reverse map
- * to lookuo values
+ * Yahoo gameId is <away-team-home-team-dateid>
  */
 const parseTeamNames = (gameId: string): [string, string] => {
   let [home, away] = ["", ""];
@@ -56,6 +55,12 @@ export async function getYahooEvents(date: string): Promise<EventKind[]> {
     };
   });
   if (yahooResponseEvents && yahooResponseEvents.length > 0) {
+    if (!fs.existsSync(`./feeds/nba/${date}`)) {
+      fs.mkdirSync(`./feeds/nba/${date}`);
+    }
+    if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
+      fs.mkdirSync(`./feeds/nba/${date}/raw`);
+    }
     fs.writeFileSync(
       `./feeds/nba/${date}/raw/yahoo.json`,
       JSON.stringify(yahooResponseEvents, null, 2)
