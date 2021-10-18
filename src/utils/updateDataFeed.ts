@@ -70,7 +70,7 @@ async function main(): Promise<string> {
       type: "select",
       name: "jsonFile",
       message: "Pick a JSON file to import",
-      choices: jsonFiles,
+      choices: jsonFiles.reverse(), // latest comes first
     },
   ]);
   console.log(`selected ${pickJson.jsonFile}`);
