@@ -3,6 +3,8 @@ import { api } from "../../api";
 import { getTeamFromEspnAbbreviation } from "../nbaAbbreviationMap";
 import fs from "fs";
 import chalk from "chalk";
+import { JsonInput } from "../../../types";
+import { getDateString } from "../getDates";
 
 export async function getEspnEvents(date: string): Promise<EventKind[]> {
   const strippedDate = date.replaceAll("-", "");
@@ -35,3 +37,8 @@ export async function getEspnEvents(date: string): Promise<EventKind[]> {
   }
   return espnEvents;
 }
+
+export const getEspnEventUrl = (feed: JsonInput): string => {
+  if (!feed.espnId) return "";
+  return `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard/${feed.espnId}`;
+};

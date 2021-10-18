@@ -3,6 +3,7 @@ import { api } from "../../api";
 import { abbreviationMap } from "../nbaAbbreviationMap";
 import fs from "fs";
 import chalk from "chalk";
+import { JsonInput } from "../../../types";
 
 /**
  * Yahoo uses the same abbreviation and naming as NBA so using reverse map
@@ -68,3 +69,8 @@ export async function getYahooEvents(date: string): Promise<EventKind[]> {
   }
   return yahooEvents;
 }
+
+export const getYahooEventUrl = (feed: JsonInput): string => {
+  if (!feed.yahooId) return "";
+  return `https://sports.yahoo.com/nba/${feed.yahooId}`;
+};

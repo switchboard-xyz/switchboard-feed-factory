@@ -3,6 +3,8 @@ import { api } from "../../api";
 import { getTeamFromNbaAbbreviation } from "../nbaAbbreviationMap";
 import fs from "fs";
 import chalk from "chalk";
+import { JsonInput } from "../../../types";
+import { getDateString } from "../getDates";
 
 export async function getNbaEvents(date: string): Promise<EventKind[]> {
   const strippedDate = date.replaceAll("-", "");
@@ -34,3 +36,10 @@ export async function getNbaEvents(date: string): Promise<EventKind[]> {
   }
   return nbaEvents;
 }
+
+export const getNbaEventUrl = (feed: JsonInput): string => {
+  if (!feed.date || !feed.nbaId) return "";
+  const date = new Date(feed.date);
+  const dateStr = getDateString(date).replaceAll("-", "");
+  return `http://data.nba.net/prod/v1/${dateStr}/${feed.nbaId}_boxscore.json`;
+};

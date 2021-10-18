@@ -12,9 +12,9 @@ import chalk from "chalk";
 import { JsonInput } from "../../types";
 import prompts from "prompts";
 import { capitalizeTeamName } from "./nbaAbbreviationMap";
-import { getNbaEvents } from "./jobs/nba";
-import { getEspnEvents } from "./jobs/espn";
-import { getYahooEvents } from "./jobs/yahoo";
+import { getNbaEvents, getNbaEventUrl } from "./jobs/nba";
+import { getEspnEvents, getEspnEventUrl } from "./jobs/espn";
+import { getYahooEvents, getYahooEventUrl } from "./jobs/yahoo";
 
 export interface EventKind {
   Endpoint: string;
@@ -149,12 +149,15 @@ export async function main(): Promise<void> {
       `./feeds/nba/JsonInput.json`,
       JSON.stringify(allMatches, null, 2)
     );
-    const header = "Date,Name,NBA ID,ESPN ID,Yahoo ID";
+    const header =
+      "Date,Name,NBA ID,ESPN ID,Yahoo ID,NBA Endpoint,SPN Endpoint,Yahoo Endpoint,";
     const csvLines: string[] = allMatches.map(
       (m) =>
         `"${getDateString(m.date)}","${m.name}","${m.nbaId}","${m.espnId}","${
           m.yahooId
-        }"`
+        }","${getNbaEventUrl(m)}","${getEspnEventUrl(m)}","${getYahooEventUrl(
+          m
+        )}"`
     );
     csvLines.unshift(header);
     fs.writeFileSync(`./feeds/nba/AllFeeds.csv`, csvLines.join("\r\n"));
