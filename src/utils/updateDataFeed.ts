@@ -125,6 +125,7 @@ async function updateDataFeed(
   ) {
     if (signatureResult.err) {
       console.error("SignatureError:", signatureResult);
+      emitter.emit("Failure");
       return;
     }
     let attempts = 30;
@@ -154,11 +155,12 @@ async function updateDataFeed(
     emitter.emit("Done");
   };
   connection.onSignature(signature, callback, "finalized");
-  emitter.on("Done", () => {
+  emitter.on("Failure", () => {
     console.error(`${chalk.red("Failed to update data feed")}`);
+    emitter.emit("Done");
   });
   emitter.on("Success", () => {
-    console.error("Successfully updated data feed");
+    console.error(chalk.green("Successfully updated data feed"));
     emitter.emit("Done");
   });
   await waitFor("Done", emitter);
