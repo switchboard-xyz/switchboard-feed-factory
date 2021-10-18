@@ -32,11 +32,15 @@ npm run fulfillment:create
 Upon running this, you will need to copy and paste the output into a terminal to set the environment variables so your local oracle can process any updates.
 
 If you already have a fulfillment manager keypair, make sure it is named fulfillment-keypair.json at the root directory or change the npm commands to point to your keypair.
+```bash
+export $FULFILLMENT_MANAGER_KEY={YOUR_FULFILLMENT_MANAGER_PUBLIC_KEY}
+export $AUTH_KEY={YOUR_FULFILLMENT_MANAGER_AUTHORIZATION_PUBLIC_KEY}
+```
 
 ### 3. Start the Oracle to Process Updates
 
 ```bash
-npm run oracle
+docker-compose up
 ```
 Make sure $FULFILLMENT_MANAGER_KEY and $AUTH_KEY are correctly set or else any updates will fail
 
