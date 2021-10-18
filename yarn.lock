@@ -2352,6 +2352,11 @@
   "resolved" "https://registry.npmjs.org/vscode-textmate/-/vscode-textmate-5.2.0.tgz"
   "version" "5.2.0"
 
+"wait-for-event@^2.0.1":
+  "integrity" "sha512-CuUBvs/TnLfmgJvCVTXDU8yl3DyTilEzMYUe7mlGWtiQU1gndKT/lvdaUatG4AVwq+3heXugYTILZDOm4etc2Q=="
+  "resolved" "https://registry.npmjs.org/wait-for-event/-/wait-for-event-2.0.1.tgz"
+  "version" "2.0.1"
+
 "webidl-conversions@^3.0.0":
   "integrity" "sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE="
   "resolved" "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz"

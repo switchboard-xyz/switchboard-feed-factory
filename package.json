@@ -36,11 +36,12 @@
     "chalk": "^4.1.2",
     "dotenv": "^10.0.0",
     "fs": "^0.0.1-security",
+    "node-fetch": "^2.0.0",
     "prompts": "^2.4.2",
     "readline-sync": "^1.4.10",
     "resolve-dir": "^1.0.1",
-    "yargs": "^17.2.1",
-    "node-fetch": "^2.0.0"
+    "wait-for-event": "^2.0.1",
+    "yargs": "^17.2.1"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.0.3",
