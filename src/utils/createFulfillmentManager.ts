@@ -90,6 +90,23 @@ async function main(): Promise<string> {
       authAccount.publicKey
     )}`
   );
+  if (!fs.existsSync(".env")) {
+    console.log("writing env file");
+    fs.writeFileSync(
+      ".env",
+      `FULFILLMENT_MANAGER_KEY=${fulfillmentManagerAccount.publicKey}
+AUTH_KEY=${authAccount.publicKey}
+    `
+    );
+  } else {
+    console.log("appending env file");
+    fs.appendFileSync(
+      ".env",
+      `FULFILLMENT_MANAGER_KEY=${fulfillmentManagerAccount.publicKey}
+AUTH_KEY=${authAccount.publicKey}
+  `
+    );
+  }
 
   return fulfillmentManagerAccount.publicKey.toString();
 }

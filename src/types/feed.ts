@@ -20,7 +20,6 @@ import {
 } from "@switchboard-xyz/switchboard-api";
 import chalk from "chalk";
 import { jobFactory } from "../jobs";
-import { sleep } from "../utils/sleep";
 
 export class DataFeed {
   input: FactoryInput;

@@ -1,10 +1,4 @@
-import {
-  Connection,
-  PublicKey,
-  Account,
-  Cluster,
-  clusterApiUrl,
-} from "@solana/web3.js";
+import { Connection, PublicKey, Account, clusterApiUrl } from "@solana/web3.js";
 import { FactoryInput, ConfigError, DataFeed } from "./";
 import {
   SWITCHBOARD_DEVNET_PID,
@@ -13,20 +7,24 @@ import {
   parseFulfillmentAccountData,
 } from "@switchboard-xyz/switchboard-api";
 import { sleep } from "../utils/sleep";
+import { saveKeypair } from "../utils/saveKeypair";
+import { AppConfig } from "./io";
 
 export class DataFeedFactory {
   private connection: Connection;
   private payerAccount: Account;
   private fulfillmentAccount: Account;
+  private sport: string;
   private authAccount?: Account; // might not be needed
   public SWITCHBOARD_PID: PublicKey;
 
-  constructor(cluster: Cluster, payer: Account, fulfillment: Account) {
-    const url = clusterApiUrl(cluster, true);
+  constructor(config: AppConfig) {
+    const url = clusterApiUrl(config.cluster, true);
     this.connection = new Connection(url, "processed");
-    this.payerAccount = payer;
-    this.fulfillmentAccount = fulfillment;
-    switch (cluster) {
+    this.payerAccount = config.payerAccount;
+    this.fulfillmentAccount = config.fulfillmentAccount;
+    this.sport = config.sport;
+    switch (config.cluster) {
       case "mainnet-beta":
         this.SWITCHBOARD_PID = SWITCHBOARD_MAINNET_PID;
         break;
@@ -67,26 +65,42 @@ export class DataFeedFactory {
     const feeds: DataFeed[] = [];
     for await (const f of factoryInput) {
       const newFeed = await this.createNewFeed(f);
-      await this.verifyNewFeed(newFeed);
       console.log(newFeed.toFormattedString());
-      await sleep(1_000);
       feeds.push(newFeed);
+      await sleep(250);
     }
     return feeds;
   }
 
-  public async createNewFeed(newFeed: FactoryInput): Promise<DataFeed> {
-    const dataFeed = new DataFeed(newFeed);
-    await dataFeed.createFeed(
+  private async createNewFeed(
+    newFeed: FactoryInput,
+    retryCount = 2
+  ): Promise<DataFeed> {
+    const feed = new DataFeed(newFeed);
+    await feed.createFeed(
       this.connection,
       this.payerAccount,
       this.fulfillmentAccount,
       this.SWITCHBOARD_PID
     );
-    return dataFeed;
+    if (feed.error) {
+      console.log(`Failed to create feed, retrying ${feed.error}`);
+      if (!retryCount) return feed;
+      this.createNewFeed(newFeed, --retryCount);
+    }
+    if (feed.output?.dataFeed) {
+      await this.verifyNewFeed(feed);
+      feed.error = undefined; // reset if succesful
+      saveKeypair(
+        feed.output?.dataFeed,
+        feed.input.name,
+        `feeds/${this.sport}/keypairs`
+      );
+    }
+    return feed;
   }
 
-  public async verifyNewFeed(dataFeed: DataFeed): Promise<void> {
+  private async verifyNewFeed(dataFeed: DataFeed): Promise<void> {
     await dataFeed.verifyFeed(this.connection);
   }
 }
