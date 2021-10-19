@@ -7,29 +7,44 @@ import {
   ConfigError,
 } from "./types/";
 import { getConfig } from "./config";
+import { ingestFeeds } from "./utils/ingestFeeds";
+import readlineSync from "readline-sync";
 
 async function main(): Promise<void> {
   const config: AppConfig = await getConfig();
 
-  const factory = new DataFeedFactory(
-    config.cluster,
-    config.payerAccount,
-    config.fulfillmentAccount
-  );
+  // read in feeds from json
+  const factoryInput = ingestFeeds(config.sport);
+  console.log(chalk.blue("# of New Feeds:"), factoryInput.length);
+
+  const factory = new DataFeedFactory(config);
 
   const ffmCheck = await factory.verifyFulfillmentManager();
   if (ffmCheck instanceof ConfigError) {
     console.log(ffmCheck.toString());
     throw ffmCheck;
   }
+  if (!readlineSync.keyInYN("Does the configuration look correct?")) {
+    console.log("Exiting...");
+    throw new ConfigError("user exited");
+  }
+
+  const ts = Date.now();
 
   console.log(
     chalk.underline.yellow(
       "######## Creating Data Feeds from JSON File ########"
     )
   );
-  const factoryOutput = await factory.buildFeeds(config.factoryInput);
+  const factoryOutput = await factory.buildFeeds(factoryInput);
 
+  /**
+   * TO DO
+   * Save Keypair function should be invoked here
+   * Need better saving format with provided configs and output keypair location
+   * Maybe better output directory structure (feeds/<sport>/<timestamp>)
+   * Maybe let user provide a job name to bundle output files
+   */
   const createdFeeds = factoryOutput.filter((f) => f.output);
   if (createdFeeds.length > 0) {
     fs.writeFileSync(

@@ -12,7 +12,7 @@
     "fulfillment:authorize": "ts-node src/utils/createFulfillmentManagerAuth.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
     "feeds:fetch": "ts-node src/utils/fetchDataFeeds.ts",
     "feeds:create": "ts-node src/main.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
-    "feeds:update": "ts-node src/utils/updateDataFeed.ts --payerKeypairFile=example-keypair.json",
+    "feeds:update": "ts-node src/utils/updateDataFeeds.ts --payerKeypairFile=example-keypair.json",
     "lint": "eslint --ext .js,.json,.ts 'src/**' --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "oracle": "docker-compose up"

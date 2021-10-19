@@ -1,14 +1,12 @@
 import { Account, PublicKey, Cluster } from "@solana/web3.js";
 import { OracleJob } from "@switchboard-xyz/switchboard-api";
 
-// should keep track of configuration parameters that might change flow of program
-// log this on error
 export interface AppConfig {
   sport: string;
   cluster: Cluster;
   fulfillmentAccount: Account;
   payerAccount: Account;
-  factoryInput: FactoryInput[];
+  // factoryInput: FactoryInput[];
 }
 
 /**

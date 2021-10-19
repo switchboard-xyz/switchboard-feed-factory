@@ -3,9 +3,7 @@ import fs from "fs";
 import resolve from "resolve-dir";
 import chalk from "chalk";
 import yargs from "yargs/yargs";
-import { ConfigError, AppConfig } from "./types/";
-import readlineSync from "readline-sync";
-import { ingestFeeds } from "./utils/ingestFeeds";
+import { AppConfig } from "./types/";
 import { toCluster } from "./utils/toCluster";
 import dotenv from "dotenv";
 import { selectSport } from "./utils/cli/selectSport";
@@ -59,8 +57,6 @@ export async function getConfig(): Promise<AppConfig> {
       ? argv.sport
       : await selectSport();
 
-  const factoryInput = ingestFeeds(sport);
-
   const payerKeypair = JSON.parse(
     fs.readFileSync(resolve(argv.payerKeypairFile), "utf-8")
   );
@@ -78,15 +74,9 @@ export async function getConfig(): Promise<AppConfig> {
     chalk.blue("Fulfillment Account:"),
     fulfillmentAccount.publicKey.toString()
   );
-  console.log(chalk.blue("# of New Feeds:"), factoryInput.length);
-  if (!readlineSync.keyInYN("Does the configuration look correct?")) {
-    console.log("Exiting...");
-    throw new ConfigError("user exited");
-  }
   return {
     cluster,
     sport,
-    factoryInput,
     fulfillmentAccount,
     payerAccount,
   };
