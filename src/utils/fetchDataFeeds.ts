@@ -1,11 +1,11 @@
-import fs from "fs";
 import chalk from "chalk";
-import { selectSport, selectDateRange } from "./cli";
-import { fetchNbaFeeds } from "./nba/fetchNbaFeeds";
-import { getNbaEventUrl } from "./nba/jobs/nba";
-import { getEspnEventUrl } from "./nba/jobs/espn";
-import { getYahooEventUrl } from "./nba/jobs/yahoo";
+import fs from "fs";
 import { JsonInput } from "../types";
+import { selectDateRange, selectSport } from "./cli";
+import { fetchNbaFeeds } from "./nba/fetchNbaFeeds";
+import { getEspnEventUrl } from "./nba/jobs/espn";
+import { getNbaEventUrl } from "./nba/jobs/nba";
+import { getYahooEventUrl } from "./nba/jobs/yahoo";
 import { toDateString } from "./toDateString";
 
 /**
@@ -64,7 +64,7 @@ export async function nba(): Promise<boolean> {
 
 fetchFeeds().then(
   () => {
-    console.log(chalk.green("Succesfully fetched Feeds"));
+    console.log(chalk.green("Successfully fetched feeds..."));
     process.exit();
   },
   (err) => {

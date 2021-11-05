@@ -1,13 +1,13 @@
-import { Connection, PublicKey, Account, clusterApiUrl } from "@solana/web3.js";
-import { FactoryInput, ConfigError, DataFeed } from "./";
+import { Account, clusterApiUrl, Connection, PublicKey } from "@solana/web3.js";
 import {
+  parseFulfillmentAccountData,
   SWITCHBOARD_DEVNET_PID,
   SWITCHBOARD_MAINNET_PID,
   SWITCHBOARD_TESTNET_PID,
-  parseFulfillmentAccountData,
 } from "@switchboard-xyz/switchboard-api";
-import { sleep } from "../utils/sleep";
 import { saveKeypair } from "../utils/saveKeypair";
+import { sleep } from "../utils/sleep";
+import { ConfigError, DataFeed, FactoryInput } from "./";
 import { AppConfig } from "./io";
 
 export class DataFeedFactory {
