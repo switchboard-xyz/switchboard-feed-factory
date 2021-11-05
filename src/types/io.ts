@@ -62,8 +62,11 @@ export interface JobOutputJSON {
 }
 
 export interface BundleOutput {
-  name: string;
+  title: string;
   description: string;
+  category: string;
+  isMainnet: boolean;
+  displayType: string;
   jobs: string[];
   tags: string[];
 }

@@ -80,7 +80,7 @@ export async function fetchNbaFeeds(date: string): Promise<FetchOutput> {
     if (match.Yahoo) matchJobs.push(match.Yahoo);
 
     eventBundles.push({
-      name:
+      title:
         `${capitalizeTeamName(match.Nba.AwayTeam)} @ ` +
         `${capitalizeTeamName(match.Nba.HomeTeam)} Result ` +
         `(${toDateString(match.Nba.EventDate)})`,
@@ -88,6 +88,9 @@ export async function fetchNbaFeeds(date: string): Promise<FetchOutput> {
         `A bundle of jobs that return the result of the match when the event ` +
         `finishes. A result of 1 indicates that the home team won while a ` +
         `result of 2 indicates that the away team won.`,
+      category: `Sports`,
+      isMainnet: true,
+      displayType: "none",
       jobs: matchJobs.map((source) =>
         JSON.stringify(
           nbaFactory({ jobProvider: source.Endpoint, jobId: source.EndpointId })
