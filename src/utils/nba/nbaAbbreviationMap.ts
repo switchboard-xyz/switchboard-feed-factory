@@ -277,11 +277,11 @@ export const getTeamFromEspnAbbreviation = (
   return espnAbbreviation;
 };
 
-// atlanta-hawks => AtlantaHawks
+// `atlanta-hawks` => `Atlanta Hawks`
 export const capitalizeTeamName = (team: string | undefined): string => {
   if (!team) return "";
   return team
     .split("-")
     .map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
-    .join("");
+    .join(" ");
 };

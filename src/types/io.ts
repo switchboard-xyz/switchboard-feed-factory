@@ -1,4 +1,4 @@
-import { Account, PublicKey, Cluster } from "@solana/web3.js";
+import { Account, Cluster, PublicKey } from "@solana/web3.js";
 import { OracleJob } from "@switchboard-xyz/switchboard-api";
 
 export interface AppConfig {
@@ -55,4 +55,10 @@ export interface JobOutputJSON {
   provider: string;
   id: string;
   pubKey: string;
+}
+
+export interface BundleOutput {
+  name: string;
+  description: string;
+  jobs: OracleJob[];
 }

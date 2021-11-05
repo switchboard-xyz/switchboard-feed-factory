@@ -41,7 +41,7 @@ export async function nba(): Promise<boolean> {
     if (!matches) console.error(`failed to fetch feeds for ${d}`);
     allMatches = allMatches.concat(matches);
   }
-  if (allMatches) {
+  if (allMatches.length) {
     fs.writeFileSync(
       `./feeds/nba/JsonInput.json`,
       JSON.stringify(allMatches, null, 2)

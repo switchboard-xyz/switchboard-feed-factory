@@ -6,14 +6,14 @@
  * @privateRemarks probably need to use some kind of fuzzy matching to match teams unless we mapped each team ID
  */
 
-import fs from "fs";
 import chalk from "chalk";
-import { JsonInput } from "../../types";
-import { capitalizeTeamName } from "./nbaAbbreviationMap";
-import { getNbaEvents } from "./jobs/nba";
-import { getEspnEvents } from "./jobs/espn";
-import { getYahooEvents } from "./jobs/yahoo";
+import fs from "fs";
+import { BundleOutput, JsonInput } from "../../types";
 import { toDateString } from "../toDateString";
+import { getEspnEvents } from "./jobs/espn";
+import { getNbaEvents } from "./jobs/nba";
+import { getYahooEvents } from "./jobs/yahoo";
+import { capitalizeTeamName } from "./nbaAbbreviationMap";
 
 export interface EventKind {
   Endpoint: string;
@@ -73,10 +73,20 @@ export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
     `./feeds/nba/${date}/full_matches.json`,
     JSON.stringify(matches, null, 2)
   );
+
+  const eventMatches2: BundleOutput[] = [];
+  for (const match of matches) {
+    const name = `${capitalizeTeamName(
+      match.Nba.AwayTeam
+    )} @ ${capitalizeTeamName(match.Nba.HomeTeam)} (${toDateString(
+      match.Nba.EventDate
+    )})`;
+  }
+
   const eventMatches: JsonInput[] = matches.map((match) => {
     const name = `${capitalizeTeamName(
       match.Nba.AwayTeam
-    )}_at_${capitalizeTeamName(match.Nba.HomeTeam)}_${toDateString(
+    )} at ${capitalizeTeamName(match.Nba.HomeTeam)} ${toDateString(
       match.Nba.EventDate
     )}`;
     const jsonInput: JsonInput = {
