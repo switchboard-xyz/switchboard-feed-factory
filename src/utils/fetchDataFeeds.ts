@@ -1,6 +1,6 @@
 import chalk from "chalk";
 import fs from "fs";
-import { JsonInput } from "../types";
+import { FetchOutput } from "../types";
 import { selectDateRange, selectSport } from "./cli";
 import { fetchNbaFeeds } from "./nba/fetchNbaFeeds";
 import { getEspnEventUrl } from "./nba/jobs/espn";
@@ -34,21 +34,22 @@ export async function fetchFeeds(): Promise<boolean> {
 export async function nba(): Promise<boolean> {
   const dates = await selectDateRange();
   console.log(dates);
-  let allMatches: JsonInput[] = [];
+  let allMatches: FetchOutput = { inputs: [], bundles: [] };
 
   for await (const d of dates) {
-    const matches: JsonInput[] = await fetchNbaFeeds(d);
-    if (!matches) console.error(`failed to fetch feeds for ${d}`);
-    allMatches = allMatches.concat(matches);
+    const output = await fetchNbaFeeds(d);
+    if (!output.inputs.length) console.error(`failed to fetch feeds for ${d}`);
+    allMatches.inputs = allMatches.inputs.concat(output.inputs);
+    allMatches.bundles = allMatches.bundles.concat(output.bundles);
   }
-  if (allMatches.length) {
+  if (allMatches.inputs.length) {
     fs.writeFileSync(
       `./feeds/nba/JsonInput.json`,
-      JSON.stringify(allMatches, null, 2)
+      JSON.stringify(allMatches.inputs, null, 2)
     );
     const header =
       "Date,Name,NBA ID,ESPN ID,Yahoo ID,NBA Endpoint,SPN Endpoint,Yahoo Endpoint,";
-    const csvLines: string[] = allMatches.map(
+    const csvLines: string[] = allMatches.inputs.map(
       (m) =>
         `"${toDateString(m.date)}","${m.name}","${m.nbaId}","${m.espnId}","${
           m.yahooId
@@ -58,6 +59,12 @@ export async function nba(): Promise<boolean> {
     );
     csvLines.unshift(header);
     fs.writeFileSync(`./feeds/nba/AllFeeds.csv`, csvLines.join("\r\n"));
+  }
+  if (allMatches.bundles.length) {
+    fs.writeFileSync(
+      `./bundles/nba/BundlesOutput.json`,
+      JSON.stringify(allMatches.bundles, null, 2)
+    );
   }
   return true;
 }

@@ -8,7 +8,8 @@
 
 import chalk from "chalk";
 import fs from "fs";
-import { BundleOutput, JsonInput } from "../../types";
+import { nbaFactory } from "../../jobs/nba";
+import { BundleOutput, FetchOutput, JsonInput } from "../../types";
 import { toDateString } from "../toDateString";
 import { getEspnEvents } from "./jobs/espn";
 import { getNbaEvents } from "./jobs/nba";
@@ -29,17 +30,15 @@ export interface Event {
   Yahoo?: EventKind;
 }
 
-export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
+export async function fetchNbaFeeds(date: string): Promise<FetchOutput> {
   const nbaEvents = await getNbaEvents(date);
   const espnEvents = await getEspnEvents(date);
   const yahooEvents = await getYahooEvents(date);
-  if (!nbaEvents || nbaEvents.length === 0) return [];
+  if (!nbaEvents || nbaEvents.length === 0) return { inputs: [], bundles: [] };
 
   // match NBA to ESPN & Yahoo list
   const matches: Event[] = nbaEvents.map((nbaEvent) => {
-    const m: Event = {
-      Nba: nbaEvent,
-    };
+    const m: Event = { Nba: nbaEvent };
     // find ESPN event
     m.Espn = espnEvents.find(
       (espnEvent) =>
@@ -74,13 +73,29 @@ export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
     JSON.stringify(matches, null, 2)
   );
 
-  const eventMatches2: BundleOutput[] = [];
+  const eventBundles: BundleOutput[] = [];
   for (const match of matches) {
-    const name = `${capitalizeTeamName(
-      match.Nba.AwayTeam
-    )} @ ${capitalizeTeamName(match.Nba.HomeTeam)} (${toDateString(
-      match.Nba.EventDate
-    )})`;
+    const matchJobs: EventKind[] = [];
+    if (match.Espn) matchJobs.push(match.Espn);
+    if (match.Yahoo) matchJobs.push(match.Yahoo);
+
+    eventBundles.push({
+      name:
+        `${capitalizeTeamName(match.Nba.AwayTeam)} @ ` +
+        `${capitalizeTeamName(match.Nba.HomeTeam)} Result ` +
+        `(${toDateString(match.Nba.EventDate)})`,
+      description:
+        `A bundle of jobs that return the result of the match when the event ` +
+        `finishes. A result of 1 indicates that the home team won while a ` +
+        `result of 2 indicates that the away team won.`,
+      jobs: matchJobs.map((source) =>
+        JSON.stringify(
+          nbaFactory({ jobProvider: source.Endpoint, jobId: source.EndpointId })
+            .job
+        )
+      ),
+      tags: ["NBA"],
+    });
   }
 
   const eventMatches: JsonInput[] = matches.map((match) => {
@@ -123,5 +138,5 @@ export async function fetchNbaFeeds(date: string): Promise<JsonInput[]> {
       yahooCount
     )} Yahoo ]`
   );
-  return eventMatches;
+  return { inputs: eventMatches, bundles: eventBundles };
 }

@@ -9,6 +9,7 @@ lerna-debug.log*
 
 bin
 feeds
+bundles
 .archive
 
 # Diagnostic reports (https://nodejs.org/api/report.html)

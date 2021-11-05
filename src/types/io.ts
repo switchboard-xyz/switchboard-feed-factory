@@ -27,11 +27,13 @@ export interface FactoryInput {
   sport: string;
   jobs: JobInput[];
 }
+
 export interface FactoryOutput {
   dataFeed: Account;
   updateAuth: Account;
   jobs: JobOutput[];
 }
+
 export interface FactoryOutputJSON {
   name: string;
   dataFeed: string;
@@ -47,10 +49,12 @@ export interface JobOutput {
   job: OracleJob;
   pubKey?: PublicKey;
 }
+
 export interface JobInput {
   jobProvider: string;
   jobId: string;
 }
+
 export interface JobOutputJSON {
   provider: string;
   id: string;
@@ -60,5 +64,11 @@ export interface JobOutputJSON {
 export interface BundleOutput {
   name: string;
   description: string;
-  jobs: OracleJob[];
+  jobs: string[];
+  tags: string[];
+}
+
+export interface FetchOutput {
+  inputs: JsonInput[];
+  bundles: BundleOutput[];
 }
