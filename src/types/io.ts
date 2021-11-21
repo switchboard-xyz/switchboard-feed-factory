@@ -70,8 +70,3 @@ export interface BundleOutput {
   jobs: string[];
   tags: string[];
 }
-
-export interface FetchOutput {
-  inputs: JsonInput[];
-  bundles: BundleOutput[];
-}
