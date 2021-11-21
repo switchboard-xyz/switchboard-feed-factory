@@ -2,14 +2,14 @@ import chalk from "chalk";
 import fs from "fs";
 import { JsonInput } from "../../../types";
 import { api } from "../../api";
-import { EventKind } from "../fetchNbaFeeds";
-import { getTeamFromEspnAbbreviation } from "../nbaAbbreviationMap";
+import { EventKind } from "../fetchNflFeeds";
+import { getTeamFromEspnAbbreviation } from "../nflAbbreviationMap";
 
 export async function getEspnEvents(date: string): Promise<EventKind[]> {
   const strippedDate = date.replaceAll("-", "");
 
   // Parse ESPN response and build EventKind array
-  const espnApi = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${strippedDate}`;
+  const espnApi = `https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=${strippedDate}`;
   const espnResponse: any = await api(espnApi);
   const espnResponseEvents: any[] = espnResponse.events;
   const espnEvents: EventKind[] = espnResponseEvents.map((e) => {
@@ -23,18 +23,18 @@ export async function getEspnEvents(date: string): Promise<EventKind[]> {
     };
   });
   if (espnEvents && espnEvents.length > 0) {
-    if (!fs.existsSync(`./feeds/nba/${date}`)) {
-      fs.mkdirSync(`./feeds/nba/${date}`);
+    if (!fs.existsSync(`./feeds/nfl/${date}`)) {
+      fs.mkdirSync(`./feeds/nfl/${date}`);
     }
-    if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
-      fs.mkdirSync(`./feeds/nba/${date}/raw`);
+    if (!fs.existsSync(`./feeds/nfl/${date}/raw`)) {
+      fs.mkdirSync(`./feeds/nfl/${date}/raw`);
     }
     fs.writeFileSync(
-      `./feeds/nba/${date}/raw/espn.json`,
+      `./feeds/nfl/${date}/raw/espn.json`,
       JSON.stringify(espnResponseEvents, null, 2)
     );
     fs.writeFileSync(
-      `./feeds/nba/${date}/espn.json`,
+      `./feeds/nfl/${date}/espn.json`,
       JSON.stringify(espnEvents, null, 2)
     );
   } else {
@@ -45,5 +45,5 @@ export async function getEspnEvents(date: string): Promise<EventKind[]> {
 
 export const getEspnEventUrl = (feed: JsonInput): string => {
   if (!feed.espnId) return "";
-  return `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard/${feed.espnId}`;
+  return `https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard/${feed.espnId}`;
 };

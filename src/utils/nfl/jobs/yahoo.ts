@@ -2,26 +2,25 @@ import chalk from "chalk";
 import fs from "fs";
 import { JsonInput } from "../../../types";
 import { api } from "../../api";
-import { EventKind } from "../fetchNbaFeeds";
-import { abbreviationMap } from "../nbaAbbreviationMap";
+import { EventKind } from "../fetchNflFeeds";
+import { getYahooAbbreviations } from "../nflAbbreviationMap";
 
 /**
  * Yahoo gameId is <away-team-home-team-dateid>
  */
 const parseTeamNames = (gameId: string): [string, string] => {
+  const abbreviations = getYahooAbbreviations();
   let [home, away] = ["", ""];
   let parsedGameId = gameId;
-  for (const awayTeam of abbreviationMap.keys()) {
+  for (const awayTeam of abbreviations) {
     if (parsedGameId.startsWith(awayTeam)) {
       away = awayTeam;
       parsedGameId = gameId.replace(`${away}-`, "");
       break;
     }
   }
-  if (!away) {
-    console.error(`failed to get away team for Yahoo ${gameId}`);
-  }
-  for (const homeTeam of abbreviationMap.keys()) {
+  if (!away) console.error(`failed to get away team for Yahoo ${gameId}`);
+  for (const homeTeam of abbreviations) {
     if (parsedGameId.startsWith(homeTeam)) {
       home = homeTeam;
       break;
@@ -37,14 +36,14 @@ const parseTeamNames = (gameId: string): [string, string] => {
 
 export async function getYahooEvents(date: string): Promise<EventKind[]> {
   // Parse Yahoo response and build EventKind array
-  const yahooApi = `https://api-secure.sports.yahoo.com/v1/editorial/s/scoreboard?leagues=nba&date=${date}`;
+  const yahooApi = `https://api-secure.sports.yahoo.com/v1/editorial/s/scoreboard?leagues=nfl&date=${date}`;
   const yahooResponse: any = await api(yahooApi);
   const yahooResponseEvents: any[] = yahooResponse.service.scoreboard.games
     ? Object.values(yahooResponse.service.scoreboard.games)
     : [];
   const yahooEvents: EventKind[] = yahooResponseEvents.map((e) => {
     const boxscoreId: string = e.navigation_links.boxscore.url;
-    const gameId = boxscoreId.replace("/nba/", "").replace("/", "");
+    const gameId = boxscoreId.replace("/nfl/", "").replace("/", "");
     const [home, away] = parseTeamNames(gameId);
     return {
       Endpoint: "yahoo",
@@ -55,18 +54,18 @@ export async function getYahooEvents(date: string): Promise<EventKind[]> {
     };
   });
   if (yahooResponseEvents && yahooResponseEvents.length > 0) {
-    if (!fs.existsSync(`./feeds/nba/${date}`)) {
-      fs.mkdirSync(`./feeds/nba/${date}`);
+    if (!fs.existsSync(`./feeds/nfl/${date}`)) {
+      fs.mkdirSync(`./feeds/nfl/${date}`);
     }
-    if (!fs.existsSync(`./feeds/nba/${date}/raw`)) {
-      fs.mkdirSync(`./feeds/nba/${date}/raw`);
+    if (!fs.existsSync(`./feeds/nfl/${date}/raw`)) {
+      fs.mkdirSync(`./feeds/nfl/${date}/raw`);
     }
     fs.writeFileSync(
-      `./feeds/nba/${date}/raw/yahoo.json`,
+      `./feeds/nfl/${date}/raw/yahoo.json`,
       JSON.stringify(yahooResponseEvents, null, 2)
     );
     fs.writeFileSync(
-      `./feeds/nba/${date}/yahoo.json`,
+      `./feeds/nfl/${date}/yahoo.json`,
       JSON.stringify(yahooEvents, null, 2)
     );
   } else {
@@ -77,5 +76,5 @@ export async function getYahooEvents(date: string): Promise<EventKind[]> {
 
 export const getYahooEventUrl = (feed: JsonInput): string => {
   if (!feed.yahooId) return "";
-  return `https://sports.yahoo.com/nba/${feed.yahooId}`;
+  return `https://sports.yahoo.com/nfl/${feed.yahooId}`;
 };

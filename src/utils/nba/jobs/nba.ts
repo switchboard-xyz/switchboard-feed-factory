@@ -1,10 +1,10 @@
-import { EventKind } from "../fetchNbaFeeds";
-import { api } from "../../api";
-import { getTeamFromNbaAbbreviation } from "../nbaAbbreviationMap";
-import fs from "fs";
 import chalk from "chalk";
+import fs from "fs";
 import { JsonInput } from "../../../types";
+import { api } from "../../api";
 import { toDateString } from "../../toDateString";
+import { EventKind } from "../fetchNbaFeeds";
+import { getTeamFromNbaAbbreviation } from "../nbaAbbreviationMap";
 
 export async function getNbaEvents(date: string): Promise<EventKind[]> {
   const strippedDate = date.replaceAll("-", "");

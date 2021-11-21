@@ -15,6 +15,10 @@ export async function selectSport(): Promise<string> {
           title: "National Basketball Association (nba.feeds.json)",
           value: "nba",
         },
+        {
+          title: "National Football League (nfl.feeds.json)",
+          value: "nfl",
+        },
       ],
     },
   ]);

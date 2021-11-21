@@ -6,6 +6,7 @@ import { fetchNbaFeeds } from "./nba/fetchNbaFeeds";
 import { getEspnEventUrl } from "./nba/jobs/espn";
 import { getNbaEventUrl } from "./nba/jobs/nba";
 import { getYahooEventUrl } from "./nba/jobs/yahoo";
+import { nfl } from "./nfl/fetchNflFeeds";
 import { toDateString } from "./toDateString";
 
 /**
@@ -15,22 +16,26 @@ import { toDateString } from "./toDateString";
  * fulfillment manager, sport, and the parsed JSON file with the intended data feeds
  */
 export async function fetchFeeds(): Promise<boolean> {
+  if (!fs.existsSync(`./feeds`)) fs.mkdirSync(`./feeds`);
+  if (!fs.existsSync(`./bundles`)) fs.mkdirSync(`./bundles`);
+
   const sport = await selectSport();
-  if (sport.toLowerCase() === "epl") {
-    console.error(chalk.red("EPL fetch not implemented yet"));
-    return false;
-  } else if (sport.toLowerCase() === "nba") {
-    if (!fs.existsSync(`./feeds`)) {
-      fs.mkdirSync(`./feeds`);
-    }
-    if (!fs.existsSync(`./feeds/nba`)) {
-      fs.mkdirSync(`./feeds/nba`);
-    }
-    const success = await nba();
-    return success;
+  switch (sport.toLowerCase()) {
+    case "epl":
+      console.error(chalk.red("EPL fetch not implemented yet"));
+      return false;
+    case "nba":
+      if (!fs.existsSync(`./feeds/nba`)) fs.mkdirSync(`./feeds/nba`);
+      if (!fs.existsSync(`./bundles/nba`)) fs.mkdirSync(`./bundles/nba`);
+      return await nba();
+    case "nfl":
+      if (!fs.existsSync(`./feeds/nfl`)) fs.mkdirSync(`./feeds/nfl`);
+      if (!fs.existsSync(`./bundles/nfl`)) fs.mkdirSync(`./bundles/nfl`);
+      return await nfl();
   }
-  return false;
+  throw new Error(`Unknown sport: ${sport}`);
 }
+
 export async function nba(): Promise<boolean> {
   const dates = await selectDateRange();
   console.log(dates);
@@ -48,7 +53,7 @@ export async function nba(): Promise<boolean> {
       JSON.stringify(allMatches.inputs, null, 2)
     );
     const header =
-      "Date,Name,NBA ID,ESPN ID,Yahoo ID,NBA Endpoint,SPN Endpoint,Yahoo Endpoint,";
+      "Date,Name,NBA ID,ESPN ID,Yahoo ID,NBA Endpoint,ESPN Endpoint,Yahoo Endpoint,";
     const csvLines: string[] = allMatches.inputs.map(
       (m) =>
         `"${toDateString(m.date)}","${m.name}","${m.nbaId}","${m.espnId}","${

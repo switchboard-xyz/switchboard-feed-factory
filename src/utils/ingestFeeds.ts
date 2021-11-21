@@ -1,16 +1,14 @@
 import fs from "fs";
-import { FactoryInput, JsonInput } from "../types";
-import { JobInput } from "../types";
+import { FactoryInput, JobInput, JsonInput } from "../types";
 import { JsonInputError } from "../types/error";
 
 /**
-   * Handles the mapping between chosen job type and parsed JSON file
-   * Returns an input for the Data Feed Factory
-   *
-   * @param sport - epl | nba
-   * @returns Array of FactoryInput elements for the DataFeedFactory to consume
-
-   */
+ * Handles the mapping between chosen job type and parsed JSON file
+ * Returns an input for the Data Feed Factory
+ *
+ * @param sport - epl | nba
+ * @returns Array of FactoryInput elements for the DataFeedFactory to consume
+ */
 export const ingestFeeds = (sport: string): FactoryInput[] => {
   let inputFile: string;
   switch (sport.toLowerCase()) {
@@ -20,8 +18,11 @@ export const ingestFeeds = (sport: string): FactoryInput[] => {
     case "nba":
       inputFile = "nba.feeds.json";
       break;
+    case "nfl":
+      inputFile = "nfl.feeds.json";
+      break;
     default:
-      throw `couldnt match a sport for ${sport} - (epl/nba)`;
+      throw `Couldnt match a sport for ${sport} - (epl/nba/nfl)`;
   }
   try {
     const fileBuffer = fs.readFileSync(inputFile);
@@ -51,7 +52,7 @@ export const ingestFeeds = (sport: string): FactoryInput[] => {
     const FactoryInputMap = new Map(factoryInput.map((f) => [f.name, f]));
     if (FactoryInputMap.size !== factoryInput.length) {
       const e = new JsonInputError(
-        "duplicate names detected, check your json file"
+        "Duplicate names detected, check your json file"
       );
       // console.log(e.toString());
       throw e;
@@ -59,6 +60,6 @@ export const ingestFeeds = (sport: string): FactoryInput[] => {
 
     return factoryInput;
   } catch (err) {
-    throw `please create ${inputFile} - ${err}`;
+    throw `Please create ${inputFile} - ${err}`;
   }
 };

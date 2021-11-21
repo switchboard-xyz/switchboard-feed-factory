@@ -1,13 +1,13 @@
 import { Account } from "@solana/web3.js";
+import chalk from "chalk";
+import dotenv from "dotenv";
 import fs from "fs";
 import resolve from "resolve-dir";
-import chalk from "chalk";
 import yargs from "yargs/yargs";
 import { AppConfig } from "./types/";
-import { toCluster } from "./utils/toCluster";
-import dotenv from "dotenv";
-import { selectSport } from "./utils/cli/selectSport";
 import { selectCluster } from "./utils/cli/selectCluster";
+import { selectSport } from "./utils/cli/selectSport";
+import { toCluster } from "./utils/toCluster";
 dotenv.config();
 
 /**
@@ -51,11 +51,10 @@ export async function getConfig(): Promise<AppConfig> {
     ? toCluster(argv.cluster)
     : await selectCluster();
 
-  // TO DO: Sport should be an enumeration
+  // TODO: Sport should be an enumeration
+  const sports = ["epl", "nba", "nfl"];
   const sport: string =
-    argv.sport === "epl" || argv.sport === "nba"
-      ? argv.sport
-      : await selectSport();
+    sports.find((sport) => sport === argv.sport) ?? (await selectSport());
 
   const payerKeypair = JSON.parse(
     fs.readFileSync(resolve(argv.payerKeypairFile), "utf-8")
