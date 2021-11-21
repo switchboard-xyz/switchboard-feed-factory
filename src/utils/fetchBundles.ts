@@ -3,6 +3,7 @@ import fs from "fs";
 import { BundleOutput } from "../types";
 import { selectDateRange, selectSport } from "./cli";
 import { fetchNbaBundles } from "./nba/fetchNbaBundles";
+import { fetchNflBundles } from "./nfl/fetchNflBundles";
 
 /**
  * Reads in program arguements and prompts, then returns the parsed JSON and DataFeedFactory
@@ -26,6 +27,9 @@ export async function fetchFeeds(): Promise<boolean> {
   } else if (sport.toLowerCase() === "nba" && (await nba(dates))) {
     console.log(`Outputted to ${sportDir}`);
     return true;
+  } else if (sport.toLowerCase() === "nfl" && (await nfl(dates))) {
+    console.log(`Outputted to ${sportDir}`);
+    return true;
   }
   return false;
 }
@@ -47,8 +51,26 @@ async function nba(dates: string[]): Promise<boolean> {
   return true;
 }
 
+async function nfl(dates: string[]): Promise<boolean> {
+  let allBundles: BundleOutput[] = [];
+  for await (const d of dates) {
+    const output = await fetchNflBundles(d);
+    if (!output.length) console.error(`failed to fetch bundles for ${d}`);
+    allBundles = allBundles.concat(output);
+  }
+
+  if (allBundles.length) {
+    fs.writeFileSync(
+      `./bundles/nfl/BundlesOutput.json`,
+      JSON.stringify(allBundles, null, 2)
+    );
+  }
+  return true;
+}
+
 fetchFeeds().then(
-  () => {
+  (result) => {
+    if (!result) throw chalk.red("An error occurred");
     console.log(chalk.green("Successfully fetched feeds..."));
     process.exit();
   },

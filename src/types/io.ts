@@ -69,4 +69,5 @@ export interface BundleOutput {
   displayType: string;
   jobs: string[];
   tags: string[];
+  eventDateUTC: string;
 }
