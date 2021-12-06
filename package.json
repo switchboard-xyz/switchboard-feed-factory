@@ -8,6 +8,7 @@
   "scripts": {
     "publish": "",
     "build": "tsc",
+    "bundles:fetch": "ts-node src/utils/fetchBundles.ts",
     "fulfillment:create": "ts-node src/utils/createFulfillmentManager.ts --payerKeypairFile=example-keypair.json",
     "fulfillment:authorize": "ts-node src/utils/createFulfillmentManagerAuth.ts --payerKeypairFile=example-keypair.json --fulfillmentKeypair=fulfillment-keypair.json",
     "feeds:fetch": "ts-node src/utils/fetchDataFeeds.ts",
