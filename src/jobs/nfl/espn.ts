@@ -68,12 +68,8 @@ export const createEspnNflJob = (espnMatchId: string): OracleJob => {
                     valueTask: { value: 0 },
                   }),
                 ],
-                // If all of the above fails, return ValueTask(-1).
-                onFailure: [
-                  OracleJob.Task.create({
-                    valueTask: { value: -1 },
-                  }),
-                ],
+                // If all of the above fails, don't return a response.
+                onFailure: [],
               }),
             }),
           ],

@@ -1,7 +1,7 @@
-import { JobInput, JobError, JobOutput } from "../../types";
-import { createYahooNbaJob } from "./yahoo";
-import { createEspnNbaJob } from "./espn";
 import { OracleJob } from "@switchboard-xyz/switchboard-api";
+import { JobError, JobInput, JobOutput } from "../../types";
+import { createEspnNbaJob } from "./espn";
+import { createYahooNbaJob } from "./yahoo";
 
 export const nbaFactory = (jobInput: JobInput): JobOutput => {
   let job: OracleJob;
